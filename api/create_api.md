@@ -13,8 +13,9 @@ return "greetings"
 
 - Give a name to your script then click on "Save" in the toolbar. You script is automatically deployed as a secure API, with it's own endpoint. 
 - **You now have a public secure API, accessible via http, websockets, mqtt and ampq!**
-- The endpoint of the script is by default "https://api.scriptrapps.io/path_to_script/script_name", e.g. https://api.scriptrapps.io/tutorials/howto/turn_a_script_into_secure_api/greeting
-- To create a path, just type it before the script name.
+
+**Note**
+The endpoint of the script is by default "https://api.scriptrapps.io/path_to_script/script_name", e.g. https://api.scriptrapps.io/tutorials/howto/turn_a_script_into_secure_api/greeting. To create a path, just type it before the script name.
 
 ## Try the new API from the workspace
 - You can execute a script by clicking on "Run" in the toolbar. The output of the script's execution will be displayed in the console. 
