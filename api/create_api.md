@@ -38,6 +38,7 @@ return "greetings"
 - Select Get as the http method
 - Type the script endpoint in the request URL field
 - Select the "Headers" tab and create the Authorization header field. Set it's value to "bearer your_scriptr_auth_token"
+
 ![Run your script from Postman](./images/run_script_in_postman.png)
 
 *Image 3*
