@@ -3,18 +3,19 @@
 Any script you write in scriptr.io is by default turned into a secure and scalable API that can be accessed using http, websockets, mqtt or amqp.
 In this how-to, we will see how to retrieve the parameters of the requests (or messages) sent to a given API, for all the above protocols.
 
+The important thing to remember is that from any script, you can access the native **request** object that allows you to retrieve information about the request, including the conveyed parameters.
+
 ## HTTP requests
 
 Http requests can be sent by client applications usign any of GET, POST or PUT with different content-types (for POST and PUT). 
-From any script, you can access the native "request" object that allows you to retrieve information about the request, including the conveyed parameters.
 
 - Before we test all possibilities, go ahead an create a script in your scriptr.io [workspace](https://www.scriptr.io/workspace).
 - For now, we will just type "return true" and save the script
 
-### HTTP GET, HTTP POST/PUT with content-type == "application/x-www-form-urlencoded"
+### HTTP GET, HTTP POST/PUT with content-type == "application/x-www-form-urlencoded" or "multipart/form-data"
 
-- In that case, the parameters of the request are retrieved using "request.parameters"
-- Let's update our script to return this object and save our changes. 
+- In that case, the parameters of the request are retrieved using **request.parameters**
+- Let's update our script to echo back object and save our changes. 
 
 ```
 return request.parameters;
@@ -27,10 +28,23 @@ In this example, we will pass "temperature", "unit" and "humidity" (don't forget
 
 *Image 1*
 
-Let's try again invoking our script using [Postman](https://www.getpostman.com/) using a POST request, passing our parameters in the body string as "application/x-www-form-urlencoded". 
+Let's try again invoking our script using [Postman](https://www.getpostman.com/) using a POST request, passing our parameters in the body as "application/x-www-form-urlencoded". 
 
 ![Retrieve parameters from body](./images/post_request_classic.png)
 
 *Image 2*
 
-### HTTP HTTP POST/PUT with content-type == "application/form-data"
+### HTTP HTTP POST/PUT with content-type == "application/json"
+
+- In that case, the JSON object that is sent along with the request is obtained using **request.body**
+- Let's update our script to return request.body this time, instead of request.parameters and save our changes
+
+```
+return request.parameters;
+```
+
+Once again, let's try invoking our script using [Postman](https://www.getpostman.com/) using a POST request, passing our parameters in the body as a JSON object
+
+![Retrieve parameters from body](./images/post_request_json.png)
+
+*Image 3*
