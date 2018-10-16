@@ -10,7 +10,8 @@ return "greetings"
 ![Save your script](./images/write_script.PNG)
 *Image 1*
 
-- Give a name to your script then click on "Save" in the toolbar. You script is automatically deployed as a secure API, with it's own endpoint.
+- Give a name to your script then click on "Save" in the toolbar. You script is automatically deployed as a secure API, with it's own endpoint. 
+- **You now have a public secure API, accessible via http, websockets, mqtt and ampq!**
 - The endpoint of the script is by default "https://api.scriptrapps.io/path_to_script/script_name", e.g. https://api.scriptrapps.io/tutorials/howto/turn_a_script_into_secure_api/greeting
 - To create a path, just type it before the script name.
 
@@ -27,6 +28,16 @@ return "greetings"
 - In Image 2, notice that the cURL instruction passes a bearer token in the Authorization header. Scriptr.io will reject any attempt to invoke a secure script if no valid token is provided. 
 
 ## Try the new API from the browser 
-- Copy your script's endpoint and paste it into a web browser (e.g. https://api.scriptrapps.io/tutorials/howto/turn_a_script_into_secure_api/greeting)
+- Copy your script's endpoint and paste it into a web browser 
 - Pass your auth token as a query parameter using auth_token, e.g. https://api.scriptrapps.io/tutorials/howto/turn_a_script_into_secure_api/greeting?auth_token=UzIyQTgwRjc2NjpzY3JpcHRyOjFFOT###################### 
+
+## Try the new API from [Postman](https://www.getpostman.com/)
+- Open Postman
+- Select Get as the http method
+- Type the script endpoint in the request URL field
+- Select the "Headers" tab and create the Authorization header field. Set it's value to "bearer your_scriptr_auth_token"
+![Run your script from Postman](./images/run_script_postman.png)
+*Image 2*
+
+
 
