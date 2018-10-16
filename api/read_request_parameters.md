@@ -11,7 +11,7 @@ From any script, you can access the native "request" object that allows you to r
 - Before we test all possibilities, go ahead an create a script in your scriptr.io [workspace](https://www.scriptr.io/workspace).
 - For now, we will just type "return true" and save the script
 
-**HTTP GET, HTTP POST/PUT with content-type == "application/x-www-form-urlencoded" or "application/form-data"
+### HTTP GET, HTTP POST/PUT with content-type == "application/x-www-form-urlencoded"
 
 - In that case, the parameters of the request are retrieved using "request.parameters"
 - Let's update our script to return this object and save our changes. 
@@ -21,7 +21,14 @@ return request.parameters;
 ```
 
 Let's try invoking our script using [Postman](https://www.getpostman.com/) using a GET request, passing our parameters in the query string. 
-In this example, we will pass "temperature", "temperature_unit" and "humidity" (don't forget to pass a valid auth token in the Authorization header)
+In this example, we will pass "temperature", "unit" and "humidity" (don't forget to pass a valid auth token in the Authorization header)
 
 ![Retrieve parameters from query string](./images/get_request.png)
 *Image 1*
+
+Let's try again invoking our script using [Postman](https://www.getpostman.com/) using a POST request, passing our parameters in the body string as "application/x-www-form-urlencoded". 
+
+![Retrieve parameters from body](./images/get_request_body.png)
+*Image 2*
+
+### HTTP HTTP POST/PUT with content-type == "application/form-data"
