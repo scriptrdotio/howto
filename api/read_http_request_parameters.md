@@ -1,6 +1,6 @@
 # How do I retrieve the parameters sent to my API via http?
 
-- Any script you write in scriptr.io is by default turned into a secure and scalable API. 
+- Any script you write in scriptr.io is by default turned into a secure and scalable API that is invokable via http (in addition to webockets, mqtt and amqp). 
 - The important thing to remember is that any script can retrieve the parameters it receives using the native **request** object that allows you to retrieve information about the request, including the conveyed parameters.
 
 ## HTTP requests
