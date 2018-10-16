@@ -16,4 +16,4 @@ return "greetings"
 - You can execute a script by clicking on "Run" in the toolbar. The output of the script's execution will be displayed in the console. 
 - The output is a JSON object that contains a metadata section and a result section, containing anything returned by the script (in our case "hello")
 - Notice that the console displays a cURL instruction to trigger the script from a remote http client
-
+![Run your script](./images/run_script.png)
