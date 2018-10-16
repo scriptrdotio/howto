@@ -29,7 +29,7 @@ In this example, we will pass "temperature", "unit" and "humidity" (don't forget
 
 Let's try again invoking our script using [Postman](https://www.getpostman.com/) using a POST request, passing our parameters in the body string as "application/x-www-form-urlencoded". 
 
-![Retrieve parameters from body](./images/get_request_body.png)
+![Retrieve parameters from body](./images/post_request_classic.png)
 
 *Image 2*
 
