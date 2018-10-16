@@ -1,0 +1,27 @@
+# How do I retrieve the parameters sent to my API?
+
+Any script you write in scriptr.io is by default turned into a secure and scalable API that can be accessed using http, websockets, mqtt or amqp.
+In this how-to, we will see how to retrieve the parameters of the requests (or messages) sent to a given API, for all the above protocols.
+
+## HTTP requests
+
+Http requests can be sent by client applications usign any of GET, POST or PUT with different content-types (for POST and PUT). 
+From any script, you can access the native "request" object that allows you to retrieve information about the request, including the conveyed parameters.
+
+- Before we test all possibilities, go ahead an create a script in your scriptr.io [workspace](https://www.scriptr.io/workspace).
+- For now, we will just type "return true" and save the script
+
+**HTTP GET, HTTP POST/PUT with content-type == "application/x-www-form-urlencoded" or "application/form-data"
+
+- In that case, the parameters of the request are retrieved using "request.parameters"
+- Let's update our script to return this object and save our changes. 
+
+```
+return request.parameters;
+```
+
+Let's try invoking our script using [Postman](https://www.getpostman.com/) using a GET request, passing our parameters in the query string. 
+In this example, we will pass "temperature", "temperature_unit" and "humidity" (don't forget to pass a valid auth token in the Authorization header)
+
+![Retrieve parameters from query string](./images/get_request.png)
+*Image 1*
