@@ -24,11 +24,13 @@ Let's try invoking our script using [Postman](https://www.getpostman.com/) using
 In this example, we will pass "temperature", "unit" and "humidity" (don't forget to pass a valid auth token in the Authorization header)
 
 ![Retrieve parameters from query string](./images/get_request.png)
+
 *Image 1*
 
 Let's try again invoking our script using [Postman](https://www.getpostman.com/) using a POST request, passing our parameters in the body string as "application/x-www-form-urlencoded". 
 
 ![Retrieve parameters from body](./images/get_request_body.png)
+
 *Image 2*
 
 ### HTTP HTTP POST/PUT with content-type == "application/form-data"
