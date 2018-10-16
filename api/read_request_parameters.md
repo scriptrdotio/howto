@@ -12,7 +12,7 @@ Http requests can be sent by client applications usign any of GET, POST or PUT w
 - Before we test all possibilities, go ahead an create a script in your scriptr.io [workspace](https://www.scriptr.io/workspace).
 - For now, we will just type "return true" and save the script
 
-### HTTP GET, HTTP POST/PUT with content-type == "application/x-www-form-urlencoded" or "multipart/form-data"
+**HTTP GET, HTTP POST/PUT with content-type == "application/x-www-form-urlencoded" or "multipart/form-data"**
 
 - In that case, the parameters of the request are retrieved using **request.parameters**
 - Let's update our script to echo back object and save our changes. 
@@ -34,7 +34,7 @@ Let's try again invoking our script using [Postman](https://www.getpostman.com/)
 
 *Image 2*
 
-### HTTP HTTP POST/PUT with content-type == "application/json"
+**HTTP HTTP POST/PUT with content-type == "application/json"**
 
 - In that case, the JSON object that is sent along with the request is obtained using **request.body**
 - Let's update our script to return request.body this time, instead of request.parameters and save our changes
