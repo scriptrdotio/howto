@@ -9,5 +9,6 @@ Scripts are the main components of any scriptr.io application. By default, any s
 return "greetings"
 ```
 - Click on "Save" in the toolbar to save the script (or type CTRL + S)
+![Save your script](./images/write_script.PNG)
 
 
