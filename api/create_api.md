@@ -8,6 +8,7 @@ Scripts are the main components of any scriptr.io application. By default, any s
 return "greetings"
 ```
 ![Save your script](./images/write_script.PNG)
+
 *Image 1*
 
 - Give a name to your script then click on "Save" in the toolbar. You script is automatically deployed as a secure API, with it's own endpoint. 
@@ -21,6 +22,7 @@ return "greetings"
 - Notice that the console displays a cURL instruction to trigger the script from a remote http client
 
 ![Run your script](./images/run_script.png)
+
 *Image 2*
 
 ## How do I know this is a secure API?
@@ -36,7 +38,8 @@ return "greetings"
 - Select Get as the http method
 - Type the script endpoint in the request URL field
 - Select the "Headers" tab and create the Authorization header field. Set it's value to "bearer your_scriptr_auth_token"
-![Run your script from Postman](./images/run_script_postman.png)
+![Run your script from Postman](./images/run_script_in_postman.png)
+
 *Image 3*
 
 
