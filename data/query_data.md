@@ -1,4 +1,4 @@
-# How do I query my persisted data?
+# How do I retrieve my persisted data?
 
 - Scriptr.io provides you with a NoSQL database that allows you to save data into key/value structures called "documents"
 - To manipulate documents from within a script, you need to require the native "document" module, which provides very straitghtforward and simple functions.
@@ -59,8 +59,9 @@ var resp = document.get("43C5AFC7BDC265828EC53056731512FB");
 }
 ```
 
-## How do I query my peristed data based on filters?
+## Can I query my peristed data based on conditions?
 
+Yes,
 - Scriptr.io has a simple yet powerful queyring syntax that you can use to query your data, using the **query()** function of the document module.
 - When invoking this method, there are two mandatory parameters to pass:
   - The "query" parameter, which contains the query expression
