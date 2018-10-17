@@ -59,7 +59,7 @@ var resp = document.get("43C5AFC7BDC265828EC53056731512FB");
 }
 ```
 
-## Can I query my peristed data based on conditions?
+## Can I query my peristed data based on criteria?
 
 Yes,
 - Scriptr.io has a simple yet powerful queyring syntax that you can use to query your data, using the **query()** function of the document module.
@@ -76,4 +76,73 @@ var queryObj = {
 };
 
 return document.query(queryObj);
+```
+
+The output of the **query()** function is an object that contains a metadata and a result section 
+- When query() is successful, metadata.status is set to "success" and result contains a "document" field that is an array of documents
+- The "document" array can be empty if no document matching the query criteria was found
+- By default, a maximum of 50 documents is returned 
+- When query() is unsuccessful, metadata.status is set to "failure"
+
+```
+// successful query (example)
+{
+	"result": {
+		"documents": [
+			{
+				"key": "43C5AFC7BDC265828EC53056731512FB",
+				"versionNumber": "1.0",
+				"temperature": "22.0",
+				"humidity": "52.0"
+			}
+		]
+	},
+	"metadata": {
+		"status": "success"
+	}
+}
+
+// unsuccessful query (example)
+{
+	"metadata": {
+		"status": "failure",
+		"statusCode": 400,
+		"errorCode": "INVALID_QUERY_REQUEST",
+		"errorDetail": "The query request must contain either requested fields, a count, or an aggregate expression."
+	}
+}
+
+```
+
+### How do I count the number of documents matching given criteria?
+
+Just pass the **count** field set to true in the query object. The result will contain the count field, in addition to the document field.
+
+```
+var document = require("document"); 
+var queryExpression = "temperature<numeric> >= 20 and humidity<numeric> < 60";
+var queryObj = {
+    query: queryExpression,
+    fields: "key", 
+    count: true
+};
+
+return document.query(queryObj);
+```
+Returns something similar to the following: 
+```
+{
+	"result": {
+		"count": "1",
+		"documents": [
+			{
+				"key": "43C5AFC7BDC265828EC53056731512FB",
+				"versionNumber": "1.0"
+			}
+		]
+	},
+	"metadata": {
+		"status": "success"
+	}
+}
 ```
