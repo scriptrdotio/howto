@@ -47,7 +47,7 @@ Once again, let's try invoking our script using [Postman](https://www.getpostman
 
 *Image 3*
 
-**HTTP HTTP POST/PUT with text based content-type (e.g. text/plain")**
+**HTTP HTTP POST/PUT with text based content-type (e.g. text/plain)**
 
 - Use **request.rawBody** to retrieve any textual content
 - request.rawBody also contains any body content that could not be parsed by scriptr.io
