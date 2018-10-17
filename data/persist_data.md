@@ -8,6 +8,8 @@ var document =  require(document);
 ```
 ## Create a document
 
+From the scriptr.io [workspace](https://www.scriptr.io/workspace)
+
 ```
 var obj = {
   temperature: 22,
@@ -25,6 +27,7 @@ var resp = document.create(obj);
 ```
 // successful create
 
+```
 
 #More
 Read more about the document module in our [documentation](https://www.scriptr.io/documentation#documentation-documentdocumentModule).
