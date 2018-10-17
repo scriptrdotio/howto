@@ -11,4 +11,5 @@ Yes,
 - In the Query panel, just press **Query** to query for all documents
 - Browse through the resulting documents list
 
+![Query all documents](./images/query_documents.png)
 
