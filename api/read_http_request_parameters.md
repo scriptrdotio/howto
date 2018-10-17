@@ -38,7 +38,7 @@ Let's try again invoking our script using [Postman](https://www.getpostman.com/)
 - Let's update our script to return request.body this time, instead of request.parameters and save our changes
 
 ```
-return request.parameters;
+return request.body;
 ```
 
 Once again, let's try invoking our script using [Postman](https://www.getpostman.com/) using a POST request, passing our parameters in the body as a JSON object
@@ -46,3 +46,12 @@ Once again, let's try invoking our script using [Postman](https://www.getpostman
 ![Retrieve parameters from body](./images/post_request_json.png)
 
 *Image 3*
+
+**HTTP HTTP POST/PUT with text based content-type (e.g. text/plain")**
+
+- Use **request.rawBody** to retrieve any textual content
+- request.rawBody also contains any body content that could not be parsed by scriptr.io
+
+```
+return request.rawBody;
+```
