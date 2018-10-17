@@ -21,13 +21,65 @@ var resp = document.create(obj);
 ```
 
 - The object returned by **create()** contains a metadata section and a result section
-- If successful, metadata.status will be set to "success" and result.key will contains the document key (identifier)
+- If successful, metadata.status will be set to "success" and result.document.key will contain the document key (identifier)
 - If **save()** fails, metadata.statust will be set to "failure" and no result is returned
 
 ```
-// successful create
+// successful create (example)
+{
+  "result": {
+    "document": {
+      "key": "361C349B24E8BF0DDFDA2AC8287B83DE",
+      "versionNumber": "1.0"
+    }
+  },
+  "metadata": {
+    "status": "success"
+  }
+  
+// unsuccessful create (example)
+{
+  "metadata": {
+    "status": "failure",
+    "statusCode": 400,
+    "errorCode": "DUPLICATE_DOCUMENT_KEY",
+    "errorDetail": "A request is sent to create a document with a key that already exists"
+  }
 
 ```
 
-#More
+## Update a document
+
+Simply use the **update()** function of the document module, passing a structure containing the document key and the fields to update
+
+```
+var obj = {
+  key: "361C349B24E8BF0DDFDA2AC8287B83DE",
+  temperature: 24,
+  humidity: 52,  
+  time: "2018-10-10"
+};
+
+var resp = document.update(obj);
+```
+
+## Specify the data types
+
+By default, scriptr.io persists the values as strings. You can specify your data types using the "meta.types" field:
+
+```
+var obj = {
+  temperature: 22,
+  humidity: 52,
+  time: "2018-10-10",
+  "meta.types": {
+    temperature: numeric,
+    humidity: numeric,
+    time: date
+  }
+};
+
+
+# More
+
 Read more about the document module in our [documentation](https://www.scriptr.io/documentation#documentation-documentdocumentModule).
