@@ -27,3 +27,6 @@ temperature<numeric> > 20 and humidity<numeric> < 60 and time<date> >= "2018-01-
 ![Query all documents](./images/query_documents_by_criteria.png)
 
 *Image 3*
+
+# More
+More on [query expressions](./query_data.md)
