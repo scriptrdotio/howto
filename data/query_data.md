@@ -58,3 +58,21 @@ var resp = document.get("43C5AFC7BDC265828EC53056731512FB");
 		}
 }
 ```
+
+## How do I query my peristed data based on filters?
+
+- Scriptr.io has a simple yet powerful queyring syntax that you can use to query your data, using the **query()** function of the document module.
+- When invoking this method, there are two mandatory parameters to pass:
+-- The "query" parameter, which contains the query expression
+-- The "fields" parameter, which specifies the document fields to return
+
+```
+var document = require("document");
+var queryExpression = "temperature<numeric> >= 20 and humidity<numeric> < 60";
+var queryObj = {
+    query: queryExpression,
+    fields: "temperature, humidity" // use "*" to return all fields
+};
+
+return document.query(queryObj);
+```
