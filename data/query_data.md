@@ -19,51 +19,51 @@ var resp = document.get("43C5AFC7BDC265828EC53056731512FB");
 ```
 // successful get (example)
 {
-		"result": {
-			"key": "43C5AFC7BDC265828EC53056731512FB",
-			"versionNumber": "1.0",
-			"temperature": "22.0",
-			"humidity": "52.0",
-			"time": "2018-10-10T00:00:00+0000",
-			"creator": "scriptr",
-			"lastModifiedDate": "2018-10-17T07:24:49+0000",
-			"lastModifiedBy": "scriptr",
-			"creationDate": "2018-10-17T07:24:49+0000",
-			"latest": "1.0",
-			"meta.types": {
-				"temperature": "numeric",
-				"humidity": "numeric",
-				"time": "date",
-				"creator": "string",
-				"lastModifiedDate": "date",
-				"lastModifiedBy": "string",
-				"creationDate": "date",
-				"versionNumber": "numeric",
-				"key": "string",
-				"latest": "numeric"
-			}
-		},
-		"metadata": {
-			"status": "success"
+	"result": {
+		"key": "43C5AFC7BDC265828EC53056731512FB",
+		"versionNumber": "1.0",
+		"temperature": "22.0",
+		"humidity": "52.0",
+		"time": "2018-10-10T00:00:00+0000",
+		"creator": "scriptr",
+		"lastModifiedDate": "2018-10-17T07:24:49+0000",
+		"lastModifiedBy": "scriptr",
+		"creationDate": "2018-10-17T07:24:49+0000",
+		"latest": "1.0",
+		"meta.types": {
+			"temperature": "numeric",
+			"humidity": "numeric",
+			"time": "date",
+			"creator": "string",
+			"lastModifiedDate": "date",
+			"lastModifiedBy": "string",
+			"creationDate": "date",
+			"versionNumber": "numeric",
+			"key": "string",
+			"latest": "numeric"
 		}
+	},
+	"metadata": {
+		"status": "success"
+	}
 }
 
 // unsuccessful get (example)
 {
-		"metadata": {
-			"status": "failure",
-			"statusCode": 404,
-			"errorCode": "DOCUMENT_NOT_FOUND",
-			"errorDetail": "The document key [43C5AFC7BDC265828EC53056731512FA] was not found."
-		}
+	"metadata": {
+		"status": "failure",
+		"statusCode": 404,
+		"errorCode": "DOCUMENT_NOT_FOUND",
+		"errorDetail": "The document key [43C5AFC7BDC265828EC53056731512FA] was not found."
+	}
 }
 ```
 
-## Can I query my peristed data based on criteria?
+## Can I query my persisted data based on criteria?
 
 Yes,
 - Scriptr.io has a simple yet powerful queyring syntax that you can use to query your data, using the **query()** function of the document module.
-- When invoking this method, there are two mandatory parameters to pass:
+- When invoking this function, there are two mandatory parameters to pass:
   - The "query" parameter, which contains the query expression
   - The "fields" parameter, which specifies the document fields to return
 
@@ -145,4 +145,24 @@ Returns something similar to the following:
 		"status": "success"
 	}
 }
+```
+
+### What about query results pagination?
+
+Scriptr.io paginates your requests automatically and returns a maximum of 50 documents per page. 
+- You can control the max number of documents to return per page using the **resultsPerPage** parameter in your query (it is limited to a max of 50)
+- You can specify the index of the page you need using the **pageNumber** parameter in your query
+
+```
+var document = require("document"); 
+var queryExpression = "temperature<numeric> >= 10";
+var queryObj = {
+    query: queryExpression,
+    fields: "temperature, humidity", 
+    count: true,
+    pageNumber: 2, // get the second page of results
+    resultsPerPage: 10 // return a max of 10 documents per result page
+};
+
+return document.query(queryObj);
 ```
