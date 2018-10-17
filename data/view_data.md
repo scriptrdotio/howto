@@ -10,7 +10,7 @@ Yes,
 
 - In the Data Explorer, click on **Stores** > **Default Store** > **Query** (if you have many store, select one of them)
 - In the Query panel, just press **Query** to query for all documents
-- Browse through the resulting documents list
+- Browse through the resulting documents list and click on any row to see the document's details
 
 ![Query all documents](./images/query_documents.png)
 
