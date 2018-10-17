@@ -69,16 +69,18 @@ By default, scriptr.io persists the values as strings. You can specify your data
 
 ```
 var obj = {
-  temperature: 22,
-  humidity: 52,
-  time: "2018-10-10",
-  "meta.types": {
-    temperature: numeric,
-    humidity: numeric,
-    time: date
-  }
+    temperature: 22,
+    humidity: 52,
+    time: "2018-10-10",
+    "meta.types": {
+        temperature: "numeric",
+        humidity: "numeric",
+        time: "date"
+    }
 };
 
+var resp = document.update(obj);
+```
 
 # More
 
