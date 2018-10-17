@@ -63,8 +63,8 @@ var resp = document.get("43C5AFC7BDC265828EC53056731512FB");
 
 - Scriptr.io has a simple yet powerful queyring syntax that you can use to query your data, using the **query()** function of the document module.
 - When invoking this method, there are two mandatory parameters to pass:
--- The "query" parameter, which contains the query expression
--- The "fields" parameter, which specifies the document fields to return
+ - The "query" parameter, which contains the query expression
+ - The "fields" parameter, which specifies the document fields to return
 
 ```
 var document = require("document");
