@@ -75,7 +75,7 @@ var queryObj = {
     fields: "temperature, humidity" // use "*" to return all fields
 };
 
-return document.query(queryObj);
+var resp = document.query(queryObj);
 ```
 
 The output of the **query()** function is an object that contains a metadata and a result section 
@@ -127,7 +127,7 @@ var queryObj = {
     count: true
 };
 
-return document.query(queryObj);
+var resp = document.query(queryObj);
 ```
 Returns something similar to the following: 
 ```
@@ -164,5 +164,44 @@ var queryObj = {
     resultsPerPage: 10 // return a max of 10 documents per result page
 };
 
-return document.query(queryObj);
+var resp = document.query(queryObj);
+```
+
+### Can I use aggregation functions when querying my data?
+
+Sure,
+- Just pass one of **SUM($fieldName)**, **MAX($fieldName)**, **MIN($fieldName)**, **AVG($fieldName)** to the **aggregateExpression** parameter of your query 
+- Specify the aggregation scope (all documents or page results) by setting one of **aggregateGlobal** or **aggregatePage** to "true" respectively
+- Omit the **fields** parameter if you only need he aggregated value
+
+```
+// Assume we need the max recorded temperature 
+var document = require("document"); 
+var queryExpression = "temperature<numeric> >= 10";
+var queryObj = {
+    query: queryExpression,
+    aggregateExpression: "MAX($temperature)",
+    aggregateGlobal: true // aggregate on all matching documents
+};
+
+va resp = document.query(queryObj);
+```
+Returns a response similar to:
+```
+{
+	"result": {
+		"aggregate": {
+			"pageScope": {
+				"value": "25.0"
+			},
+			"globalScope": {
+				"value": "25.0"
+			}
+		},
+		"documents": []
+	},
+	"metadata": {
+		"status": "success"
+	}
+}
 ```
