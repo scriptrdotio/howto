@@ -1,4 +1,4 @@
-# How do I retrieve my persisted data?
+# How to retrieve my persisted data?
 
 - Scriptr.io provides you with a NoSQL database that allows you to save data into key/value structures called "documents"
 - To manipulate documents from within a script, you need to require the native "document" module, which provides very straitghtforward and simple functions.
