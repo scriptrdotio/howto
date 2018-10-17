@@ -4,7 +4,7 @@
 - To persist data into document from within a script, you need to require the native "document" module
 
 ```
-var document =  require(document);
+var document =  require("document");
 ```
 ## Create a document
 
