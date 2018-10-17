@@ -13,3 +13,4 @@ Yes,
 
 ![Query all documents](./images/query_documents.png)
 
+*Image 2*
