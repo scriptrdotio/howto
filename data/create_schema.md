@@ -1,4 +1,4 @@
-# How to express constraints on my data (schemas)?
+# How to express constraints (schemas) on my data?
 
 - Scriptr.io provides you with a NoSQL database that allows you to save data into key/value structures called "documents"
 - You can create (XML) schemas to define constraints on the data (mandatory fields, multiplicity, data types, etc.)
@@ -31,6 +31,7 @@ Permissions are specified via the **&lt;read&gt;** and **&lt;write&gt;** element
 In the below example we created an ACL group called "smart_building_can_write" within which we specified that members of the "smart_building" group and the "building_admin" user have write privilege on the "temperature" and "humidity" fields of documents 
 to which this schema is applied. Read permissions are granted to the "authenticated" predefined role, which includes any authenticated
 entity in the current scriptr.io account. Owners of the write privilege also have the permission to read.
+([learn how to create users, devices and groups](../acl/create_devices_groups.md))
 
 ```
 <schema>
@@ -55,6 +56,4 @@ entity in the current scriptr.io account. Owners of the write privilege also hav
 	</fields>
 </schema>
 ```
-
-**Note** [learn how to create users, devices and groups](../acl/create_devices_groups.md)
 
