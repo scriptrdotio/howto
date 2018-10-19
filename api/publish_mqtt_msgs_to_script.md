@@ -38,4 +38,6 @@ mosquitto_pub -t "UxIkQLgwWjc4Ng==/collaboration_topic/message"
 -h "mqtt.scriptr.io" -p 1883 
 -m "{\"method\":\"tutorials/howto/api/mqtt_receive_json\", \"params\":{\"temperature\":22, \"humidity\":52}}"
 ```
+# More
+
 
