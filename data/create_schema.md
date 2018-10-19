@@ -95,7 +95,7 @@ The **&lt;fields&gt;** element allows you to define (1) the type of the fields o
 	<fields>
 		<field name='temperature' type='numeric'>
 		    <validation>
-		        <cardinality min='1'></cardinality>
+		        <cardinality min='1' max='1'></cardinality>
 		    </validation>
 		</field>
 		<field name='humidity' type='numeric'>
