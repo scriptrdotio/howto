@@ -26,9 +26,8 @@ The **method** field contains the path to the script and the **params** field co
 }
 ```
 
-## Publish example ##
+## Publish example with mosquitto ##
 
-The below is an example of how publish an mqtt message to a script, using the mosquitto mqtt client.
 Replace the values of the -t, -u, -P, and -m with your own respective topic, username, password and message, based on the above explanations
 
 ```
@@ -38,6 +37,10 @@ mosquitto_pub -t "UxIkQLgwWjc4Ng==/collaboration_topic/message"
 -h "mqtt.scriptr.io" -p 1883 
 -m "{\"method\":\"tutorials/howto/api/mqtt_receive_json\", \"params\":{\"temperature\":22, \"humidity\":52}}"
 ```
+
 # More
+
+- [How to read the messages sent to my API through mqtt?](./read_mqtt_messages.md)
+- More on [using scriptr.io as an mqtt broker](https://www.scriptr.io/documentation#documentation-communicating-over-mqttScriptr.ioMQTTBroker)
 
 
