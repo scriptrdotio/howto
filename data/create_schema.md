@@ -29,9 +29,7 @@ Scriptr.io creates three ACL groups by defaults:
 An ACL group specifies read/write permissions on the document fields it contains (&lt;fields&gt;)
 Permissions are specified via the **&lt;read&gt;** and **&lt;write&gt;** elements, which respectively define who has read and/or write permissions on the fields.
 
-In the below example we created an ACL group called "smart_building_can_write" within which we specified that members of the "smart_building" group and the "building_admin" user have write privilege on the "temperature" and "humidity" fields of documents 
-to which this schema is applied. Read permissions are granted to the "authenticated" predefined role, which includes any authenticated
-entity in the current scriptr.io account. Owners of the write privilege also have the permission to read.
+In the below example we created an ACL group called "smart_building_can_write" within which we specified that members of the "smart_building" **group** and the "building_admin" **user** have write privilege on the "temperature" and "humidity" fields of documents to which this schema is applied. Read permissions are granted to the "authenticated" **predefined role**, which includes any authenticated entity in the current scriptr.io account. Owners of the write privilege also have the permission to read.
 ([learn how to create users, devices and groups](../acl/create_devices_groups.md))
 
 ```
@@ -39,7 +37,7 @@ entity in the current scriptr.io account. Owners of the write privilege also hav
 	<aclGroups>
 		<aclGroup name='smart_building_can_write'>
 			<read>authenticated</read>
-			<write>group:smart_building,building_admin</write>
+			<write>group:smart_building;building_admin</write>
 			<fields>
 				<field>temperature</field>
 				<field>humidity</field>
@@ -64,9 +62,12 @@ The **&lt;fields&gt;** element allows you to define (1) the type of the fields o
 
 - Available types are: numeric, string, text, data and geospatial
 - Validation constraints are: 
-  - cardinality: min, max values allowed for this field. If min = 1 and max = 1, the filed is mandatory. If min = 0 and max = 1, the field is optional, if min = 1 and max = 10, you can store up to 10 values in this field (array - limited to a max of 50)
+  - cardinality: min, max values allowed for this field. If min = 1 and max = 1, the filed is mandatory. If min = 0 and max = 1, the field is optional (default case), if min = 1 and max = 10, you can store up to 10 values in this field (array - limited to a max of 50)
   - range: specifies the min and max value of a numeric field
   - length: specifies the min nand max length of a string field
+  - regex: specifies a regular expression that must be matched by the value of a string field
 - Unicity: when the "unique" attribute is set to true, it indicates that the value of the corresponding field is unique across documents sharing the same schema
 - Searchable: when the "searchable"field is set to true, it forces the indexing of this field (only possible if the store is created as searchable)
- 
+
+Example
+
