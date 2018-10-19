@@ -1,7 +1,8 @@
 # How to express constraints (schemas) on my data?
 
 - Scriptr.io provides you with a NoSQL database that allows you to save data into key/value structures called "documents"
-- You can create (XML) schemas to define constraints on the data (mandatory fields, multiplicity, data types, etc.)
+- You can create (XML) schemas to define **document types**, i.e. constraints on the data (mandatory fields, multiplicity, data types, etc.)
+- Scriptr.io **automatically** validates any schema-related document upon creation or update
 
 ## Create a schema using the visual environment
 
@@ -15,7 +16,9 @@ Click on Schema then New to open the schema editor.
 
 ![Open Schema Editor](./images/new_schema.png)
 
-A schema has two main sections: aclGroups and fields.
+*Image 2*
+
+A schema has two main sections: **aclGroups** and **fields**
 
 ### aclGroups 
 
@@ -69,5 +72,44 @@ The **&lt;fields&gt;** element allows you to define (1) the type of the fields o
 - Unicity: when the "unique" attribute is set to true, it indicates that the value of the corresponding field is unique across documents sharing the same schema
 - Searchable: when the "searchable"field is set to true, it forces the indexing of this field (only possible if the store is created as searchable)
 
-Example
+**Example**
+```
+<schema>
+	<aclGroups>
+		<aclGroup name='smart_building_can_write'>
+			<read>authenticated</read>
+			<write>group:smart_building;admin</write>
+			<fields>
+				<field>temperature</field>
+				<field>humidity</field>
+				<field>timestamp</field>
+				<field>deviceid</field>
+			</fields>
+		</aclGroup>
+		<schemaAcl>
+			<read>nobody</read>
+			<write>nobody</write>
+			<delete>nobody</delete>
+		</schemaAcl>
+	</aclGroups>
+	<fields>
+		<field name='temperature' type='numeric'>
+		    <validation>
+		        <cardinality min='1'></cardinality>
+		    </validation>
+		</field>
+		<field name='humidity' type='numeric'>
+		    <validation>
+		        <range min='0' max='100'></range>
+		    </validation>
+		</field>
+		<field name='timestamp' unique='true' type="numeric"></field>
+		<field name='deviceid' type='string'>
+		    <validation>
+		        <regex>dev[0-9]{9}</regex>
+		    </validation>
+		</field>
+	</fields>
+</schema>
+```
 
