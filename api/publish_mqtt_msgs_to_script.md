@@ -44,9 +44,11 @@ mosquitto_pub -t "UxIkQLgwWjc4Ng==/collaboration_topic/invoke"
 - Install [MQTTBox](http://workswithweb.com/html/mqttbox/downloads.html) if needed
 - Replace the values of the field in the below form with your own respective username, password, based on the above explanations
 
-![Configure MQTTBox]()./images/configure_mqtbox.png)
+![Configure MQTTBox](./images/configure_mqtbox.png)
 
 - Replace the values of the field in the below form with your own respective topic and message, based on the above explanations
+
+![Configure Publish](./images/configure_mqtbox_publish.png)
 
 
 # More
