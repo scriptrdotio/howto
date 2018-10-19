@@ -19,7 +19,8 @@ A schema has two main sections: aclGroups and fields.
 
 ### aclGroups 
 
-ACL groups allow you to define read/write permissions on the fields of your document. You should define at least one ACL group. 
+ACL groups allow you to define read/write permissions on the fields of your document. You should define at least one ACL group but you can have more than one ACL group. 
+
 Scriptr.io creates three ACL groups by defaults: 
 - &lt;aclGroup name='aclgroupName'&gt; (the name is just a dummy value, you should replace it with somethings meaningful), 
 - &lt;defaultAcl&gt; is the default ACL. You can remove this element if you wish
@@ -57,3 +58,15 @@ entity in the current scriptr.io account. Owners of the write privilege also hav
 </schema>
 ```
 
+### Fields
+
+The **&lt;fields&gt;** element allows you to define (1) the type of the fields of your documents (2) validation constraints, (3) if a field is unique, (4) if a field is searchable.
+
+- Available types are: numeric, string, text, data and geospatial
+- Validation constraints are: 
+  - cardinality: min, max values allowed for this field. If min = 1 and max = 1, the filed is mandatory. If min = 0 and max = 1, the field is optional, if min = 1 and max = 10, you can store up to 10 values in this field (array - limited to a max of 50)
+  - range: specifies the min and max value of a numeric field
+  - length: specifies the min nand max length of a string field
+- Unicity: when the "unique" attribute is set to true, it indicates that the value of the corresponding field is unique across documents sharing the same schema
+- Searchable: when the "searchable"field is set to true, it forces the indexing of this field (only possible if the store is created as searchable)
+ 
