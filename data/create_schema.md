@@ -28,7 +28,7 @@ Scriptr.io creates three ACL groups by defaults:
 An ACL group specifies read/write permissions on the document fields it contains (&lt;fields&gt;)
 Permissions are specified via the **&lt;read&gt;** and **&lt;write&gt;** elements, which respectively define who has read and/or write permissions on the fields.
 
-In the below example we created an ACL group called "smart_building_can_write" within which you specify that members of the "smart_building" group and the "building_admin" user have write privilege on the "temperature" and "humidity" fields of documents 
+In the below example we created an ACL group called "smart_building_can_write" within which we specified that members of the "smart_building" group and the "building_admin" user have write privilege on the "temperature" and "humidity" fields of documents 
 to which this schema is applied. Read permissions are granted to the "authenticated" predefined role, which includes any authenticated
 entity in the current scriptr.io account. Owners of the write privilege also have the permission to read.
 
@@ -56,5 +56,5 @@ entity in the current scriptr.io account. Owners of the write privilege also hav
 </schema>
 ```
 
-
+**Note** [learn how to create users, devices and groups](../acl/create_devices_groups.md)
 
