@@ -1,4 +1,4 @@
-# How to express constraints (schemas) on my data?
+# How to express validation rules (schemas) on my data?
 
 - Scriptr.io provides you with a NoSQL database that allows you to save data into key/value structures called "documents"
 - You can create (XML) schemas to define **document types**, i.e. constraints on the data (mandatory fields, multiplicity, data types, etc.)
@@ -113,3 +113,7 @@ The **&lt;fields&gt;** element allows you to define (1) the type of the fields o
 </schema>
 ```
 
+# More
+
+- Read our [documentation](https://www.scriptr.io/documentation#documentation-schemamoduleschemaModule) to Learn how to manipulate schemas from the code in your scripts
+- [How to apply automatic validation (schemas) on my data](,/create_schemabased_docs)
