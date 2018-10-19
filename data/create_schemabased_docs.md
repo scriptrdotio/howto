@@ -1,1 +1,1 @@
-# How to apply automatic validation on my data
+# How to apply automatic validation (schemas) on my data
