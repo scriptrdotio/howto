@@ -11,7 +11,7 @@ var document =  require("document");
 From the scriptr.io [workspace](https://www.scriptr.io/workspace)
 
 ```
-var document =  require(document);
+var document =  require("document");
 var obj = {
   temperature: 22,
   humidity: 52,
@@ -54,7 +54,7 @@ var resp = document.create(obj);
 Simply use the **update()** function of the document module, passing a structure containing the document key and the fields to update
 
 ```
-var document =  require(document);
+var document =  require("document");
 var obj = {
   key: "361C349B24E8BF0DDFDA2AC8287B83DE",
   temperature: 24,
