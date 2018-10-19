@@ -22,7 +22,7 @@ var obj = {
 
 var resp = document.create(obj);
 ```
-Notice that you have to pass the "meta.schema" field to instruct scriptr.io that the new document should verify the validations and constraints defined in the "smart_building" schema.
+Notice that you have to pass the **meta.schema** field to instruct scriptr.io that the new document should verify the validations and constraints defined in the "smart_building" schema.
 
 - The object returned by **create()** contains a metadata section and a result section
 - If successful, metadata.status will be set to "success" and result.document.key will contain the document key (identifier)
@@ -68,3 +68,8 @@ var obj = {
 
 var resp = document.update(obj);
 ```
+
+# More
+
+- [How to express validation rules (schemas) on my data?](create_schema.md)
+- Read more about the document module in our [documentation](https://www.scriptr.io/documentation#documentation-documentdocumentModule).
