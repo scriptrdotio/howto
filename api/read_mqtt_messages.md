@@ -11,5 +11,5 @@ var payload = request.parameters;
 ```
 
 # More
-- [How to publish an mqtt message directly to one of my APIs](./publish_mqtt_msgs_to_script.md)
+- [How to publish an mqtt message directly to a script?](./publish_mqtt_msgs_to_script.md)
 - More on [using scriptr.io as an mqtt broker](https://www.scriptr.io/documentation#documentation-communicating-over-mqttScriptr.ioMQTTBroker)
