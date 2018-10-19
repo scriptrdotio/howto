@@ -46,10 +46,13 @@ mosquitto_pub -t "UxIkQLgwWjc4Ng==/collaboration_topic/invoke"
 
 ![Configure MQTTBox](./images/configure_mqtbox.png)
 
+*Image 1*
+
 - Replace the values of the field in the below form with your own respective topic and message, based on the above explanations
 
 ![Configure Publish](./images/configure_mqtbox_publish.png)
 
+*Image 2*
 
 # More
 
