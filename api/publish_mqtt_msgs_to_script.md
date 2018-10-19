@@ -1,5 +1,5 @@
 
-## How to publish the message to a script? ##
+# How to publish the message to a script? ##
 
 - Any script you write in scriptr.io is by default turned into a secure and scalable API that is invokable via http (in addition to webockets, mqtt and amqp).
 - The important thing to remember is that any script can retrieve the parameters it receives using the native request object that allows you to retrieve information about the request, including the conveyed parameters.
@@ -28,7 +28,8 @@ The **method** field contains the path to the script and the **params** field co
 
 ## Publish example with mosquitto ##
 
-Replace the values of the -t, -u, -P, and -m with your own respective topic, username, password and message, based on the above explanations
+- Install the [mosquitto client](http://mosquitto.org/download/) if needed
+- Replace the values of the -t, -u, -P, and -m with your own respective topic, username, password and message, based on the above explanations
 
 ```
 mosquitto_pub -t "UxIkQLgwWjc4Ng==/collaboration_topic/message" 
@@ -37,6 +38,13 @@ mosquitto_pub -t "UxIkQLgwWjc4Ng==/collaboration_topic/message"
 -h "mqtt.scriptr.io" -p 1883 
 -m "{\"method\":\"tutorials/howto/api/mqtt_receive_json\", \"params\":{\"temperature\":22, \"humidity\":52}}"
 ```
+
+## Publish example with MQTTBOX ##
+
+- Install MQTTBox if needed
+- Replace the values of the field in the below form with your own respective topic, username, password and message, based on the above explanations
+
+
 
 # More
 
