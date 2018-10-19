@@ -3,12 +3,27 @@
 - Any script you write in scriptr.io is by default turned into a secure and scalable API that is invokable via http (in addition to webockets, mqtt and amqp).
 - The important thing to remember is that any script can retrieve the parameters it receives using the native request object that allows you to retrieve information about the request, including the conveyed parameters.
 
-## Supported MQTT messages
+## Expected mqtt messages structure
 
-- Key/value pairs JSON objects (if you have many nested objects you will have to stringify them, e.g. {"msg": "{\"temperature\":22,\"humidity\":52,\"device\":{\"id\":123456,\"location\":\"40.7775,-73.971\"}}"})
-- Text
-- XML
+When you **directly invoke** a script via mqtt, you need to adopt a predefined message structure in JSON:
+```
+{
+"method":"path/to/script",
+"params":key/value pairs
+}
+```
+The **method** fied contains the path to the script and the **params** field contains a key/value pairs payload (no nested objects allowed). Example:
+```
+{
+"method":"tutorials/howto/api/mqtt_receive_json",
+"params":{"temperature":22, "humidity":52}
+}
+```
+In the target script, the message payload is automatically delivered to in the native **request.parameters** object.
+```
+var payload = request.parameters; // using the above message example, 'payload' will contain: {"temperature":22, "humidity":52}
+```
 
-
-
-go ahead an create a script in your scriptr.io [workspace](https://www.scriptr.io/workspace)
+# More
+- [How to publish an mqtt message directly to one of my APIs]()
+- More on [using scriptr.io as an mqtt broker]()
