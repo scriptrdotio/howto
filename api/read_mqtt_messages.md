@@ -5,11 +5,11 @@
 
 ## Retrieving the message payload
 
-In the target script, the message payload is automatically delivered to in the native **request.parameters** object.
+TSimple: in the target script (your API), the message payload is automatically delivered to in the native **request.parameters** object.
 ```
-var payload = request.parameters; // using the above message example, 'payload' will contain: {"temperature":22, "humidity":52}
+var payload = request.parameters; 
 ```
 
 # More
-- [How to publish an mqtt message directly to one of my APIs]()
-- More on [using scriptr.io as an mqtt broker]()
+- [How to publish an mqtt message directly to one of my APIs](../api/publish_mqtt_msgs_to_script.md)
+- More on [using scriptr.io as an mqtt broker](https://www.scriptr.io/documentation#documentation-communicating-over-mqttScriptr.ioMQTTBroker)
