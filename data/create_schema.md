@@ -13,7 +13,7 @@ From the scriptr.io [workspace](https://www.scriptr.io/workspace) click on **Too
 
 Click on Schema then New to open the schema editor.
 
-
+![Open Schema Editor](./images/new_schema.png)
 
 A schema has two main sections: aclGroups and fields.
 
