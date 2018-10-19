@@ -1,4 +1,4 @@
-# How to obtain credentials to puboish mqtt messages to my scriptr.io account?
+# How to obtain credentials to publish mqtt messages to my scriptr.io account?
 
 You can obtain these from the scriptr.io [workspace](https://www.scriptr.io/workspace). Click on the arrow near your username in the top-right corner, then select the "Messaging Protocols" option. In the resulting configuration form, do the following:
 
