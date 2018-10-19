@@ -19,7 +19,7 @@ A schema has two main sections: aclGroups and fields.
 
 ACL groups allow you to define read/write permissions on the fields of your document. You should define at least one ACL group. 
 Scriptr.io creates two ACL groups by defaults: 
-- "<aclGroup name='aclgroupName'>" (the name is just a dummy value, you should replace
+- <![CDATA[<aclGroup name='aclgroupName'>]] (the name is just a dummy value, you should replace
 it with somethings meaningful), 
 - "<defaultAcl>", which is the default ACL. You can remove this element if you wish
 
