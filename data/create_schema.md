@@ -11,11 +11,13 @@ From the scriptr.io [workspace](https://www.scriptr.io/workspace) click on **Too
 
 *Image 1*
 
-Click on Schema
+Click on Schema then New to open the schema editor.
+
+
 
 A schema has two main sections: aclGroups and fields.
 
-**aclGroups**
+### aclGroups 
 
 ACL groups allow you to define read/write permissions on the fields of your document. You should define at least one ACL group. 
 Scriptr.io creates two ACL groups by defaults: 
