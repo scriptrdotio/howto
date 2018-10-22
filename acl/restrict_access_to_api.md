@@ -12,12 +12,17 @@ By default, a script is ony accesible to entities (users, devices) that are auth
 
 *Image 1*
 
-If you take a closer look by clicking on the lock, this opens an Access Control List editor. As you can see, access to the script is by default only to the owners **authenticated** role, i.e. any user or device created from your account.
+If you take a closer look by clicking on the lock, this opens an **Access Control List (ACL)** editor. As you can see, access to the script is by default only to the owners **authenticated** role, i.e. any user or device created from your account.
 
-[!Default permissions](./images/acl_view.png)
+![Default ACL](./images/acl_view.png)
 
 *Image2*
 
-You can refine these permissions by selecting a device, a user, a role or a group from the drop down list, then by clicking "Add". You can repeat this process as many times as needed, then validate your changes by clicking on "Save".
+You can modify this ACL by selecting a device, a user, a role or a group from the drop down list, then by clicking "Add". You can repeat this process as many times as needed, then validate your changes by clicking on "Save changes".
 
+![Change ACL](./images/acl_change.png)
+
+*Image3*
+
+In the above example, the authorization to execute the script is limited to all members of the "my_devices" group and to the "iot_gateway" device.
 
