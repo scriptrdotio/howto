@@ -16,13 +16,13 @@ If you take a closer look by clicking on the lock, this opens an **Access Contro
 
 ![Default ACL](./images/acl_view.png)
 
-*Image2*
+*Image 2*
 
 You can modify this ACL by selecting a device, a user, a role or a group from the drop down list, then by clicking "Add". You can repeat this process as many times as needed, then validate your changes by clicking on "Save changes".
 
 ![Change ACL](./images/acl_change.png)
 
-*Image3*
+*Image 3*
 
 In the above example, the authorization to execute the script is limited to all members of the "mydevices" group and to the "iot_gateway" device.
 
@@ -30,5 +30,5 @@ Permissions are instantaneously effective. You can try this by clicking "run" fr
 
 ![Change ACL](./images/permission_denied.png)
 
-*Image4*
+*Image 4*
 
