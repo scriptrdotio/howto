@@ -50,3 +50,7 @@ return resp;
     "status": "failure"
  }
 ```
+
+# More
+
+Learn more about the group module from our [documentation](https://www.scriptr.io/documentation#documentation-group-modulegroupModule)
