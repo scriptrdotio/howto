@@ -68,6 +68,12 @@ return resp;
 	}
 }
 ```
+**ATTENTION** invoking device.create() will not automatically generate a token for the created device. You have to ask for generating a token yourself using **device.generateToken(deviceId)**
+
+```
+var device = require("device");
+devices.generateToken("T7256996A7"); 
+```
 
 ## Update a device dynamically from the code
 
@@ -82,7 +88,7 @@ var deviceData = {
 };
 
 var resp = device.update(deviceData);
-return resp;
+return resp;```
 ```
 # More
 
