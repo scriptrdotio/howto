@@ -71,7 +71,7 @@ return resp;
 
 ## Update a device dynamically from the code
 
-Simply use the **update()** function of the document module, passing a structure containing the device id and the fields to update.
+Simply use the **update()** function of the **device** module, passing a structure containing the device id and the fields to update.
 ```
 var device = require("device");
 var deviceData = {
