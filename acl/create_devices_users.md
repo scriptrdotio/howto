@@ -2,7 +2,7 @@
 
 You can create devices and users in two different ways:
 - From the workspace, using the visual tools
-- From your code, dynamically
+- From dynamically the code
 
 ## Create device/users from the workspace
 
@@ -25,3 +25,13 @@ then  click on **Device Directory**
 
 Scriptr.io automatically generates and authentication token for the newly created device. 
 This token can be used to authenticate http requests and web socket messages sent to your APIs.
+
+## Create devices dynamically from the code
+
+From within a script in the [workspace](https://www.scriptr.io/workspace), you need to require the **device** module and invoke its create()
+```
+
+```
+
+
+
