@@ -1,10 +1,10 @@
-# How to create groups of devices/users?
+# How to create groups of devices or groups of users?
 
 You can create groups of devices and users in two different ways:
 - From the workspace, using the visual tools
 - Dynamically from the code (scripts)
 
-## Create device/users from the workspace
+## Create groups from the workspace
 
 Sign-in to your [workspace](https://www.scriptr.io/workspace), click on your username in the top-right corner of the screen, 
 then  click on **Device Directory**
@@ -19,7 +19,7 @@ then  click on **Device Directory**
 - Enter a optional description
 - Click on the check sign
 
-![Create a group](./images/new_group.png)
+![Create a group](./images/add_group.png)
 
 *Image 2*
 
@@ -32,9 +32,11 @@ var group = require("group");
 var resp = group.create("iot_devices");
 return resp;
 ```
+
 - The object returned by create() contains a metadata section 
 - If successful, metadata.status will be set to "success"
 - If create() fails, metadata.status will be set to "failure" 
+
 ```
 // successful create (example)
  {
