@@ -48,24 +48,24 @@ return resp;
 ```
 // successful create (example)
 {
-		"result": {
-			"device": {
-				"id": "T7256996A7"
-			}
-		},
-		"metadata": {
-			"status": "success"
+	"result": {
+		"device": {
+			"id": "T7256996A7"
 		}
+	},
+	"metadata": {
+		"status": "success"
+	}
 }
 
 // unsuccessful create (example)
  {
-		"metadata": {
-			"status": "failure",
-			"statusCode": 400,
-			"errorCode": "INVALID_IDENTIFIER",
-			"errorDetail": "The device [T7256996A7] is invalid."
-		}
+	"metadata": {
+		"status": "failure",
+		"statusCode": 400,
+		"errorCode": "INVALID_IDENTIFIER",
+		"errorDetail": "The device [T7256996A7] is invalid."
+	}
 }
 ```
 
