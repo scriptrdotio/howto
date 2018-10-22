@@ -86,4 +86,4 @@ return resp;
 ```
 # More
 
-Learn more about the device module in our [documentation[(https://www.scriptr.io/documentation#documentation-device-moduledeviceModule)
+Learn more about the device module in our [documentation](https://www.scriptr.io/documentation#documentation-device-moduledeviceModule)
