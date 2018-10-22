@@ -23,7 +23,7 @@ var resp = document.create(obj);
 
 - The object returned by **create()** contains a metadata section and a result section
 - If successful, metadata.status will be set to "success" and result.document.key will contain the document key (identifier)
-- If **save()** fails, metadata.statust will be set to "failure" and no result is returned
+- If **create()** fails, metadata.statust will be set to "failure" and no result is returned
 
 ```
 // successful create (example)
