@@ -6,5 +6,7 @@ Scripts are the main components of any scriptr.io application. By default, any s
 
 ## Defining authorizations
 
-By default, a script is ony accesible to entities (users, devices) that are authenticated by your scriptr.io account, thus scriptr.io always makes sure that your APIs are not accessed by unauthorized parties. This is visually expressed by the small red lock that appears a the right of the script editor in your [workspacde](https://www.scriptr.io/workspace)
+By default, a script is ony accesible to entities (users, devices) that are authenticated by your scriptr.io account, thus scriptr.io always makes sure that your APIs are not accessed by unauthorized parties. This is visually expressed by the small red lock that appears on the right of the script editor in your [workspacde](https://www.scriptr.io/workspace)
+
+
 
