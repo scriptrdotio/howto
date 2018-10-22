@@ -24,5 +24,11 @@ You can modify this ACL by selecting a device, a user, a role or a group from th
 
 *Image3*
 
-In the above example, the authorization to execute the script is limited to all members of the "my_devices" group and to the "iot_gateway" device.
+In the above example, the authorization to execute the script is limited to all members of the "mydevices" group and to the "iot_gateway" device.
+
+Permissions are instantaneously effective. You can try this by clicking "run" from the IDE and you will notice that scriptr.io will deny you the authorization to remotely execute the script if you are not part of the ACL.
+
+![Change ACL](./images/permission_denied.png)
+
+*Image4*
 
