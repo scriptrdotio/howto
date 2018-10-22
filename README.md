@@ -10,7 +10,7 @@
 - [How to restrict access to my API?](https://github.com/scriptrdotio/howto/blob/master/acl/restrict_access_to_api.md)
 - [How to create devices and users in my account?](https://github.com/scriptrdotio/howto/blob/master/acl/create_devices_users.md)
 - [How to create groups of devices or groups of users?](https://github.com/scriptrdotio/howto/blob/master/acl/create_devices_groups.md)
-- [How to invoke a remote REST API from a script?(https://github.com/scriptrdotio/howto/blob/master/remote/invoke_rest_api.md)
+- [How to invoke a remote REST API from a script?](https://github.com/scriptrdotio/howto/blob/master/remote/invoke_rest_api.md)
 - [How to send files via http to my API?](https://github.com/scriptrdotio/howto/blob/master/data/upload_files.md)
 - [How to publish an mqtt message to a script (API)?](https://github.com/scriptrdotio/howto/blob/master/api/publish_mqtt_msgs_to_script.md)
 - [How to read the messages sent to my API through mqtt?](https://github.com/scriptrdotio/howto/blob/master/api/read_mqtt_messages.md)
