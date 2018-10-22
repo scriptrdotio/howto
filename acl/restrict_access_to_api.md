@@ -4,7 +4,7 @@ Scripts are the main components of any scriptr.io application. By default, any s
 
 *You might want to check [How to create a secure and scalable API?](https://github.com/scriptrdotio/howto/blob/master/api/create_api.md)*
 
-## Defining authorizations
+## Define authorizations
 
 By default, a script is ony accesible to entities (users, devices) that are authenticated by your scriptr.io account, thus scriptr.io always makes sure that your APIs are not accessed by unauthorized parties. This is visually expressed by the small red lock that appears on the right of the script editor in your [workspace](https://www.scriptr.io/workspace)
 
@@ -12,7 +12,12 @@ By default, a script is ony accesible to entities (users, devices) that are auth
 
 *Image 1*
 
-If you take a closer look by clicking on the lock, this opens an Access Control List editor. As you can see, access to the script is by default only allowed to any entity that has the predefined **authenticated** role, i.e. any user or device creating from your account.
+If you take a closer look by clicking on the lock, this opens an Access Control List editor. As you can see, access to the script is by default only to the owners **authenticated** role, i.e. any user or device created from your account.
 
+[!Default permissions](./images/acl_view.png)
+
+*Image2*
+
+You can refine these permissions by selecting a device, a user, a role or a group from the drop down list, then by clicking "Add". You can repeat this process as many times as needed, then validate your changes by clicking on "Save".
 
 
