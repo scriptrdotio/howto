@@ -12,5 +12,7 @@ By default, a script is ony accesible to entities (users, devices) that are auth
 
 *Image 1*
 
+If you take a closer look by clicking on the lock, this opens an Access Control List editor. As you can see, access to the script is by default only allowed to any entity that has the predefined **authenticated** role, i.e. any user or device creating from your account.
+
 
 
