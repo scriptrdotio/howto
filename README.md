@@ -8,6 +8,7 @@
 - [How to express validation rules (schemas) on my data?](https://github.com/scriptrdotio/howto/blob/master/data/create_schema.md)
 - [How to apply automatic validation (schemas) on my data?](https://github.com/scriptrdotio/howto/blob/master/data/create_schema.md)
 - [How to restrict access to my API?](https://github.com/scriptrdotio/howto/blob/master/acl/restrict_access_to_api.md)
+- [How to create devices and users in my account?](https://github.com/scriptrdotio/howto/blob/master/acl/create_devices_users.md)
 - [How to send files via http to my API?](https://github.com/scriptrdotio/howto/blob/master/data/upload_files.md)
 - [How to publish an mqtt message to a script (API)?](https://github.com/scriptrdotio/howto/blob/master/api/publish_mqtt_msgs_to_script.md)
 - [How to read the messages sent to my API through mqtt?](https://github.com/scriptrdotio/howto/blob/master/api/read_mqtt_messages.md)
