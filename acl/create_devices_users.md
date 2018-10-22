@@ -19,7 +19,7 @@ then  click on **Device Directory**
 - Enter a optional description
 - Click on the check sign
 
-![Device Directory](./images/new_device.png)
+![Create a device](./images/new_device.png)
 
 *Image 2*
 
