@@ -2,7 +2,7 @@
 
 You can create devices and users in two different ways:
 - From the workspace, using the visual tools
-- From dynamically the code
+- Dynamically from the code (scripts)
 
 ## Create device/users from the workspace
 
