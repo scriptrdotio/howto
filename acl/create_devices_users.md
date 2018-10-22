@@ -84,4 +84,6 @@ var deviceData = {
 var resp = device.update(deviceData);
 return resp;
 ```
+# More
 
+Learn more about the device module in our [documentation[(https://www.scriptr.io/documentation#documentation-device-moduledeviceModule)
