@@ -21,4 +21,6 @@ return null;
  
 Let's upload a file to the above API using [Postman](https://www.getpostman.com/)
 
+![Upload file](./images/get_files.png)
+
 
