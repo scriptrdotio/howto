@@ -13,6 +13,8 @@ Assume we have persisted a file into a document (Read more on [how to persist fi
 
 The get a file that is attached to a document, you just need to require the **document** module and invoke the **getAttachment()** function, specifying the key of the targeted document, the file name and the name of the document field holding the file.
 
+Open your [workspace](https://www.scriptr.io/workspace) and type the below:
+
 ```
 var document = require("document");
 var file = document.getAttachment("AAFE8C24CC9B7D5E275143DADF228CD5", "110916_server_512x512.png", {"fieldName":"camera_snapshot"});
