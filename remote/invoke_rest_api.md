@@ -7,7 +7,7 @@ var http = require("http");
 var requestParams = {}; // details in the below sections
 var resp = http.request(requestParams);
 ```
-The **request()** function needs you to provide some parameters to configure the http request to issue: url, params, method, headers, bodyString, etc.
+The **request()** function needs you to provide some parameters to configure the http request to issue, such as: **url, params, method, headers, bodyString, etc.**
 
 The response returned by the invocation of **request()** has the following structure:
 ```
