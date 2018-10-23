@@ -32,6 +32,7 @@ Issuing this request results in the below. As you can see, our API returned an a
 - Scriptr.io provides you with a NoSQL database that allows you to save data into key/value structures called "documents"
 - To manipulate documents, you need to require the **document** module ([read more about creating documents](./persist_data.md))
 - To create a document, you need to invoke the **document.create()**, passing the data to persist and any required descriptive metadata
+- Files are attached into scriptr.io documents that are persisted in the No SQL storage
 
 Let's update the above code example, to save the file into a document
 
@@ -56,7 +57,7 @@ return null;
 ```
 To create the document, we need to following:
 - Create a data structure with at least two properties: "attachments" and "meta.types"
-- Link the  uploaded file to "attachements" 
+- Associate the  uploaded file to "attachements" 
 - Informing script.io that this field is of type "file" using the "meta.types" property
 - Invoke document.create() passing the whole data structure
 
