@@ -23,4 +23,7 @@ Let's upload a file to the above API using [Postman](https://www.getpostman.com/
 
 ![Upload file](./images/get_files.png)
 
+Issuing this request results in the below. As you can see, our API returned an array of File objects containing one element, as expected.
+
+![Upload result](./images/upload/upload_file_return.png)
 
