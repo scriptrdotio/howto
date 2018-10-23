@@ -1,7 +1,7 @@
 # How to persist data?
 
 - Scriptr.io provides you with a NoSQL database that allows you to save data into key/value structures called "documents" 
-- To persist data into document from within a script, you need to require the native "document" module
+- To persist data into document from within a script, you need to require the native **document** module
 
 ```
 var document =  require("document");
