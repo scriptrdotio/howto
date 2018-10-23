@@ -62,5 +62,13 @@ To create the document, we need to following:
 
 **ATTENTION**: **attachments** is a reserved keyword in scriptr.io. It is mandatory to use it to name a document field that contains a file, when the document is not bound to a **schema** (as in our example). In that latter case, you cannot use any field name but only **attachments**. 
 
-(Learn more about [schemas](./create_schema.md))
+If you issue again a request towards our API using Postman, you should obtain something close to the below
+
+
+
+## Saving the file into a document that is bound to a schema
+
+Schemas are used to define document types, i.e. constraints on the data (mandatory fields, multiplicity, data types, etc.). (Learn more about [schemas](./create_schema.md))
+
+Assume we want to save an uploaded file into documents of a predefined type (schema), 
 
