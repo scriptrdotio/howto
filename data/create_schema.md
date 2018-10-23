@@ -63,7 +63,7 @@ In the below example we created an ACL group called "smart_building_can_write" w
 
 The **&lt;fields&gt;** element allows you to define (1) the type of the fields of your documents (2) validation constraints, (3) if a field is unique, (4) if a field is searchable.
 
-- Available types are: numeric, string, text, data and geospatial
+- Available types are: numeric, string, text, data, File and geospatial
 - Validation constraints are: 
   - cardinality: min, max values allowed for this field. If min = 1 and max = 1, the filed is mandatory. If min = 0 and max = 1, the field is optional (default case), if min = 1 and max = 10, you can store up to 10 values in this field (array - limited to a max of 50)
   - range: specifies the min and max value of a numeric field
