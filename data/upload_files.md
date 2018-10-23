@@ -13,8 +13,12 @@ Open your [workspace](https://www.scriptr.io/workspace) and create a new script 
 var files = request.files;
 if (request.files.camera_snapshot && request.files.camera_snapshot.length > 0) {
     var snapshotFile = request.files.camera_snapshot[0];
+    return snapshotFile;
 };
-```
 
-The 
-Let's send a file to an
+return null;
+```
+ 
+Let's upload a file to the above API using [Postman](https://www.getpostman.com/)
+
+
