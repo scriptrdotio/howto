@@ -5,7 +5,7 @@
 
 ## Retrieving a file stored in a document
 
-(Read more on [how to persist files sent to my API via http?](./upload_files.md))
+(Read more on [how to persist files sent to my API via http?](../data/upload_files.md))
 
 Assume we have persisted a file into a document (the file is "attached" to the document):
 - If the document is not bound to a schema, the field name of the file is **attachments**
