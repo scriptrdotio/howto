@@ -30,11 +30,13 @@ The below sections provides cover different scenarios through code examples. In 
 
 - Open your [workspace](https://www.scriptr.io/workspace) and create a new script
 - In this example, we invoke an API operation that lists books (returns an array of books). The API requires us to specify the encoding we accept on our end. We will instruct it to send us data in the JSON format
+- Notice that we are specifying the url, method and headers properties
 
 ```
 var http = require("http");
 var requestParams = {
   "url": "https://fakerestapi.azurewebsites.net/api/Books",
+  "method": "get",
   "headers": {
     "Accept": "application/json"
   }
@@ -44,17 +46,19 @@ var requestParams = {
 var resp = http.request(requestParams);
 if (resp.status == "200") {
 
-  // lets parse the body of the response
+  // let's parse the body of the response
   var bookList = JSON.parse(resp.body);
+  return bookList;
 }
+// ... more code
 
-return bookList;
 ```
 
 ## How to issue a GET request with parameters
 
 - Open your [workspace](https://www.scriptr.io/workspace) and create a new script
 - In this example we invoke send an id parameter to an API operation that returns the book that matches the provided ID
+- Notice that we are specifying the url, method and headers properties
 
 ```
 var http = require("http");
@@ -72,13 +76,51 @@ var requestParams = {
 var resp = http.request(requestParams);
 if (resp.status == "200") {
 
-    // lets parse the body of the response
+    // let's parse the body of the response
     var book = JSON.parse(resp.body);
+    return book;
 }
+// ... more code
 
-return book;
 ```
 
 ## How to issue a POST request with application/json content
+
+- Open your [workspace](https://www.scriptr.io/workspace) and create a new script
+- In this example we invoke an API operation to create a new book (the API responds with the data about the book it created). The new book's data is sent as a JSON object 
+- Observe that in that case we are sending a **stringifed JSON** in the **bodyString** property
+- Also note that we are sending the content-type in the headers property
+
+```
+var http = require("http");
+var newBookData = {
+
+  "ID": 1000,
+  "Title": "Mastering scriptr.io",
+  "Description": "Become an expert in scriptr.io",
+  "PageCount": 100,
+  "Excerpt": "string",
+  "PublishDate": "2018-10-23T08:02:26.482Z"
+};
+
+var requestParams = {
+    "url": "https://fakerestapi.azurewebsites.net/api/Books",
+    "method": "post",
+    "headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+    },
+    "bodyString": JSON.stringify(newBookData)
+}; 
+
+var resp = http.request(requestParams);
+if (resp.status == "200") {
+
+    // lets parse the body of the response
+    var createdBook = JSON.parse(resp.body);
+    return createdBook;
+}
+```
+
 
 
