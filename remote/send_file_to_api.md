@@ -5,9 +5,8 @@
 
 ## Retrieving a file stored in a document
 
-(Read more on [how to persist files sent to my API via http?](../data/upload_files.md))
-
-Assume we have persisted a file into document:
+Assume we have persisted a file into a document (Read more on [how to persist files sent to my API via http?](../data/upload_files.md))
+:
 - The document key is "AAFE8C24CC9B7D5E275143DADF228CD5" 
 - The name of the document field storing the file is "camera_snapshot"
 - The file name is "110916_server_512x512.png" 
@@ -24,4 +23,28 @@ return file;
 
 ## Sending a file to a remote REST API
 
+To invoke a remote API, you need to use the **http** module and invoke its **request()** method, passing all the required parameters. Let's update the above code sample to incorporate the invocation of a remote API
 
+```
+var http = require("http");
+var document = require("document");
+var file = document.getAttachment("AAFE8C24CC9B7D5E275143DADF228CD5", "110916_server_512x512.png", {"fieldName":"camera_snapshot"});
+var params = { // Prepare the parameters to pass the http.request()
+
+    "files" :{ // use the predefined "files" parameter name to store a map of file objects
+        "some_param_name": file // replace some_param_name with a name that is expected by the remote API
+    },
+    "method":"POST",
+    "url":"https://api.scriptrapps.io/tutorials/howto/data/save_file", // replace with a remote endpoint
+};
+
+var response = http.request(params);
+return response;
+````
+
+As you can seem in the example, you can use the predefined **files** property name to specify a map of file objects to send to the remote API.
+
+# More
+
+- Read more on attachments in our [documentation](https://www.scriptr.io/documentation#documentation-get-attachmentgetAttachment)
+- Read more on the http module in our [documentation](https://www.scriptr.io/documentation#documentation-httphttpModule)
