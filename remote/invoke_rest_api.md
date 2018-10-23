@@ -149,3 +149,6 @@ if (resp.status == "201") {
     return post;
 }
 ```
+# More
+
+Read more about the http module in our [documentation](https://www.scriptr.io/documentation#documentation-httphttpModule)
