@@ -11,7 +11,7 @@ Assume we have persisted a file into a document (Read more on [how to persist fi
 - The name of the document field storing the file is "camera_snapshot"
 - The file name is "110916_server_512x512.png" 
 
-The get a file that is attached to a document, you just need to require the **document** module and invoke the **getAttachment()** function, specifying the key of the targetted document, the file name and the name of the document field holding the file.
+The get a file that is attached to a document, you just need to require the **document** module and invoke the **getAttachment()** function, specifying the key of the targeted document, the file name and the name of the document field holding the file.
 
 ```
 var document = require("document");
