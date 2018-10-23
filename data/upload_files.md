@@ -48,7 +48,7 @@ if (request.files.camera_snapshot && request.files.camera_snapshot.length > 0) {
         }
     };
     
-	var resp = document.create(data);
+    var resp = document.create(data);
     return resp;
 };
 
@@ -70,5 +70,56 @@ If you issue again a request towards our API using Postman, you should obtain so
 
 Schemas are used to define document types, i.e. constraints on the data (mandatory fields, multiplicity, data types, etc.). (Learn more about [schemas](./create_schema.md))
 
-Assume we want to save an uploaded file into documents of a predefined type (schema), 
+- Assume we want to save an uploaded camera snapshot file into a document 
+- Also assume that we want the field to hold the document to be named "camera_snapshot"
+- In that case we need to bind our document to a schema similar to the following (let's say we named this schema "surveillance_cam_doctype"):
+
+```
+<schema>
+	<aclGroups>
+		<aclGroup name='authenticated'>
+			<read>authenticated</read>
+			<write>authenticated</write>
+			<fields>
+				<field>camera_snapshot</field>
+			</fields>
+		</aclGroup>
+		<schemaAcl>
+			<read>nobody</read>
+			<write>nobody</write>
+			<delete>nobody</delete>
+		</schemaAcl>
+	</aclGroups>
+	<fields>
+		<field name='camera_snapshot' type='file'>
+			<validation>
+				<cardinality min='1' max='1'/>
+			</validation>
+		</field>
+	</fields>
+</schema>
+```
+
+All we need is to update our code once again as follows:
+- Replace "attachments" with any field name we need ("camera_snapshot")
+- Replace "meta.types" with "meta.schema" and refer to the schema we are binding our document to
+
+```
+var document = require("document");
+var files = request.files;
+if (request.files.camera_snapshot && request.files.camera_snapshot.length > 0) {
+    
+    var snapshotFile = request.files.camera_snapshot[0];
+    var data = {
+    	"camera_snapshot": snapshotFile, 
+        "meta.schema": "surveillance_cam_doctype"
+    };
+    
+	var resp = document.create(data);
+    return resp;
+};
+
+return null;
+```
+
 
