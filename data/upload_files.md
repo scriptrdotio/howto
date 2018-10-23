@@ -60,5 +60,7 @@ To create the document, we need to following:
 - Informing script.io that this field is of type "file" using the "meta.types" property
 - Invoke document.create() passing the whole data structure
 
-**ATTENTION**: **attachments** is a reserved keyword in scriptr.io. It is mandatory to use it to name a document field that contains a file, when the document is not bound to a **schema**. In that latter case, you cannot use any field name but only **attachments**.
+**ATTENTION**: **attachments** is a reserved keyword in scriptr.io. It is mandatory to use it to name a document field that contains a file, when the document is not bound to a **schema** (as in our example). In that latter case, you cannot use any field name but only **attachments**. 
+
+(Learn more about [schemas](./create_schema.md))
 
