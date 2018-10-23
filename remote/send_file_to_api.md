@@ -7,17 +7,20 @@
 
 (Read more on [how to persist files sent to my API via http?](../data/upload_files.md))
 
-Assume we have persisted a file into a document (the file is "attached" to the document):
-- If the document is not bound to a schema, the field name of the file is **attachments**
-- If the document is bound to a schema, the field name is whatever is specified in the latter
+Assume we have persisted a file into document:
+- The document key is "AAFE8C24CC9B7D5E275143DADF228CD5" 
+- The name of the document field storing the file is "camera_snapshot"
+- The file name is "110916_server_512x512.png" 
 
-Let's agree that in our example, our the file is attached to a document under the "camera_snapshot" field and assume that the identifier (the key) of our document is "AAFE8C24CC9B7D5E275143DADF228CD5".
-
-The get a file that is attached to a document, we just need to require the **document** module and invoke the **getAttachment()** function, specifying the key of the targetted document.
-
-```
+The get a file that is attached to a document, you just need to require the **document** module and invoke the **getAttachment()** function, specifying the key of the targetted document, the file name and the name of the document field holding the file.
 
 ```
+var document = require("document");
+var file = document.getAttachment("AAFE8C24CC9B7D5E275143DADF228CD5", "110916_server_512x512.png", {"fieldName":"camera_snapshot"});
+return file;
+```
+
+**ATTENTION** notice in the above example that the field name is always passed as a property of an object
 
 ## Sending a file to a remote REST API
 
