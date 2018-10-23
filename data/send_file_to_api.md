@@ -1,2 +1,2 @@
-# How to send a file to a remote API?
+# How to send a file to a remote REST API?
 
