@@ -9,7 +9,7 @@ var resp = http.request(requestParams);
 ```
 The **request()** function needs you to provide some parameters to configure the http request to issue: url, params, method, headers, bodyString, etc.
 
-The response return by the invocation of **request()** has the following structure:
+The response returned by the invocation of **request()** has the following structure:
 ```
 {
   "status": "some_http_status", // status as returned by the remote API (200, 400, 404, 500, etc.)
@@ -26,9 +26,10 @@ The response return by the invocation of **request()** has the following structu
 
 The below sections provides cover different scenarios through code examples. In the latter, we will be using an online test API (https://fakerestapi.azurewebsites.net/api/Books).
 
-## Issuing a Get request
+## How to issue a Get request
 
-In this example, we invoke an API operation that lists books (returns an array of books). The API requires us to specify the encoding we accept on our end. We will instruct it to send us data in the JSON format.
+- Open your [workspace](https://www.scriptr.io/workspace) and create a new script).
+- In this example, we invoke an API operation that lists books (returns an array of books). The API requires us to specify the encoding we accept on our end. We will instruct it to send us data in the JSON format.
 
 ```
 var http = require("http");
@@ -46,7 +47,10 @@ if (resp.status == "200") {
   // lets parse the body of the response
   var bookList = JSON.parse(resp.body);
 }
+
+return bookList;
 ```
+
 
 
 
