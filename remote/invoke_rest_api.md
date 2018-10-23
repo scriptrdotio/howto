@@ -24,7 +24,7 @@ The response returned by the invocation of **request()** has the following struc
 
 **IMPORTANT**: the body field always contained stringified data. You will have to parse it in your script.
 
-The below sections provides cover different scenarios through code examples. In the latter, we will be using an online test API (https://fakerestapi.azurewebsites.net/api/Books).
+The below sections provides cover different scenarios through code examples. In the latter, we will be using public online test APIs.
 
 ## How to issue a GET request
 
@@ -122,5 +122,29 @@ if (resp.status == "200") {
 }
 ```
 
+## How to issue a POST request with application/x-www-form-urlencoded or multipat/form-data content
 
+- In that case, you can pass the content as key/value pairs using the **params** property
 
+```
+var http = require("http");
+var requestParams = {
+    "url": "https://jsonplaceholder.typicode.com/posts",
+    "method": "post",
+    "headers": {
+        "Content-Type": "application/x-www-form-urlencoded"
+    },
+    "params": { // when posting with content-type "application/x-www-form-urlencoded" or "multipart/form-data", use params
+        "topic": "scriptr.io",
+        "subject": "posting data"
+    }
+}; 
+
+var resp = http.request(requestParams);
+if (resp.status == "201") {
+
+    // lets parse the body of the response
+    var post = JSON.parse(resp.body);
+    return post;
+}
+```
