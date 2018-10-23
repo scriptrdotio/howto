@@ -7,3 +7,14 @@
 ## Getting the uploaded files
 
 **request.files** is an map of key/values where each key is the name of the parameter used to upload files and the value is an array of File objects
+
+Open your [workspace](https://www.scriptr.io/workspace) and create a new script with the below content
+```
+var files = request.files;
+if (request.files.camera_snapshot && request.files.camera_snapshot.length > 0) {
+    var snapshotFile = request.files.camera_snapshot[0];
+};
+```
+
+The 
+Let's send a file to an
