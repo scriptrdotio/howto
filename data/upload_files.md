@@ -64,7 +64,7 @@ To create the document, we need to following:
 
 If you issue again a request towards our API using Postman, you should obtain something close to the below
 
-
+![Save successful](./images/ave_file_return.png)
 
 ## Saving the file into a document that is bound to a schema
 
