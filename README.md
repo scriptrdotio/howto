@@ -5,7 +5,6 @@
 - [How to persist data?](https://github.com/scriptrdotio/howto/blob/master/data/persist_data.md)
 - [How to retrieve my persisted data?](https://github.com/scriptrdotio/howto/blob/master/data/query_data.md)
 - [How to view the data that I have persisted?](https://github.com/scriptrdotio/howto/blob/master/data/view_data.md)
-- [How to express validation rules (schemas) on my data?](https://github.com/scriptrdotio/howto/blob/master/data/create_schema.md)
 - [How to apply automatic validation (schemas) on my data?](https://github.com/scriptrdotio/howto/blob/master/data/create_schema.md)
 - [How to restrict access to my API?](https://github.com/scriptrdotio/howto/blob/master/acl/restrict_access_to_api.md)
 - [How to create devices and users in my account?](https://github.com/scriptrdotio/howto/blob/master/acl/create_devices_users.md)
