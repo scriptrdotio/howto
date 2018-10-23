@@ -124,6 +124,7 @@ if (resp.status == "200") {
 
 ## How to issue a POST request with application/x-www-form-urlencoded or multipat/form-data content
 
+- Open your [workspace](https://www.scriptr.io/workspace) and create a new script
 - In that case, you can pass the content as key/value pairs using the **params** property
 
 ```
