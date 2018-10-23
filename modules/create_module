@@ -1,0 +1,5 @@
+# How to create a module?
+
+You can easily write you own reusable functions and classes and put them in a module, to implement code libraries for example.
+
+A module is actually a script
