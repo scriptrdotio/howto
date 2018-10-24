@@ -1,4 +1,4 @@
-# How to accept requests to my API from any or from specific domains (CORS settings)?
+# How to accept requests from any or from specific domains (CORS settings)?
 
 CORS (Cross-Origin Resource Sharing) is a mechanism that allows resources on a web page to be requested from another domain
 outside the domain from which the resource originated.
@@ -11,4 +11,4 @@ If you wish to be less restrictive, you can configure the CORS settings from the
 - In the CORS section, enter a list of authorized domain names, or * to accept all domains
 - Click on Close to validate
 
-![CORS settings](./images/cors_settings)
+![CORS settings](./images/cors_settings.png)
