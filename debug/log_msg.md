@@ -25,3 +25,10 @@ As in any othr log system, the log level defines the verbosity, i.e. what appear
 - If the level is set to "info", any call to log.info(), log.warn(), log.error() results in a log entry, log.debug() is ignored
 - If the level is set to "warn", any call to log.warn(), log.error() results in a log entry, log.debug(), log.info() are ignored
 - If the level is set to "error", only calls to log.error() result in a log entry, log.debug(), log.info() and log.warn() are ignored
+
+### How to see the logs
+
+From the [workspace]("https://www.scriptr.io/workspace"), click on "Logs". This opens the logs file in a new tab. 
+
+
+Logs are listed by script execution and sorted by date in descending order. Click on a row to see the log messages for the corresponding script execution.
