@@ -45,7 +45,11 @@ Also notice that a small clock icon is now set next to the script name in the tr
 
 From the [workspace](https://www.scriptr.io/workspace] click on "New Script" to create the scheduler script (will contain the code to schedule the execution of another script)
 
-To schedule a script from the code, you just need to invoke the **schedule()** native function, passing the path+name of the script to schedule (**ATTENTION** always use the absolute path to the script and do not start with "/")
+To schedule a script from the code, you just need to invoke the **schedule()** native function, passing the path+name of the script to schedule.
+
+**ATTENTION**
+- Always use the absolute path to the script and do not start with "/")
+- A script should never schedule itself
 
 ```
 var document = require("document");
