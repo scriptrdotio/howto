@@ -9,6 +9,7 @@
 - [How to restrict access to my API?](https://github.com/scriptrdotio/howto/blob/master/acl/restrict_access_to_api.md)
 - [How to create devices and users in my account?](https://github.com/scriptrdotio/howto/blob/master/acl/create_devices_users.md)
 - [How to create groups of devices or groups of users?](https://github.com/scriptrdotio/howto/blob/master/acl/create_devices_groups.md)
+- [How to create modules?](https://github.com/scriptrdotio/howto/edit/master/modules/create_modules.md)
 - [How to invoke a remote REST API from a script?](https://github.com/scriptrdotio/howto/blob/master/remote/invoke_rest_api.md)
 - [How to persist files sent to my API via http?](https://github.com/scriptrdotio/howto/blob/master/data/upload_files.md)
 - [how to send a file to a remote REST API?](https://github.com/scriptrdotio/howto/blob/master/remote/send_file_to_api.md)
