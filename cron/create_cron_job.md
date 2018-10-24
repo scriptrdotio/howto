@@ -88,5 +88,7 @@ The executionof **schedule()** function returns a metadata section and a result 
   }
 }
 ```
+# More
 
+Read how to [unschedule a script](./unschedule_cron_job.md)
 
