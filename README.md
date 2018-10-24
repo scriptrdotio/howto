@@ -14,6 +14,7 @@
 - [How to invoke a remote REST API from a script?](https://github.com/scriptrdotio/howto/blob/master/remote/invoke_rest_api.md)
 - [How to persist files sent to my API via http?](https://github.com/scriptrdotio/howto/blob/master/data/upload_files.md)
 - [how to send a file to a remote REST API?](https://github.com/scriptrdotio/howto/blob/master/remote/send_file_to_api.md)
+- [How to schedule the automatic execution of a script (cron job)?](https://github.com/scriptrdotio/howto/blob/master/cron/create_cron_job.md)
 - [How to publish an mqtt message to a script (API)?](https://github.com/scriptrdotio/howto/blob/master/api/publish_mqtt_msgs_to_script.md)
 - [How to read the messages sent to my API through mqtt?](https://github.com/scriptrdotio/howto/blob/master/api/read_mqtt_messages.md)
 - [How to obtain credentials to allow devices to publish mqtt messages to my scriptr.io account?](https://github.com/scriptrdotio/howto/blob/master/mqtt/obtain_credentials.md)
