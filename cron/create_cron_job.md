@@ -48,7 +48,7 @@ From the [workspace](https://www.scriptr.io/workspace] click on "New Script" to 
 To schedule a script from the code, you just need to invoke the **schedule()** native function, passing the path+name of the script to schedule.
 
 **ATTENTION**
-- Always use the absolute path to the script and do not start with "/")
+- Always use the absolute path to the script and **do not start with "/"**
 - A script should never schedule itself
 
 ```
