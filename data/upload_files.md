@@ -27,6 +27,8 @@ Issuing this request results in the below. As you can see, our API returned an a
 
 ![Upload result](./images/upload_file_return.png)
 
+*Image 1*
+
 ## Saving the file into a document
 
 - Scriptr.io provides you with a NoSQL database that allows you to save data into key/value structures called "documents"
@@ -66,6 +68,8 @@ To create the document, we need to following:
 If you issue again a request towards our API using Postman, you should obtain something close to the below
 
 ![Save successful](./images/save_file_return.png)
+
+*Image 2*
 
 ## Saving the file into a document that is bound to a schema
 
