@@ -4,7 +4,7 @@ Scriptr.io Access Control Lists (ACL) allows you to define fine grain permission
 
 - The first filter to your data is the permissions you set on your APIs that receive client requests. You can read more about [how to restrict access on your APIs](./restrict_access_to_api.md) if needed
 - The second filter is to create a [document schema](../data/create_schema.md), in which you map read/write permissions on document fields, to devices, users, groups or roles
-- However, once a request has passed the first filter and successfully triggered an API, **the script executes by default with the account owner credentials** therefore, your code can access any document 
+- However, once a request has passed the first filter and successfully triggered an API, **the script executes by default with the account owner credentials** therefore, your code can access any document, despite the schema 
 - Since this might not be what you want, **you can enforce accessing documents using the credentials of the device/user that triggered the request**
 
 ## How do I access data using the request initiator credentials?
@@ -13,11 +13,11 @@ Simple,
 
 In your code, just insert invocation to the document module's operation into a function passed to the native **runAs()** function.
 - Example 1 below shows code that runs using the default privileges (account owner)
-- Example 2 shows how to use **runAs()** to use the caller's (request initiator) credentials to run the same code
+- Example 2 shows how to use **runAs()** to use the caller's (request initiator) privileges to run the same code
 
-**Example 1** 
+**Example 1: using default privileges** 
 ```
-// we quert 
+// we query all documents that are bound to the "smart_building" schema
 var document = require("document");
 var queryExpression = {
 
@@ -27,3 +27,24 @@ var queryExpression = {
 
 // default privileges (account owner)
 return document.query(queryExpression);
+```
+
+**Example 2: using caller's privileges**
+```
+var document = require("document");
+var queryExpression = {
+
+    query: 'schema="smart_building"',
+    fields: '*'
+};
+
+// Retrive user (caller) id from the request
+var userId = request.user.id;
+
+// use caller's privileges
+return runAs(
+    function(){
+        return document.query(queryExpression);
+    }, "fitbit");
+```
+
