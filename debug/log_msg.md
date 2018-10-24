@@ -34,9 +34,13 @@ From the [workspace]("https://www.scriptr.io/workspace"), click on "Logs". This 
 
 ![Open Logs](./images/logs.png)
 
+*Image 1*
+
 Logs are listed by script execution and sorted by date in descending order. Click on a row to see the log messages for the corresponding script execution.
 
 ![View logs](./images/log_file.png)
+
+*Image 2*
 
 ## Write to the console
 
@@ -63,3 +67,5 @@ Another option is to write to the console, which actually adds logs to the **scr
 When running the script from the [workspace]("https://www.scriptr.io/workspace"), the logs are displayed in the console panel at the bottom of the screen:
 
 ![Log to the Console](./images/console_log.png)
+
+*Image 3*
