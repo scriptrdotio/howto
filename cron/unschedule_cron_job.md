@@ -14,3 +14,20 @@ There are two ways to do this:
 
 ![Remove trigger](./images/delete_trigger.png)
 
+## Unschedule a script from the code
+
+Scripts can be unscheduled using the native **unschedule()** function. All you need is pass it the handle obtained when scheduling he script (read more on [how to schedule the automatic the execution of a script](./create_cron_job.md). 
+
+In the example below, we assume that the handle was persisted in a document ("scheduled_script_handle") in the "handle" field.
+
+```
+var document = require("document");
+var resp = document.get("scheduled_script_handle");
+if (resp.metadata.status == "success") {  // if document is found
+    
+    var handle = resp.result.handle;
+    return unschedule(handle); 
+}
+
+return null;
+```
