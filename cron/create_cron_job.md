@@ -25,11 +25,21 @@ In the below example, we schedule the script to run every data at 08:00 AM.
 
 ![Cron trigger](./images/create_trigger.png)
 
+*Image 1*
+
 **Note** if you are familiar with [cron expressions](https://www.freeformatter.com/cron-expression-generator-quartz.html), you can directly write an expression by clicking on the Advanced link.
 
 Click on the check sign to save your trigger. It is added to the list of triggers of the script (you can define many triggers for the same script)
 
-![Trigger set](./images/trigger_Set.png)
+![Trigger set](./images/trigger_set.png)
+
+*Image 2*
+
+Also notice that a small clock icon is now set next to the script name in the tree view on the left
+
+![Clock set](./images/clock.png)
+
+*Image 3*
 
 
 
