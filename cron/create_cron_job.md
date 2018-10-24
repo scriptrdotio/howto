@@ -14,6 +14,19 @@ or create a new script (click on New Script) and type some instructions.
 
 ![Schedule a script](./images/schedule.png)
 
+From the "Schedule script" dialog, define your scheduling rule:
+
+- Specify if the script should execture regularly (**every**) or at at specified date/time (**on**)
+- Specify the time range (hour, day, week, month or year)
+- Specify the hour of execution
+- Specify the minute of execution
+
+In the below example, we schedule the script to run every data at 08:00 AM.
+
+![Cron trigger](./images/create_trigger.png)
+
+**Note** if you are familiar with [cron expressions](https://www.freeformatter.com/cron-expression-generator-quartz.html), you can directly write an expression by clicking on the Advanced link.
+
 
 
 
