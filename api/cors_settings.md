@@ -11,4 +11,4 @@ If you wish to be less restrictive, you can configure the CORS settings from the
 - In the CORS section, enter a list of authorized domain names, or * to accept all domains
 - Click on Close to validate
 
-![CORS settings](./images/cors_settings]
+![CORS settings](./images/cors_settings)
