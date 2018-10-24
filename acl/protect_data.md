@@ -5,7 +5,7 @@ Scriptr.io Access Control Lists (ACL) allows you to define fine grain permission
 - The first filter to your data is the permissions you set on your APIs that receive client requests. You can read more about [how to restrict access on your APIs](./restrict_access_to_api.md) if needed
 - The second filter is to create a [document schema](../data/create_schema.md), in which you map read/write permissions on document fields, to devices, users, groups or roles
 - However, once a request has passed the first filter and successfully triggered an API, **the script executes by default with the account owner credentials** therefore, your code can access any document, despite the schema 
-- Since this might not be what you want, **you can enforce accessing documents using the credentials of the device/user that triggered the request**
+- If this is not what you want, **you can enforce accessing documents using the credentials of the device/user that triggered the request**
 
 ## How do I access data using the request initiator credentials?
 
@@ -48,3 +48,53 @@ return runAs(
     }, "fitbit");
 ```
 
+## The schema used in the above examples
+
+- Open the [Data Explorer](https://www.scriptr.io/dataexplorer), click on "Schemas" in the left-side menu, then click on "New" to create a new schema
+- In the editing area, paste the below schema definition and save it as "smart_building".
+```
+<schema>
+	<aclGroups>
+		<aclGroup name='smart_building_policy'>
+			<read>group:smart_building</read>
+			<write>group:smart_building/write>
+			<fields>
+				<field>temperature</field>
+				<field>humidity</field>
+				<field>timestamp</field>
+				<field>deviceid</field>
+			</fields>
+		</aclGroup>
+		<schemaAcl>
+			<read>nobody</read>
+			<write>nobody</write>
+			<delete>nobody</delete>
+		</schemaAcl>
+	</aclGroups>
+	<fields>
+		<field name='temperature' type='numeric'>
+		    <validation>
+		        <cardinality min='1'></cardinality>
+		    </validation>
+		</field>
+		<field name='humidity' type='numeric'>
+		    <validation>
+		        <range min='0' max='100'></range>
+		    </validation>
+		</field>
+		<field name='timestamp' unique='true' type="numeric"></field>
+		<field name='deviceid' type='string'>
+		    <validation>
+		        <regex>dev[0-9]{9}</regex>
+		    </validation>
+		</field>
+	</fields>
+</schema>
+```
+Looking closer at &lt;aclGroup&gt; element, you can observe that the schema grants read and write permissions on all the document fields to the devices and users that are members of the "smart_building" group (read more on [how to create groups](./create_devices_groups.md))
+
+Assume you already have created two documents bound to the above schema, the execution of example 1 would return something similar to the following:
+
+```
+
+```
