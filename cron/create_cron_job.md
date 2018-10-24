@@ -41,8 +41,48 @@ Also notice that a small clock icon is now set next to the script name in the tr
 
 *Image 3*
 
+## Schedule the automatic execution of a script from the code
 
+From the [workspace](https://www.scriptr.io/workspace] click on "New Script" to create the scheduler script (will contain the code to schedule the execution of another script)
 
+To schedule a script from the code, you just need to invoke the **schedule()** native function, passing the path+name of the script to schedule (**ATTENTION** always use the absolute path to the script and do not start with "/")
 
+```
+var document = require("document");
+var resp = schedule("tutorials/howto/cron/sheduled", "0 8 * * ?");
+if (resp.metadata.status == "success") {
+    document.save({"key": "scheduled_script_handle", "handle": resp.result.handle});
+}
+
+return resp;
+```
+The executionof **schedule()** function returns a metadata section and a result section (that latter only if successful)
+- metadata.status is set to "success" or "failure"
+- If the invocation is successful, **result.handle** contains a schedule handle
+
+** IMPORTANT ** as shown in the above example, you should always persist the handle in some document if you need to unschedule your script.
+
+```
+// successful execution of schedule() - example
+{
+  "metadata": {
+    "status": "success"
+  },
+  "result": {
+    "handle": "84383B09C51583A68FE0F8FABC9DACC5"
+  }
+}
+
+// unsuccessful execution of schedule() - example
+
+{
+  "metadata": {
+    "status": "failure",
+    "statusCode": 400,
+    "errorCode": "INVALID_SCRIPT_NAME",
+    "errorDetail": "Invalid script name [/tutorials/howto/cron/sheduled]."
+  }
+}
+```
 
 
