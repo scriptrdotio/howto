@@ -23,11 +23,13 @@ Let's upload a file to the above API using [Postman](https://www.getpostman.com/
 
 ![Upload file](./images/get_files.png)
 
+*Image 1*
+
 Issuing this request results in the below. As you can see, our API returned an array of File objects containing one element, as expected.
 
 ![Upload result](./images/upload_file_return.png)
 
-*Image 1*
+*Image 2*
 
 ## Saving the file into a document
 
@@ -69,7 +71,7 @@ If you issue again a request towards our API using Postman, you should obtain so
 
 ![Save successful](./images/save_file_return.png)
 
-*Image 2*
+*Image 3*
 
 ## Saving the file into a document that is bound to a schema
 
