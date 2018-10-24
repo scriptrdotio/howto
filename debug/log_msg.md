@@ -18,6 +18,8 @@ log.info("some info");
 log.warn("some warning");
 log.error("some error");
 ```
+**Note**: you can display objects or data structures in the logs. You first have to stringify them (JSON.stringify(data))
+
 ### Log levels
 
 As in any othr log system, the log level defines the verbosity, i.e. what appears in the log and what doesn't. Hence:
@@ -34,4 +36,4 @@ From the [workspace]("https://www.scriptr.io/workspace"), click on "Logs". This 
 
 Logs are listed by script execution and sorted by date in descending order. Click on a row to see the log messages for the corresponding script execution.
 
-![View logs](./images/log_files.png]
+![View logs](./images/log_files.png)
