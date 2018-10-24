@@ -10,7 +10,7 @@ There are two ways to do this:
 ## Schedule the automatic execution of a script from the workspace
 
 From the [workspace](https://www.scriptr.io/workspace], select an existing script from the tree view on left-side, 
-or create a new script (click on New Script) and type some instructions.
+or create a new script (click on New Script) and type some instructions. Once you script is ready, click on the **⌚chedule** button in the script editor toolbar.
 
 ![Schedule a script](./images/schedule.png)
 
@@ -26,6 +26,10 @@ In the below example, we schedule the script to run every data at 08:00 AM.
 ![Cron trigger](./images/create_trigger.png)
 
 **Note** if you are familiar with [cron expressions](https://www.freeformatter.com/cron-expression-generator-quartz.html), you can directly write an expression by clicking on the Advanced link.
+
+Click on the check sign to save your trigger. It is added to the list of triggers of the script (you can define many triggers for the same script)
+
+![Trigger set](./images/trigger_Set.png)
 
 
 
