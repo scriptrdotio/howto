@@ -1,4 +1,4 @@
-# How to accept requests from any or from specific domains (CORS settings)?
+# How to accept requests from other domains (CORS settings)?
 
 CORS (Cross-Origin Resource Sharing) is a mechanism that allows resources on a web page to be requested from another domain
 outside the domain from which the resource originated.
