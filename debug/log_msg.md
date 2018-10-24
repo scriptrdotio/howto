@@ -36,4 +36,30 @@ From the [workspace]("https://www.scriptr.io/workspace"), click on "Logs". This 
 
 Logs are listed by script execution and sorted by date in descending order. Click on a row to see the log messages for the corresponding script execution.
 
-![View logs](./images/log_files.png)
+![View logs](./images/log_file.png)
+
+## Write to the console
+
+Another option is to write to the console, which actually adds logs to the **scriptLog** field of the metadata section of the response returned by your script:
+
+```
+{"response": {
+  "metadata": {
+    "requestId": "8b53e8cb-67e6-40f3-ab33-76cbb0f15b7f",
+    "status": "success",
+    "scriptLog": [
+      {
+        "timestamp": "2018-10-24 06:41:29.253",
+        "level": "log",
+        "component": "log",
+        "message": "this is a message"
+      }
+    ],
+    "statusCode": "200"
+  },"result": null
+}}
+```
+
+When running the script from the [workspace]("https://www.scriptr.io/workspace"), the logs are displayed in the console panel at the bottom of the screen:
+
+![Log To Console](./images/console_log.png)
