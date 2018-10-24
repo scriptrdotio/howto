@@ -7,4 +7,23 @@ Scriptr.io Access Control Lists (ACL) allows you to define fine grain permission
 - However, once a request has passed the first filter and successfully triggered an API, **the script executes by default with the account owner credentials** therefore, your code can access any document 
 - Since this might not be what you want, **you can enforce accessing documents using the credentials of the device/user that triggered the request**
 
+## How do I access data using the request initiator credentials?
 
+Simple,
+
+In your code, just insert invocation to the document module's operation into a function passed to the native **runAs()** function.
+- Example 1 below shows code that runs using the default privileges (account owner)
+- Example 2 shows how to use **runAs()** to use the caller's (request initiator) credentials to run the same code
+
+**Example 1** 
+```
+// we quert 
+var document = require("document");
+var queryExpression = {
+
+    query: 'schema="smart_building"',
+    fields: '*'
+};
+
+// default privileges (account owner)
+return document.query(queryExpression);
