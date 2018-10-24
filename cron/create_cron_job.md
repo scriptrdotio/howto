@@ -10,7 +10,7 @@ There are two ways to do this:
 ## Schedule the automatic execution of a script from the workspace
 
 From the [workspace](https://www.scriptr.io/workspace], select an existing script from the tree view on left-side, 
-or create a new script (click on New Script) and type some instructions. Once you script is ready, click on the **⌚chedule** button in the script editor toolbar.
+or create a new script (click on New Script) and type some instructions. Once you script is ready, click on the **⌚Schedule** button in the script editor toolbar.
 
 ![Schedule a script](./images/schedule.png)
 
