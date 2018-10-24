@@ -62,4 +62,4 @@ Another option is to write to the console, which actually adds logs to the **scr
 
 When running the script from the [workspace]("https://www.scriptr.io/workspace"), the logs are displayed in the console panel at the bottom of the screen:
 
-![Log To Console](./images/console_log.png)
+![Log to the Console](./images/console_log.png)
