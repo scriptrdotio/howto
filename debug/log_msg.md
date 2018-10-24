@@ -30,5 +30,8 @@ As in any othr log system, the log level defines the verbosity, i.e. what appear
 
 From the [workspace]("https://www.scriptr.io/workspace"), click on "Logs". This opens the logs file in a new tab. 
 
+![Open Logs](./images/logs.png)
 
 Logs are listed by script execution and sorted by date in descending order. Click on a row to see the log messages for the corresponding script execution.
+
+![View logs](./images/log_files.png]
