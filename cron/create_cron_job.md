@@ -5,7 +5,7 @@ There are two ways to do this:
 - From the [workspace](https://www.scriptr.io/workspace]
 - From the code of a script
 
-** Note** scheduled scripts should have a return instruction (you cannot schedule the execution of modules)
+**Note** scheduled scripts should have a return instruction (you cannot schedule the execution of modules)
 
 ## Schedule the automatic execution of a script from the workspace
 
@@ -60,7 +60,7 @@ The executionof **schedule()** function returns a metadata section and a result 
 - metadata.status is set to "success" or "failure"
 - If the invocation is successful, **result.handle** contains a schedule handle
 
-** IMPORTANT ** as shown in the above example, you should always persist the handle in some document if you need to unschedule your script.
+**IMPORTANT** as shown in the above example, you should always persist the handle in some document if you need to unschedule your script.
 
 ```
 // successful execution of schedule() - example
