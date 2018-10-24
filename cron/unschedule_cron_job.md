@@ -31,3 +31,5 @@ if (resp.metadata.status == "success") {  // if document is found
 
 return null;
 ```
+# More
+Read [how to schedule a script](./create_cron_job.md)
