@@ -4,5 +4,7 @@ Scriptr.io Access Control Lists (ACL) allows you to define fine grain permission
 
 - The first filter to your data is the permissions you set on your APIs that receive client requests. You can read more about [how to restrict access on your APIs](./restrict_access_to_api.md) if needed
 - The second filter is to create a [document schema](../data/create_schema.md), in which you map read/write permissions on document fields, to devices, users, groups or roles
-- However, once a request triggered an API, the script executes with the **account owner credentials**, and therefore, your code can access any document. Since this might not be what you want, you can enforce accessing documents using the credentials of the device/user that triggered the request
-- 
+- However, once a request has passed the first filter and successfully triggered an API, **the script executes by default with the account owner credentials** therefore, your code can access any document 
+- Since this might not be what you want, **you can enforce accessing documents using the credentials of the device/user that triggered the request**
+
+
