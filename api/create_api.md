@@ -1,8 +1,8 @@
 # How to create a secure and scalable API?
-Scripts are the main components of any scriptr.io application. By default, any script you write is automatically deployed as a secure and scalable API. All scripts are written in standard JavaScript, deployed and ran on the back-end.
+Scripts are the main components of any scriptr application. By default, any script you write is automatically deployed as a secure and scalable API. All scripts are written in standard JavaScript, deployed and ran on the back-end.
 
 ## Create a script
-- Open your scriptr.io [workspace](https://www.scriptr.io/workspace). In the bottom left corner, click on "New Script". 
+- Open your scriptr [workspace](https://www.scriptr.io/workspace). In the bottom left corner, click on "New Script". 
 - In the editor, simply type the below:
 ```
 return "greetings"
@@ -28,7 +28,7 @@ The endpoint of the script is by default "https://api.scriptrapps.io/path_to_scr
 
 ## How do I know this is a secure API?
 - In Image 1, notice the red lock on the top right corner of the script. This indicates that the execution of the script is restricted to authorized entities (by default, authenticated devices and users of your account)
-- In Image 2, notice that the cURL instruction passes a bearer token in the Authorization header. Scriptr.io will reject any attempt to invoke a secure script if no valid token is provided. 
+- In Image 2, notice that the cURL instruction passes a bearer token in the Authorization header. Scriptr will reject any attempt to invoke a secure script if no valid token is provided. 
 
 ## Try the new API from the browser 
 - Copy your script's endpoint and paste it into a web browser 
