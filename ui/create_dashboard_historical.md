@@ -23,14 +23,14 @@ This is done in four steps:
 
 - Click on the line chart icon in the toolbar. A new lien chart is automatically added to the dashboard
 
-![New gauge](./images/add_linechart.png)
+![New linechart](./images/add_linechart.png)
 
 *Image 2*
 
 - You can resize the line chart by dragging its bottom-right corner. You can also move the line chart by pressing on the widget's title bar then dragging and dropping it
 - You can customize the look and feel of the line chart by clicking on the **gear icon** to open the settings
 
-![Gauge settings](./images/linechart_settings.png)
+![Line chart settings](./images/linechart_settings.png)
 
 *Image 3*
 
@@ -39,7 +39,7 @@ Since we need to display historical temperature and humidity values, we should c
 - From the setting, click on the **X** tab
 - Set the value of the X-Key field to "date-time" or any other string you'd like
 
-![Gauge Min/Max](./images/linechart_x_axis.png)
+![Line chart X axis](./images/linechart_x_axis.png)
 
 *Image 4*
 
@@ -47,7 +47,7 @@ Since we need to display historical temperature and humidity values, we should c
 - Set the value of the Y-Keys field to an array containing the names of the documents fields that hold temperature and humidity values (assume these are "temperature and "humidity")
 - Set the value of the Labels field to an array of label, for each of the above field name respectively
 
-![Gauge Min/Max](./images/linehcart_y_axis.png)
+![Line chart Y axis](./images/linehcart_y_axis.png)
 
 *Image 5*
 
@@ -69,9 +69,9 @@ if (resp.metadata.status == "success") {
 return [];
 ```
 
-### Connect the gauge to the script
+### Connect the line chart to the script
 
-- From the gauge, click on the **gear icon** to open the settings
+- From the line chart, click on the **gear icon** to open the settings
 - In the Data tab:
   - Set the **Transport** field to https
   - Set the **Api** field to the absolute path of your script (**do not start with /** !)
@@ -87,5 +87,5 @@ return [];
 
 ```
 // Example
-https://iotdemos.scriptrapps.io/tutorials/howto/ui/gauge_dashboard?auth_token=UzByDTgkRjkk2NjpmaXRiaXQ6MjlBRURDOEZCMzlDOTR1QUE5MDIxQ0LyGjc7MkJ5MDU%6X
+https://iotdemos.scriptrapps.io/tutorials/howto/ui/linechart_dashboard?auth_token=UzByDTgkRjkk2NjpmaXRiaXQ6MjlBRURDOEZCMzlDOTR1QUE5MDIxQ0LyGjc7MkJ5MDU%6X
 ```
