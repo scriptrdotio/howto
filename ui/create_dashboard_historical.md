@@ -30,7 +30,7 @@ This is done in four steps:
 - You can resize the line chart by dragging its bottom-right corner. You can also move the line chart by pressing on the widget's title bar then dragging and dropping it
 - You can customize the look and feel of the line chart by clicking on the **gear icon** to open the settings
 
-![Line chart settings](./images/linechart_settings.png)
+![Line chart settings](./images/linchart_settings.png)
 
 *Image 3*
 
@@ -69,10 +69,6 @@ if (resp.metadata.status == "success") {
 return [];
 ```
 
-![Line chart API](./images/linechart_api.png)
-
-*Image 6*
-
 ### Connect the line chart to the script
 
 - From the line chart, click on the **gear icon** to open the settings
@@ -81,7 +77,9 @@ return [];
   - Set the **Api** field to the absolute path of your script (**do not start with /** !)
   - Click on Save
 
+![Line chart API](./images/linechart_api.png)
 
+*Image 6*
 
 ### Save your dashboard and view it
 
