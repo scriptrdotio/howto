@@ -1,13 +1,13 @@
 # How to retrieve the parameters sent to my API via http?
 
-- Any script you write in scriptr.io is by default turned into a secure and scalable API that is invokable via http (in addition to webockets, mqtt and amqp). 
+- Any script you write in scriptr is by default turned into a secure and scalable API that is invokable via http (in addition to webockets, mqtt and amqp). 
 - The important thing to remember is that any script can retrieve the parameters it receives using the native **request** object that allows you to retrieve information about the request, including the conveyed parameters.
 
 ## HTTP requests
 
 Http requests can be sent by client applications usign any of GET, POST or PUT with different content-types (for POST and PUT). 
 
-- Before we test all possibilities, go ahead an create a script in your scriptr.io [workspace](https://www.scriptr.io/workspace).
+- Before we test all possibilities, go ahead an create a script in your scriptr [workspace](https://www.scriptr.io/workspace).
 - For now, we will just type "return true" and save the script
 
 **HTTP GET, HTTP POST/PUT with content-type == "application/x-www-form-urlencoded" or "multipart/form-data"**
