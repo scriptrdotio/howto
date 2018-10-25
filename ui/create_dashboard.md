@@ -57,7 +57,7 @@ Since we need to display temperature, we will configure the min and max values (
 
 ![Gauge custom ranges](./images/gauge_sectors.png)
 
-*Image 6
+*Image 6*
 
 ### Create an API script to read the temperature from a document 
 
