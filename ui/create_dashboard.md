@@ -10,8 +10,7 @@ The dashboard builder is a visual environment that allows your to build dashboar
 ## Displaying single values
 
 The dashboard builder offers several widgets that are dedicated to displaying single values, such as gauges, speedometer or odometer.
-
-Let's say you need a gauge to display the current temperature measured by a sensor and persisted in a document. This is done in three steps:
+Say you need a gauge to display the current temperature measured by a sensor and persisted in a document. This is done in three steps:
 - Add a gauge to the editing area and configure it 
 - Create an API script to read the temperature from the document (we assume you already created the script to persist the temperature in a document)
 - Connect the gauge to the script
