@@ -1,7 +1,7 @@
 
 # How to publish an mqtt message to a script? ##
 
-- Any script you write in scriptr.io is by default turned into a secure and scalable API that is invokable via http (in addition to webockets, mqtt and amqp).
+- Any script you write in scriptr is by default turned into a secure and scalable API that is invokable via http (in addition to webockets, mqtt and amqp).
 - The important thing to remember is that any script can retrieve the parameters it receives using the native request object that allows you to retrieve information about the request, including the conveyed parameters.
 
 ## What credentials should I use? ##
@@ -57,6 +57,6 @@ mosquitto_pub -t "UxIkQLgwWjc4Ng==/collaboration_topic/invoke"
 # More
 
 - [How to read the messages sent to my API through mqtt?](./read_mqtt_messages.md)
-- More on [using scriptr.io as an mqtt broker](https://www.scriptr.io/documentation#documentation-communicating-over-mqttScriptr.ioMQTTBroker)
+- More on [using scriptr as an mqtt broker](https://www.scriptr.io/documentation#documentation-communicating-over-mqttScriptr.ioMQTTBroker)
 
 
