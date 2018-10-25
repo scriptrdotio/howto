@@ -1,4 +1,4 @@
-# How to view the data that I have persisted?
+# How to browse through the data that I have persisted?
 
 - From the scripr.io [workspace](https://www.scriptr.io/workspace), click on **Tools** in the toolbar then select **Data Explorer**
 
