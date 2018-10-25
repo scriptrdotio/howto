@@ -1,4 +1,4 @@
-# How do I restrict access to my data?
+# How to restrict access to my data?
 
 Scriptr Access Control Lists (ACL) allows you to define fine grain permissions, on your APIs and on your data.
 
