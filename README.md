@@ -5,7 +5,7 @@
 - [How to accept requests from other domains (CORS settings)?](https://github.com/scriptrdotio/howto/blob/master/api/cors_settings.md)
 - [How to persist data?](https://github.com/scriptrdotio/howto/blob/master/data/persist_data.md)
 - [How to retrieve my persisted data?](https://github.com/scriptrdotio/howto/blob/master/data/query_data.md)
-- [How to view the data that I have persisted?](https://github.com/scriptrdotio/howto/blob/master/data/view_data.md)
+- [How to browse through the data that I have persisted?](https://github.com/scriptrdotio/howto/blob/master/data/view_data.md)
 - [How to apply automatic validation (schemas) on my data?](https://github.com/scriptrdotio/howto/blob/master/data/create_schema.md)
 - [How to create devices and users in my account?](https://github.com/scriptrdotio/howto/blob/master/acl/create_devices_users.md)
 - [How to create groups of devices or groups of users?](https://github.com/scriptrdotio/howto/blob/master/acl/create_devices_groups.md)
