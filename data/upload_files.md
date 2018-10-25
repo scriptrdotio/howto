@@ -33,10 +33,10 @@ Issuing this request results in the below. As you can see, our API returned an a
 
 ## Saving the file into a document
 
-- Scriptr.io provides you with a NoSQL database that allows you to save data into key/value structures called "documents"
+- Scriptr provides you with a NoSQL database that allows you to save data into key/value structures called "documents"
 - To manipulate documents, you need to require the **document** module ([read more about creating documents](./persist_data.md))
 - To create a document, you need to invoke the **document.create()**, passing the data to persist and any required descriptive metadata
-- Files are attached into scriptr.io documents that are persisted in the No SQL storage
+- Files are attached into scriptr documents that are persisted in the No SQL storage
 
 Let's update the above code example, to save the file into a document
 
@@ -65,7 +65,7 @@ To create the document, we need to following:
 - Informing script.io that this field is of type "file" using the "meta.types" property
 - Invoke document.create() passing the whole data structure
 
-**ATTENTION**: **attachments** is a reserved keyword in scriptr.io. It is mandatory to use it to name a document field that contains a file, when the document is not bound to a **schema** (as in our example). In that latter case, you cannot use any field name but **attachments**. 
+**ATTENTION**: **attachments** is a reserved keyword in scriptr. It is mandatory to use it to name a document field that contains a file, when the document is not bound to a **schema** (as in our example). In that latter case, you cannot use any field name but **attachments**. 
 
 If you issue again a request towards our API using Postman, you should obtain something close to the below
 
