@@ -11,7 +11,7 @@ Scriptr.io Access Control Lists (ACL) allows you to define fine grain permission
 
 Simple,
 
-In your code, just insert invocation to the document module's operation into a function passed to the native **runAs()** function.
+In your code, just insert the invocations of the document module operations into a function passed to the native **runAs()** function.
 - Example 1 below shows code that runs using the default privileges (account owner)
 - Example 2 shows how to use **runAs()** to use the caller's (request initiator) privileges to run the same code
 
@@ -38,14 +38,14 @@ var queryExpression = {
     fields: '*'
 };
 
-// Retrive user (caller) id from the request
+// Retrive device/user (caller) id from the request
 var userId = request.user.id;
 
 // use caller's privileges
 return runAs(
     function(){
         return document.query(queryExpression);
-    }, "fitbit");
+    }, userId);
 ```
 
 ## The schema used in the above examples
