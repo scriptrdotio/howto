@@ -23,12 +23,12 @@ then  click on **Device Directory**
 
 *Image 2*
 
-Scriptr.io automatically generates and authentication token for the newly created device. 
+Scriptr automatically generates and authentication token for the newly created device. 
 This token can be used to authenticate http requests and web socket messages sent to your APIs.
 
 ## Create devices dynamically from the code
 
-From within a script in the [workspace](https://www.scriptr.io/workspace), you need to require the **device** module and invoke its **create()** method passing the necessary data. If you do not specify an "id", scriptr.io will create one automatically.
+From within a script in the [workspace](https://www.scriptr.io/workspace), you need to require the **device** module and invoke its **create()** method passing the necessary data. If you do not specify an "id", scriptr will create one automatically.
 
 ```
 var device = require("device");
