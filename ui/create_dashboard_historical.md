@@ -37,7 +37,7 @@ This is done in four steps:
 Since we need to display historical temperature and humidity values, we should configure both X (date/time) and Y (temperature, humidity) values axes,
 
 - From the setting, click on the **X** tab
-- Set the value of the X-Key field to "date-time" or any other string you'd like
+- Set the value of the X-Key field to a date/time field holding a timestamp in the documents (if you do not have a timestamp, you can choose "creationDate" that is automatically created by scriptr when creating a document)
 
 ![Line chart X axis](./images/linechart_x_axis.png)
 
@@ -47,7 +47,7 @@ Since we need to display historical temperature and humidity values, we should c
 - Set the value of the Y-Keys field to an array containing the names of the documents fields that hold temperature and humidity values (assume these are "temperature and "humidity")
 - Set the value of the Labels field to an array of label, for each of the above field name respectively
 
-![Line chart Y axis](./images/linehcart_y_axis.png)
+![Line chart Y axis](./images/linechart_y_axis.png)
 
 *Image 5*
 
@@ -69,6 +69,10 @@ if (resp.metadata.status == "success") {
 return [];
 ```
 
+![Line chart API](./images/linechart_api.png)
+
+*Image 6*
+
 ### Connect the line chart to the script
 
 - From the line chart, click on the **gear icon** to open the settings
@@ -76,6 +80,8 @@ return [];
   - Set the **Transport** field to https
   - Set the **Api** field to the absolute path of your script (**do not start with /** !)
   - Click on Save
+
+
 
 ### Save your dashboard and view it
 
