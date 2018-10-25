@@ -77,6 +77,10 @@ return temperature;
   - Set the **Api** field to the absolute path of your script (**do not start with /** !)
   - Click on Save
 
+![Gauge api](./images/gauge_api.png)
+
+*Image 7*
+
 ### Save your dashboard and view it
 
 - Give a name to your your dashboard and save it by pressing Save in the workspace toolbar
