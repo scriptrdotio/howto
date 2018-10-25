@@ -39,14 +39,14 @@ Since we need to display temperature, we will configure the min and max values (
 
 ![Gauge Min/Max](./images/gauge_minmax.png)
 
-*Image 3*
+*Image 4*
 
 - From the setting, click on the Format tab
 - Set the Symbol field to "Celsius"
 
 ![Gauge Min/Max](./images/gauge_unit.png)
 
-*Image 4*
+*Image 5*
 
 - From the setting, click on the Sectors tab
 - By default, the gauge is subdivided in three sectors (ranges). Remove them by clicking on the 'x' sign to their right
@@ -56,4 +56,4 @@ Since we need to display temperature, we will configure the min and max values (
 
 ![Gauge custom ranges](./images/gauge_sectors.png)
 
-*Image 5*
+*Image 6
