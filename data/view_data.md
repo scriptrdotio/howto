@@ -1,6 +1,6 @@
 # How to browse through the data that I have persisted?
 
-- From the scripr.io [workspace](https://www.scriptr.io/workspace), click on **Tools** in the toolbar then select **Data Explorer**
+- From the scriptr [workspace](https://www.scriptr.io/workspace), click on **Tools** in the toolbar then select **Data Explorer**
 
 ![Open Data Explorer](./images/open_data_explorer.png)
 
