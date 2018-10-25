@@ -1,4 +1,4 @@
-# How to display simple values in a dashbord?
+# How to display simple values in a dashboard?
 
 - Open your [workspace](https://www.scriptr.io/workspace), then click on the arrow near "New Script" in the bottom left corner of the screen
 - Select **Dashboard** to open the dashboard builder
