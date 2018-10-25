@@ -91,10 +91,82 @@ return runAs(
 	</fields>
 </schema>
 ```
-Looking closer at &lt;aclGroup&gt; element, you can observe that the schema grants read and write permissions on all the document fields to the devices and users that are members of the "smart_building" group (read more on [how to create groups](./create_devices_groups.md))
+Looking closer at &lt;aclGroup&gt; element, you can observe that **the schema grants read and write permissions on all the document fields to the devices and users that are members of the "smart_building" group** (read more on [how to create groups](./create_devices_groups.md))
 
-Assume you already have created two documents bound to the above schema, the execution of example 1 would return something similar to the following:
+Assume you already have created two documents bound to the above schema:
+
+- The execution of Example 1 would return something similar to the following
+- You can observe that the temperature, umidity and timestamp field are returned
 
 ```
+{
+	"result": {
+		"documents": [
+			{
+				"key": "6D73404F88A6A12363CB1FC404A76C85",
+				"versionNumber": "1.0",
+				"deviceid": "dev012345678",
+				"temperature": "22.5",
+				"humidity": "52.0",
+				"timestamp": "1.53996309E12",
+				"creator": "scriptr",
+				"lastModifiedDate": "2018-10-19T15:40:35+0000",
+				"lastModifiedBy": "scriptr",
+				"creationDate": "2018-10-19T15:37:14+0000",
+				"schema": "smart_building",
+				"latest": "1.0"
+			},
+			{
+				"key": "D92B256B64773A86AB89C2253735725E",
+				"versionNumber": "1.0",
+				"deviceid": "dev012345678",
+				"temperature": "55.0",
+				"humidity": "22.0",
+				"timestamp": "1.23456794E9",
+				"creator": "S22A80F766",
+				"lastModifiedDate": "2018-10-19T14:58:55+0000",
+				"lastModifiedBy": "S22A80F766",
+				"creationDate": "2018-10-19T14:57:48+0000",
+				"schema": "smart_building",
+				"latest": "1.0"
+			}
+		]
+	},
+	"metadata": {
+		"status": "success"
+	}
+}
+```
+- On the opposite, running the code in Example 2 returns what follows
+- You can see the effect or using runAs(): we only obtained document metadata, but not the temperature, humidity and timestamp fields
 
+```
+ {
+	"result": {
+		"documents": [
+			{
+				"key": "6D73404F88A6A12363CB1FC404A76C85",
+				"versionNumber": "1.0",
+				"creator": "scriptr",
+				"lastModifiedDate": "2018-10-19T15:40:35+0000",
+				"lastModifiedBy": "scriptr",
+				"creationDate": "2018-10-19T15:37:14+0000",
+				"schema": "smart_building",
+				"latest": "1.0"
+			},
+			{
+				"key": "D92B256B64773A86AB89C2253735725E",
+				"versionNumber": "1.0",
+				"creator": "S22A80F766",
+				"lastModifiedDate": "2018-10-19T14:58:55+0000",
+				"lastModifiedBy": "S22A80F766",
+				"creationDate": "2018-10-19T14:57:48+0000",
+				"schema": "smart_building",
+				"latest": "1.0"
+			}
+		]
+	},
+	"metadata": {
+		"status": "success"
+	}
 ```
