@@ -1,6 +1,6 @@
 # How to invoke a remote REST API from a script?
 
-It is very simple to invoke third party REST APIs from within a script, using scriptr.io's **http** module and its **request()** function.
+It is very simple to invoke third party REST APIs from within a script, using scriptr's **http** module and its **request()** function.
 
 ```
 var http = require("http");
