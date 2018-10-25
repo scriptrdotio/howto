@@ -1,4 +1,4 @@
-# How to customize the URL of my API?
+# How to customize the URL of my API (create a sub-domain)?
 
 Scriptr.io allows you to create a **sub-domain** for your account to customize the generic URL prefix used to invoke your APIs (api.scriptrapps.io). 
 Hence, if you are building a smart farming application for example, then you might like your URL to be smartfarming.scriptrapps.io. 
