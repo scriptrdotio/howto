@@ -75,6 +75,7 @@ return [];
 - In the Data tab:
   - Set the **Transport** field to https
   - Set the **Api** field to the absolute path of your script (**do not start with /** !)
+  - Clear the **Data** field
   - Click on Save
 
 ![Line chart API](./images/linechart_api.png)
