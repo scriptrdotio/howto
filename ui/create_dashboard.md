@@ -5,6 +5,8 @@
 
 ![Open Dashboard Builder](./images/open_dashboard.png)
 
+*Image 1*
+
 The dashboard builder is a visual environment that allows your to build dashboards without coding.
 
 ## Displaying single values
@@ -21,12 +23,14 @@ Say you need a gauge to display the current temperature measured by a sensor and
 
 ![New gauge](./images/add_gauge.png)
 
-*Image 1*
+*Image 2*
 
 - You can resize the gauge by dragging its bottom-right corner. You can also move the gauge by pressing on the gauge title bar then dragging and dropping it
 - You can customize the look and feel of the gauge by clicking on the **gear icon** to open the settings
 
 ![Gauge settings](./images/gauge_settings.png)
+
+*Image 3*
 
 Since we need to display temperature, we will configure the min and max values (in Celsius) and the corresponding colors: green from 0 to 22, orange from 23 to 28 and red from 29 to 40:
 
@@ -35,10 +39,14 @@ Since we need to display temperature, we will configure the min and max values (
 
 ![Gauge Min/Max](./images/gauge_minmax.png)
 
+*Image 3*
+
 - From the setting, click on the Format tab
 - Set the Symbol field to "Celsius"
 
 ![Gauge Min/Max](./images/gauge_unit.png)
+
+*Image 4*
 
 - From the setting, click on the Sectors tab
 - By default, the gauge is subdivided in three sectors (ranges). Remove them by clicking on the 'x' sign to their right
@@ -47,3 +55,5 @@ Since we need to display temperature, we will configure the min and max values (
 - Repeat this for the other ranges, as shown in the figure below, then click on Save
 
 ![Gauge custom ranges](./images/gauge_sectors.png)
+
+*Image 5*
