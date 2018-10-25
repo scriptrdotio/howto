@@ -12,7 +12,7 @@
 - [How to restrict access to my API?](https://github.com/scriptrdotio/howto/blob/master/acl/restrict_access_to_api.md)
 - [How do I restrict access to my data?](https://github.com/scriptrdotio/howto/blob/master/acl/protect_data.md)
 - [How to create modules?](https://github.com/scriptrdotio/howto/edit/master/modules/create_modules.md)
-- [How to customize the URL of my API?](https://github.com/scriptrdotio/howto/blob/master/config/create_subdomain.md)
+- [How to customize the URL of my API (create a sub-domain)?](https://github.com/scriptrdotio/howto/blob/master/config/create_subdomain.md)
 - [How to log messages to check the execution of my scripts?](https://github.com/scriptrdotio/howto/blob/master/debug/log_msg.md)
 - [How to invoke a remote REST API from a script?](https://github.com/scriptrdotio/howto/blob/master/remote/invoke_rest_api.md)
 - [How to persist files sent to my API via http?](https://github.com/scriptrdotio/howto/blob/master/data/upload_files.md)
