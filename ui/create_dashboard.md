@@ -12,10 +12,11 @@ The dashboard builder is a visual environment that allows your to build dashboar
 ## Displaying single values
 
 The dashboard builder offers several widgets that are dedicated to displaying single values, such as gauges, speedometer or odometer.
-Say you need a gauge to display the current temperature measured by a sensor and persisted in a document. This is done in three steps:
+Say you need a gauge to display the current temperature measured by a sensor and persisted in a document. This is done in four steps:
 - Add a gauge to the editing area and configure it 
 - Create an API script to read the temperature from the document (we assume you already created the script to persist the temperature in a document)
 - Connect the gauge to the script
+- Save your dashboard and view it
 
 ### Add a gauge to the editing area and configure it 
 
@@ -60,7 +61,7 @@ Since we need to display temperature, we will configure the min and max values (
 
 ### Create an API script to read the temperature from a document 
 
-In [workspace](https://www.scriptr.io/workspace), click on "New Script" to create a new script and paste the below code in it
+In the [workspace](https://www.scriptr.io/workspace), click on "New Script" to create a new script and paste the below code in it, then save it 
 ```
 var document = require("document");
 var resp = document.get("current_readings"); // we assume we created "current_readings"
@@ -68,3 +69,23 @@ var temperature = Number(resp.result.temperature);
 return temperature;
 ```
 
+### Connect the gauge to the script
+
+- From the gauge, click on the **gear icon** to open the settings
+- In the Data tab:
+  - Set the **Transport** field to https
+  - Set the **Api** field to the absolute path of your script (**do not start with /** !)
+  - Click on Save
+
+### Save your dashboard and view it
+
+- Give a name to your your dashboard and save it by pressing Save in the workspace toolbar
+- You now have a full fledge HTML dashboard that can be opened from any web browser 
+- Try it by clicking on "View" in the workspace toolbar.
+
+**ATTENTION** If you open your dashboard directly from a browser using it's URL (not from the workspace), do not forget to pass a valid script authentication token in the query string. Otherwise, the dahsboard will not be able to invoke the API that returns the temperate
+
+```
+// Example
+https://iotdemos.scriptrapps.io/tutorials/howto/ui/gauge_dashboard?auth_token=UzByDTgkRjkk2NjpmaXRiaXQ6MjlBRURDOEZCMzlDOTR1QUE5MDIxQ0LyGjc7MkJ5MDU%6X
+```
