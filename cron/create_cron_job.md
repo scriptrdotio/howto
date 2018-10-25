@@ -1,6 +1,6 @@
 # How to schedule the automatic execution of a script (cron job)?
 
-Scriptr.io allows you to automatically execute your scripts are regular intervals. 
+Scriptr allows you to automatically execute your scripts are regular intervals. 
 There are two ways to do this: 
 - From the [workspace](https://www.scriptr.io/workspace]
 - From the code of a script
