@@ -1,12 +1,12 @@
 # How to retrieve my persisted data?
 
-- Scriptr.io provides you with a NoSQL database that allows you to save data into key/value structures called "documents"
+- Scriptr provides you with a NoSQL database that allows you to save data into key/value structures called "documents"
 - To manipulate documents from within a script, you need to require the native "document" module, which provides very straitghtforward and simple functions.
 
 ## Retrieve data by document key
 
 The simplest way to retrieve persisted data is by using the identifier of the document into which these data were pesisted. For that, you just need to invoke the **get()** method of the document module, passing a document key.
-From within a script opened in the scriptr.io [workspace](https://www.scriptr.io/workspace), you can type the following:
+From within a script opened in the scriptr [workspace](https://www.scriptr.io/workspace), you can type the following:
 
 ```
 var document = require("document");
