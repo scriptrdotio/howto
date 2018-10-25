@@ -1,12 +1,12 @@
 # How to apply automatic validation (schemas) on my data?
 
-- Scriptr.io provides you with a NoSQL database that allows you to save data into key/value structures called "documents"
+- Scriptr provides you with a NoSQL database that allows you to save data into key/value structures called "documents"
 - You can create (XML) schemas to define **document types**, i.e. constraints on the data (mandatory fields, multiplicity, data types, etc.)
-- Scriptr.io **automatically** validates any schema-related document upon creation or update
+- Scriptr **automatically** validates any schema-related document upon creation or update
 
 ## Create a schema using the visual environment
 
-From the scriptr.io [workspace](https://www.scriptr.io/workspace) click on **Tools** in the toolbar then select **Data Explorer**
+From the scriptr [workspace](https://www.scriptr.io/workspace) click on **Tools** in the toolbar then select **Data Explorer**
 
 ![Open Data Explorer](./images/open_data_explorer.png)
 
@@ -24,7 +24,7 @@ A schema has two main sections: **aclGroups** and **fields**
 
 ACL groups allow you to define read/write permissions on the fields of your document. You should define at least one ACL group but you can have more than one ACL group. 
 
-Scriptr.io creates three ACL groups by defaults: 
+Scriptr creates three ACL groups by defaults: 
 - &lt;aclGroup name='aclgroupName'&gt; (the name is just a dummy value, you should replace it with somethings meaningful), 
 - &lt;defaultAcl&gt; is the default ACL. You can remove this element if you wish
 - &lt;schemaAcl&gt; defines permissions on the schema itself. **You usually won't modify it**
@@ -32,7 +32,7 @@ Scriptr.io creates three ACL groups by defaults:
 An ACL group specifies read/write permissions on the document fields it contains (&lt;fields&gt;)
 Permissions are specified via the **&lt;read&gt;** and **&lt;write&gt;** elements, which respectively define who has read and/or write permissions on the fields.
 
-In the below example we created an ACL group called "smart_building_can_write" within which we specified that members of the "smart_building" **group** and the "building_admin" **user** have write privilege on the "temperature" and "humidity" fields of documents to which this schema is applied. Read permissions are granted to the "authenticated" **predefined role**, which includes any authenticated entity in the current scriptr.io account. Owners of the write privilege also have the permission to read.
+In the below example we created an ACL group called "smart_building_can_write" within which we specified that members of the "smart_building" **group** and the "building_admin" **user** have write privilege on the "temperature" and "humidity" fields of documents to which this schema is applied. Read permissions are granted to the "authenticated" **predefined role**, which includes any authenticated entity in the current scriptr account. Owners of the write privilege also have the permission to read.
 ([learn how to create users, devices and groups](../acl/create_devices_groups.md))
 
 ```
