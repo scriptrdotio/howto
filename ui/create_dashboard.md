@@ -46,4 +46,4 @@ Since we need to display temperature, we will configure the min and max values (
   - Select green color and set **lo** to 0 and **hi** to 22
 - Repeat this for the other ranges, as shown in the figure below, then click on Save
 
-![Gauge custom ranges](./images/gauge_custom_ranges.png)
+![Gauge custom ranges](./images/gauge_sectors.png)
