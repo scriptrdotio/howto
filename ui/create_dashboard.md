@@ -28,7 +28,7 @@ Say you need a gauge to display the current temperature measured by a sensor and
 
 ![Gauge settings](./images/gauge_settings.png)
 
-Since we need to display temperature, we will configure the min and max values (in Celsius) and the corresponding colors: green from 0 to 22, orange from 22 to 28 and red from 28 to 40:
+Since we need to display temperature, we will configure the min and max values (in Celsius) and the corresponding colors: green from 0 to 22, orange from 23 to 28 and red from 29 to 40:
 
 - From the setting, click on the Min/Max tab
 - Set the min value to 0 and the max value to 40
@@ -40,4 +40,10 @@ Since we need to display temperature, we will configure the min and max values (
 
 ![Gauge Min/Max](./images/gauge_unit.png)
 
+- From the setting, click on the Sectors tab
+- By default, the gauge is subdivided in three sectors (ranges). Remove them by clicking on the 'x' sign to their right
+- Click on the +Add button underneeth the Custom ranges section to create your own ranges
+  - Select green color and set **lo** to 0 and **hi** to 22
+- Repeat this for the other ranges, as shown in the figure below, then click on Save
 
+![Gauge custom ranges](./images/gauge_custom_ranges.png)
