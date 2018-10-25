@@ -57,3 +57,14 @@ Since we need to display temperature, we will configure the min and max values (
 ![Gauge custom ranges](./images/gauge_sectors.png)
 
 *Image 6
+
+### Create an API script to read the temperature from a document 
+
+In [workspace](https://www.scriptr.io/workspace), click on "New Script" to create a new script and paste the below code in it
+```
+var document = require("document");
+var resp = document.get("current_readings"); // we assume we created "current_readings"
+var temperature = Number(resp.result.temperature);
+return temperature;
+```
+
