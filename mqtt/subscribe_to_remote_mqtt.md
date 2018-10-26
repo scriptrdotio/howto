@@ -85,6 +85,8 @@ You can subscribe a script to a channel in two different ways:
 
 ![Subscribe to Channel](./images/subscribe_to_channel.png)
 
+*Image 5*
+
 ### Subcribing a script to a channel from the code of anoher script
 
 Simply use the native **subscribe()** function in the code, passing the channel name and the absolute path to the script (**note**: do not start with "/")
