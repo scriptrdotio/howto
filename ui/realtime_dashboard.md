@@ -10,7 +10,17 @@ Well, that is doable in four steps.
 
 ## Create a channel
 
+A channel is a generic publish/subscribe mecanism. Scripts or remote clients can publish or subscribe to it using any of the supported messaging protocols (websockets, mqtt, amqp). Any published messages is automatically broadcast to all subscribers.
 
+To create a channel:
+
+- Open your [workspace](https://www.scriptr.io/workspace), then click on your username in the top-right corner of the screen and select **Settings**
+- Select the **Channels** tab then click "+Add Channel"
+- Enter a name for your channel. Do not check the boxes if you do not want to authorize non authenticated (anonymous) subscriptions or publications
+
+![Create Channel](../publish_subscribe/create_secure_channel.png)
+
+*Image 1*
 
 ## Create a dashboard with the dashboard builder and add some widgets to reflect the values
 
@@ -19,7 +29,18 @@ Well, that is doable in four steps.
 
 ![Open Dashboard Builder](./images/open_dashboard.png)
 
-*Image 1*
+*Image 2*
+
+- Click on the gear icon on the top right corner of the dashboard to open the settings
+
+![Dashboard Settings](./inages/dashboard_settings.png)
+
+*Image 3*
+
+- Enter the name of the channel created above in the **Subscribe Channel** field, then save
+
+![Dashboard Transport](./inages/dashboard_transport.png)
+
 
 Let's assume you need to reflect temperature variations in real time in a gauge:
 
