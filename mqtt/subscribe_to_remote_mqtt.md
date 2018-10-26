@@ -11,7 +11,7 @@ Assume some devices are publishing data to a third party mqtt topic and say that
 For the sake of the example, we will use a free [online mqtt test broker](https://test.mosquitto.org/). 
 You can replace it with any other mqtt broker you have access to.
 
-**ATTENTION: this feature is not accessible from a freemium account. You need to upgrade to a premium plan to use it**
+![#f03c15](This feature is not accessible from a freemium account. You need to upgrade to a premium plan to use it)
 
 ## Create an mqtt endpoint
 
