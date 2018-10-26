@@ -1,4 +1,4 @@
-# How to know what data structure in expected by a widget I add to my dashboard?
+# How to know what data structure is expected by a widget I add to my dashboard?
 
 - Click on the gear icon on the top right corner of your widget to open the settings
 - Check the **Data** field. It contains a generic example of the data structure expected by your widget. 
