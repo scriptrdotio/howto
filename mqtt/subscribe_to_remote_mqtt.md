@@ -105,3 +105,6 @@ return {
     raw: request.rawBody // text or XML payload in mqtt message
 };
 ```
+# More
+
+- [The pubsub module in scriptr](https://www.scriptr.io/documentation#documentation-publishsubscribemodulepubsubModule)
