@@ -66,4 +66,7 @@ To create a bridge,
 
 *Image 4*
 
+- Select the endpoint configuration to use
+- Specify an authentication token to use when conveying a message from the endpoint to your scripts (if needed, read [how to create devices and users](../acl/create_devices_users.md) and obtain a authentication token. 
+
 
