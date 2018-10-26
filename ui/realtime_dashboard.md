@@ -62,6 +62,26 @@ Let's assume you will use a gauge to reflect real time temperature variations:
 
 ![Bind to channe](./images/gauge_settings.png)
 
+*Image 6*
+
+## Update you API (or create a new API) that receives the data to publish to the dashboard
+
+- Let's create a script that will receive new temperature value, sent by devices (we can simulate the device using any REST client)
+- In your [workspace](https://www.scriptr.io/workspace), click on "New Script" in the bottom left corner of the screen
+- We assume in this example that the temperature value (sent by the device) is retrieved from the temperature parameter of the request
+- We only need to **publish** this new value to our **channel** in a message that has the following format, where **id** should be set to the tag name used in you widget, and **result** should contain the value (or data structure) to send to the widget
+```
+{"id": "<message tag value>", "result": "<static data structure>"}
+```
+
+Script Example:
+```
+var temperature = request.parameters.temperature;
+return publish("responseChannel", {"id":"gauge", "result":temperature});
+```
+
+You can try invoking the script passing a different value for the "temperature" parameter each time, and you will see it immediately reflected on the gauge.
+
 # More
 
 - [How to create a secure and scalable API?](../api/create_api.md)
