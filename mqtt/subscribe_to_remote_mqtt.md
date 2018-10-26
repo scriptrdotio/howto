@@ -3,7 +3,7 @@
 Assume some devices are publishing data to a third party mqtt topic and say that you need to broadcast these messages to one or many of your scripts. The following steps tell you how to easily do that in scriptr:
 
 - Create an mqtt endpoint
-- Create a channel
+- Create or reuse a channel
 - Create a bridge between the endpoint and the channel
 - Subscribe the script(s) to the channel
 - Read the incoming messages in the subscriber script
@@ -38,9 +38,11 @@ You can replace it with any other mqtt broker you have access to.
 
 *Image 2*
 
-## Create a channel
+## Create or reuse a channel
 
 A channel is a generic publish/subscribe mecanism. Scripts or remote clients can publish or subscribe to it using any of the supported messaging protocols (websockets, mqtt, amqp). Any published messages is automatically broadcast to all subscribers.
+
+**If you already have a channel and you wish to use it for the current purpose, jump to the next step**
 
 To create a channel:
 
