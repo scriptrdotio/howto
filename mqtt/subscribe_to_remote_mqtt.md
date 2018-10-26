@@ -76,7 +76,7 @@ You can subscribe a script to a channel in two different ways:
 - From the user interface
 - From the code of another script
 
-### Subcribing a script to a channel from the user interface
+### Subcribe a script to a channel from the user interface
 
 - In the [workspace](https://www.scriptr.io/workspace), select the script you wish to subscribe to the channel, from the tree view on the left side of the screen
 - In the editor area, click on the **Subscribe button**
@@ -84,4 +84,6 @@ You can subscribe a script to a channel in two different ways:
 
 ![Subscribe to Channel](./images/subscribe_to_channel.png)
 
+### Subcribing a script to a channel from the code if anoher script
 
+Simply use 
