@@ -34,5 +34,18 @@ You can replace it with any other mqtt broker you have access to.
 
 *Image 2*
 
+## Create a channel
+
+A channel is a generic publish/subscribe mecanism. Scripts or remote clients can publish or subscribe to it using any of the supported messaging protocols (websockets, mqtt, amqp). Any published messages is automatically broadcast to all subscribers.
+
+To create a channel:
+
+- Open your workspace, then click on your username in the top-right corner of the screen and select Settings
+- Select the Channels tab then click "+Add Channel"
+- Enter a name for your channel. Do not check the boxes if you do not want to authorize non authenticated (anonymous) subscriptions or publications
+
+![MQTT Channel](./images/new_channel.png)
+
+*Image 3*
 
 
