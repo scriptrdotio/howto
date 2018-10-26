@@ -12,7 +12,7 @@ For the sake of the example, we will use a free [online mqtt test broker](https:
 You can replace it with any other mqtt broker you have access to.
 
 ```diff
-- This feature is not accessible from a freemium account. You need to upgrade to a premium plan to use it
+- This feature is not accessible from a freemium account. You need to upgrade to a premium plan to use it -
 ```
 
 ## Create an mqtt endpoint
