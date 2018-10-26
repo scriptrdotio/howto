@@ -11,6 +11,8 @@ Assume some devices are publishing data to a third party mqtt topic and say that
 For the sake of the example, we will use a free [online mqtt test broker](https://test.mosquitto.org/). 
 You can replace it with any other mqtt broker you have access to.
 
+**ATTENTION** this feature is not accessible from a freemium account. You need to upgrade to a premium plan to get access to it.
+
 ## Create an mqtt endpoint
 
 - Open the [workspace](https://www.scriptr.io/workspace) and click on your username in the top right corner of the screen
@@ -40,12 +42,26 @@ A channel is a generic publish/subscribe mecanism. Scripts or remote clients can
 
 To create a channel:
 
-- Open your workspace, then click on your username in the top-right corner of the screen and select Settings
-- Select the Channels tab then click "+Add Channel"
+- In the [workspace](https://www.scriptr.io/workspace), click on your username in the top-right corner of the screen and select **Settings**
+- Click on the **Channels** tab then click "+Add Channel"
 - Enter a name for your channel. Do not check the boxes if you do not want to authorize non authenticated (anonymous) subscriptions or publications
 
 ![MQTT Channel](./images/new_channel.png)
 
 *Image 3*
+
+## Create a bridge between the endpoint and the channel
+
+The bridge uses the endpoint definition to subscribe to the remote topic and convey any received message to the channel, which will broadcast it to all of its subscriber. 
+
+To create a bridge,  
+
+- In the [workspace](https://www.scriptr.io/workspace), click on your username in the top-right corner of the screen and select **Settings**
+- Click on the **Channels** tab then select one of your existing channels
+- Click on the globe icon to manage the bridges for this channel
+
+![Manage bridges](./images/new_bridge.png)
+
+*Image 4*
 
 
