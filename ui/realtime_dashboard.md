@@ -58,7 +58,7 @@ Let's assume you will use a gauge to reflect real time temperature variations:
 
 - Click on the gear icon on the top right corner of the gauge to open the settings
 - Make sure that the **Transport** field is set to **wss** (secure websockets)
-- In the **Message tag** field, enter an tag name that allows the gauge to only receive the messages that are intented to it. Indeed, since a dashboard can contain many widgets, multiple different messages can be broadcast to it, targeting different widgets. Therefore, each widget needs to specify a filter
+- In the **Message tag** field, enter a tag name that allows the gauge to only receive the messages that are intented to it. Indeed, since a dashboard can contain many widgets, multiple different messages can be broadcast to it, targeting different widgets. Therefore, each widget needs to specify a filter
 
 ![Bind to channe](./images/gauge_settings.png)
 
