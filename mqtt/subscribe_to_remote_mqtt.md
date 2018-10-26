@@ -85,14 +85,15 @@ You can subscribe a script to a channel in two different ways:
 
 ![Subscribe to Channel](./images/subscribe_to_channel.png)
 
-### Subcribing a script to a channel from the code if anoher script
+### Subcribing a script to a channel from the code of anoher script
 
-Simply use the native **subscribe()** function from the code, passing the channel name and the absolute path to the script (**note**: do not start with "/")
+Simply use the native **subscribe()** function in the code, passing the channel name and the absolute path to the script (**note**: do not start with "/")
 
 ```
 // the below subscribed the "tutorials/howto/mqtt/subscriber" to the "mosquitto" channel
 var resp = subscribe("mosquitto", "tutorials/howto/mqtt/subscriber");
 ```
+
 ## Read the incoming messages in the subscriber script
 
 Depending on the format of the message that was published on the remote topic, you will be able to retrive it from the native **request.body** and/or **request.rawBody** objects. The former will hold any JSON payload, whereas the latter will hold anything that cannot be parsed as JSON (e.g. text or XML)
