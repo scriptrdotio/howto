@@ -18,7 +18,7 @@ To create a channel:
 - Select the **Channels** tab then click "+Add Channel"
 - Enter a name for your channel. Do not check the boxes if you do not want to authorize non authenticated (anonymous) subscriptions or publications
 
-![Create Channel](../publish_subscribe/create_secure_channel.png)
+![Create Channel](../publish_subscribe/images/create_secure_channel.png)
 
 *Image 1*
 
@@ -33,13 +33,13 @@ To create a channel:
 
 - Click on the gear icon on the top right corner of the dashboard to open the settings
 
-![Dashboard Settings](./inages/dashboard_settings.png)
+![Dashboard Settings](./images/dashboard_settings.png)
 
 *Image 3*
 
 - Enter the name of the channel created above in the **Subscribe Channel** field, then save
 
-![Dashboard Transport](./inages/dashboard_transport.png)
+![Dashboard Transport](./images/dashboard_transport.png)
 
 
 Let's assume you need to reflect temperature variations in real time in a gauge:
