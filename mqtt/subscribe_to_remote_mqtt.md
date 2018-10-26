@@ -69,4 +69,19 @@ To create a bridge,
 - Select the endpoint configuration to use
 - Specify an authentication token to use when conveying a message from the endpoint to your scripts (if needed, read [how to create devices and users](../acl/create_devices_users.md) and obtain a authentication token. 
 
+## Subscribe the script(s) to the channel
+
+You can subscribe a script to a channel in two different ways:
+
+- From the user interface
+- From the code of another script
+
+### Subcribing a script to a channel from the user interface
+
+- In the [workspace](https://www.scriptr.io/workspace), select the script you wish to subscribe to the channel, from the tree view on the left side of the screen
+- In the editor area, click on the **Subscribe button**
+- Subscribe to a channel by switching on the corresponding toggle
+
+![Subscribe to Channel](./images/subscribe_to_channel.png)
+
 
