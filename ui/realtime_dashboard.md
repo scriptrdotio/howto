@@ -1,12 +1,13 @@
 # How to update my dashboard in real time?
 
-You have devices pushing data to one of your API and you need to reflect the data in real time on a dasboard. 
-Well, that is doable in four steps.
+You have devices that are pushing data to one of your API and you need to reflect the data in real time on a dasboard. 
+This is easily done, by following the below steps:
 
 - Create a channel
-- Update you API (or create a new API) to receive the data pushed by the devices
-- Create a dashboard with the dashboard builder and add some widgets to reflect the values
-- Bind your widgets to the channel
+- Create a dashboard and subscribe it to the channel
+- Add a widget to reflect the values
+- Bind the widget to the channel
+- Update you API (or create a new API) that receives the data to publish to the dashboard
 
 ## Create a channel
 
@@ -22,7 +23,7 @@ To create a channel:
 
 *Image 1*
 
-## Create a dashboard with the dashboard builder and add some widgets to reflect the values
+## Create a dashboard and subscribe it to the channel
 
 - Open your [workspace](https://www.scriptr.io/workspace), then click on the arrow near "New Script" in the bottom left corner of the screen
 - Select **Dashboard** to open the dashboard builder (The dashboard builder is a visual environment that allows your to build dashboards without coding)
@@ -37,22 +38,29 @@ To create a channel:
 
 *Image 3*
 
-- Enter the name of the channel created above in the **Subscribe Channel** field, then save
+- Enter the name of the channel created above in the **Subscribe Channel** field, then save. Doing so subscribes the dashboard to the channel and therefore, any message published to the latter will be broadcast to the dashboard automatically
 
 ![Dashboard Transport](./images/dashboard_transport.png)
 
+*Image 4*
 
-Let's assume you need to reflect temperature variations in real time in a gauge:
+## Add a widget to reflect the values
+
+Let's assume you will use a gauge to reflect real time temperature variations:
 
 - Click on the gauge icon in the toolbar. A new Gauge is automatically added to the dashboard
 
 ![New gauge](./images/add_gauge.png)
 
-*Image 2*
+*Image 5*
 
-## Update a gauge in real time
+## Bind the widget to the channel
 
+- Click on the gear icon on the top right corner of the gauge to open the settings
+- Make sure that the **Transport** field is set to **wss** (secure websockets)
+- In the **Message tag** field, enter an tag name that allows the gauge to only receive the messages that are intented to it. Indeed, since a dashboard can contain many widgets, multiple different messages can be broadcast to it, targeting different widgets. Therefore, each widget needs to specify a filter
 
+![Bind to channe](./images/gauge_settings.png)
 
 # More
 
