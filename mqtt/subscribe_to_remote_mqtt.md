@@ -6,7 +6,7 @@ Assume some devices are publishing data to a third party mqtt topic and say that
 - Create a channel
 - Create a bridge between the endpoint and the channel
 - Subscribe the script(s) to the channel
-- Read the incoming messages
+- Read the incoming messages in the subscriber script
 
 For the sake of the example, we will use a free [online mqtt test broker](https://test.mosquitto.org/). 
 You can replace it with any other mqtt broker you have access to.
@@ -56,6 +56,9 @@ To create a channel:
 
 The bridge uses the endpoint definition to subscribe to the remote topic and convey any received message to the channel, which will broadcast it to all of its subscriber. 
 
+## Read the incoming messages in the subscriber script
+
+
 To create a bridge,  
 
 - In the [workspace](https://www.scriptr.io/workspace), click on your username in the top-right corner of the screen and select **Settings**
@@ -86,4 +89,9 @@ You can subscribe a script to a channel in two different ways:
 
 ### Subcribing a script to a channel from the code if anoher script
 
-Simply use 
+Simply use the native **subscribe()** function from the code, passing the channel name and the absolute path to the script (**note**: do not start with "/")
+
+```
+// the below subscribed the "tutorials/howto/mqtt/subscriber" to the "mosquitto" channel
+var resp = subscribe("mosquitto", "tutorials/howto/mqtt/subscriber");
+```
