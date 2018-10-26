@@ -1,4 +1,4 @@
-# How to transform an XML payload to JSON and vice-vesra?
+# How to transform an XML payload to JSON and vice-versa?
 
 
 ## Transform an XML payload to JSON
