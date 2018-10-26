@@ -56,9 +56,6 @@ To create a channel:
 
 The bridge uses the endpoint definition to subscribe to the remote topic and convey any received message to the channel, which will broadcast it to all of its subscriber. 
 
-## Read the incoming messages in the subscriber script
-
-
 To create a bridge,  
 
 - In the [workspace](https://www.scriptr.io/workspace), click on your username in the top-right corner of the screen and select **Settings**
@@ -70,7 +67,8 @@ To create a bridge,
 *Image 4*
 
 - Select the endpoint configuration to use
-- Specify an authentication token to use when conveying a message from the endpoint to your scripts (if needed, read [how to create devices and users](../acl/create_devices_users.md) and obtain a authentication token. 
+- Specify an authentication token to use when conveying a message from the endpoint to your scripts (if needed, read [how to create devices and users](../acl/create_devices_users.md) and obtain a authentication token)
+- Click on **Add Bridge**
 
 ## Subscribe the script(s) to the channel
 
@@ -94,4 +92,15 @@ Simply use the native **subscribe()** function from the code, passing the channe
 ```
 // the below subscribed the "tutorials/howto/mqtt/subscriber" to the "mosquitto" channel
 var resp = subscribe("mosquitto", "tutorials/howto/mqtt/subscriber");
+```
+## Read the incoming messages in the subscriber script
+
+Depending on the format of the message that was published on the remote topic, you will be able to retrive it from the native **request.body** and/or **request.rawBody** objects. The former will hold any JSON payload, whereas the latter will hold anything that cannot be parsed as JSON (e.g. text or XML)
+
+```
+// This is the subscriber script
+return {
+    body: request.body, // JSON payload in mqtt message
+    raw: request.rawBody // text or XML payload in mqtt message
+};
 ```
