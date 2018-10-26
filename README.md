@@ -16,7 +16,7 @@
 - [How to log messages to check the execution of my scripts?](https://github.com/scriptrdotio/howto/blob/master/debug/log_msg.md)
 - [How to display simple values in a dashboard?](https://github.com/scriptrdotio/howto/blob/master/ui/create_dashboard.md)
 - [How to display historical data in a dashboard?](https://github.com/scriptrdotio/howto/blob/master/ui/create_dashboard_historical.md)
-- [How to know what data structure in expected by a widget I add to my dashboard?](https://github.com/scriptrdotio/howto/blob/master/ui/what_data_structure_for_widget.md)
+- [How to know what data structure is expected by a widget I add to my dashboard?](https://github.com/scriptrdotio/howto/blob/master/ui/what_data_structure_for_widget.md)
 - [How to update my dashboard in real time?](https://github.com/scriptrdotio/howto/blob/master/ui/realtime_dashboard.md)
 - [How to invoke a remote REST API from a script?](https://github.com/scriptrdotio/howto/blob/master/remote/invoke_rest_api.md)
 - [How to transform an XML payload to JSON and vice-versa?](https://github.com/scriptrdotio/howto/blob/master/util/xmltojson.md)
