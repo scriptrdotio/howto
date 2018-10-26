@@ -94,3 +94,7 @@ return [];
 // Example
 https://iotdemos.scriptrapps.io/tutorials/howto/ui/linechart_dashboard?auth_token=UzByDTgkRjkk2NjpmaXRiaXQ6MjlBRURDOEZCMzlDOTR1QUE5MDIxQ0LyGjc7MkJ5MDU%6X
 ```
+
+# More 
+- [How to persist data?](../data/persist_data.md)
+- [How to retrieve my persisted data?](../data/query_data.md)
