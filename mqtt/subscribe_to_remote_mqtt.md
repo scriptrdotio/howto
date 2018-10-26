@@ -100,7 +100,7 @@ var resp = subscribe("mosquitto", "tutorials/howto/mqtt/subscriber");
 
 ## Read the incoming messages in the subscriber script
 
-Depending on the format of the message that was published on the remote topic, you will be able to retrive it from the native **request.body** and/or **request.rawBody** objects. The former will hold any JSON payload, whereas the latter will hold anything that cannot be parsed as JSON (e.g. text or XML)
+Depending on the format of the message that was published on the remote topic, you will be able to retrieve it from the native **request.body** and/or **request.rawBody** objects. The former will hold any JSON payload, whereas the latter will hold anything that cannot be parsed as JSON (e.g. text or XML)
 
 ```
 // This is the subscriber script
