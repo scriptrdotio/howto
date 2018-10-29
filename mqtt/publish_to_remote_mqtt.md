@@ -1,4 +1,4 @@
-# How to publish a message to a remote mqtt broker from a script?
+# How to publish a message to a remote mqtt topic from a script?
 
 Very simple. This is what you need to do:
 
