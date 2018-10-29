@@ -10,7 +10,22 @@ To create a decision table, click on the arrow near +New Script on the bottom le
 
 *Image 1*
 
-The upper-left side of the decision table is where you set the criteria that you need to evaluate, and the columns specify the rules (conditions) you want to associate to these criteria.
+- The upper-left part of the decision table is where you set the criteria that you need to evaluate, and the columns specify the conditions you want to associate to these criteria. A rule is a combination of multiple conditions within a same conlumn
+- The lower-left part of the decision table is where you specify the actions to execute whenever a rule is verified
+- Each column of the decision table can hold a pair of rules/corresponding actions.
+
+For example, assume you need to control an AC split based on temperature and humidity values. You could define the following rules:
+
+- If temperature < 18 turn and humidity < 60%  turn heater on
+- If temperature < 18 turn and humidity >= 60% turn heater and dehumidifier on 
+- If temperature > 25 turn and humidity < 60%  turn cooler on
+- If temperature > 25 18 turn and humidity >= 60% turn heater and dehumidifier on 
+
+![Ambiant climate control](./images/decision_table.png)
+
+*Image 2*
+
+
 
 
 
