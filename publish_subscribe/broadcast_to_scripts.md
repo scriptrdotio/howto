@@ -17,7 +17,7 @@ To create a channel:
 - Click on the **Channels** tab then click "+Add Channel"
 - Enter a name for your channel. Do not check the boxes if you do not want to authorize non authenticated (anonymous) subscriptions or publications
 
-![A Channel](./images/new_channel.png)
+![A Channel](./images/new_channel_2.png)
 
 *Image 1*
 
