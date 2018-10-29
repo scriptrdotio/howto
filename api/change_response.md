@@ -59,6 +59,7 @@ In the below example, we're specifying that our settings accept requests from an
 // ... some code here
 response.setHeader("Content-Type", "text/javascript");
 response.setHeader("Access-Control-Allow-Origin", "*");
+response.write("write_something");
 response.flush();
 response.close();
 ```
