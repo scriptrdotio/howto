@@ -18,12 +18,12 @@ Sample script response, no error
 Sample script response, error occurred
 ```
 {
-		"metadata": {
-			"status": "failure",
-			"statusCode": 400,
-			"errorCode": "DUPLICATE_CHANNEL",
-			"errorDetail": "The channel [internal_topic] already exists."
-		}
+	"metadata": {
+		"status": "failure",
+		"statusCode": 400,
+		"errorCode": "DUPLICATE_CHANNEL",
+		"errorDetail": "The channel [internal_topic] already exists."
+	}
 }
 ```
 However, there are cases where you would like to take control of the returned structure and provide your own customized response.
