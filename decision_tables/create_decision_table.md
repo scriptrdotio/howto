@@ -47,7 +47,22 @@ Example of the payload to send for the ambiant climate control example:
 
 Actions do not automatically translate to anything specific by default. The decision table returns all the actions of the rules that are verified further to receiving the payload. It is up to the developer to determine how to process this result.
 
-Example of the result return
+Example of the output returned by the decision table above when temperature = 26 and humidity = 61
+```
+{
+	"metadata": {
+		"requestId": "e20d3234-8566-46b0-aad9-387a26d40f78",
+		"status": "success",
+		"statusCode": "200"
+	},
+	"result": [
+		{
+			"dehumidifier": "on",
+			"cooler": "on"
+		}
+	]
+}
+```
 
 
 
