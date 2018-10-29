@@ -73,7 +73,9 @@ To add some **pre-processing logic**, click on the  "Pre-script" tab. Note that 
 
 ![Pre-processing](./images/pre-processing.png)
 
-To add some **post-processing logic**. click on the  "Post-script" tab. Note that you can manipulate the returned decision object through the **decision** local variable, as shown in the below example:
+To add some **post-processing logic**. click on the  "Post-script" tab. Note that you can manipulate the returned decision object through the **decision** local variable. 
+
+![Post-processing](./images/post-processing.png)
 
 
 
