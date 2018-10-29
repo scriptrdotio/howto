@@ -14,7 +14,7 @@ To create a decision table, click on the arrow near +New Script on the bottom le
 - The lower-left part of the decision table is where you specify the actions to execute whenever a rule is verified
 - Each column of the decision table can hold a pair of rules/corresponding actions.
 
-For example, assume you need to control an AC split based on temperature and humidity values. You could define the following rules:
+For example, assume you need to control the ambiant climate based on temperature and humidity values. You could define the following rules:
 
 - If temperature < 18 turn and humidity < 60%  turn heater on
 - If temperature < 18 turn and humidity >= 60% turn heater and dehumidifier on 
@@ -24,6 +24,20 @@ For example, assume you need to control an AC split based on temperature and hum
 ![Ambiant climate control](./images/decision_table.png)
 
 *Image 2*
+
+## Where do criteria come from?
+
+Criteria you use in defining conditions are fields of the payload that is sent to the decision table. This payload is a JSON object that has contains the mandatory "payload" field, which is a map of key/values.
+
+Example of the payload to send for the ambiant climate control example:
+```
+{
+  "payload": {
+    "temperature":26,
+    "humidity": 40
+  }
+}
+```
 
 
 
