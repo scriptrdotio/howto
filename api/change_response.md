@@ -52,8 +52,8 @@ response.close();
 
 ## CORS settings
 
-Scriptr handles the setting of the CORS configuration in the defaut response. If you need to override the default response and send your own custom one as in the above example, you should also consider sending the CORS configuration in the geader of your response.
-In the below example, we're specifying that our settings accept requests from any domain:
+Scriptr handles the setting of the CORS configuration in the defaut response. If you need to override the default response and send your own custom one as in the above example, you should also consider sending the CORS configuration in the header of your response.
+In the below example, we're specifying that we are accepting requests from any domain (*):
 
 ```
 // ... some code here
