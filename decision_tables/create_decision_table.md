@@ -27,9 +27,11 @@ For example, assume you need to control the ambiant climate based on temperature
 
 *Image 2*
 
+**Note** rules are usually mutually exclusive, therefore, once a rule is verified, script stops evaluating the other rules. However, there are cases where multiple rules can be verified simulatenously. If you want scriptr to evaluate all rules, unchechk the "mutually exclusive" checkbox on the top right corner of the decision table.
+
 ## Where do criteria come from?
 
-Criteria you use in defining conditions are fields of the payload that is sent to the decision table. This payload is a JSON object that has contains the mandatory "payload" field, which is a map of key/values.
+Criteria you use when defining conditions are fields of the payload that is sent to the decision table. This payload is a JSON object that contains the mandatory "payload" field, which is a map of key/value pairs.
 
 Example of the payload to send for the ambiant climate control example:
 ```
