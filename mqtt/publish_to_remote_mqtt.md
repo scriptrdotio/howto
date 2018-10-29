@@ -25,7 +25,22 @@ return mqttClient.publish("io.scriptr.mqtt", JSON.stringify({"fan":"on"}));
 
 ## Publish using mqtts
 
-- When using mqtts, you might have to provide a client certificate, a root CA or both. These are passed along with the **options** parameter of **mqtt.getInstance()** 
-- The free online broker we are using in these example expects root CA when connecting on port 8883 
-- We will assume that our 
+When using mqtts, you will probably have to provide a client certificate, a root CA or both. These parameters, along with other optional parameters (username, password, key) are provided to the mqtt client through the **options** parameter of **mqtt.getInstance()** 
 
+The free online broker we are using in these examples expects a root CA when connecting on port 8883. We will assume that our root CA file is attached to a document, which we will retrieve and pass to the mqtt client.
+
+```
+var document = require("document");
+var mqtt = require("mqtt");
+// In our example, the root CA file is persisted as an attached file of a document 
+var file = document.getAttachment("mosquitto_ca", "mosquitto.org.crt", {fieldName:"apsdb_attachments", "versionNumber": "1"});
+var options = {
+  rootCa: file  
+};
+var mqttClient = mqtt.getInstance("mqtts://test.mosquitto.org:8883", options); // You should add the mqtts:// when using TLS
+return mqttClient.publish("iotdemos.scriptr.io", JSON.stringify({"fan":"on"}));
+```
+# More
+
+- Read more about the [mqtt.getInstance() options](https://www.scriptr.io/documentation#documentation-mqtt-getInstance-endpointgetInstance)
+- Read more about how to [get attached files from documents]()
