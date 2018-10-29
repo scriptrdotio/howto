@@ -1,4 +1,4 @@
-# How to broadcast data from one of my scripts to other scripts?
+# How to broadcast data from one script to other scripts in my scriptr account?
 
 This is very easy to do:
 - First, you have to create a channel, (this is optional. If you've already created channels, you can reuse them)
