@@ -1,6 +1,6 @@
 # How to change the standard response structure of my API?
 
-By default, scriptr.io wraps anything you return from a script into a predefine structure divided into two sections: 
+By default, scriptr.io wraps anything you return from a script into a predefined structure divided into two sections: 
 - a metadata section, containing a status code and, in the case or the occurence of an error, an error code and an the error deails that 
 - a result section, which contains whatever your script returned (in case no error was thrown)
 
@@ -52,7 +52,7 @@ response.close();
 
 ## CORS settings
 
-Scriptr handles the setting of the CORS configuration in the defaut response. If you need to override the default response and send your own customized one as in the above example, you should also consider sending the CORS configuration in the geader of your response.
+Scriptr handles the setting of the CORS configuration in the defaut response. If you need to override the default response and send your own custom one as in the above example, you should also consider sending the CORS configuration in the geader of your response.
 In the below example, we're specifying that our settings accept requests from any domain:
 
 ```
