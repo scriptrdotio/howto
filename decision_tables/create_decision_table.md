@@ -4,7 +4,7 @@ Scriptr allows you to create advanced condition/action evaluation logic without 
 
 ## Create a decision table
 
-To create a decision table, click on the arrow near +New Script on the bottom left corner of the script, then select **Decision Tables**.
+To create a decision table, click on the arrow near +New Script on the bottom left corner of the script, then select **Decision Tables**. Decision table are automatically turned into an API as any other script and thus, they can be invoked by remote clients using any of the protocols that are supported by scriptr.
 
 ![New Decision Table](./images/create_decision_table.png)
 
@@ -27,11 +27,11 @@ For example, assume you need to control the ambiant climate based on temperature
 
 *Image 2*
 
-**Note** rules are usually mutually exclusive, therefore, once a rule is verified, script stops evaluating the other rules. However, there are cases where multiple rules can be verified simulatenously. If you want scriptr to evaluate all rules, unchechk the "mutually exclusive" checkbox on the top right corner of the decision table.
+**Note** rules are usually mutually exclusive, therefore, once a rule is verified, script stops evaluating the other rules. However, there are cases where multiple rules can be verified simulatenously. If you want scriptr to evaluate all the rules, uncheck the "mutually exclusive rules" checkbox on the top right corner of the decision table.
 
 ## Where do criteria come from?
 
-Criteria you use when defining conditions are fields of the payload that is sent to the decision table. This payload is a JSON object that contains the mandatory "payload" field, which is a map of key/value pairs.
+Criteria you use when defining conditions are fields of the request payload that triggers the execution of the decision table. This payload is a JSON object that contains the mandatory "payload" field, which is a map of key/value pairs.
 
 Example of the payload to send for the ambiant climate control example:
 ```
@@ -43,6 +43,11 @@ Example of the payload to send for the ambiant climate control example:
 }
 ```
 
+## What are actions?
+
+Actions do not automatically translate to anything specific by default. The decision table returns all the actions of the rules that are verified further to receiving the payload. It is up to the developer to determine how to process this result.
+
+Example of the result return
 
 
 
