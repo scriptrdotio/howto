@@ -18,10 +18,10 @@ To create a decision table, click on the arrow near +New Script on the bottom le
 
 For example, assume you need to control the ambiant climate based on temperature and humidity values. You could define the following rules:
 
-- If temperature < 18 turn and humidity < 60%  turn heater on
-- If temperature < 18 turn and humidity >= 60% turn heater and dehumidifier on 
-- If temperature > 25 turn and humidity < 60%  turn cooler on
-- If temperature > 25 18 turn and humidity >= 60% turn heater and dehumidifier on 
+- If temperature < 18 and humidity < 60%  turn heater on
+- If temperature < 18 and humidity >= 60% turn heater and dehumidifier on 
+- If temperature > 25 and humidity < 60%  turn cooler on
+- If temperature > 25 and humidity >= 60% turn heater and dehumidifier on 
 
 ![Ambiant climate control](./images/decision_table.png)
 
@@ -67,7 +67,7 @@ Example of the output returned by the decision table above when temperature = 26
 
 There are two places where you can customize a decision table:
 - Pre-processing logic, executed before the rules are evaluated (**pre-script**)
-- Post-processing logic, executer sfter the rules are evaluated (**post-script**
+- Post-processing logic, executer after the rules are evaluated (**post-script**
 
 To add some **pre-processing logic**, click on the  "Pre-script" tab. Note that you can manipulate the received payload object through the **pl** local variable, as shown in the below example:
 
