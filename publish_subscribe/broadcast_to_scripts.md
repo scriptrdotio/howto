@@ -17,7 +17,7 @@ To create a channel:
 - Click on the **Channels** tab then click "+Add Channel"
 - Enter a name for your channel. Do not check the boxes if you do not want to authorize non authenticated (anonymous) subscriptions or publications
 
-![A Channel](./images/new_channel_2.png)
+![A Channel](./images/create_secure_channel_2.png)
 
 *Image 1*
 
@@ -51,5 +51,5 @@ var resp = subscribe("internal_topic", "tutorials/howto/mqtt/subscriber");
 
 From the publisher script, just use the native **publish()** function to publish to your channel:
 ```
-publish("
+publish("internal_topic", {"command": "set_target_temperature", "value":22, "unit":"C"});
 ```
