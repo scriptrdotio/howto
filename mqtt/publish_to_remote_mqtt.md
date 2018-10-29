@@ -43,4 +43,4 @@ return mqttClient.publish("iotdemos.scriptr.io", JSON.stringify({"fan":"on"}));
 # More
 
 - Read more about the [mqtt.getInstance() options](https://www.scriptr.io/documentation#documentation-mqtt-getInstance-endpointgetInstance)
-- Read more about how to [get attached files from documents]()
+- Read more about how to [get attached files from documents](https://www.scriptr.io/documentation#documentation-get-attachmentgetAttachment)
