@@ -6,7 +6,7 @@ Scriptr allows you to create advanced condition/action evaluation logic without 
 
 To create a decision table, click on the arrow near +New Script on the bottom left corner of the script, then select **Decision Tables**.
 
-![New Decision Table]()./images/create_decision_table.png)
+![New Decision Table](./images/create_decision_table.png)
 
 *Image 1*
 
