@@ -45,7 +45,7 @@ Example of the payload to send for the ambiant climate control example:
 
 ## What are actions?
 
-Actions do not automatically translate to anything specific by default. The decision table returns all the actions of the rules that are verified further to receiving the payload. It is up to the developer to determine how to process this result.
+Actions do not automatically translate to anything specific by default. The decision table returns all the actions of the rules that are verified further to receiving the payload. It is up to the caller to determine how to process this result.
 
 Example of the output returned by the decision table above when temperature = 26 and humidity = 61
 ```
@@ -63,6 +63,18 @@ Example of the output returned by the decision table above when temperature = 26
 	]
 }
 ```
+## How to customize a decision table?
+
+There are two places where you can customize a decision table:
+- Pre-processing logic, executed before the rules are evaluated (**pre-script**)
+- Post-processing logic, executer sfter the rules are evaluated (**post-script**
+
+To add some **pre-processing logic**, click on the  "Pre-script" tab. Note that you can manipulate the received payload object through the **pl** local variable, as shown in the below example:
+
+![Pre-processing](./images/pre-processing.png)
+
+To add some **post-processing logic**. click on the  "Post-script" tab. Note that you can manipulate the returned decision object through the **decision** local variable, as shown in the below example:
+
 
 
 
