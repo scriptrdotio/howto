@@ -53,3 +53,18 @@ From the publisher script, just use the native **publish()** function to publish
 ```
 publish("internal_topic", {"command": "set_target_temperature", "value":22, "unit":"C"});
 ```
+
+## Consume the data, from the subscribers
+
+Depending on the format of the message that was published on the channel, you will be able to retrieve it from the native **request.body** and/or **request.rawBody** objects. The former will hold any JSON payload, whereas the latter will hold anything that cannot be parsed as JSON (e.g. text or XML)
+
+```
+// This is the subscriber script, in this trivial code, it just returns anything it receives
+return {
+    body: request.body, // JSON payload in mqtt message
+    raw: request.rawBody // text or XML payload in mqtt message
+};
+```
+# More
+
+- [The pubsub module in scriptr](https://www.scriptr.io/documentation#documentation-publishsubscribemodulepubsubModule)
