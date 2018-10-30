@@ -2,6 +2,8 @@
 
 A decison table is automatically turned into an API, which is meant to be invoked by remote clients through one of the supported communication protocols (http, mqtt, websockets, amqp). Nevertheless, it is possible for a script to invoke a decision table as if it was a module, using the native **scriptUtil** module.
 
+Open your [workspace](https://www.scriptr.io/workspace) and create a new script using the below (first, create a decision table using the example given in [How to use decision tables?](./create_decision_table.md)
+
 ```
 // Require the scriptUtil module, notice the "/m"
 var stdLibScript = require("m/scriptUtil");
