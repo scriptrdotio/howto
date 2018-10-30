@@ -82,7 +82,8 @@ return publish("responseChannel", {"id":"gauge", "result":temperature});
 
 You can try invoking the script passing a different value for the "temperature" parameter each time, and you will see it immediately reflected on the gauge.
 
-**Tip** It is recommended to always specify an API to retrieve the data from, even if your widgets are updated in real time. This will allow your dasboard to display data the first time it is loaded (otherwise, it won't display anything until an update is received in real-time)  
+# Tip
+It is recommended to always specify an API to retrieve the data from, even if your widgets are updated in real time. This will allow your dasboard to display data the first time it is loaded (otherwise, it won't display anything until an update is received in real-time)  
 
 # More
 
