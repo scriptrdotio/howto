@@ -1,3 +1,11 @@
+# About
+
+This is a list of small tutorials that answer most of the common questions related to using [scriptr](https://www.scriptr.io). It is meant to be used in two ways:
+- If you are new to [scriptr](https://www.scriptr.io), it is recommanded to read the contentn of the list sequentially, to teach yourself how to use [scriptr](https://www.scriptr.io) to implement your iot applications
+- If you are not new, you can pick a how-to that matches your need
+
+**Make sure that you already [signed-up for a free account](https://www.scriptr.io/register)!**
+
 # how to
 
 - [How to create a secure and scalable API?](https://github.com/scriptrdotio/howto/blob/master/api/create_api.md)
