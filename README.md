@@ -21,7 +21,7 @@
 - [How to invoke a remote REST API from a script?](https://github.com/scriptrdotio/howto/blob/master/remote/invoke_rest_api.md)
 - [How to transform an XML payload to JSON and vice-versa?](https://github.com/scriptrdotio/howto/blob/master/util/xmltojson.md)
 - [How to persist files sent to my API via http?](https://github.com/scriptrdotio/howto/blob/master/data/upload_files.md)
-- [how to send a file to a remote REST API?](https://github.com/scriptrdotio/howto/blob/master/remote/send_file_to_api.md)
+- [How to send a file to a remote REST API?](https://github.com/scriptrdotio/howto/blob/master/remote/send_file_to_api.md)
 - [How to schedule the automatic execution of a script (cron job)?](https://github.com/scriptrdotio/howto/blob/master/cron/create_cron_job.md)
 - [How to unschedule the automatic execution of a script (cron job)?](https://github.com/scriptrdotio/howto/blob/master/cron/unschedule_cron_job.md)
 - [How to change the standard response structure of my API?](https://github.com/scriptrdotio/howto/blob/master/api/change_response.md)
