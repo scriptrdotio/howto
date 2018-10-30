@@ -31,7 +31,10 @@ The way to do that is by leveraging the native **response** object from within y
 
 ## The reponse object
 
-The **response** object allows you to specify your own http response headers (**response.setHeader()**) and to write (**response.write()**) into the response stream:
+The **response** object allows you to specify your own http response headers (**response.setHeader()**) and to write (**response.write()**) into the response stream.
+
+Let's try it by pasting the below code into a script in the [workspace](https://www.scriptr.io/workspace)
+
 ```
 if (!request.parameters.temperature) { // send a custom error message if an expected parameter is not found in the request
     
