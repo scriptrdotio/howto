@@ -29,7 +29,7 @@ If you wish to automatically reflect any change that is done on the repository, 
 
 As soon as you connect to a Github repository, a synchronization takes place and the content of the repository is added to your workspace. For explicit synchronization, click on the **Synchronize** tab at the top of the treeview on the left
 
-![Github configuration](./images/synchronize_tab.png)
+![Github synchronization](./images/syncrhonize_tab.png)
 
 *Image 2*
 
