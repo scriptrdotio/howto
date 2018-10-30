@@ -66,3 +66,7 @@ Click **Install** once done.
 ![Configure installation](./images/import_repo.png)
 
 *Image 5*
+
+# More 
+
+Read more about the integration with Github in our [documentation](https://www.scriptr.io/documentation#documentation-github)
