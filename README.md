@@ -25,6 +25,7 @@
 - [How to schedule the automatic execution of a script (cron job)?](https://github.com/scriptrdotio/howto/blob/master/cron/create_cron_job.md)
 - [How to unschedule the automatic execution of a script (cron job)?](https://github.com/scriptrdotio/howto/blob/master/cron/unschedule_cron_job.md)
 - [How to change the standard response structure of my API?](https://github.com/scriptrdotio/howto/blob/master/api/change_response.md)
+- [How to download a file from scriptr via http?](https://github.com/scriptrdotio/howto/blob/master/data/download_file.md)
 - [How to broadcast data from one script to other scripts in my scriptr account?](https://github.com/scriptrdotio/howto/blob/master/publish_subscribe/broadcast_to_scripts.md)
 - [How to subscribe one or many scripts to a remote mqtt topic?](https://github.com/scriptrdotio/howto/blob/master/mqtt/subscribe_to_remote_mqtt.md)
 - [How to publish a message to a remote mqtt topic from a script?](https://github.com/scriptrdotio/howto/blob/master/mqtt/publish_to_remote_mqtt.md)
