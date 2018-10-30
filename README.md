@@ -40,5 +40,6 @@ This is a list of small tutorials that answer most of the common questions relat
 - [How to read the messages sent to my API through mqtt?](https://github.com/scriptrdotio/howto/blob/master/api/read_mqtt_messages.md)
 - [How to obtain credentials to allow devices to publish mqtt messages to my scriptr.io account?](https://github.com/scriptrdotio/howto/blob/master/mqtt/obtain_credentials.md)
 - [How to use decision tables?](https://github.com/scriptrdotio/howto/blob/master/decision_tables/create_decision_table.md)
-- [How to invoke a decision table from a script?](https://github.com/scriptrdotio/howto/blob/master/decision_tables/invoke_decision_table_from_script.md)
+- [How to invoke a decision table from a script?](https://github.com/scriptrdotio/howto/blob/master/decision_tables/invoke_decision_table_from_script.md)]()
+- [How to control the versions of my application and scripts?](https://github.com/scriptrdotio/howto/blob/master/teamwork/version_control.md)
 
