@@ -38,7 +38,8 @@ Example of the payload to send for the ambiant climate control example:
 {
   "payload": {
     "temperature":26,
-    "humidity": 40
+    "humidity": 40,
+    "unit": "C" // this field is not used by the rules of our decision table
   }
 }
 ```
