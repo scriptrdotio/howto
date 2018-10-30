@@ -42,3 +42,25 @@ Right-clicking an item on the synchronization view opens a drop-down list that e
 ![Github actions](./images/git_actions.png)
 
 *Image 3*
+
+## Importing code from other repositories
+
+Once your scriptr account is configured to use Github, you can import code from repositories other than the one used in your configuration (these will be read-only, i.e. you won't be able to synchronize with them)
+
+In order to import the content of a Github repository into your workspace, click on the arrown near **+New Script** in the bottom-left corner of the screen
+
+![Install module](./images/install_module.png)
+
+*Image 4*
+
+Fill the fields of the Modules dialog: 
+
+- Owner: the Github username of the repository owner
+- Repository: the name of the repository to install code from
+- Path: if you are targeting a subset of the repository, specify the path to the folder you need
+- Branch: the targeted branch of the repository (master by default)
+- Destination folder: the path in your workspace where to deploy the content of the repository
+
+![Configure installation](./images/import_repo.png)
+
+*Image 5*
