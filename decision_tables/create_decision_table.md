@@ -1,6 +1,6 @@
 # How to use decision tables?
 
-Scriptr allows you to create advanced condition/action evaluation logic without coding, through [decision tables](https://en.wikipedia.org/wiki/Decision_table).
+Scriptr allows you to create advanced condition/action evaluation logic without coding, through [decision tables](https://en.wikipedia.org/wiki/Decision_table). A decision table is automatically turned into an API that can be invoked by remote clients.
 
 ## Create a decision table
 
