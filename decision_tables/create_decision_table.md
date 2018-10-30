@@ -1,10 +1,10 @@
 # How to use decision tables?
 
-Scriptr allows you to create advanced condition/action evaluation logic without coding, through [decision tables](https://en.wikipedia.org/wiki/Decision_table). A decision table is automatically turned into an API that can be invoked by remote clients.
+Scriptr allows you to create advanced condition/action evaluation logic without coding, through [decision tables](https://en.wikipedia.org/wiki/Decision_table). On scriptr, decision tables are automatically turned into an API as any other script and thus, they can be invoked by remote clients using any of the protocols that are supported by scriptr.
 
 ## Create a decision table
 
-To create a decision table, click on the arrow near **+New Script** on the bottom left corner of the script, then select **Simple Decision Table**. Decision tables are automatically turned into an API as any other script and thus, they can be invoked by remote clients using any of the protocols that are supported by scriptr.
+To create a decision table, click on the arrow near **+New Script** on the bottom left corner of the script, then select **Simple Decision Table**. 
 
 ![New Decision Table](./images/create_decision_table.png)
 
