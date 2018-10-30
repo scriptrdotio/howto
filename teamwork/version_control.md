@@ -61,6 +61,8 @@ Fill the fields of the Modules dialog:
 - Branch: the targeted branch of the repository (master by default)
 - Destination folder: the path in your workspace where to deploy the content of the repository
 
+Click **Install** once done.
+
 ![Configure installation](./images/import_repo.png)
 
 *Image 5*
