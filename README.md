@@ -1,6 +1,6 @@
 # About
 
-This is a list of small tutorials that answer most of the common questions related to using [scriptr](https://www.scriptr.io). It is meant to be used in two ways: (1) if you are new to [scriptr](https://www.scriptr.io), it is recommended to read the content of the list sequentially, to teach yourself how to use [scriptr](https://www.scriptr.io) to implement your iot applications. (2) Otherwise, pick a **how-to** article that matches your needs.
+This is a list of small tutorials that answer most of the common questions related to using [scriptr](https://www.scriptr.io), in complement to our [documentation](https://www.scriptr.io/documentation#documentation-get-attachmentgetAttachment). It is meant to be used in two ways: (1) if you are new to [scriptr](https://www.scriptr.io), it is recommended to read the content of the list sequentially, to teach yourself how to use [scriptr](https://www.scriptr.io) to implement your iot applications. (2) Otherwise, pick a **how-to** article that matches your needs.
 
 **Make sure that you already [signed-up for a free account](https://www.scriptr.io/register)!**
 
