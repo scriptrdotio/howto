@@ -11,13 +11,14 @@ var decisionTablePath = "tutorials/howto/decision_tables/simple_table"; // this 
 
 // prepare the payload to send to the decision table
 var data = {
-  "payload": { // "payload" is a mandatory field
-      "temperature": 26,
-      "humidity": 61,
-      "unit": "C"
-   }
+    // "payload" is a mandatory field
+    "payload": JSON.stringify({  // notice that the payload content has to be stringified
+        "temperature": 26,
+        "humidity": 61,
+        "unit": "C"
+    })
 };
 
 // invoke the decision table using the execute() function, passing the path and the stringified payload, then get the returned decision
-var decision = stdLibScript.execute(decisionTablePath, {"payload": JSON.stringify(payload)});
+var decision = stdLibScript.execute(decisionTablePath, data);
 ```
