@@ -1,4 +1,27 @@
 # How to control the versions of my scripts?
 
-As soon as you start tackeling a level beyond tinkering, notably if you're engaged in projects involving multiple developers, resorting to a version control system becomes a must.
+As soon as you start tackeling a level beyond tinkering, notably if you're engaged in projects involving multiple developers, resorting to a version control system becomes a must. That's why script natively integrates with Github, allowing you to place all your developments under version control.
+
+## Connecting your scriptr account to Github
+
+### Pre-requisites
+
+- If you do not already have a account, please [sign-up to Github](https://github.com/) 
+- If necessary, [create a new Github repository](https://help.github.com/articles/create-a-repo/)
+- [Generate a personal access token from Github](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)
+
+### Configure scriptr
+
+- Open your [workspace](https://www.scriptr.io/workspace)
+- Click on your username in the top-right corner of the screen, then click on **Settings** and select the **Github** tab
+
+![Github configuration](./images/github_config.png)
+
+- Fill in the **Repository Owner***, **Acess Token*** and **Repository Name** with their respective corresponding values: your Github username, you Github personal access token and the name of your repository. The **Branch** field is set by default to "master". You can replace its value with the name of another branch of your repository if needed. The **Path** contains the absolute path to the folder where the code resides in your scriptr account. It is set by default to the root folder ("/"). Therefore, the code in scriptr will be stored in /some_absolute_path/repository_name.
+- Click **Save** when you're done
+
+**Note**
+If you wish to automatically reflect any change that is done on the repository, into your code, click on the **Enable Automatic Deployment** button. This is an interesting feature that notably proves useful when you need to simulatneously deploy an application on multiple scriptr accounts. 
+
+
 
