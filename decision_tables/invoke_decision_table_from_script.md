@@ -19,6 +19,7 @@ var data = {
     })
 };
 
-// invoke the decision table using the execute() function, passing the path and the stringified payload, then get the returned decision
+// invoke the decision table using the execute() function, passing the path and the stringified payload, 
+// then get the returned decision
 var decision = stdLibScript.execute(decisionTablePath, data);
 ```
