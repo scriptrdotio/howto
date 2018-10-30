@@ -56,7 +56,7 @@ To create a channel:
 
 ## Create a bridge between the endpoint and the channel
 
-The bridge uses the endpoint definition to subscribe to the remote topic and convey any received message to the channel, which will broadcast it to all of its subscriber. 
+The bridge uses the endpoint definition to subscribe to the remote topic and convey any received message to the channel, which will broadcast it to all of its subscribers. 
 
 To create a bridge,  
 
