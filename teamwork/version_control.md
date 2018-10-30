@@ -1,4 +1,4 @@
-# How to control the versions of my scripts?
+# How to control the versions of my application and scripts?
 
 As soon as you start tackeling a level beyond tinkering, notably if you're engaged in projects involving multiple developers, resorting to a version control system becomes a must. That's why script natively integrates with Github, allowing you to place all your developments under version control.
 
