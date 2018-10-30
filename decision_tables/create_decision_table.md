@@ -14,7 +14,7 @@ To create a decision table, click on the arrow near **+New Script** on the botto
 
 - The upper-left part of the decision table is where you set the criteria that you need to evaluate, and the columns specify the conditions you want to associate to these criteria. A rule is a combination of multiple conditions within a same column
 - The lower-left part of the decision table is where you specify the actions to execute whenever a rule is verified
-- Each column of the decision table can hold a pair of rules/corresponding actions.
+- Each rule of the decision table is associated to corresponding actions.
 
 For example, assume you need to control the ambiant climate based on temperature and humidity values. You could define the following rules:
 
