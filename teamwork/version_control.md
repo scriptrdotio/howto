@@ -15,7 +15,9 @@ As soon as you start tackeling a level beyond tinkering, notably if you're engag
 - Open your [workspace](https://www.scriptr.io/workspace)
 - Click on your username in the top-right corner of the screen, then click on **Settings** and select the **Github** tab
 
-![Github configuration](./images/github_config.png)
+![Github configuration](./images/github_settings.png)
+
+*Image 1*
 
 - Fill in the **Repository Owner***, **Acess Token*** and **Repository Name** with their respective corresponding values: your Github username, you Github personal access token and the name of your repository. The **Branch** field is set by default to "master". You can replace its value with the name of another branch of your repository if needed. The **Path** contains the absolute path to the folder where the code resides in your scriptr account. It is set by default to the root folder ("/"). Therefore, the code in scriptr will be stored in /some_absolute_path/repository_name.
 - Click **Save** when you're done
@@ -23,5 +25,20 @@ As soon as you start tackeling a level beyond tinkering, notably if you're engag
 **Note**
 If you wish to automatically reflect any change that is done on the repository, into your code, click on the **Enable Automatic Deployment** button. This is an interesting feature that notably proves useful when you need to simulatneously deploy an application on multiple scriptr accounts. 
 
+### Github operations from the workspace
 
+As soon as you connect to a Github repository, a synchronization takes place and the content of the repository is added to your workspace. For explicit synchronization, click on the **Synchronize** tab at the top of the treeview on the left
 
+![Github configuration](./images/synchronize_tab.png)
+
+*Image 2*
+
+Right-clicking an item on the synchronization view opens a drop-down list that exposes three possible actions:
+
+- update: select this action to **replace the content of the selected script with the content of the script in the repository** 
+- commit: select this action to push the changes in the selected script to update the script in the repository 
+- compare: opens a comparison editor to see what differences exist between the workspace and the Github versions of the selected script
+
+![Github actions](./images/git_actions.png)
+
+*Image 3*
