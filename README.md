@@ -4,7 +4,7 @@ This is a list of small tutorials that answer most of the common questions relat
 
 **Make sure that you already [signed-up for a free account](https://www.scriptr.io/register)!**
 
-# how to
+# How to...
 
 - [How to create a secure and scalable API?](https://github.com/scriptrdotio/howto/blob/master/api/create_api.md)
 - [How to retrieve the parameters sent to my API via http?](https://github.com/scriptrdotio/howto/blob/master/api/read_http_request_parameters.md)
