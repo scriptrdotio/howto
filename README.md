@@ -19,6 +19,7 @@ This is a list of small tutorials that answer most of the common questions relat
 - [How to restrict access to my data?](https://github.com/scriptrdotio/howto/blob/master/acl/protect_data.md)
 - [How to create modules?](https://github.com/scriptrdotio/howto/edit/master/modules/create_modules.md)
 - [How to customize the URL of my API (create a sub-domain)?](https://github.com/scriptrdotio/howto/blob/master/config/create_subdomain.md)
+- [How to send emails from my scripts?](https://github.com/scriptrdotio/howto/blob/master/util/sendmail.md)
 - [How to log messages to check the execution of my scripts?](https://github.com/scriptrdotio/howto/blob/master/debug/log_msg.md)
 - [How to display simple values in a dashboard?](https://github.com/scriptrdotio/howto/blob/master/ui/create_dashboard.md)
 - [How to display historical data in a dashboard?](https://github.com/scriptrdotio/howto/blob/master/ui/create_dashboard_historical.md)
