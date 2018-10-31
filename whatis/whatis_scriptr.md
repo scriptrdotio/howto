@@ -13,7 +13,7 @@ In a few words:
 - Once registered, [sign-in](https://www.scriptr.io/login) and you will land in the [workspace](https://www.scriptr.io/workspace)
 - The workspace is a web IDE that offers everything you need to start developing a full fledged IoT application 
 
-## What can I do with scriptr?
+## What can I do with scriptr from the workspace?
 
 - Create APIs that can be invoked by remote clients (such as devices) over http, websockets, mqtt or amqp
 - Create reusable modules
