@@ -31,7 +31,7 @@ In a few words:
 - Integrate with Big Data platforms using connectors
 - Integrate with networks services and device management platform using connectors
 - Integrate with legacy systems using connectors.
-- ... amd much more
+- ... and much more
 
 ## How and where is my code deployed?
 
