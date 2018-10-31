@@ -31,7 +31,7 @@ In a few words:
 - Integrate with legacy systems using connectors
 - Create HTML/JavaScript user interfaces
 - Create HTML/JavaScript dashboards
-- ... and much more
+- **... and much more**
 
 ## What language is used for coding?
 
