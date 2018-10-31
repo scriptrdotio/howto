@@ -50,3 +50,5 @@ IF you do not wish to start from scratch, you can resort to our UI Component lib
   - Branch: leave empty (master by default)
   - Destination folder: the path in your workspace where to deploy the content of the repository. Entering "UIComponents" will deploy the library in the root folder
 - Click Install once done.
+
+Check the layout and usermanagement folders and notably their **examples** sub-folders respectively for creating menu bars and login pages.
