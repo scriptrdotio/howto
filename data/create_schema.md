@@ -1,4 +1,4 @@
-# How to apply automatic validation (schemas) on my data?
+# How to create validation rules on my data?
 
 - Scriptr provides you with a NoSQL database that allows you to save data into key/value structures called "documents"
 - You can create (XML) schemas to define **document types**, i.e. constraints on the data (mandatory fields, multiplicity, data types, etc.)
@@ -111,22 +111,6 @@ The **&lt;fields&gt;** element allows you to define (1) the type of the fields o
 		</field>
 	</fields>
 </schema>
-```
-
-## How to use a schema?
-
-When creating a new document, you can specify the schema to bind to the document and scriptr will make sure that all the schema's rules are verified
-
-```
-var document = require("document");
-var data = {
-	"temperature": 22,
-	"humidity": 45,
-	"timestamp": new Date().getTime(),
-	"meta.schema": "smart_building" // specify the schema
-};
-
-var resp = document.create(data)
 ```
 
 # More
