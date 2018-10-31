@@ -36,7 +36,7 @@ Once your are done typing your HTM/Javascript code, click on **Save** to save yo
 
 ## Leverage the UI Components library
 
-IF you do not wish to start from scratch, you can resort to our UI Component library. Although it built with AngularJS, you can start using it without any knowledge of the latter.
+If you do not wish to start from scratch, you can resort to our UI Component library. Although it built with AngularJS, you can start using it without any knowledge of the latter.
 
 ### Deploy the UI Component library
 
