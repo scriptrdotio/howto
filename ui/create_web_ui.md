@@ -44,9 +44,9 @@ IF you do not wish to start from scratch, you can resort to our UI Component lib
 - Click on the arrown near +New Script in the bottom-left corner of the screen and select **Install module**
 - Click on **Add Custom Module from GitHub** 
 - Fill the fields of the Modules dialog as follow:
- - Owner: scriptrdotio
- - Repository: UIComponents
- - Path: leave empty if you need all the components
- - Branch: leave empty (master by default)
- - Destination folder: the path in your workspace where to deploy the content of the repository. Entering "UIComponents" will deploy the library in the root folder
+  - Owner: scriptrdotio
+  - Repository: UIComponents
+  - Path: leave empty if you need all the components
+  - Branch: leave empty (master by default)
+  - Destination folder: the path in your workspace where to deploy the content of the repository. Entering "UIComponents" will deploy the library in the root folder
 - Click Install once done.
