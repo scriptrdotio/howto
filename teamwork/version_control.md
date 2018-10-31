@@ -53,7 +53,7 @@ In order to import the content of a Github repository into your workspace, click
 
 *Image 4*
 
-Fill the fields of the Modules dialog: 
+click on **Add Custom Module from GitHub**  and fill the fields of the Modules dialog: 
 
 - Owner: the Github username of the repository owner
 - Repository: the name of the repository to install code from
