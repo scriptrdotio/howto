@@ -16,7 +16,7 @@ In a few words:
 ## What can I do with scriptr from the workspace?
 
 - Create APIs that can be invoked by remote clients (such as devices) over http, websockets, mqtt or amqp
-- Create reusable modules
+- Implement application and business logic into reusable modules
 - Invoke remote http REST APIs
 - Persist data and files in a NoSQL data store
 - Publish mqtt messages to remote mqtt topics
