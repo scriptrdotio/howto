@@ -2,11 +2,11 @@
 
 If you want more than a dashboard, scriptr allows you to implement your own web user interfaces. Once saved, your HTMLpages and JavaScript scripts will be hosted and served by your scriptr account! If you do not wish to start from scratch, you can also deploy our UI component library.
 
-# Create an HTML page
+## Create an HTML page
 
 - Open your [workspace](https://www.scriptr.io/workspace)
 - Click on the arrow near the **+New Script** option in the bottom left corner of the screen
-- Select **File** then HTML
+- Select **File** then **HTML**
 
 ![New HTML page](./images/new_html.png)
 
@@ -20,3 +20,33 @@ Once your are done typing your HTM/Javascript code, click on **Save** to save yo
 
 **Note**: clicking on the drop-down arrown next to **View** opens a form that allows you to specify parameters that will be sent to your HTML page as part of the request
 
+## Create a JavaScript script
+
+- Open your [workspace](https://www.scriptr.io/workspace)
+- Click on the arrow near the **+New Script** option in the bottom left corner of the screen
+- Select **File** then **JS**
+
+**Note**: we recommand using the ".js" extension to client-side scripts
+
+![New JS script](./images/new_js.png)
+
+*Image 3*
+
+**IMPORTANT**: obviously, you cannot directly invoke a server-side script from a client-side script. You will have to issue a request for that, using http or websockets, from the latter to the former.
+
+## Leverage the UI Components library
+
+IF you do not wish to start from scratch, you can resort to our UI Component library. Although it built with AngularJS, you can start using it without any knowledge of the latter.
+
+### Deploy the UI Component library
+
+- Make sure to [configure Github for your scriptr account](https://github.com/scriptrdotio/howto/blob/master/teamwork/version_control.md)
+- Click on the arrown near +New Script in the bottom-left corner of the screen and select **Install module**
+- Click on **Add Custom Module from GitHub** 
+- Fill the fields of the Modules dialog as follow:
+ - Owner: scriptrdotio
+ - Repository: UIComponents
+ - Path: leave empty if you need all the components
+ - Branch: leave empty (master by default)
+ - Destination folder: the path in your workspace where to deploy the content of the repository. Entering "UIComponents" will deploy the library in the root folder
+- Click Install once done.
