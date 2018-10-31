@@ -12,7 +12,8 @@ For the sake of the example, we will use a [free online mqtt test broker](https:
 
 ```
 var mqtt = require("mqtt");
-var options = {username:"blah", password:"blah"}; // no credentials are actually required for the remote test broker we're using in this example
+// no credentials are actually required for the remote test broker we're using in this example
+var options = {username:"blah", password:"blah"}; 
 var mqttClient = mqtt.getInstance("test.mosquitto.org", options); 
 if (mqttClient.metadata) {
     return mqttClient;  // failure message
