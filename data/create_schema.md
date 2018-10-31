@@ -1,4 +1,4 @@
-# How to create validation rules on my data?
+# How to create validation rules (schemas) on my data?
 
 - Scriptr provides you with a NoSQL database that allows you to save data into key/value structures called "documents"
 - You can create (XML) schemas to define **document types**, i.e. constraints on the data (mandatory fields, multiplicity, data types, etc.)
