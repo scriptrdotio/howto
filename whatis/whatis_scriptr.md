@@ -23,15 +23,21 @@ In a few words:
 - Subscribe to remote mqtt topic
 - Send amqp messages to remote amqp exchanges/queues
 - Subscribe to remote amqp queues
-- Create HTML/JavaScript user interfaces
-- Create HTML/JavaScript dashboards
 - Create scheduled (cron) jobs 
 - Broadcast messages
 - Queue the execution of tasks
 - Integrate with Big Data platforms using connectors
 - Integrate with networks services and device management platform using connectors
-- Integrate with legacy systems using connectors.
+- Integrate with legacy systems using connectors
+- Create HTML/JavaScript user interfaces
+- Create HTML/JavaScript dashboards
 - ... and much more
+
+## What language is used for coding?
+
+- Scripts are the main constructs in script. Whenever you click on **+New Script** in the [workspace](https://www.scriptr.io/workspace), you create a new **server-side** script. Coding scripts is done in **JavaScript**
+- From a server-side script, you have access to an extensive list of scriptr modules, native objects and functions that offer powerful features. Since scripts are running on the server-side, **you do not have access to the DOM**
+- It is however possible to create client-side HTML pages and JavaScript scripts. You can read more about this in the howto
 
 ## How and where is my code deployed?
 
