@@ -31,4 +31,30 @@ To create a channel:
 
 ## Create the job
 
-A job could be any script. For the sake of the example 
+A job could be any script. 
+
+As an illustration for this tutorial, we will use a script that sends weather data to a weather forecast web site API, then saves the returned answer into a document. Observe that the script receives data through the native **request** object. Assume this script is saved as "tutorials/howto/queuing/job". 
+
+```
+var document = require("document");
+var metclient = require("../metclient");
+try {
+    var metClient = new metclient.MetOffice(); 
+    var resp = metClient.sendObservation(request.parameters);
+    document.save(resp;
+}catch(exception){
+    return exception;
+}
+```
+
+## Create the manager script
+
+This script requires the **queue** module and creates an instance of a queue client by invoking the **getInstance()** function, passing the name of a **channel**. The scripts pushes a new job into the queue by invoking the **queue()** function of the queue client, specifying the absolute path of the corresponding script, and providing the data to be processed.
+
+```
+var queue = require("queue");
+var queueClient = queue.getInstance("internal_topic"); 
+queueClient.queue("tutorials/howto/queuing/job", request.parameters); 
+```
+
+This is a typical scenario where you would use queuing. Indeed, hundreds of devices might be sending data to the above script and not expecting any reply, therefore, resorting to a queue would shorten their request cycle.
