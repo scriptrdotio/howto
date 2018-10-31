@@ -52,3 +52,5 @@ IF you do not wish to start from scratch, you can resort to our UI Component lib
 - Click Install once done.
 
 Check the layout and usermanagement folders and notably their **examples** sub-folders respectively for creating menu bars and login pages.
+
+![The UI Components library](./images/ui_components.png)
