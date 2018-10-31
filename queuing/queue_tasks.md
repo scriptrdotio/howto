@@ -58,3 +58,8 @@ queueClient.queue("tutorials/howto/queuing/job", request.parameters);
 ```
 
 This is a typical scenario where you would use queuing. Indeed, hundreds of devices might be sending data to the above script and not expecting any reply, therefore, resorting to a queue would shorten their request cycle.
+
+# More
+
+- Read more about the queue module in our [documentation](https://www.scriptr.io/documentation#documentation-queuemodulequeueModule)
+- Check our blog post about [queuing jobs with scriptr](https://blog.scriptr.io/queuing-tasks-with-scriptr-io/)
