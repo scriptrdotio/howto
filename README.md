@@ -44,4 +44,5 @@ This repository contains a list of small tutorials that answer most of the commo
 - [How to use decision tables?](https://github.com/scriptrdotio/howto/blob/master/decision_tables/create_decision_table.md)
 - [How to invoke a decision table from a script?](https://github.com/scriptrdotio/howto/blob/master/decision_tables/invoke_decision_table_from_script.md)
 - [How to control the versions of my application and scripts?](https://github.com/scriptrdotio/howto/blob/master/teamwork/version_control.md)
+- [How to create queued jobs?](https://github.com/scriptrdotio/howto/blob/master/queuing/queue_tasks.md)
 
