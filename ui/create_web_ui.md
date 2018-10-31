@@ -20,7 +20,7 @@ Once your are done typing your HTM/Javascript code, click on **Save** to save yo
 
 **Note**: clicking on the drop-down arrown next to **View** opens a form that allows you to specify parameters that will be sent to your HTML page as part of the request
 
-## Create a JavaScript script
+## Create a client-side JavaScript script
 
 - Open your [workspace](https://www.scriptr.io/workspace)
 - Click on the arrow near the **+New Script** option in the bottom left corner of the screen
