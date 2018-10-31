@@ -47,7 +47,7 @@ Right-clicking an item on the synchronization view opens a drop-down list that e
 
 Once your scriptr account is configured to use Github, you can import code from repositories other than the one used in your configuration (these will be read-only, i.e. you won't be able to synchronize with them)
 
-In order to import the content of a Github repository into your workspace, click on the arrown near **+New Script** in the bottom-left corner of the screen
+In order to import the content of a Github repository into your workspace, click on the arrown near **+New Script** in the bottom-left corner of the screen and select **Install module**
 
 ![Install module](./images/install_module.png)
 
