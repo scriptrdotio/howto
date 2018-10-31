@@ -43,5 +43,4 @@ In a few words:
 
 As soon as you save a script in the Web IDE, it is automatically deployed on the cloud run-time and ready to be used.
 
-
-
+[Back to the how to list](https://github.com/scriptrdotio/howto/blob/master/README.md)
