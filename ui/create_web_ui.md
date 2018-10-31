@@ -1,6 +1,6 @@
 # How to create web user interfaces (HTML/JavaScript)?
 
-If you want more than a dashboard, scriptr allows you to implement your own web user interfaces. Once saved, your HTMLpages and JavaScript scripts will be hosted and served by your scriptr account! If you do not wish to start from scratch, you can also deploy our UI component library.
+If you want more than a dashboard, scriptr allows you to implement your own web user interfaces. Once saved, your HTML pages and JavaScript scripts will be hosted and served by your scriptr account! If you do not wish to start from scratch, you can also deploy our [UI component library](https://github.com/scriptrdotio/UIComponents).
 
 ## Create an HTML page
 
