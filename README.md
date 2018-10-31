@@ -26,6 +26,7 @@ This is a list of small tutorials that answer most of the common questions relat
 - [How to customize a dashboard?](https://github.com/scriptrdotio/howto/blob/master/ui/customize_dashboard.md)
 - [How to know what data structure is expected by a widget I add to my dashboard?](https://github.com/scriptrdotio/howto/blob/master/ui/what_data_structure_for_widget.md)
 - [How to update my dashboard in real time?](https://github.com/scriptrdotio/howto/blob/master/ui/realtime_dashboard.md)
+- [How to create web user interfaces (HTML/JavaScript)?](https://github.com/scriptrdotio/howto/blob/master/ui/create_web_ui.md)
 - [How to invoke a remote REST API from a script?](https://github.com/scriptrdotio/howto/blob/master/remote/invoke_rest_api.md)
 - [How to transform an XML payload to JSON and vice-versa?](https://github.com/scriptrdotio/howto/blob/master/util/xmltojson.md)
 - [How to persist files sent to my API via http?](https://github.com/scriptrdotio/howto/blob/master/data/upload_files.md)
