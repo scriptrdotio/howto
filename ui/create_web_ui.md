@@ -12,7 +12,7 @@ If you want more than a dashboard, scriptr allows you to implement your own web 
 
 *Image 1*
 
-Once your are done typing your HTM/Javascript code, click on **Save** to save your script and deploy it on the cloud environment (its recommended to add the .html extension at the end).  Can open your HTML pahe in a browser by clicking on **View**
+Once your are done typing your HTM/Javascript code, click on **Save** to save your script and deploy it on the cloud environment (it is recommended to add the .html extension at the end). You can open your HTML page in a browser by clicking on **View**
 
 ![View HTML page](./images/view_html.png)
 
