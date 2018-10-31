@@ -23,7 +23,7 @@ response.write(fileContent);
 response.close();
 ```
 
-** Note** you can't run this example directly from the [workspace](https://www.scriptr.io/workspace) but rather from a web browser.
+**Note** you can't run this example directly from the [workspace](https://www.scriptr.io/workspace) but rather from a web browser.
 
 # More
 
