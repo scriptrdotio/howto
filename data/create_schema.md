@@ -113,6 +113,22 @@ The **&lt;fields&gt;** element allows you to define (1) the type of the fields o
 </schema>
 ```
 
+## How to use a schema?
+
+When creating a new document, you can specify the schema to bind to the document and scriptr will make sure that all the schema's rules are verified
+
+```
+var document = require("document");
+var data = {
+	"temperature": 22,
+	"humidity": 45,
+	"timestamp": new Date().getTime(),
+	"meta.schema": "smart_building" // specify the schema
+};
+
+var resp = document.create(data)
+```
+
 # More
 
 - Read our [documentation](https://www.scriptr.io/documentation#documentation-schemamoduleschemaModule) to Learn how to manipulate schemas from the code in your scripts
