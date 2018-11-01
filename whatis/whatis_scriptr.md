@@ -5,7 +5,7 @@ In a few words:
 - Scriptr is a cloud-based platform for developing and executing IoT solutions. It offers a set of tools, components and APIs to reduce the effort and time to market IoT applications
 - Everything you code is automatically deployed in a secure and scalable cloud environment, releaving you from DevOps operations
 - Scriptr is a managed service, so we take care of monitoring the health of your applications
-- Scriptr runs on the cloud (AWS), and upon request: on premises (data centers) and even at the Edge
+- Scriptr runs on the cloud, and upon request: on premises (data centers) and even at the Edge
 
 ## How does it work?
 
