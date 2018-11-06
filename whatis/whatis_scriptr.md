@@ -43,4 +43,10 @@ In a few words:
 
 As soon as you save a script in the Web IDE, it is automatically deployed on the cloud run-time and ready to be used.
 
+## How to integrate with third party systems?
+
+There are many ways to do this:
+- Leverage our **bridges** to subscribe to remote topics and queues (mqtt, amqp, websockets, Azure IoT hub, AWS)
+- Leverage our [connectors](https://github.com/scriptrdotio?tab=repositories)
+
 [Back to the how to list](https://github.com/scriptrdotio/howto/blob/master/README.md)
