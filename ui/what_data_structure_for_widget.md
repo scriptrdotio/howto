@@ -12,6 +12,8 @@ Example
 
 *Image 1*
 
+**Note** in case the data that is received by the widget is not already in the expected format, you can transform it by writting some  code in the **Format data** section.
+
 # More
 
 - [How to display simple values in a dashboard?](./create_dashboard.md)
