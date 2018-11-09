@@ -31,7 +31,7 @@ The message to send is a JSON structure with the following format:
 ## Example of a JavaScript websocket client
 
 - You can run the below code in a browser.
-- The value of the **params** field can be text or a simple key/value pairs JSON object (no nested objects). If you wish to send nested objects, check [how to publish data to scriptr using websockets?]()
+- The value of the **params** field can be text or a simple key/value pairs JSON object (no nested objects). If you wish to send nested objects, check [how to publish data to scriptr using websockets?](https://github.com/scriptrdotio/howto/blob/master/publish_subscribe/publish_ws.md)
 
 ```
 // connect to scriptr
