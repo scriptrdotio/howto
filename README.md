@@ -7,6 +7,7 @@ This repository contains a list of small tutorials that answer most of the commo
 # How to...
 
 - [How to create a secure and scalable API?](https://github.com/scriptrdotio/howto/blob/master/api/create_api.md)
+- [How to obtain authentication tokens?](https://github.com/scriptrdotio/howto/blob/master/api/obtain_auth_token.md)
 - [How to retrieve the parameters sent to my API via http?](https://github.com/scriptrdotio/howto/blob/master/api/read_http_request_parameters.md)
 - [How to accept requests from other domains (CORS settings)?](https://github.com/scriptrdotio/howto/blob/master/api/cors_settings.md)
 - [How to persist data?](https://github.com/scriptrdotio/howto/blob/master/data/persist_data.md)
