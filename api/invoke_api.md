@@ -41,7 +41,7 @@ var connection = new WebSocket("wss://api.scriptrapps.io/YOUR_AUTH_TOKEN");
 connection.onopen = function () {
   
   var msg  = {
-  	"method":"tutorials/howto/api/websocket_receive_json", // replace with relative path to your script
+    "method":"tutorials/howto/api/websocket_receive_json", // replace with relative path to your script
     "params": {"temperature":22, "humidity":43} // replace with any payload
   };
   
