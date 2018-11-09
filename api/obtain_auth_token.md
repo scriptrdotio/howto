@@ -11,3 +11,7 @@
  ## User and Device authentication tokens
 
 The account token token has a very high level of privileges and therefore, you should not distribute it and only use it for your own tests. To distribute tokens to remote clients, you should rather [create devices and users](https://github.com/scriptrdotio/howto/blob/master/acl/create_devices_users.md) and use the corresponding tokens.
+
+# Read more
+
+[How to obtain credentials to allow devices to publish mqtt messages to my scriptr.io account?](https://github.com/scriptrdotio/howto/blob/master/mqtt/obtain_credentials.md)
