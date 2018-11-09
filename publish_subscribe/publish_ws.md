@@ -114,3 +114,7 @@ On scriptr's end, the payload (the content of the "message" field) is available 
 var temperature = request.body.temperature;
 var humidity = request.body.humidity;
 ```
+
+# More
+
+- Read more about websocket communication in our [documentation](https://www.scriptr.io/documentation#documentation-realtimecommunicationReal-timeCommunication)
