@@ -43,6 +43,7 @@ This repository contains a list of small tutorials that answer most of the commo
 - [How to read the messages sent to my API through mqtt?](https://github.com/scriptrdotio/howto/blob/master/api/read_mqtt_messages.md)
 - [How to obtain credentials to allow devices to publish mqtt messages to my scriptr.io account?](https://github.com/scriptrdotio/howto/blob/master/mqtt/obtain_credentials.md)
 - [How to invoke my API (scripts) using websockets?](https://github.com/scriptrdotio/howto/blob/master/api/invoke_api.md)
+- [How to publish data to scriptr using websockets?](https://github.com/scriptrdotio/howto/blob/master/publish_subscribe/publish_ws.md)
 - [How to communicate with a remote websocket endpoint?](https://github.com/scriptrdotio/howto/blob/master/websockets/send_receive_msgs.md)
 - [How to use decision tables?](https://github.com/scriptrdotio/howto/blob/master/decision_tables/create_decision_table.md)
 - [How to invoke a decision table from a script?](https://github.com/scriptrdotio/howto/blob/master/decision_tables/invoke_decision_table_from_script.md)
