@@ -27,3 +27,4 @@ Example
   "params":{"temperature":22, "humidity":43}
 }
 ```
+
