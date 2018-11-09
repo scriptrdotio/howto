@@ -81,6 +81,6 @@ All you need to do is to subscribe a script to the corresponding channel. This c
 Simply use the native **subscribe()** function in the code, passing the channel name and the absolute path to the script (**note**: do not start with "/")
 
 ```
-// the below subscribed the "tutorials/howto/mqtt/subscriber" to the "mosquitto" channel
+// the below subscribed the "tutorials/howto/websockets/subscriber" to the "websocketdotorg" channel
 var resp = subscribe("websocketdotorg", "tutorials/howto/websockets/subscriber");
 ```
