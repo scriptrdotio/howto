@@ -14,7 +14,7 @@ The message to send is a JSON structure with the following format:
 
 ```
 {
-  "method":"aboslute_path_to_script",
+  "method":"absolute_path_to_script",
   "params":your_params_as_json_or_string
 }
 ```
