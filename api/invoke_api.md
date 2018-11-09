@@ -64,3 +64,6 @@ var temperature = request.parameters.temperature;
 var humidity = request.parameters.humidity;
 // etc.
 ```
+
+# More
+- Read more about websocket communication in our [documentation](https://www.scriptr.io/documentation#documentation-realtimecommunicationReal-timeCommunication)
