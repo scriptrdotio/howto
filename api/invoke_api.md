@@ -19,7 +19,7 @@ The message to send is a JSON structure with the following format:
 }
 ```
 
-Example
+**Example**
 
 ```
 {
@@ -28,3 +28,39 @@ Example
 }
 ```
 
+## Example of a JavaScript websocket client
+
+- You can run the below code in a browser.
+- The value of the **params** field can be text or a simple key/value pairs JSON object (no nested objects). If you wish to send nested objects, check [how to publish data to scriptr using websockets?]()
+
+```
+// connect to scriptr
+var connection = new WebSocket("wss://api.scriptrapps.io/YOUR_AUTH_TOKEN");
+
+// When the connection is open, send some data to your API on scriptr
+connection.onopen = function () {
+  
+  var msg  = {
+  	"method":"tutorials/howto/api/websocket_receive_json", // replace with relative path to your script
+    "params": {"temperature":22, "humidity":43} // replace with any payload
+  };
+  
+  connection.send(JSON.stringify(msg)); // NOTICE THAT YOU NEED TO STRINGIFY THE MESSAGE
+};
+
+// Log errors
+connection.onerror = function (error) {
+  console.log('WebSocket Error ' + error);
+};
+```
+
+## How to read the received message in the script?
+
+On the scriptr side, your script will receive the **params** part of the message that was sent by the JavaScript client.
+These parameters are obtained from the native **request.parameters** object:
+
+```
+var temperature = request.parameters.temperature;
+var humidity = request.parameters.humidity;
+// etc.
+```
