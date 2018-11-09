@@ -15,6 +15,8 @@ Click on **+Add** to create a new websocket endpoint:
 - In the **Port** field, enter the port. This is optional, only enter a value if the endpoint is not using nominal websocket ports
 - In the **Authorization**, enter optional credentials
 
+In the below example, we are connecting to a websocket endpoint (wss://echo.websocket.org) that echoes the messages that are sent to it.
+
 ![New WebSocket endpoint](./images/websocket_endpoint.png)
 
 *Image 1*
@@ -83,4 +85,16 @@ Simply use the native **subscribe()** function in the code, passing the channel 
 ```
 // the below subscribed the "tutorials/howto/websockets/subscriber" to the "websocketdotorg" channel
 var resp = subscribe("websocketdotorg", "tutorials/howto/websockets/subscriber");
+```
+**Note** *in the section related to creating the bridge we used a webocket endpoint that echoes the messages that are sent to it. Therefore, if you send a message to this endpoint from on of your scripts, you should receive it back in all the scripts that are subscribed to the channel used to send the message.*
+
+## Read the incoming messages in the subscriber script
+Depending on the format of the message that was sent by the remote websocket endpoint, you can retrieve it from the native request.body and/or request.rawBody objects. The former will hold any JSON payload, whereas the latter will hold anything that cannot be parsed as JSON (e.g. text or XML)
+
+```
+// This is the subscriber script, in this trivial code, it just returns anything it receives
+return {
+    body: request.body, // JSON payload in mqtt message
+    raw: request.rawBody // text or XML payload in mqtt message
+};
 ```
