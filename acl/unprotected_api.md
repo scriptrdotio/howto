@@ -1,7 +1,8 @@
 # How to give remote clients anonymous access to my API?
 
-It is very simple to grant unrestricted access to your API (scripts) to remote resources, i.e. without requiring the latter to provide an authentication token.
-In order to do that, you need to just need to switch the ACL of the script to **Anonymous**
+It is very simple to grant remote resources unrestricted access to your API (scripts), i.e. without requiring from them to provide an authentication token. In order to do that, you need to just need to switch the ACL of the script to **Anonymous**
+
+## Switching the ACL of a script to Anonymous
 
 Click on the small red lock that appears on the right of the script editor in your [workspace](https://www.scriptr.io/workspace)
 
