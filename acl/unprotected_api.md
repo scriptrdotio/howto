@@ -39,3 +39,6 @@ Open the [workspace](https://www.scriptr.io/workspace) then click on your userna
 
 Read this [how-to](https://github.com/scriptrdotio/howto/blob/master/config/create_subdomain.md).
 
+# More
+
+[How to restrict access to my API?](https://github.com/scriptrdotio/howto/blob/master/acl/restrict_access_to_api.md)
