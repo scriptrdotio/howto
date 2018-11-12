@@ -10,7 +10,7 @@ Click on the small red lock that appears on the right of the script editor in yo
 
 **Image 1**
 
-Clicking on the lock opens an **Access Control List (ACL)** editor. As you can see, access to the script is granted by default only to the owners **authenticated** role, i.e. any user or device created from your account.
+Clicking on the lock opens an **Access Control List (ACL)** editor. As you can see, access to the script is granted by default only to the built-in **authenticated** role, i.e. any user or device created from your account.
 
 ![Default ACL](./images/acl_view.png)
 
