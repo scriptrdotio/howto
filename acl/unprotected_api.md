@@ -28,8 +28,8 @@ As you can see it now, the lock's color has turned to green, which is an indicat
 
 If you're using http or websockets, there are two options:
 
-1) Distributed the anonymous token of your account to the remote client applications so they can pass it along with their requests
-2) Create a sub-domain, which frees the remote client applicatons from passing the anonymous token, as long as they are invoking your script through your sub-domain
+1) Distribute the anonymous token of your account to the remote client applications so they can pass it along with their requests
+2) Create a sub-domain, which frees the remote client applications from passing the anonymous token, as long as they are invoking your script through your sub-domain
 
 ### How to obtain an anonymous token?
 
