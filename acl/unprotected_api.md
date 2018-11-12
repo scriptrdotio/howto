@@ -1,4 +1,4 @@
-# How to give remote clients anonymous access to my API?
+# How to give remote clients unrestricted access to my API?
 
 It is very simple to grant remote resources unrestricted access to your API (scripts), i.e. without requiring from them to provide an authentication token. In order to do that, you need to just need to switch the ACL of the script to **Anonymous**
 
