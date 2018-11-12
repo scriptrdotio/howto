@@ -16,7 +16,7 @@ Clicking on the lock opens an **Access Control List (ACL)** editor. As you can s
 
 *Image 2*
 
-Modify this ACL by searching for the **Anonymous** built-in role, then by clicking "Add". Acknowledge scriptr's message regarding switching to this role (cick "yes") and click on "Save Changes" to validate your choice, then click on "Close" to go back to the script.  
+Modify this ACL by searching for the **anonymous** built-in role, then by clicking "Add". Acknowledge scriptr's message regarding switching to this role (cick "yes") and click on "Save Changes" to validate your choice, then click on "Close" to go back to the script.  
 
 ![Change ACL](./images/anonymous.png)
 
