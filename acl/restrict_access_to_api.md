@@ -12,7 +12,7 @@ By default, a script is ony accesible to entities (users, devices) that are auth
 
 *Image 1*
 
-If you take a closer look by clicking on the lock, this opens an **Access Control List (ACL)** editor. As you can see, access to the script is by default only to the owners **authenticated** role, i.e. any user or device created from your account.
+If you take a closer look by clicking on the lock, this opens an **Access Control List (ACL)** editor. As you can see, access to the script is by default only granted to the owners **authenticated** role, i.e. any user or device created from your account.
 
 ![Default ACL](./images/acl_view.png)
 
