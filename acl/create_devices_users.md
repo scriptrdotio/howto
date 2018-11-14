@@ -1,10 +1,10 @@
-# How to create devices and users in my account?
+# How to create devices in my account?
 
-You can create devices and users in two different ways:
+You can create devices in two different ways:
 - From the workspace, using the visual tools
 - Dynamically from the code (scripts)
 
-## Create device/users from the workspace
+## Create device from the workspace
 
 Sign-in to your [workspace](https://www.scriptr.io/workspace), click on your username in the top-right corner of the screen, 
 then  click on **Device Directory**
