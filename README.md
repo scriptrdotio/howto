@@ -15,7 +15,7 @@ This repository contains a list of small tutorials that answer most of the commo
 - [How to create validation rules (schemas) on my data?](https://github.com/scriptrdotio/howto/blob/master/data/create_schema.md)
 - [How to apply automatic validation (schemas) on my data?](https://github.com/scriptrdotio/howto/blob/master/data/create_schema.md)
 - [How to obtain authentication tokens?](https://github.com/scriptrdotio/howto/blob/master/api/obtain_auth_token.md)
-- [How to create devices and users in my account?](https://github.com/scriptrdotio/howto/blob/master/acl/create_devices_users.md)
+- [How to create devices in my account?](https://github.com/scriptrdotio/howto/blob/master/acl/create_devices_users.md)
 - [How to create groups of devices or groups of users?](https://github.com/scriptrdotio/howto/blob/master/acl/create_devices_groups.md)
 - [How to restrict access to my API?](https://github.com/scriptrdotio/howto/blob/master/acl/restrict_access_to_api.md)
 - [How to restrict access to my data?](https://github.com/scriptrdotio/howto/blob/master/acl/protect_data.md)
