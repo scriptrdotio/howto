@@ -22,7 +22,7 @@ var resp = document.create(obj);
 ```
 
 - The object returned by **create()** contains a metadata section and a result section
-- If successful, metadata.status will be set to "success" and result.document.key will contain the document key (identifier)
+- If successful, metadata.status will be set to "success" and **result.document.key** contain the **document key** (identifier)
 - If **create()** fails, metadata.status will be set to "failure" and no result is returned
 
 ```
@@ -51,7 +51,7 @@ var resp = document.create(obj);
 
 ## Update a document
 
-Simply use the **update()** function of the document module, passing a structure containing the document key and the fields to update
+Simply use the **update()** function of the document module, passing a structure containing the **document key** (obtained when the document was created the first time) and the fields to update
 
 ```
 var document =  require("document");
