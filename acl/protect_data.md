@@ -138,7 +138,7 @@ Assume you already have created two documents bound to the above schema:
 }
 ```
 - On the opposite, running the code in Example 2 returns what follows
-- You can see the effect or using runAs(): we only obtained document metadata, but not the temperature, humidity and timestamp fields
+- You can see the effect of using runAs(): we only obtained document metadata, but not the temperature, humidity and timestamp fields
 
 ```
  {
