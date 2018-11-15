@@ -56,3 +56,13 @@ Check the layout and usermanagement folders and notably their **examples** sub-f
 ![The UI Components library](./images/ui_components.png)
 
 *Image 4*
+
+### Configure the UI Component library
+
+You just need to modify the **/UIComponents/config/scriptrTransport.js** script as follows:
+
+- In **wsClientProvider.setToken()** and **httpClientProvider.setToken()** and pass a valid authentication token
+- In **httpClientProvider.setBaseUrl()** pass your accounts endpoint using your sub-domain (e.g. myiot.scriptrapps.io)
+
+For more on how to obtain token, read [this](https://github.com/scriptrdotio/howto/blob/master/api/obtain_auth_token.md)
+For more on how to create a sub-domain, read [this](https://github.com/scriptrdotio/howto/blob/master/config/create_subdomain.md)
