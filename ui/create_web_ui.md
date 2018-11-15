@@ -64,5 +64,5 @@ You just need to modify the **/UIComponents/config/scriptrTransport.js** script 
 - In **wsClientProvider.setToken()** and **httpClientProvider.setToken()** and pass a valid authentication token
 - In **httpClientProvider.setBaseUrl()** pass your accounts endpoint using your sub-domain (e.g. myiot.scriptrapps.io)
 
-For more on how to obtain token, read [this](https://github.com/scriptrdotio/howto/blob/master/api/obtain_auth_token.md)
-For more on how to create a sub-domain, read [this](https://github.com/scriptrdotio/howto/blob/master/config/create_subdomain.md)
+- For more on how to obtain token, read [this](https://github.com/scriptrdotio/howto/blob/master/api/obtain_auth_token.md)
+- For more on how to create a sub-domain, read [this](https://github.com/scriptrdotio/howto/blob/master/config/create_subdomain.md)
