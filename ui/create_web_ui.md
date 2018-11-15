@@ -46,7 +46,7 @@ If you do not wish to start from scratch, you can resort to our UI Component lib
 - Fill the fields of the Modules dialog as follow:
   - Owner: scriptrdotio
   - Repository: UIComponents
-  - Path: leave empty if you need all the components
+  - Path: set to /UIComponent if you need all the components
   - Branch: leave empty (master by default)
   - Destination folder: the path in your workspace where to deploy the content of the repository. Entering "UIComponents" will deploy the library in the root folder
 - Click Install once done.
