@@ -17,7 +17,7 @@ Sign-in to your [workspace](https://www.scriptr.io/workspace), click on **Tools*
 
 Notice that script allows you to add your own custom fields. You can also attach files, which is convenient to add a picture of the user for example.
 
-![Create a group](./images/new_user.png)
+![Create a user](./images/new_user.png)
 
 *Image 2*
 
@@ -41,11 +41,11 @@ As shown in the example below, you need to provide the following mandatory param
 
 ```
 var user = require("user");
-var userData = {
+var userData = { // mandatory fields
     
-  	id: "john@acme.com", // mandatory field
-    name: "john doe",
-    password: "j0HN@AcmE"
+  id: "john@acme.com", 
+  name: "john doe",
+  password: "j0HN@AcmE"
 };
 
 var resp = user.create(userData);
