@@ -92,4 +92,5 @@ return resp;```
 ```
 # More
 
-Learn more about the device module in our [documentation](https://www.scriptr.io/documentation#documentation-device-moduledeviceModule)
+- Learn more about the device module in our [documentation](https://www.scriptr.io/documentation#documentation-device-moduledeviceModule)
+- Learn [how to create users in my account?](https://github.com/scriptrdotio/howto/blob/master/acl/create_users.md)
