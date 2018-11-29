@@ -87,7 +87,7 @@ return temperature;
 - You now have a full fledge HTML dashboard that can be opened from any web browser 
 - Try it by clicking on "View" in the workspace toolbar.
 
-**ATTENTION** If you open your dashboard directly from a browser using it's URL (not from the workspace), do not forget to pass a valid script authentication token in the query string. Otherwise, the dahsboard will not be able to invoke the API that returns the temperate
+**ATTENTION** If you open your dashboard directly from a browser using it's URL (not from the workspace), do not forget to pass a valid scriptr authentication token in the query string. Otherwise, the dahsboard will not be able to invoke the API that returns the temperate
 
 ```
 // Example
