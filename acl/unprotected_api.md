@@ -33,7 +33,7 @@ If you're using http or websockets, there are two options:
 
 ### How to obtain an anonymous token?
 
-Open the [workspace](https://www.scriptr.io/workspace) then click on your username in the top right corner of the screen. In the drop-down list, click on Account. Select the Info tab (should be selected by default). Copy the value of the **anonymous token field**.
+Open the [workspace](https://www.scriptr.io/workspace) then click on your username on the top right corner of the screen. In the drop-down list, click on Account. Select the Info tab (should be selected by default). Copy the value of the **anonymous token field**.
 
 ### How to create a sub-domain?
 
