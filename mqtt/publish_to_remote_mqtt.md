@@ -54,7 +54,7 @@ You can create a reusable endpoint configuration from the workspace settings and
 
 ### Create an mqtt endpoint configuration
 
-- Open the [workspace](https://www.scriptr.io/workspace) and click on your username in the top right corner of the screen
+- Open the [workspace](https://www.scriptr.io/workspace) and click on your username on the top right corner of the screen
 - From the drop-down list, select **Settings** then click on the **External Endpoints** tab
 - Click on +Add External Endpoint Configuration
 
