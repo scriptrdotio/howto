@@ -15,7 +15,7 @@ A channel is a generic publish/subscribe mecanism. Scripts or remote clients can
 
 To create a channel:
 
-- Open your [workspace](https://www.scriptr.io/workspace), then click on your username in the top-right corner of the screen and select **Settings**
+- Open your [workspace](https://www.scriptr.io/workspace), then click on your username on the top-right corner of the screen and select **Settings**
 - Select the **Channels** tab then click "+Add Channel"
 - Enter a name for your channel. Do not check the boxes if you do not want to authorize non authenticated (anonymous) subscriptions or publications
 
