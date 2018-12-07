@@ -40,7 +40,7 @@ The value of the **params.message** field is text or a JSON object (simple or ne
 
 A channel is a generic publish/subscribe mecanism. Scripts or remote clients can publish or subscribe to it using any of the supported messaging protocols (websockets, mqtt, amqp). Any published messages is automatically broadcast to all subscribers. To create a channel:
 
-- In the [workspace](https://www.sriptr.io), click on your username in the top-right corner of the screen and select Settings
+- In the [workspace](https://www.sriptr.io), click on your username on the top-right corner of the screen and select Settings
 - Click on the **Channels** tab then click "+Add Channel"
 - Enter a name for your channel. Do not check the boxes if you do not want to authorize non authenticated (anonymous) subscriptions or publications
 
