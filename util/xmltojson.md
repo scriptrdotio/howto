@@ -7,7 +7,7 @@ Use the **xmlToJson()** native function!
 
 Try it: 
 
-- Open the [workspace](https://www.scriptr.io/workspace) and click on New Script in the bottom left corner of the screen 
+- Open the [workspace](https://www.scriptr.io/workspace) and click on New Script on the bottom left corner of the screen 
 to create a new script
 - Paste the below code in the script. The code invokes a remote test API that returns data in XML upon request (accept header),  
 it then converts the XML response JSON using **xmlToJson()** and returns the converted value
