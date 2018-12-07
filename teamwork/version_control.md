@@ -13,7 +13,7 @@ As soon as you start tackeling a level beyond tinkering, notably if you're engag
 ### Configure scriptr
 
 - Open your [workspace](https://www.scriptr.io/workspace)
-- Click on your username in the top-right corner of the screen, then click on **Settings** and select the **Github** tab
+- Click on your username on the top-right corner of the screen, then click on **Settings** and select the **Github** tab
 
 ![Github configuration](./images/github_settings.png)
 
