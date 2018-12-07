@@ -5,7 +5,7 @@ If you want more than a dashboard, scriptr allows you to implement your own web 
 ## Create an HTML page
 
 - Open your [workspace](https://www.scriptr.io/workspace)
-- Click on the arrow near the **+New Script** option in the bottom left corner of the screen
+- Click on the arrow near the **+New Script** option on the bottom left corner of the screen
 - Select **File** then **HTML**
 
 ![New HTML page](./images/new_html.png)
@@ -23,7 +23,7 @@ Once your are done typing your HTM/Javascript code, click on **Save** to save yo
 ## Create a client-side JavaScript script
 
 - Open your [workspace](https://www.scriptr.io/workspace)
-- Click on the arrow near the **+New Script** option in the bottom left corner of the screen
+- Click on the arrow near the **+New Script** option on the bottom left corner of the screen
 - Select **File** then **JS**
 
 **Note**: we recommand using the ".js" extension to client-side scripts
@@ -41,7 +41,7 @@ If you do not wish to start from scratch, you can resort to our UI Component lib
 ### Deploy the UI Component library
 
 - Make sure to [configure Github for your scriptr account](https://github.com/scriptrdotio/howto/blob/master/teamwork/version_control.md)
-- Click on the arrown near +New Script in the bottom-left corner of the screen and select **Install module**
+- Click on the arrown near +New Script on the bottom-left corner of the screen and select **Install module**
 - Click on **Add Custom Module from GitHub** 
 - Fill the fields of the Modules dialog as follow:
   - Owner: scriptrdotio
