@@ -1,6 +1,6 @@
 # How to obtain credentials to publish mqtt messages to my scriptr account?
 
-You can obtain these from the scriptr [workspace](https://www.scriptr.io/workspace). Click on the arrow near your username in the top-right corner, then select the **Messaging Protocols** option (*you might need to ask for the activation of a one month free trial*). In the resulting configuration form, do the following:
+You can obtain these from the scriptr [workspace](https://www.scriptr.io/workspace). Click on the arrow near your username on the top-right corner, then select the **Messaging Protocols** option (*you might need to ask for the activation of a one month free trial*). In the resulting configuration form, do the following:
 
 - Select MQTT from the Protocol drop-down
 - Select a device from the Device drop-down in the Credentials section. Messages will be published to scriptr using the device's credentials
