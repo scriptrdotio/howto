@@ -1,6 +1,6 @@
 # How to display historical data in a dashboard?
 
-- Open your [workspace](https://www.scriptr.io/workspace), then click on the arrow near "New Script" in the bottom left corner of the screen
+- Open your [workspace](https://www.scriptr.io/workspace), then click on the arrow near "New Script" on the bottom left corner of the screen
 - Select **Dashboard** to open the dashboard builder
 
 ![Open Dashboard Builder](./images/open_dashboard.png)
