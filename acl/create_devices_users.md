@@ -6,7 +6,7 @@ You can create devices in two different ways:
 
 ## Create device from the workspace
 
-Sign-in to your [workspace](https://www.scriptr.io/workspace), click on your username in the top-right corner of the screen, 
+Sign-in to your [workspace](https://www.scriptr.io/workspace), click on your username on the top-right corner of the screen, 
 then  click on **Device Directory**
 
 ![Device Directory](./images/device_directory.png)
