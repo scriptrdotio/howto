@@ -5,7 +5,7 @@
  ## Account owner's authentication token
  
  When you registered to scriptr, an account was created for you on the platform and an authentication token was allocated to it. 
- To get your account token, open the [workspace](https://www.scriptr.io/workspace) then click on your username in the top right corner of the screen. In the drop-down list, click on **Account**.
+ To get your account token, open the [workspace](https://www.scriptr.io/workspace) then click on your username on the top right corner of the screen. In the drop-down list, click on **Account**.
  Select the **Info** tab (should be selected by default). Copy the value of the **token** field.
  
  ## User and Device authentication tokens
