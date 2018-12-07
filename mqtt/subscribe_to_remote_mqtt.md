@@ -17,7 +17,7 @@ You can replace it with any other mqtt broker you have access to.
 
 ## Create an mqtt endpoint
 
-- Open the [workspace](https://www.scriptr.io/workspace) and click on your username in the top right corner of the screen
+- Open the [workspace](https://www.scriptr.io/workspace) and click on your username on the top right corner of the screen
 - From the drop-down list, select **Settings** then click on the **External Endpoints** tab
 - Click on +Add External Endpoint Configuration
 
@@ -46,7 +46,7 @@ A channel is a generic publish/subscribe mecanism. Scripts or remote clients can
 
 To create a channel:
 
-- In the [workspace](https://www.scriptr.io/workspace), click on your username in the top-right corner of the screen and select **Settings**
+- In the [workspace](https://www.scriptr.io/workspace), click on your username on the top-right corner of the screen and select **Settings**
 - Click on the **Channels** tab then click "+Add Channel"
 - Enter a name for your channel. Do not check the boxes if you do not want to authorize non authenticated (anonymous) subscriptions or publications
 
@@ -60,7 +60,7 @@ The bridge uses the endpoint definition to subscribe to the remote topic and con
 
 To create a bridge,  
 
-- In the [workspace](https://www.scriptr.io/workspace), click on your username in the top-right corner of the screen and select **Settings**
+- In the [workspace](https://www.scriptr.io/workspace), click on your username on the top-right corner of the screen and select **Settings**
 - Click on the **Channels** tab then select one of your existing channels
 - Click on the globe icon to manage the bridges for this channel
 
