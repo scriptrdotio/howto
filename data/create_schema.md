@@ -116,4 +116,4 @@ The **&lt;fields&gt;** element allows you to define (1) the type of the fields o
 # More
 
 - Read our [documentation](https://www.scriptr.io/documentation#documentation-schemamoduleschemaModule) to Learn how to manipulate schemas from the code in your scripts
-- [How to apply automatic validation (schemas) on my data](./create_schemabased_docs)
+- [How to apply automatic validation (schemas) on my data](./create_schemabased_docs.md)
