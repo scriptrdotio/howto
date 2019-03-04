@@ -1,19 +1,22 @@
-# What is scriptr?
+# What is scriptr.io?
 
 In a few words: 
 
-- Scriptr is a cloud-based platform for developing and executing IoT solutions. It offers a set of tools, components and APIs to reduce the effort and time to market IoT applications
+- Scriptr.io is a cloud-based platform for developing and executing IoT solutions. It offers a set of tools, components and APIs to reduce the effort and time to market IoT applications
 - Everything you code is automatically deployed in a secure and scalable cloud environment, releaving you from DevOps operations
-- Scriptr is a managed service, so we take care of monitoring the health of your applications
-- Scriptr runs on the cloud, and upon request: on premises (data centers) and even at the Edge
+- Scriptr.io is a managed service, so we take care of monitoring the health of your applications
+- Scriptr.io runs on the cloud, and upon request: on premises (data centers) and even at the Edge
+- Scriptr.io is one of the most flexible IoT Middlewares and communication broker, enabling collaboration among heterogenous platforms and protocols.
+
+![scriptr.io features at a glance](./scriptr.io-iot-middleware.png)
 
 ## How does it work?
 
-- You can [sign-up for a free account](https://www.scriptr.io/register) to start exploring scriptr
+- You can [sign-up for a free account](https://www.scriptr.io/register) to start exploring scriptr.io
 - Once registered, [sign-in](https://www.scriptr.io/login) and you will land in the [workspace](https://www.scriptr.io/workspace)
 - The workspace is a web IDE that offers everything you need to start developing a full fledged IoT application 
 
-## What can I do with scriptr from the workspace?
+## What can I do with scriptr.io from the workspace?
 
 - Create APIs that can be invoked by remote clients (such as devices) over http, websockets, mqtt or amqp
 - Implement application and business logic into reusable modules
@@ -29,6 +32,7 @@ In a few words:
 - Integrate with Big Data platforms using connectors
 - Integrate with networks services and device management platform using connectors
 - Integrate with legacy systems using connectors
+- Broker messages among different protocols in real-time
 - Create HTML/JavaScript user interfaces
 - Create HTML/JavaScript dashboards
 - **... and much more**
@@ -36,7 +40,7 @@ In a few words:
 ## What language is used for coding?
 
 - Scripts are the main constructs in script. Whenever you click on **+New Script** in the [workspace](https://www.scriptr.io/workspace), you create a new **server-side** script. Coding scripts is done in **JavaScript**
-- From a server-side script, you have access to an extensive list of scriptr modules, native objects and functions that offer powerful features. Since scripts are running on the server-side, **you do not have access to the DOM**
+- From a server-side script, you have access to an extensive list of scriptr.io modules, native objects and functions that offer powerful features. Since scripts are running on the server-side, **you do not have access to the DOM**
 - It is however possible to create client-side HTML pages and JavaScript scripts. You can read more about this in the howto
 
 ## How and where is my code deployed?
