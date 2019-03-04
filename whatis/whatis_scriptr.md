@@ -6,7 +6,7 @@ In a few words:
 - Everything you code is automatically deployed in a secure and scalable cloud environment, releaving you from DevOps operations
 - Scriptr.io is a managed service, so we take care of monitoring the health of your applications
 - Scriptr.io runs on the cloud, and upon request: on premises (data centers) and even at the Edge
-- Scriptr.io is one of the most flexible IoT Middlewares and communication broker, enabling collaboration among heterogenous platforms and protocols.
+- Scriptr.io is an extremely flexible and efficient IoT Middleware and communication broker, enabling collaboration among heterogenous platforms and protocols.
 
 ![scriptr.io features at a glance](./scriptr.io-iot-middleware.png)
 
