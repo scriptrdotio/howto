@@ -11,10 +11,15 @@ In a few words:
 ![scriptr.io features at a glance](./scriptr.io-iot-middleware.png)
 
 (1): Build dashboards by drag and dropping widgets using the Dashboard builder, or more advances User Interfaces with scriptr.io's UI Component library
+
 (2): Create your own custom API and API operations. Orchestrate your API operations and thrid party API operation using scriptr.io's orchestration service
+
 (3): Implement any business logic and business rules in server-side JavaScript 
+
 (4): Enable seamless message-based and real-time communication among heterogenous systems using different protocols by using scripr.io's brokering service
+
 (5): Persist your application's data in scriptr.io's out-of-the-box NoSQL data store
+
 (6): Integrate your business logic with 3rd party systems and APIs using scriptr.io's custom connectors
 
 ## How does it work?
