@@ -12,7 +12,7 @@ In a few words:
 
 (1): Build dashboards by drag and dropping widgets using the Dashboard builder, or more advances User Interfaces with scriptr.io's UI Component library
 
-(2): Create your own custom API and API operations. Orchestrate your API operations and thrid party API operation using scriptr.io's orchestration service
+(2): Create your own custom API and API operations. Orchestrate your API operations and third party API operation using scriptr.io's orchestration service
 
 (3): Implement any business logic and business rules in server-side JavaScript 
 
