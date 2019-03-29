@@ -76,5 +76,15 @@ Let's create an API script and call it "ingest". It will be invoked by devices s
 - Pass the received payload (obtained from the native request.object
 
 ```
+var mapper = require("./mapper");
+
+// transform incoming payload to the expected output structure
+var data = mapper.mapIt(request.body); 
+
+// do something with the resulting data 
+// ...
 
 ```
+![Use your mapping script from within any other script](./user_mapping.png)
+
+*Figure 5 - Use your mapping script from within any other script*
