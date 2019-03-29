@@ -12,7 +12,7 @@ Click +New Script in the bottom left corner of the [workspace](https://www.scrip
 
 ![Open the Json Mapper](./open_mapper.PNG)
 
-*Figure 1 - Open the Json Mapper*
+*Image 1 - Open the Json Mapper*
 
 ## Define the Input data structure and the Output (target) data structure
 
@@ -38,7 +38,7 @@ Assume we need to normalize this struture into the following target structure:
 Just type the target data structure into the **Output JSON** area.
 ![Specifiy Input and Output payloads](./input_output_payloads.png)
 
-*Figure 2 - Enter Input and Output payloads*
+*Image 2 - Enter Input and Output payloads*
 
 ## Visually map input fields to output fields
 
@@ -46,7 +46,7 @@ Click now the **Graph** tab to visually map the fields of the Input payload to t
 
 ![Drag and drop to map input fields to output fields](./graph_mapping.png)
 
-*Figure 3 - Map input fields to output fields by dragging the input to the corresponding output*
+*Image 3 - Map input fields to output fields by dragging the input to the corresponding output*
 
 ## Customize the mapping by adding transformation logic
 
@@ -56,7 +56,7 @@ Say for example that the temp field of the input payload contains a temperature 
 
 ![Customize the mapping by adding some transformation logic](./customize_mapping.png)
 
-*Figure 4 - Customize the mapping by adding some transformation logic*
+*Image 4 - Customize the mapping by adding some transformation logic*
 
 ## Save your mapping
 
@@ -64,7 +64,7 @@ Save your mapping logic by entering a name and clicking **Save**. In our example
 
 ![Save your mapping](./save_mapping.png)
 
-*Figure 4 - Enter a name for your mapping and save it*
+*Image 5 - Enter a name for your mapping and save it*
 
 If you click the **View script** tab, you will notice that scriptr.io has automatically generated the mapping logic for you. What is interesting is that you can now require this script from any of your other scripts and invoke the mapIt function, passing it a payload matching the defined Input data structure and obtain the expected Output in return. 
 
@@ -87,13 +87,13 @@ var data = mapper.mapIt(request.body);
 ```
 ![Use your mapping script from within any other script](./use_mapping.png)
 
-*Figure 5 - Use your mapping script from within any other script*
+*Image 6 - Use your mapping script from within any other script*
 
 To try your mapping, open [Postman](https://www.getpostman.com/) to simulate the device that is sending requests to your demo/ingest API. Create a POST request pointing to your API and send a JSON payload (don't forget pass your scriptr.io authentication token in the Authorization header).
 
 ![Use Postman to simulate the device](./simulate_device.png)
 
-*Figure 6 - Simulate the device that is sending the Input JSON payload to your API*
+*Image 7 - Simulate the device that is sending the Input JSON payload to your API*
 
 
 
