@@ -85,6 +85,6 @@ var data = mapper.mapIt(request.body);
 // ...
 
 ```
-![Use your mapping script from within any other script](./user_mapping.png)
+![Use your mapping script from within any other script](./use_mapping.png)
 
 *Figure 5 - Use your mapping script from within any other script*
