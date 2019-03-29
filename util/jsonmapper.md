@@ -70,7 +70,7 @@ If you click the **View script** tab, you will notice that scriptr.io has automa
 
 ## Use the mapping to transform incoming data
 
-Let's create an API script and call it "ingest". It will be invoked by devices sending data payloads via an HTTP POST  request. The payload has the structured defined in the Input JSON aread of our example above. We will use our mapper to automatically transform this payload into the expected normalized form defined as Output JSON in our example: 
+Let's create an API script and call it "demo/ingest". It will be invoked by devices sending data payloads via an HTTP POST  request. The payload has the structured defined in the Input JSON aread of our example above. We will use our mapper to automatically transform this payload into the expected normalized form defined as Output JSON in our example: 
 
 - Simple require the mapping script (in our example demo/mapper)
 - Pass the received payload (obtained from the native request.object
@@ -88,3 +88,13 @@ var data = mapper.mapIt(request.body);
 ![Use your mapping script from within any other script](./use_mapping.png)
 
 *Figure 5 - Use your mapping script from within any other script*
+
+To try your mapping, open [Postman](https://www.getpostman.com/) to simulate the device that is sending requests to your demo/ingest API. Create a POST request pointing to your API and send a JSON payload (don't forget pass your scriptr.io authentication token in the Authorization header).
+
+![Use Postman to simulate the device](./simulate_device.png)
+
+*Figure 6 - Simulate the device that is sending the Input JSON payload to your API*
+
+
+
+
