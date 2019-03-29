@@ -35,7 +35,7 @@ In a few words:
 - Invoke remote http REST APIs
 - Persist data and files in a NoSQL data store
 - Publish mqtt messages to remote mqtt topics
-- Subscribe to remote mqtt topic
+- Subscribe to remote mqtt topics
 - Send amqp messages to remote amqp exchanges/queues
 - Subscribe to remote amqp queues
 - Create scheduled (cron) jobs 
