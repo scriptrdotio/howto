@@ -42,7 +42,7 @@ Just type the target data structure into the **Output JSON** area.
 
 ## Visually map input fields to output fields
 
-Click now the **Graph** tab to visually map the field on the Input payload to those of the Output payload. Simply click a input field and drag the arrow to the corresponding out field.
+Click now the **Graph** tab to visually map the fields of the Input payload to those of the Output payload. Simply click a input field and drag the arrow to the corresponding output field.
 
 ![Drag and drop to map input fields to output fields](./graph_mapping.png)
 
@@ -60,8 +60,21 @@ Say for example that the temp field of the input payload contains a temperature 
 
 ## Save your mapping
 
-Save your mapping logic by entering a name and clicking **Save**
+Save your mapping logic by entering a name and clicking **Save**. In our example, our script is name "demo/mapper".
 
 ![Save your mapping](./save_mapping.png)
 
 *Figure 4 - Enter a name for your mapping and save it*
+
+If you click the **View script** tab, you will notice that scriptr.io has automatically generated the mapping logic for you. What is interesting is that you can now require this script from any of your other scripts and invoke the mapIt function, passing it a payload matching the defined Input data structure and obtain the expected Output in return. 
+
+## Use the mapping to transform incoming data
+
+Let's create an API script and call it "ingest". It will be invoked by devices sending data payloads via an HTTP POST  request. The payload has the structured defined in the Input JSON aread of our example above. We will use our mapper to automatically transform this payload into the expected normalized form defined as Output JSON in our example: 
+
+- Simple require the mapping script (in our example demo/mapper)
+- Pass the received payload (obtained from the native request.object
+
+```
+
+```
