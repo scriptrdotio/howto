@@ -10,7 +10,7 @@ Another interesting option is to do this visually, using the JSON mapper tool.
 
 Click +New Script in the bottom left corner of the [workspace](https://www.scriptr.io/workspace) and select Json Mapper.
 
-![Open the Json Mapper](./open_mapper.PNG])
+![Open the Json Mapper]("./open_mapper.PNG"])
 *Figure 1 - Open the Json Mapper*
 
 In the editor area, under the JSON tab, enter a sample of the expected incoming payload structure in the Input JSON area. 
