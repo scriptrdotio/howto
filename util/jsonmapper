@@ -1,0 +1,9 @@
+# How to map an incoming JSON payload to another JSON structure (JSON mapper)?
+
+In many cases your IoT application will be receiving JSON data in different structures because they are stemming from different data sources. 
+You will therefore need to normalize these data into a unique target data structure that your business logic will use.
+
+One option to transform an incoming JSON structure into another one is to code the transformation yourself in one of your scriptrs. Another interesting option is to do this visually, using the JSON mapper tool.
+
+# The JSON mapper
+Click +New Script in the bottom left corner of the [https://www.scriptr.io/workspace](workspace) and select J
