@@ -40,7 +40,12 @@ Just type the target data structure into the **Output JSON** area.
 
 Click now the **Graph** tab to visually map the field on the Input payload to those of the Output payload. Simply click a input field and drag the arrow to the corresponding out field.
 
-![Drag and drop to map input fields to output fields](./graphic_mapping.png)
+![Drag and drop to map input fields to output fields](./graph_mapping.png)
 
 *Figure 3 - Map input fields to output fields by dragging the input to the corresponding output*
 
+Save your mapping logic by entering a name and clicking **Save**
+
+![Save your mapping](./save_mapping.png)
+
+*Figure 4 - Enter a name for your mapping and save it*
