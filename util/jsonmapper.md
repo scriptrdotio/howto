@@ -14,6 +14,8 @@ Click +New Script in the bottom left corner of the [workspace](https://www.scrip
 
 *Figure 1 - Open the Json Mapper*
 
+## Define the Input data structure and the Output (target) data structure
+
 In the editor area, under the **JSON** tab, enter a sample of the expected incoming payload structure in the **Input JSON** area. 
 In our example, we will use the below:
 ```
@@ -38,11 +40,15 @@ Just type the target data structure into the **Output JSON** area.
 
 *Figure 2 - Enter Input and Output payloads*
 
+## Visually map input fields to output fields
+
 Click now the **Graph** tab to visually map the field on the Input payload to those of the Output payload. Simply click a input field and drag the arrow to the corresponding out field.
 
 ![Drag and drop to map input fields to output fields](./graph_mapping.png)
 
 *Figure 3 - Map input fields to output fields by dragging the input to the corresponding output*
+
+## Customize the mapping by adding transformation logic
 
 Notice the **Transform data** section that appears on the right of the editor when you select any of the mapping rows: it allows you to customize the corresponding transformation.
 
@@ -51,6 +57,8 @@ Say for example that the temp field of the input payload contains a temperature 
 ![Customize the mapping by adding some transformation logic](./customize_mapping.png)
 
 *Figure 4 - Customize the mapping by adding some transformation logic*
+
+## Save your mapping
 
 Save your mapping logic by entering a name and clicking **Save**
 
