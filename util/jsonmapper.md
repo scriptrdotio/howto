@@ -14,7 +14,7 @@ Click +New Script in the bottom left corner of the [workspace](https://www.scrip
 
 *Figure 1 - Open the Json Mapper*
 
-In the editor area, under the JSON tab, enter a sample of the expected incoming payload structure in the Input JSON area. 
+In the editor area, under the **JSON** tab, enter a sample of the expected incoming payload structure in the **Input JSON** area. 
 In our example, we will use the below:
 ```
 {
@@ -33,7 +33,14 @@ Assume we need to normalize this struture into the following target structure:
   "rssi": 324
 }
 ```
-Just type the target data structure into the Output JSON area.
+Just type the target data structure into the **Output JSON** area.
 ![Specifiy Input and Output payloads](./input_output_payloads.png)
 
 *Figure 2 - Enter Input and Output payloads*
+
+Click now the **Graph** tab to visually map the field on the Input payload to those of the Output payload. Simply click a input field and drag the arrow to the corresponding out field.
+
+![Drag and drop to map input fields to output fields](./graphic_mapping.png)
+
+*Figure 3 - Map input fields to output fields by dragging the input to the corresponding output*
+
