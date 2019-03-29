@@ -46,7 +46,7 @@ Click now the **Graph** tab to visually map the field on the Input payload to th
 
 Notice the **Transform data** section that appears on the right of the editor when you select any of the mapping rows: it allows you to customize the corresponding transformation.
 
-Say for example that the temp field of the input payload contains a temperature value in Celsius degrees and that you would like to have it to Fahrenheit in the target payload. Just select the arrow binding the input temp field to the output temperature field and modify the Transform data section by entering the Celsisu to Fahrenheit conversion formula, as in the below:
+Say for example that the temp field of the input payload contains a temperature value in Celsius degrees and that you would like to convert it to Fahrenheit degrees in the target payload. Just select the arrow binding the input temp field to the output temperature field and modify the Transform data section by entering the Celsisu to Fahrenheit conversion formula, as in the below:
 
 ![Customize the mapping by adding some transformation logic](./customize_mapping.png)
 
