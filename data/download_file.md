@@ -12,14 +12,11 @@ In the below example, we assume that the name of the document is "mosquitto_ca",
 ```
 // retrieve the file object from the persisted document
 var document = require("document");
-var file = document.getAttachment("mosquitto_ca", "mosquitto.org.crt", {"fieldName":"apsdb_attachments"});
-
-// retrieve the content of the file object
-var fileContent = file.content;
+var file = document.getAttachment("mosquitto_ca", "mosquitto.org.crt", {"fieldName":"attachments"});
 
 // Override the standard response to send the file
 response.setHeader("content-disposition", "attachment;filename=" + file.fileName);
-response.write(fileContent);
+response.write(file);
 response.close();
 ```
 
