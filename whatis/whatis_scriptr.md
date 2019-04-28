@@ -3,7 +3,7 @@
 In a few words: 
 
 - Scriptr.io is a cloud-based platform for developing and executing Enterprise-scale IoT solutions. It offers a set of tools, components and APIs to reduce the effort and time to market IoT applications
-- Everything you code is automatically deployed in a secure and scalable cloud environment, releaving you from system administration operations
+- Everything you code is automatically deployed in a secure and scalable cloud environment, releaving you from devops operations
 - Scriptr.io is a managed service, so we take care of monitoring the health of your applications
 - Scriptr.io runs on the cloud, and upon request: on premises (data centers) and even at the Edge
 - Scriptr.io is an extremely flexible and efficient IoT Middleware and communication broker, enabling collaboration among heterogenous platforms and protocols.
