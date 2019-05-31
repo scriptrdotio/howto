@@ -7,7 +7,7 @@ For that, you need the following:
 - Retrieve the content of the file object
 - Override the standard response to send the file
 
-In the below example, we assume that the name of the document is "mosquitto_ca",  the file name is ""  and that the file is attached to the "apsdb_attachments" field of the document.
+In the below example, we assume that the name of the document is "mosquitto_ca",  the file name is "mosquitto.org.ct"  and that the file is attached to the "attachments" field of the document (if the document has no schema, "attachments" is a mandatory name).
 
 ```
 // retrieve the file object from the persisted document
