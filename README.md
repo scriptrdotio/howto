@@ -21,7 +21,7 @@ This repository contains a list of small tutorials that answer most of the commo
 - [How to restrict access to my API?](https://github.com/scriptrdotio/howto/blob/master/acl/restrict_access_to_api.md)
 - [How to restrict access to my data?](https://github.com/scriptrdotio/howto/blob/master/acl/protect_data.md)
 - [How to give remote clients unrestricted access to my API?](https://github.com/scriptrdotio/howto/blob/master/acl/unprotected_api.md)
-- [How to create modules?](https://github.com/scriptrdotio/howto/edit/master/modules/create_modules.md)
+- [How to create modules?](https://github.com/scriptrdotio/howto/blob/master/modules/create_modules.md)
 - [How to customize the URL of my API (create a sub-domain)?](https://github.com/scriptrdotio/howto/blob/master/config/create_subdomain.md)
 - [How to send emails from my scripts?](https://github.com/scriptrdotio/howto/blob/master/util/sendmail.md)
 - [How to log messages to check the execution of my scripts?](https://github.com/scriptrdotio/howto/blob/master/debug/log_msg.md)
