@@ -30,9 +30,29 @@ In a few words:
 
 ## What language is used for coding?
 
-- Scripts are the main constructs in script. Whenever you click on **+New Script** in the [workspace](https://www.scriptr.io/workspace), you create a new **server-side** script. Coding scripts is done in **JavaScript**
+- Scripts are the main constructs in script. Whenever you click on **+New Script** in the [workspace](https://www.scriptr.io/workspace), you create a new **server-side** script. Coding scripts is done in **JavaScript** and your logic will leverage scriptr.io's APIs.
 - From a server-side script, you have access to an extensive list of scriptr.io modules, native objects and functions that offer powerful features. Since scripts are running on the server-side, **you do not have access to the DOM**
-- It is however possible to create client-side HTML pages and JavaScript scripts. You can read more about this in the howto
+- It is also possible to create client-side HTML pages and JavaScript scripts. You can read more about this in the howto
+
+## How and where is my code deployed?
+
+As soon as you save a script in the Web IDE, it is automatically deployed on the cloud run-time and ready to be used.
+
+## Can I use my own IDE?
+
+Yes. The only constraint is to code your back-end scripts in JavaScript using scriptr.io's APIs and to code your front-end logic in standard JavaScript/HTML/CSS adding any third party libraries. You will need to send all your scripts to your scriptr.io account before running your application. The simplest way to do that is to commit your code to a Github repository to which your scriptr.io account is associated and that has [automatic deployment](https://www.scriptr.io/documentation#documentation-AutomaticDeployment) enabled. To run your scripts, the easiest way is to do it from scriptr.io's web IDE.
+
+## What are the components of a typical application running on scriptr.io?
+
+You can develop applications of various types using scritpr.io. However, a typical IoT application will consist of the following:
+- One or many back-end scripts that receive http requests, mqtt, amqp or websocket messages sent by devices. This set of scripts constitute the data ingestion API. Back-end scripts are written in JavaScript and leverage scriptr.io's API. They run on the back-end (the cloud)
+- One or many back-end scripts that implement any business/application logic. Back-end scripts are written in JavaScript and leverage scriptr.io's API. They run on the back-end (cloud)
+- One or many User Interface scripts. They are coded in JavaScript/HTML5/CSS. They are served by scriptr.io and run on the browser
+- One or many scripts that receive http requests and/or websocket messages from the User Interface to enable interactions between the end user and the application logic. This set of scripts constitutes the application API.
+
+![Typical scriptr.io IoT application, code structure and architecture](./typical_iot_app.png)
+
+In addition to these layers, you can add integrations with third party systems and platforms, leveraging scriptr.io's bridges and connectors.
 
 ## What can I do with scriptr.io from the workspace?
 
@@ -54,21 +74,6 @@ In a few words:
 - Create HTML/JavaScript user interfaces
 - Create HTML/JavaScript dashboards
 - **... and much more**
-
-## How and where is my code deployed?
-
-As soon as you save a script in the Web IDE, it is automatically deployed on the cloud run-time and ready to be used.
-
-## Can I use my own IDE?
-
-Yes. The only constraint is to code your back-end scripts in JavaScript using scriptr.io's APIs and to code your front-end in standard JavaScript/HTML/CSS adding any third party libraries. You will need to send all your scripts to your scriptr.io account. The simplest way to do that is to commit your code to a Github repository to which your scriptr.io account is associated and that has [automatic deployment](https://www.scriptr.io/documentation#documentation-AutomaticDeployment) enabled. To run your scripts, the easiest way is to do it from scriptr.io's web IDE.
-
-## What are the components of an application running on scriptr.io?
-
-You can develop applications of various types using scritpr.io. However, a typical IoT application will consist of the following:
-- One or many back-end scripts that receive http requests, mqtt, amqp or websocket messages sent by devices. These scripts can further save and/or process the data they have received. Back-end scripts are written in JavaScript and leverage scriptr.io's API. They run on the back-end (cloud)
-- One or many back-end scriptrs that implement any business/application logic. Back-end scripts are written in JavaScript and leverage scriptr.io's API. They run on the back-end (cloud)
-- One or many User Interface scripts. They are coded in JavaScript/HTML5/CSS. They are served by scriptr.io and run on the browser.
 
 ## How to integrate with third party systems?
 
