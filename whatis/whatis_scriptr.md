@@ -54,7 +54,7 @@ You can develop applications of various types using scritpr.io. However, a typic
 
 In addition to these layers, you can add integrations with third party systems and platforms, leveraging scriptr.io's bridges and connectors.
 
-## What can I do with scriptr.io from the workspace?
+## What can I do with scriptr.io?
 
 - Create APIs that can be invoked by remote clients (such as devices) over http, websockets, mqtt or amqp
 - Implement application and business logic into reusable modules
