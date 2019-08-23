@@ -134,3 +134,15 @@ To create a new dashboard, simply click the arrow near "+New Script" in the bott
 To display current values of speed, temperature and number of passengers, we will respectively use 2 gauges and 1 odometer. Just click the corresponding icon in the dashboard's toolbar to add the widgets to the dashboard.
 
 ![create_dashboard](./ingestion_script_3.png)
+
+Let's customize our widgets a bit to fit our use case, by clicking the gear icon on the right corner of each widget. Let's start with the first gauge that will display the latest value of the speed:
+
+- In the DATA tab, replace the value of the **Message tag** with the value specified for the **id** field of the message published to the channel. In our case, we used "device_data"
+- In the DATA tab, replace the code in the **Format data** field with the following:
+```
+return data.speed;
+```
+We do this because the ingestion script is publishing the whole payload it received, so we need to instruct the gauge widget to only read the value of the payload field it is interested in (the "speed")
+
+- In the MIN/MAX tab, replace the values of the **Gauge min** and **Gauge max** fields with values you find appropriate to represent the speed (let's say 0 to 150)
+
