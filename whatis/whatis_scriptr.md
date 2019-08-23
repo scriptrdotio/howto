@@ -22,11 +22,17 @@ In a few words:
 
 (6): Integrate your business logic with 3rd party systems and APIs using scriptr.io's custom connectors
 
-## How does it work?
+## How do I use it?
 
 - You can [sign-up for a free account](https://www.scriptr.io/register) to start exploring scriptr.io
 - Once registered, [sign-in](https://www.scriptr.io/login) and you will land in the [workspace](https://www.scriptr.io/workspace)
 - The workspace is a web IDE that offers everything you need to start developing a full fledged IoT application 
+
+## What language is used for coding?
+
+- Scripts are the main constructs in script. Whenever you click on **+New Script** in the [workspace](https://www.scriptr.io/workspace), you create a new **server-side** script. Coding scripts is done in **JavaScript**
+- From a server-side script, you have access to an extensive list of scriptr.io modules, native objects and functions that offer powerful features. Since scripts are running on the server-side, **you do not have access to the DOM**
+- It is however possible to create client-side HTML pages and JavaScript scripts. You can read more about this in the howto
 
 ## What can I do with scriptr.io from the workspace?
 
@@ -49,15 +55,13 @@ In a few words:
 - Create HTML/JavaScript dashboards
 - **... and much more**
 
-## What language is used for coding?
-
-- Scripts are the main constructs in script. Whenever you click on **+New Script** in the [workspace](https://www.scriptr.io/workspace), you create a new **server-side** script. Coding scripts is done in **JavaScript**
-- From a server-side script, you have access to an extensive list of scriptr.io modules, native objects and functions that offer powerful features. Since scripts are running on the server-side, **you do not have access to the DOM**
-- It is however possible to create client-side HTML pages and JavaScript scripts. You can read more about this in the howto
-
 ## How and where is my code deployed?
 
 As soon as you save a script in the Web IDE, it is automatically deployed on the cloud run-time and ready to be used.
+
+## Can I use my own IDE?
+
+Yes. The only constraint is to code your back-end scripts in JavaScript using scriptr.io's APIs and to code your front-end in standard JavaScript/HTML/CSS adding any third party libraries. You will need to send all your scripts to your scriptr.io account. The simplest way to do that is to commit your code to a Github repository to which your scriptr.io account is associated and that has [automatic deployment](https://www.scriptr.io/documentation#documentation-AutomaticDeployment) enabled. To run your scripts, the easiest way is to do it from scriptr.io's web IDE.
 
 ## How to integrate with third party systems?
 
