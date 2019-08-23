@@ -28,6 +28,8 @@ Our application requires the following to be implemented:
 
 # Implementation
 
+## Part 1: the ingestion script
+
 In the following, we will assume that the device sends us the following JSON payload via an HTTP POST request:
 ```
 {
@@ -37,7 +39,7 @@ In the following, we will assume that the device sends us the following JSON pay
 }
 ```
 
-## Extract payload sent by the device
+### 1. Extract payload sent by the device
 
 In scriptr.io, any script you implement is automatically turned into a web service, remotely accessible via different protocols and notably http. So let's go ahead and create our ingestion script:
 - From the [workspace](https://www.scrptr.io/workspace), click on the +New Script option in the bottom-left corner of the screen
@@ -56,7 +58,7 @@ var payload = request.body;
 ```
 Save your changes by clicking "Save".
 
-## Store the extracted payload (measurments) into the NoSQL data store
+### 2. Store the extracted payload (measurments) into the NoSQL data store
 
 In scriptr.io NoSQL data store, you save your data into *documents*, therefore, in order to manipulate documents, you need the document API. To instruct your script to load the document API, just use the **require** function as follows:
 ```
@@ -68,7 +70,7 @@ document.save(payload);  // add this line to the ingestion script
 ```
 That's all. Don't forget to save your changes.
 
-## Query the data store for the last 20 historical values of each measurement
+### 3. Query the data store for the historical values of each measurement
 
 Scriptr.io queries allow you to retrieve documents from your NoSQL store, based on some criteria you specify. A query requires you to specify the following (at least):
 - the query expression (filtering criteria)
@@ -90,6 +92,19 @@ Executing queries on documents is also done using the document API, using the **
 var resp = document.query(queryObj); // excute the query
 var result = resp.result.documents; // the returned documents list
 ```
+**Note**: scriptr.io automatically limits to 50 the number of documents that are returned by a query.
+
+### 4. Publish the latest and the historical values to the dashboard
+
+Publishing data to anyone listening (this is refered to as "publish/subscribe") is done in scriptr.io through **channels**. Therefore, before we can publish anything to our dashboard, we first need to create a channel:
+
+- Click your username in the top-right corner of the screen
+- From the drop-down, select "settings"
+- Click the "Channel" tab
+- Add a new channel (name it "dashboardChannel" for this tutorial) them click the check sign
+
+![create_script](./ingestion_script_2.png)
+
 
 
 
