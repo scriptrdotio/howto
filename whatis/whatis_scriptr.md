@@ -63,6 +63,13 @@ As soon as you save a script in the Web IDE, it is automatically deployed on the
 
 Yes. The only constraint is to code your back-end scripts in JavaScript using scriptr.io's APIs and to code your front-end in standard JavaScript/HTML/CSS adding any third party libraries. You will need to send all your scripts to your scriptr.io account. The simplest way to do that is to commit your code to a Github repository to which your scriptr.io account is associated and that has [automatic deployment](https://www.scriptr.io/documentation#documentation-AutomaticDeployment) enabled. To run your scripts, the easiest way is to do it from scriptr.io's web IDE.
 
+## What are the components of an application running on scriptr.io?
+
+You can develop applications of various types using scritpr.io. However, a typical IoT application will consist of the following:
+- One or many back-end scripts that receive http requests, mqtt, amqp or websocket messages sent by devices. These scripts can further save and/or process the data they have received. Back-end scripts are written in JavaScript and leverage scriptr.io's API. They run on the back-end (cloud)
+- One or many back-end scriptrs that implement any business/application logic. Back-end scripts are written in JavaScript and leverage scriptr.io's API. They run on the back-end (cloud)
+- One or many User Interface scripts. They are coded in JavaScript/HTML5/CSS. They are served by scriptr.io and run on the browser.
+
 ## How to integrate with third party systems?
 
 There are many ways to do this:
