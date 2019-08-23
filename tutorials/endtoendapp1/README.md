@@ -50,11 +50,44 @@ You now have a remotely accessible API available at the following endpoint: http
 
 You might be wondering what will happen if all readers of this tutorial name their script "ingestion", wouldn't there be collisions? Actually, scriptr.io turned your script into a **secure** web service (you might have noticed the small red lock on the right), which means that devices can only invoke the script by providing credentials that are generated from your own scriptr.io account. Since credentials are account specific, there is no risk of collision! We'll get back to credentials later on.
 
-Let's now add the code that retrieves the payload from the http request 
+Let's now add the code that retrieves the payload from the http request. All we need is to use the native **request** object and read the payload from the latter's **body** property:
+```
+var payload = request.body;
+```
+Save your changes by clicking "Save".
 
+## Store the extracted payload (measurments) into the NoSQL data store
 
+In scriptr.io NoSQL data store, you save your data into *documents*, therefore, in order to manipulate documents, you need the document API. To instruct your script to load the document API, just use the **require** function as follows:
+```
+var document = require("document"); // add this line to the ingestion script
+```
+To create a document using the received payload, just save the latter by using the **save** function of the document object.
+```
+document.save(payload);  // add this line to the ingestion script
+```
+That's all. Don't forget to save your changes.
 
+## Query the data store for the last 20 historical values of each measurement
 
+Scriptr.io queries allow you to retrieve documents from your NoSQL store, based on some criteria you specify. A query requires you to specify the following (at least):
+- the query expression (filtering criteria)
+- the fields to return from the document
+
+So let's assume we want to obtain all documents that have a non null speed and temperature fields. We will accordingly create a new query object as follows:
+```
+// add the below to the ingestion script
+var queryObj = {
+  query: "temperature is not null and speed is not null",
+  fields: "temperature, speed, number_passsengers"
+};
+```
+Executing queries on documents is also done using the document API, using the **query** function. Since we already loaded the latter in the above lines of code, we can directly reuse our "document" variable:
+```
+// add the below lines to the ingestion script
+var resp = document.query(queryObj); // excute the query
+var result = resp.result.documents; // the returned documents list
+```
 
 
 
