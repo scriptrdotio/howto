@@ -125,4 +125,9 @@ Let's also publish the historical values we've just obtained from the execution 
 publish("id": "device_data", "result": historicalData);
 ```
 
+## Part 2: the dashboard
+
+In this simple example, we will not code anything on the User Interface side, but we will rather resort the "Dahboard Builder", a visual tool provide by scriptr.io's web IDE to rapidly implement dashboards. 
+
+To create a new dashboard, simply click the arrow near "+New Script" in the bottom left corner of the [workspace](https://www.scrptr.io/workspace) the select "Dashboard". 
 
