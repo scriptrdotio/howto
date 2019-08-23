@@ -12,6 +12,8 @@ Our application will be composed of two parts:
 - A data ingestion script used by the device to send measurments. The script saves the data in our scriptr.io's NoSQL data store and publishes updates to the dahsboard
 - A dahsboard script that receives published data and displays it.
 
+![logical architecture](./sampleapp1_architecture.png)
+
 To keep it simple, we will simulate the device by resorting to [Postman](https://www.getpostman.com/products), a well known http client. We will manually send data from Postman to our data ingestion script. 
 
 ## Required functionality
@@ -48,7 +50,7 @@ You now have a remotely accessible API available at the following endpoint: http
 
 You might be wondering what will happen if all readers of this tutorial name their script "ingestion", wouldn't there be collisions? Actually, scriptr.io turned your script into a **secure** web service (you might have noticed the small red lock on the right), which means that devices can only invoke the script by providing credentials that are generated from your own scriptr.io account. Since credentials are account specific, there is no risk of collision! We'll get back to credentials later on.
 
-
+Let's now add the code that retrieves the payload from the http request 
 
 
 
