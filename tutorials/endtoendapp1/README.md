@@ -105,7 +105,7 @@ Publishing data to anyone listening (this is refered to as "publish/subscribe") 
 - Click the "Channel" tab
 - Add a new channel (name it "dashboardChannel" for this tutorial) them click the check sign
 
-![create_script](./ingestion_script_2.png)
+![create_channel](./ingestion_script_2.png)
 
 **Note** any entity wishing to consume the messages that are published to a channel needs to subscribe to it. You can have one or many subscribers for the same channel.
 
@@ -131,3 +131,6 @@ In this simple example, we will not code anything on the User Interface side, bu
 
 To create a new dashboard, simply click the arrow near "+New Script" in the bottom left corner of the [workspace](https://www.scrptr.io/workspace) the select "Dashboard". 
 
+To display current values of speed, temperature and number of passengers, we will respectively use 2 gauges and 1 odometer. Just click the corresponding icon in the dashboard's toolbar to add the widgets to the dashboard.
+
+![create_dashboard](./ingestion_script_3.png)
