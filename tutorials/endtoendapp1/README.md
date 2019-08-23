@@ -42,11 +42,13 @@ In scriptr.io, any script you implement is automatically turned into a web servi
 - Enter a name (ingestion)
 - In the editor area, type "return" and save the script by clicking "Save" in the menu bar.
 
+![create_script](./ingestion_script_1.png)
+
+You now have a remotely accessible API available at the following endpoint: https://api.scriptrapps.io/ingest.
+
+You might be wondering what will happen if all readers of this tutorial name their script "ingestion", wouldn't there be collisions? Actually, scriptr.io turned your script into a **secure** web service (you might have noticed the small red lock on the right), which means that devices can only invoke the script by providing credentials that are generated from your own scriptr.io account. Since credentials are account specific, there is no risk of collision! We'll get back to credentials later on.
 
 
-You know have a remotely accessible API available at the following endpoint: https://api.scriptrapps.io/ingest.
-
-You might be wondering what will happen if all readers of this tutorial name their script "ingestion", and you would be right. Actually, scriptr.io turned your script into a **secure** web service (you might have noticed the small red lock on the right), which means that devices can only invoke the script by providing credentials that are generated from your own scriptr.io account. Since credentials are account specific, there is no risk of collision!
 
 
 
