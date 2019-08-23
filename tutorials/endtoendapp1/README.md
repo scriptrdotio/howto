@@ -21,7 +21,7 @@ To keep it simple, we will simulate the device by resorting to [Postman](https:/
 Our application requires the following to be implemented:
 
 1. Extract payload sent by the device 
-2. Store the extracted payload (measurments) into the NoSQL data store
+2. Store the extracted payload (measurements) into the NoSQL data store
 3. Query the data store for the last 20 historical values of each measurement
 4. Publish the latest and the historical values to the dashboard
 5. Display the values in the dashboard
@@ -58,7 +58,7 @@ var payload = request.body;
 ```
 Save your changes by clicking "Save".
 
-### 2. Store the extracted payload (measurments) into the NoSQL data store
+### 2. Store the extracted payload (measurements) into the NoSQL data store
 
 In scriptr.io NoSQL data store, you save your data into *documents*, therefore, in order to manipulate documents, you need the document API. To instruct your script to load the document API, just use the **require** function as follows:
 ```
