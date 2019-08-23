@@ -90,9 +90,11 @@ Executing queries on documents is also done using the document API, using the **
 ```
 // add the below lines to the ingestion script
 var resp = document.query(queryObj); // excute the query
-var result = resp.result.documents; // the returned documents list
+var historicalData = resp.result.documents; // the returned documents list
 ```
 **Note**: scriptr.io automatically limits to 50 the number of documents that are returned by a query.
+
+Don't forget to save your changes.
 
 ### 4. Publish the latest and the historical values to the dashboard
 
@@ -105,6 +107,22 @@ Publishing data to anyone listening (this is refered to as "publish/subscribe") 
 
 ![create_script](./ingestion_script_2.png)
 
+**Note** any entity wishing to consume the messages that are published to a channel needs to subscribe to it. You can have one or many subscribers for the same channel.
 
+Let's now get back to editing the "ingestion" script. We need to publish the new data to the dashboard (through the **dashboardChannel**). This is simply done using the native **publish** function that expects you to pass it the following properties:
+
+- "id": this can be any string you specify, which is used by a subsciber of the channel to determine that a published message is his
+- "result": this can be any value or object to publish towards subscribers
+
+So let's go ahead and publish the payload that was just received by our "ingest" script:
+```
+// add the below line to the ingestion script
+publish("id": "device_data", "result": payload);
+```
+Let's also publish the historical values we've just obtained from the execution of our request:
+```
+// add the below line to the ingestion script
+publish("id": "device_data", "result": historicalData);
+```
 
 
