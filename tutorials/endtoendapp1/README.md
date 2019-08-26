@@ -220,7 +220,7 @@ Proceed similarly with the other widgets (the gauge to display the temperature a
 - In the MIN/MAX tab of the gauge, set the values of the **Gauge min** and **Gauge max** fields to 0 and 50 (or any other value)
 - Change the title of the widgets using the BOX PROPERTIES tab.
 
-Click the "Save" button the  to save you changes. *Also make sure to give a name to your dashboard and to save it*.
+Click the "Save" button the  to save you changes on the widget. *Also make sure to give a name to your dashboard and to save it*.
 
 ### Displaying the historical values
 
@@ -228,7 +228,7 @@ To display historical values we will resort to a "line chart". Just click the co
 
 To customize the line chart widget, click the gear icon on its top-right corner:
 - In the DATA tab, set the "message tag" field to "historical_device_data"
-- Replace the value of the "API" field with "ingest" (this will ask the widget to send a request to this script) the first time it is loaded
+- Replace the value of the "API" field with "ingestion" (this will ask the widget to send a request to this script) the first time it is loaded
 - Clear the content of the "DATA" field (this is optional)
 
 ![create_dashboard](./dashboard_7.png)
@@ -237,3 +237,10 @@ To customize the line chart widget, click the gear icon on its top-right corner:
 - Optionnally, you can specify the display angle of the values on the horizontal axis. In the below figure, we set this to an angle of 45 degrees.
 
 ![create_dashboard](./dashboard_8.png)
+
+- In the Y tab, specify the value that will be used on the vertical axis by changing the "Y Keys" field. In our case, we will use the "speed", "temperature" and "num_passengers" fields of the documents that are returned by the query and published to the dashboard. 
+- Notice that you also can modify the labels that will respectively be diplayed for each field by  the widget.
+
+![create_dashboard](./dashboard_9.png)
+
+Click the "Save" button the  to save you changes on the widget. *Also make sure to save your dashboard*.
