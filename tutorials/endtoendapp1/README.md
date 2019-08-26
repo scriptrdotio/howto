@@ -136,11 +136,27 @@ Notice that we used different id values: "latest_device_data" and "historical_de
 
 Finally, let's return "historicalData" the variable that we created earlier that contains the result of the query. This is not necessary but we will use it to show you the structure of the data that is returned by a query.
 
-### Let's run a first test
+## Let's run a first test
 
-From the Postman user interface, we will issue a POST http request toward our ingestion script. Open Postman, create a new request of type POST and enter the address of your script.
+From the **Postman** user interface, we will issue a POST http request toward our ingestion script. Open Postman, create a new request of type POST and enter the address of your script.
 
 ![test1](./tutorial_test1.png)
+
+From the Postman user interface, click the "Body" tab. Enter the following JSON structure:
+```
+{
+  "speed": 45, 
+  "temperature": 25, 
+  "num_passengers": 12 
+}
+```
+Make sure to check the "raw" rabio button and set the content type to JSON(application/json) using the drop-down on the right.
+
+![test1](./tutorial_test2.png)
+
+We also need to specify our credentials since, as already mentioned, our script is a secure web service. For now, we will use our scriptr.io account's main token. To get it, click your username in scriptr.io's [workspace](https://www.scrptr.io/workspace). Click "Account" the copy the value of the Token field.
+
+![test1](./tutorial_test3.png)
 
 ## Part 2: the dashboard
 
