@@ -244,3 +244,14 @@ To customize the line chart widget, click the gear icon on its top-right corner:
 ![create_dashboard](./dashboard_9.png)
 
 Click the "Save" button the  to save you changes on the widget. *Also make sure to save your dashboard*.
+You should now have a dashboard that resembles the below:
+
+![create_dashboard](./dashboard_10.png)
+
+## Open the dashboard in the browser
+
+Before opening the dahboard in the browser, turn it into a secure dashboard, i.e. a page that can only display data to authenticated and authorized users. On that purpose, click the small red lock icon on the right corner of the screen:
+
+- Remove anonymous (
+
+## Let's try again
