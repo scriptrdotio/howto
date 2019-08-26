@@ -158,6 +158,27 @@ We also need to specify our credentials since, as already mentioned, our script 
 
 ![test1](./tutorial_test3.png)
 
+From the Postman user interface, click the "Authorization" tab. From the "Type" drop-down, select "Bearer Token" and paste the value of your scriptr.io token into the corresponding field.
+
+![test1](./tutorial_test4.png)
+
+Send your request to your script by clicking the **Send** button. You should obtain a response similar to the below:
+
+![test1](./tutorial_test5.png)
+
+As you can see, the historical values query returned an array containing a single document (since this is the first time we invoke our script):
+```
+"result": [
+ {
+  "key": "B02AF1417D8F374C1506286D51B26356",
+  "versionNumber": "1.0",
+  "temperature": "25",
+  "speed": "45",
+  "creationDate": "2019-08-26T11:43:28+0000"
+ }
+]
+```
+
 ## Part 2: the dashboard
 
 In this simple example, we will not code anything on the User Interface side, but we will rather resort the "Dahboard Builder", a visual tool provide by scriptr.io's web IDE to rapidly implement dashboards. 
