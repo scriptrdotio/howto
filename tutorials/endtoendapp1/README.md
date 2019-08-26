@@ -159,3 +159,8 @@ return data.speed;
 
 - In the MIN/MAX tab, replace the values of the **Gauge min** and **Gauge max** fields with values you find appropriate to represent the speed (let's say 0 to 150)
 
+![create_dashboard](./dashboard_4.png)
+
+- In the BOX PROPERTIES tab, replace the value of the **Box Label** field with an appropriate title (e.g. "Speed")
+
+![create_dashboard](./dashboard_6.png)
