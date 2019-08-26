@@ -134,6 +134,14 @@ publish("id": "historical_device_data", "result": historicalData);
 ```
 Notice that we used different id values: "latest_device_data" and "historical_device_data", which allows the widget of the dashboard to only consume messages they are interested in, as we will see it shortly.
 
+Finally, let's return "historicalData" the variable that we created earlier that contains the result of the query. This is not necessary but we will use it to show you the structure of the data that is returned by a query.
+
+### Let's run a first test
+
+From the Postman user interface, we will issue a POST http request toward our ingestion script. Open Postman, create a new request of type POST and enter the address of your script.
+
+![test1](./tutorial_test1.png)
+
 ## Part 2: the dashboard
 
 In this simple example, we will not code anything on the User Interface side, but we will rather resort the "Dahboard Builder", a visual tool provide by scriptr.io's web IDE to rapidly implement dashboards. 
@@ -165,6 +173,16 @@ return data.speed;
 
 ![create_dashboard](./dashboard_6.png)
 
-Click "Save" to save you changes.
+Click the "Save" button the  to save you changes.
 
-Proceed similarly for the 
+Proceed similarly with the other widgets (the gauge to display the temperature and the odometer to display the number of passengers).
+
+- In the DATA tab, set the "message tag" field of the gauge and the odometer to "latest_device_data"
+- In the DATA tab, set the "data" field of the gauge to ```return data.temperature``` and set the data field of the odometer to ```return data.num_passengers```. Also set the "static data" field of the latter to 0.
+- In the MIN/MAX tab of the gauge, set the values of the **Gauge min** and **Gauge max** fields to 0 and 50 (or any other value)
+- Change the title of the widgets using the BOX PROPERTIES tab.
+
+Click the "Save" button the  to save you changes.
+
+### Displaying the historical values
+
