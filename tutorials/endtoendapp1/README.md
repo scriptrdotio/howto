@@ -252,6 +252,10 @@ You should now have a dashboard that resembles the below:
 
 Before opening the dahboard in the browser, turn it into a secure dashboard, i.e. a page that can only display data to authenticated and authorized users. On that purpose, click the small red lock icon on the right corner of the screen:
 
-- Remove anonymous (
+- Remove "anonymous" (allows for non authenticated access) 
+- Select "authenticated" (restrict access to users/devices of your account) from the drop-down. 
+- Click "add" and confirm your choice with "Yes".
+
+![acl](./acl1.png)
 
 ## Let's try again
