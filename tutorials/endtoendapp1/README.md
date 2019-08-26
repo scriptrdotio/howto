@@ -125,13 +125,14 @@ Let's now get back to editing the "ingestion" script. We need to publish the new
 So let's go ahead and add the code to publish the payload that was just received by our "ingest" script:
 ```
 // add the below line to the ingestion script
-publish("id": "device_data", "result": payload);
+publish("id": "latest_device_data", "result": payload);
 ```
 Let's also add the code to publish the historical values we've just obtained from the execution of our request:
 ```
 // add the below line to the ingestion script
-publish("id": "device_data", "result": historicalData);
+publish("id": "historical_device_data", "result": historicalData);
 ```
+Notice that we used different id values: "latest_device_data" and "historical_device_data", which allows the widget of the dashboard to only consume messages they are interested in, as we will see it shortly.
 
 ## Part 2: the dashboard
 
@@ -145,7 +146,7 @@ To display current values of speed, temperature and number of passengers, we wil
 
 Let's customize our widgets a bit to fit our use case, by clicking the gear icon on the right corner of each widget. Let's start with the first gauge that will display the latest value of the speed:
 
-- In the DATA tab, replace the value of the **Message tag** with the value specified for the **id** field of the message published to the channel. In our case, we used "device_data"
+- In the DATA tab, replace the value of the **Message tag** with the value specified for the **id** field of the message published to the channel. In our case, we used "latest_device_data"
 - In the DATA tab, replace the code in the **Format data** field with the following:
 ```
 return data.speed;
