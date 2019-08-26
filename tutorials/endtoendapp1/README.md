@@ -166,7 +166,7 @@ Send your request to your script by clicking the **Send** button. You should obt
 
 ![test1](./tutorial_test5.png)
 
-As you can see, the historical values query returned an array containing a single document (since this is the first time we invoke our script):
+As you can see, the historical values query returns an array containing of documents (a single one in that case since this is the first time we invoke our script). Also notice the "creationDate", "key" (document unique ID) and "versionNumber" fields that are automatically added by scriptr.io.
 ```
 "result": [
  {
@@ -220,7 +220,20 @@ Proceed similarly with the other widgets (the gauge to display the temperature a
 - In the MIN/MAX tab of the gauge, set the values of the **Gauge min** and **Gauge max** fields to 0 and 50 (or any other value)
 - Change the title of the widgets using the BOX PROPERTIES tab.
 
-Click the "Save" button the  to save you changes.
+Click the "Save" button the  to save you changes. *Also make sure to give a name to your dashboard and to save it*.
 
 ### Displaying the historical values
 
+To display historical values we will resort to a "line chart". Just click the corresponding widget in the menu bar of the dashboard builder to add a line chart that will need to customize to reflect our needs.
+
+To customize the line chart widget, click the gear icon on its top-right corner:
+- In the DATA tab, set the "message tag" field to "historical_device_data"
+- Replace the value of the "API" field with "ingest" (this will ask the widget to send a request to this script) the first time it is loaded
+- Clear the content of the "DATA" field (this is optional)
+
+![create_dashboard](./dashboard_7.png)
+
+- In the X tab, specify the value that will be used on the horizontal axis by changing the "X Key" field. In our case, we will use the value of the "creationDate" field that is returned for each document by our query.  
+- Optionnally, you can specify the display angle of the values on the horizontal axis. In the below figure, we set this to an angle of 45 degrees.
+
+![create_dashboard](./dashboard_8.png)
