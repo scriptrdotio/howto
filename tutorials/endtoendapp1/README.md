@@ -140,11 +140,11 @@ In this simple example, we will not code anything on the User Interface side, bu
 
 To create a new dashboard, simply click the arrow near "+New Script" in the bottom left corner of the [workspace](https://www.scrptr.io/workspace) the select "Dashboard". 
 
+### Displaying the latest values
+
 To display current values of speed, temperature and number of passengers, we will respectively use 2 gauges and 1 odometer. Just click the corresponding icon in the dashboard's toolbar to add the widgets to the dashboard.
 
 ![create_dashboard](./ingestion_script_3.png)
-
-### 
 
 Let's customize our widgets a bit to fit our use case, by clicking the gear icon on the right corner of each widget. Let's start with the first gauge that will display the latest value of the speed:
 
@@ -164,3 +164,7 @@ return data.speed;
 - In the BOX PROPERTIES tab, replace the value of the **Box Label** field with an appropriate title (e.g. "Speed")
 
 ![create_dashboard](./dashboard_6.png)
+
+Click "Save" to save you changes.
+
+Proceed similarly for the 
