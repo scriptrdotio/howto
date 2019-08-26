@@ -150,7 +150,7 @@ Let's customize our widgets a bit to fit our use case, by clicking the gear icon
 ```
 return data.speed;
 ```
-**data** contains the value that is received by the widget. Since the ingestion script is publishing the whole payload it received, we need to instruct the gauge widget to only read the value of the payload field it is interested in (the "speed"). This is why we have to replace '''return data''' with '''return data.speed'''.
+**data** contains the value that is received by the widget. Since the ingestion script is publishing the whole payload it received, we need to instruct the gauge widget to only read the value of the payload field it is interested in (the "speed"). This is why we have to replace ```return data``` with ```return data.speed```.
 
 - In the MIN/MAX tab, replace the values of the **Gauge min** and **Gauge max** fields with values you find appropriate to represent the speed (let's say 0 to 150)
 
