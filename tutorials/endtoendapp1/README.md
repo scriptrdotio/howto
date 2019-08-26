@@ -170,11 +170,12 @@ As you can see, the historical values query returned an array containing a singl
 ```
 "result": [
  {
-  "key": "B02AF1417D8F374C1506286D51B26356",
+  "key": "8CDA3EA9AAE5587D113BBC9F9E5FB76D",
   "versionNumber": "1.0",
   "temperature": "25",
   "speed": "45",
-  "creationDate": "2019-08-26T11:43:28+0000"
+  "num_passengers": "12",
+  "creationDate": "2019-08-26T11:49:52+0000"
  }
 ]
 ```
