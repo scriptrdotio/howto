@@ -153,7 +153,7 @@ return data.speed;
 ```
 **data** contains the value that is received by the widget. Since the ingestion script is publishing the whole payload it received, we need to instruct the gauge widget to only read the value of the payload field it is interested in (the "speed"). This is why we have to replace ```return data``` with ```return data.speed```.
 
-![create_dashboard](./ingestion_script_5.png)
+![create_dashboard](./dashboard_5.png)
 
 - In the MIN/MAX tab, replace the values of the **Gauge min** and **Gauge max** fields with values you find appropriate to represent the speed (let's say 0 to 150)
 
