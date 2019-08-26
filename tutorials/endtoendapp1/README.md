@@ -125,12 +125,12 @@ Let's now get back to editing the "ingestion" script. We need to publish the new
 So let's go ahead and add the code to publish the payload that was just received by our "ingest" script:
 ```
 // add the below line to the ingestion script
-publish("id": "latest_device_data", "result": payload);
+publish({"id": "latest_device_data", "result": payload});
 ```
 Let's also add the code to publish the historical values we've just obtained from the execution of our request:
 ```
 // add the below line to the ingestion script
-publish("id": "historical_device_data", "result": historicalData);
+publish({"id": "historical_device_data", "result": historicalData});
 ```
 Notice that we used different id values: "latest_device_data" and "historical_device_data", which allows the widget of the dashboard to only consume messages they are interested in, as we will see it shortly.
 
@@ -250,12 +250,17 @@ You should now have a dashboard that resembles the below:
 
 ## Open the dashboard in the browser
 
-Before opening the dahboard in the browser, turn it into a secure dashboard, i.e. a page that can only display data to authenticated and authorized users. On that purpose, click the small red lock icon on the right corner of the screen:
+Before opening the dahboard in the browser, turn it into a secure dashboard, i.e. a page that can only display data to authenticated and authorized users. On that purpose, click the small green lock icon on the right corner of the screen:
 
 - Remove "anonymous" (allows for non authenticated access) 
 - Select "authenticated" (restrict access to users/devices of your account) from the drop-down. 
 - Click "add" and confirm your choice with "Yes".
+- Save your changes.
 
 ![acl](./acl1.png)
 
+The green lock turns into red to indicate that the dashboard is now only accessible by authenticated users. Click **View** in the toolbar to open the dashboard in the browser.
+
 ## Let's try again
+
+
