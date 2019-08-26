@@ -119,18 +119,20 @@ Publishing - or broadcasting - data to anyone listening (this is refered to as "
 
 Let's now get back to editing the "ingestion" script. We need to publish the new data to the dashboard (through the **dashboardChannel**). This is simply done using the native **publish** function that expects you to pass it the following properties:
 
-- "id": this can be any string you specify, which is used by a subsciber of the channel to determine that a published message is his
-- "result": this can be any value or object to publish towards subscribers
+- The name of the channel to publish to (e.g. dashboardChannel)
+- An object containing the following fields:
+  - "id": this can be any string you specify, which is used by a subsciber of the channel to determine that a published message is his
+  - "result": this can be any value or object to publish towards subscribers
 
 So let's go ahead and add the code to publish the payload that was just received by our "ingest" script:
 ```
 // add the below line to the ingestion script
-publish({"id": "latest_device_data", "result": payload});
+publish("dashboardChannel", {"id": "latest_device_data", "result": payload});
 ```
 Let's also add the code to publish the historical values we've just obtained from the execution of our request:
 ```
 // add the below line to the ingestion script
-publish({"id": "historical_device_data", "result": historicalData});
+publish("dashboardChannel", {"id": "historical_device_data", "result": historicalData});
 ```
 Notice that we used different id values: "latest_device_data" and "historical_device_data", which allows the widget of the dashboard to only consume messages they are interested in, as we will see it shortly.
 
