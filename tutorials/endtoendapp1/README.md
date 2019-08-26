@@ -144,6 +144,8 @@ To display current values of speed, temperature and number of passengers, we wil
 
 ![create_dashboard](./ingestion_script_3.png)
 
+### 
+
 Let's customize our widgets a bit to fit our use case, by clicking the gear icon on the right corner of each widget. Let's start with the first gauge that will display the latest value of the speed:
 
 - In the DATA tab, replace the value of the **Message tag** with the value specified for the **id** field of the message published to the channel. In our case, we used "latest_device_data"
