@@ -127,14 +127,14 @@ Let's now get back to editing the "ingestion" script. We need to publish the new
 So let's go ahead and add the code to publish the payload that was just received by our "ingest" script:
 ```
 // add the below line to the ingestion script
-publish("dashboardChannel", {"id": "latest_device_data", "result": payload});
+publish("dashboardChannel", {"id": "latest_device_value", "result": payload});
 ```
 Let's also add the code to publish the historical values we've just obtained from the execution of our request:
 ```
 // add the below line to the ingestion script
-publish("dashboardChannel", {"id": "historical_device_data", "result": historicalData});
+publish("dashboardChannel", {"id": "historical_device_value", "result": historicalData});
 ```
-Notice that we used different id values: "latest_device_data" and "historical_device_data", which allows the widget of the dashboard to only consume messages they are interested in, as we will see it shortly.
+Notice that we used different id values: "latest_device_value" and "historical_device_value", which allows the widget of the dashboard to only consume messages they are interested in, as we will see it shortly.
 
 Finally, let's return "historicalData" the variable that we created earlier that contains the result of the query. This is not necessary but we will use it to show you the structure of the data that is returned by a query.
 
