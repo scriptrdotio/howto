@@ -209,7 +209,7 @@ To display current values of speed, temperature and number of passengers, we wil
 
 Let's customize our widgets a bit to fit our use case, by clicking the gear icon in the right corner of each widget. Let's start with the first gauge that will display the latest value of the speed:
 
-- In the DATA tab, replace the value of the **Message tag** with the value specified for the **id** field of the message published to the channel. In our case, we used "latest_device_data". This means that our gauge will only consume published messages that have an id set to "latest_device_data".
+- In the DATA tab, replace the value of the **Message tag** with the value specified for the **id** field of the message published to the channel. In our case, we used "latest_device_value". This means that our gauge will only consume published messages that have an id set to "latest_device_value".
 - In the DATA tab, replace the code in the **Format data** field with the following:
 ```
 return data.speed;
@@ -243,7 +243,7 @@ To display historical values we will resort to a "line chart". Just click the co
 
 To customize the line chart widget, click the gear icon on its top-right corner:
 
-- In the DATA tab, set the "message tag" field to "historical_device_value". This means that our line chart will only consume published messages that have an id set to "historical_device_data".
+- In the DATA tab, set the "message tag" field to "historical_device_value". This means that our line chart will only consume published messages that have an id set to "historical_device_value".
 - Replace the value of the "API" field with "ingestion". This instructs the widget to send a request to this script, the first time it is loaded. The widget will thus display any data that is returned by the script.
 - Clear the content of the "DATA" field (this is optional)
 
