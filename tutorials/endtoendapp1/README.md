@@ -116,7 +116,7 @@ We will leverage the publish/subscribe ability of scriptr.io to propagate (i.e. 
 - Click your username in the top-right corner of the screen
 - From the drop-down, select "settings"
 - Click the "Channel" tab
-- Add a new channel (name it "dashboardchannel" for this tutorial) them click the check sign
+- Add a new channel (name it "dashboardchannel" for this tutorial) then click the check sign
 
 ![create_channel](./ingestion_script_2.png)
 
