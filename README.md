@@ -1,11 +1,17 @@
 # About
 
-This repository contains a list of small tutorials that answer most of the common questions related to using [scriptr.io](https://www.scriptr.io), in complement to our [documentation](https://www.scriptr.io/documentation#documentation-get-attachmentgetAttachment). It is meant to be used in two ways: (1) if you are new to [scriptr.io](https://www.scriptr.io), it is recommended to read the content of the list sequentially, to teach yourself how to use [scriptr.io](https://www.scriptr.io) to implement your iot applications. (2) Otherwise, pick a **how-to** article that matches your needs.
+This repository contains a list of small tutorials that answer most of the common questions related to using [scriptr.io](https://www.scriptr.io), in complement to our [documentation](https://www.scriptr.io/documentation#documentation-get-attachmentgetAttachment). It is meant to be used in two ways: 
+- (1) If you are new to [scriptr.io](https://www.scriptr.io), it is recommended start with the [tutorial](#tutorial) and/or to read the content of the list sequentially, to teach yourself how to use [scriptr.io](https://www.scriptr.io) to implement your iot applications. 
+- (2) If you already are familiar with scriptr.io, pick a **how-to** article that matches your needs.
 
 # Pre-requisites
 
 - **Make sure that you already [signed-up for a free account](https://www.scriptr.io/register)!** 
 - If you don't know yet what scriptr.io is, check [what scriptr.io is and what it allows you to do](https://github.com/scriptrdotio/howto/blob/master/whatis/whatis_scriptr.md).
+
+# Tutorial
+
+If you prefer starting by checking how to develop an end-to-end application, start with [this tutorial](./tutorials/endtoendapp1/README.md)
 
 # How to...
 
