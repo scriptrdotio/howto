@@ -73,7 +73,7 @@ To manipulate documents, you need to use the document API (or module). To instru
 ```
 var document = require("document"); // add this line to the ingestion script
 ```
-In the above instruction, we loaded the document API into a variable called "document". We can now leverage all the functions that are defined in our API through this variable (document). More particularly, to create a document using the received payload, just save the latter by using the **save** function of the document object.
+In the above instruction, we loaded the document API into a variable called "document". We can now leverage all the functions that are defined in our API through this variable ("document"). More particularly, to create a document using the received payload, just save the latter by using the **save** function of the document object.
 ```
 document.save(payload);  // add this line to the ingestion script
 ```
