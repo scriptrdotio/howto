@@ -281,4 +281,15 @@ The green lock turns into red to indicate that the dashboard is now only accessi
 
 From Postman, click the "Send" button again. You should this that the value are automatically reflected on your dashboard. Try changing the values of speed, temperature and number of passengers and clicking "Send" every time to see how your dashboard will be updated.
 
+# Read more
 
+The different features seen throughout this tutorial are described in the following "how tos":
+
+- [How to create a secure and scalable API?](https://github.com/scriptrdotio/howto/blob/master/api/create_api.md)
+- [How to retrieve the parameters sent to my API via http?]
+- [How to persist data?](https://github.com/scriptrdotio/howto/blob/master/data/persist_data.md)
+- [How to retrieve my persisted data?](https://github.com/scriptrdotio/howto/blob/master/data/query_data.md)
+- [How to obtain authentication tokens?](https://github.com/scriptrdotio/howto/blob/master/api/obtain_auth_token.md)
+- [How to restrict access to my API?](https://github.com/scriptrdotio/howto/blob/master/acl/restrict_access_to_api.md)
+- [How to display simple values in a dashboard?](https://github.com/scriptrdotio/howto/blob/master/ui/create_dashboard.md)
+- [How to display historical data in a dashboard?](https://github.com/scriptrdotio/howto/blob/master/ui/create_dashboard_historical.md)
