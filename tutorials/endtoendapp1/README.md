@@ -295,3 +295,7 @@ The different features seen throughout this tutorial are described in the follow
 - [How to display historical data in a dashboard?](https://github.com/scriptrdotio/howto/blob/master/ui/create_dashboard_historical.md)
 - [How to know what data structure is expected by a widget I add to my dashboard?](https://github.com/scriptrdotio/howto/blob/master/ui/what_data_structure_for_widget.md)
 - [How to update my dashboard in real time?](https://github.com/scriptrdotio/howto/blob/master/ui/realtime_dashboard.md)
+
+# Check the tutorials on scriptr.io's blog
+
+There is an extensive list of specific [tutorials on our blog](https://blog.scriptr.io/category/tutorials). Don't hesitate to check it!
