@@ -126,7 +126,7 @@ Any entity wishing to consume the messages that are published to a channel needs
 ![subscribe](./subscribe_1.png)
 
 - Set the value of the "Subscribe channel" field to "dashboardchannel". 
-- Save you changess
+- Save you changes
 
 ![subscribe](./subscribe_2.png)
 
