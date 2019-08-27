@@ -169,7 +169,7 @@ Make sure to check the "raw" rabio button and set the content type to JSON(appli
 
 ![test1](./tutorial_test2.png)
 
-We also need to specify our credentials since, as already mentioned, our script is a secure web service. For now, we will use our scriptr.io account's main token. To get it, click your username in scriptr.io's [workspace](https://www.scrptr.io/workspace). Click "Account" the copy the value of the Token field.
+We also need to specify our credentials since, as already mentioned, our script is a secure web service. For now, we will use our scriptr.io account's main token. To get it, click your username in scriptr.io's [workspace](https://www.scrptr.io/workspace). Click "Account", then copy the value of the "Token" field.
 
 ![test1](./tutorial_test3.png)
 
