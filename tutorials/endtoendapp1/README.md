@@ -109,7 +109,7 @@ Don't forget to save your changes.
 
 ### 4. Publish the latest and the historical values to the dashboard
 
-Publishing - or broadcasting - data to anyone listening (this is refered to as "publish/subscribe") is a very practical mechanism that allows for the real-time propagation of data for one data source to one or many destinations. It is done in scriptr.io through **channels**. 
+Publishing - or broadcasting - data to anyone listening (this is refered to as "publish/subscribe") is a very practical mechanism that allows for the real-time propagation of data from one data source to one or many destinations. It is done in scriptr.io through **channels**. 
 
 We will leverage the publish/subscribe ability of scriptr.io to propagate (i.e. *publish*) data from the server-side script to the dashboard, in real-time. Before we can publish anything to our dashboard, we first need to create a channel:
 
