@@ -11,7 +11,7 @@ This repository contains a list of short documents that answer most of the commo
 
 # Tutorial
 
-If you prefer starting by checking how to develop an end-to-end application, start with [this tutorial](./tutorials/endtoendapp1/README.md)
+If you prefer starting by checking how to develop an end-to-end application, try [this tutorial](./tutorials/endtoendapp1/README.md)
 
 # How to...
 
