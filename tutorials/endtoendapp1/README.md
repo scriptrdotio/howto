@@ -147,7 +147,7 @@ Let's also add the code to publish the historical values we've just obtained fro
 // add the below line to the ingestion script
 publish("dashboardchannel", {"id": "historical_device_value", "result": historicalData});
 ```
-Notice that we used different id values: "latest_device_value" and "historical_device_value", which allows the widget of the dashboard to only consume messages they are interested in, as we will see it shortly.
+Notice that we used different id values: "latest_device_value" and "historical_device_value", which allows the widgets of the dashboard to only consume messages they are interested in, as we will see it shortly.
 
 Finally, let's return "historicalData" the variable that we created earlier that contains the result of the query. This is not necessary but we will use it to show you the structure of the data that is returned by a query.
 
