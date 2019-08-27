@@ -81,7 +81,7 @@ That's all. Don't forget to save your changes.
 
 ### 3. Query the data store for the historical values of each measurement
 
-While scriptr.io's data store is not a relational databse, you still can build queries to retrieve your data, using a simple syntax that is rather close to SQL. 
+While scriptr.io's data store is not a relational database, you still can build queries to retrieve your data, using a simple syntax that is rather close to SQL. 
 
 Scriptr.io queries allow you to retrieve documents (or document excerpts) from your store, based on some criteria you provide. A query requires you to specify the following (at least):
 - the query expression (filtering criteria)
