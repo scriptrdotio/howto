@@ -230,7 +230,7 @@ Click the "Save" button to save you changes.
 
 Proceed similarly with the other widgets (the gauge to display the temperature and the odometer to display the number of passengers).
 
-- In the DATA tab, set the "message tag" field of the gauge and the odometer to "latest_device_data"
+- In the DATA tab, set the "message tag" field of the gauge and the odometer to "latest_device_value"
 - In the DATA tab, set the "data" field of the gauge to ```return data.temperature``` and set the data field of the odometer to ```return data.num_passengers```. Also set the "static data" field of the latter to 0.
 - In the MIN/MAX tab of the gauge, set the values of the **Gauge min** and **Gauge max** fields to 0 and 50 (or any other value)
 - Change the title of the widgets using the BOX PROPERTIES tab.
@@ -243,7 +243,7 @@ To display historical values we will resort to a "line chart". Just click the co
 
 To customize the line chart widget, click the gear icon on its top-right corner:
 
-- In the DATA tab, set the "message tag" field to "historical_device_data". This means that our line chart will only consume published messages that have an id set to "historical_device_data".
+- In the DATA tab, set the "message tag" field to "historical_device_value". This means that our line chart will only consume published messages that have an id set to "historical_device_data".
 - Replace the value of the "API" field with "ingestion". This instructs the widget to send a request to this script, the first time it is loaded. The widget will thus display any data that is returned by the script.
 - Clear the content of the "DATA" field (this is optional)
 
