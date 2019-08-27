@@ -181,7 +181,7 @@ Send your request to your script by clicking the **Send** button. You should obt
 
 ![test1](./tutorial_test5.png)
 
-As you can see, the historical values query returns an array containing of documents (a single one in that case since this is the first time we invoke our script). Also notice the "creationDate", "key" (document unique ID) and "versionNumber" fields that are automatically added by scriptr.io.
+As you can see, the historical values query returns an array (list) of documents (a single one in that case since this is the first time we invoke our script). Also notice the "creationDate", "key" (document unique ID) and "versionNumber" fields that are automatically added by scriptr.io.
 ```
 "result": [
  {
