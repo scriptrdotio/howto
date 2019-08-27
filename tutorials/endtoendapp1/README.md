@@ -197,9 +197,9 @@ As you can see, the historical values query returns an array containing of docum
 
 ## Part 2: the dashboard
 
-In this simple example, we will not code anything on the User Interface side, but we will rather resort the "Dahboard Builder", a visual tool provide by scriptr.io's web IDE to rapidly implement dashboards. 
+In this simple example, we will not code anything on the User Interface side, but we will rather resort to the "Dahboard Builder", a visual tool provided by scriptr.io's web IDE to rapidly implement dashboards. A dashboard is merely an HTML/JavaScript page that is generated for you. It is thus served by scriptr.io but runs in the browser. 
 
-To create a new dashboard, simply click the arrow near "+New Script" in the bottom left corner of the [workspace](https://www.scrptr.io/workspace) the select "Dashboard". 
+To create a new dashboard, simply click the arrow near "+New Script" in the bottom left corner of the [workspace](https://www.scrptr.io/workspace) then select "Dashboard". 
 
 ### Displaying the latest values
 
@@ -209,7 +209,7 @@ To display current values of speed, temperature and number of passengers, we wil
 
 Let's customize our widgets a bit to fit our use case, by clicking the gear icon on the right corner of each widget. Let's start with the first gauge that will display the latest value of the speed:
 
-- In the DATA tab, replace the value of the **Message tag** with the value specified for the **id** field of the message published to the channel. In our case, we used "latest_device_data"
+- In the DATA tab, replace the value of the **Message tag** with the value specified for the **id** field of the message published to the channel. In our case, we used "latest_device_data". This means that our gauge will only consume published messages that have an id set to "latest_device_data".
 - In the DATA tab, replace the code in the **Format data** field with the following:
 ```
 return data.speed;
@@ -226,7 +226,7 @@ return data.speed;
 
 ![create_dashboard](./dashboard_6.png)
 
-Click the "Save" button the  to save you changes.
+Click the "Save" button to save you changes.
 
 Proceed similarly with the other widgets (the gauge to display the temperature and the odometer to display the number of passengers).
 
@@ -235,15 +235,16 @@ Proceed similarly with the other widgets (the gauge to display the temperature a
 - In the MIN/MAX tab of the gauge, set the values of the **Gauge min** and **Gauge max** fields to 0 and 50 (or any other value)
 - Change the title of the widgets using the BOX PROPERTIES tab.
 
-Click the "Save" button the  to save you changes on the widget. *Also make sure to give a name to your dashboard and to save it*.
+Click the "Save" button to save you changes on the widget. *Also make sure to give a name to your dashboard and to save it. Saving changes on a Widget does not save the dashboard itself!*.
 
 ### Displaying the historical values
 
-To display historical values we will resort to a "line chart". Just click the corresponding widget in the menu bar of the dashboard builder to add a line chart that will need to customize to reflect our needs.
+To display historical values we will resort to a "line chart". Just click the corresponding widget in the menu bar of the dashboard builder to add a line chart, which we will also customize to our needs.
 
 To customize the line chart widget, click the gear icon on its top-right corner:
-- In the DATA tab, set the "message tag" field to "historical_device_data"
-- Replace the value of the "API" field with "ingestion" (this will ask the widget to send a request to this script) the first time it is loaded
+
+- In the DATA tab, set the "message tag" field to "historical_device_data". This means that our line chart will only consume published messages that have an id set to "historical_device_data".
+- Replace the value of the "API" field with "ingestion". This instructs the widget to send a request to this script, the first time it is loaded. The widget will thus display any data that is returned by the script.
 - Clear the content of the "DATA" field (this is optional)
 
 ![create_dashboard](./dashboard_7.png)
@@ -254,11 +255,11 @@ To customize the line chart widget, click the gear icon on its top-right corner:
 ![create_dashboard](./dashboard_8.png)
 
 - In the Y tab, specify the value that will be used on the vertical axis by changing the "Y Keys" field. In our case, we will use the "speed", "temperature" and "num_passengers" fields of the documents that are returned by the query and published to the dashboard. 
-- Notice that you also can modify the labels that will respectively be diplayed for each field by  the widget.
+- Notice that you also can modify the labels that will respectively be diplayed for each field by the widget.
 
 ![create_dashboard](./dashboard_9.png)
 
-Click the "Save" button the  to save you changes on the widget. *Also make sure to save your dashboard*.
+Click the "Save" button to save you changes on the widget. *Also make sure to save your dashboard*.
 You should now have a dashboard that resembles the below:
 
 ![create_dashboard](./dashboard_10.png)
@@ -277,5 +278,7 @@ Before opening the dahboard in the browser, turn it into a secure dashboard, i.e
 The green lock turns into red to indicate that the dashboard is now only accessible by authenticated users. Click **View** in the toolbar to open the dashboard in the browser.
 
 ## Let's try again
+
+From Postman, click the "Send" button again. You should this that the value are automatically reflected on your dashboard. Try changing the values of speed, temperature and number of passengers and clicking "Send" every time to see how your dashboard will be updated.
 
 
