@@ -7,7 +7,7 @@ This repository contains a list of short documents that answer most of the commo
 # Pre-requisites
 
 - **Make sure that you already [signed-up for a free account](https://www.scriptr.io/register)!** 
-- If you don't know yet what scriptr.io is, check [what scriptr.io is and what it allows you to do](https://github.com/scriptrdotio/howto/blob/master/whatis/whatis_scriptr.md).
+- If you don't know yet what scriptr.io is, **check [what scriptr.io is and what it allows you to do](https://github.com/scriptrdotio/howto/blob/master/whatis/whatis_scriptr.md)**.
 
 # Tutorial
 
