@@ -4,7 +4,7 @@ This is a short tutorial on how to implement a very simple end-to-end IoT applic
 
 We will consider the following use case: we need to display in a very simple dashboard, the current and historical values of measurements (speed, temperature and number of passengers) sent by a device to our scriptr.io account through http POST requests. Value changes will be reflected in real-time in the dashboard.
 
-Through the tutorial, you will become more familiar with programming applications with scriptr.io and notbaly:
+Through the tutorial, you will become more familiar with programming applications with scriptr.io and notably:
 
 - Exposing operations through an API
 - Storing and persisting data into scriptr.io's NoSQL data store
