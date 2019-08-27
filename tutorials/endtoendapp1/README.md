@@ -137,7 +137,7 @@ Let's now get back to editing the "ingestion" script. We need to publish the new
   - "id": this can be any string you specify, which is used by a subsciber of the channel to determine that a published message is his
   - "result": this can be any value or object to publish towards subscribers
 
-So let's go ahead and add the code to publish the payload that was just received by our "ingest" script:
+So let's go ahead and add the code to publish the payload that was just received by our "ingestion" script:
 ```
 // add the below line to the ingestion script
 publish("dashboardchannel", {"id": "latest_device_value", "result": payload});
