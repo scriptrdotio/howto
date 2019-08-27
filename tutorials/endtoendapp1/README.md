@@ -46,7 +46,7 @@ In the following, we assume that the device sends us the following JSON payload 
 }
 ```
 
-### 1. Extract payload sent by the device
+### 1. Extract the payload sent by the device
 
 Let's go ahead and create our ingestion script. This is a server-side script, i.e. it runs on the cloud. To create a new (server-side) script from the [workspace](https://www.scrptr.io/workspace), click on the +New Script option in the bottom-left corner of the screen:
 
