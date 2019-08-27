@@ -1,7 +1,7 @@
 # About
 
 This repository contains a list of short documents that answer most of the common questions related to using [scriptr.io](https://www.scriptr.io), in complement to our [documentation](https://www.scriptr.io/documentation#documentation-get-attachmentgetAttachment). It is meant to be used in two ways: 
-- (1) If you are new to [scriptr.io](https://www.scriptr.io), it is recommended to either start with the [tutorial](#tutorial) and/or to read the content of the list sequentially, to teach yourself how to use [scriptr.io](https://www.scriptr.io) to implement your iot applications. 
+- (1) If you are new to [scriptr.io](https://www.scriptr.io), it is recommended to either start with the [tutorial](#tutorial) and/or to read the content of the how-to list below sequentially, to teach yourself how to use [scriptr.io](https://www.scriptr.io) to implement your iot applications. 
 - (2) If you already are familiar with scriptr.io, pick a **how-to** article that matches your needs.
 
 # Pre-requisites
