@@ -69,7 +69,7 @@ Save your changes by clicking "Save".
 
 Scriptr.io's data store is not a relational database. Instead of saving data in table rows, you save them into *documents*, which are key/value pairs. 
 
-To manipulate documents, you need to use the document API. To instruct your script to load an API, just use the **require** function as follows:
+To manipulate documents, you need to use the document API (or module). To instruct your script to load an API (module), just use the **require** function as follows:
 ```
 var document = require("document"); // add this line to the ingestion script
 ```
