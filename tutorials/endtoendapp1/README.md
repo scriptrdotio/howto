@@ -50,7 +50,7 @@ In the following, we assume that the device sends us the following JSON payload 
 
 Let's go ahead and create our ingestion script. This is a server-side script, i.e. it runs on the cloud. To create a new (server-side) script from the [workspace](https://www.scrptr.io/workspace), click on the +New Script option in the bottom-left corner of the screen:
 
-- Enter a name for your script ("ingestion")
+- Enter a name for your script (we will name it "ingestion" in this example)
 - In the editor area, type "return" and save the script by clicking "Save" in the menu bar.
 
 ![create_script](./ingestion_script_1.png)
