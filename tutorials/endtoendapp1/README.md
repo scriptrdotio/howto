@@ -177,9 +177,10 @@ From the Postman user interface, click the "Authorization" tab. From the "Type" 
 
 ![test1](./tutorial_test4.png)
 
-*If you are not using Postman but, you might find the below code snippets useful to insert into your code on the device side:
-|cUR                                                               |
---------------------------------------------------------------------
+*If you are not using Postman but, you might find the below code snippets useful to insert into your code on the device side:*
+
+|cURL                                                               |
+|------------------------------------------------------------------|
 | ```                                                              |
 | curl -X POST                                                     |
 |  https://api.scriptrapps.io/tutorials/endtoendapp1/ingestion     |
@@ -191,7 +192,6 @@ From the Postman user interface, click the "Authorization" tab. From the "Type" 
 |    "num_passengers": 14                                          |
 | }'                                                               |
 |```                                                               |
-*
 
 Send your request to your script by clicking the **Send** button. You should obtain a response similar to the below:
 
