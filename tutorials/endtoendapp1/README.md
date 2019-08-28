@@ -1,6 +1,6 @@
 # About this tutorial
 
-This is a short tutorial on how to implement a very simple end-to-end IoT application with scriptr.io, as means to start familiarizing yourself with our platform.
+This is a short tutorial on how to implement a very simple end-to-end IoT application with scriptr.io, as means to start familiarizing yourself with [our platform](../whatis/whatis_scriptr.md).
 
 We will consider the following use case: we need to display in a very simple dashboard, the current and historical values of measurements (speed, temperature and number of passengers) sent by a device to our scriptr.io account through http POST requests. Value changes will be reflected in real-time in the dashboard.
 
