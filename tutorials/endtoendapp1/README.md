@@ -177,6 +177,22 @@ From the Postman user interface, click the "Authorization" tab. From the "Type" 
 
 ![test1](./tutorial_test4.png)
 
+*If you are not using Postman but, you might find the below code snippets useful to insert into your code on the device side:
+|cUR                                                               |
+--------------------------------------------------------------------
+| ```                                                              |
+| curl -X POST                                                     |
+|  https://api.scriptrapps.io/tutorials/endtoendapp1/ingestion     |
+|  -H 'Content-Type: application/json'                             |
+|  -H 'Authorization: bearer <your_scriptr.io_token_here>          |
+|  -d '{                                                           |
+|    "speed": 40,                                                  |
+|    "temperature": 24,                                            |
+|    "num_passengers": 14                                          |
+| }'                                                               |
+|```                                                               |
+*
+
 Send your request to your script by clicking the **Send** button. You should obtain a response similar to the below:
 
 ![test1](./tutorial_test5.png)
