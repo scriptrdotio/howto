@@ -177,22 +177,34 @@ From the Postman user interface, click the "Authorization" tab. From the "Type" 
 
 ![test1](./tutorial_test4.png)
 
-*If you are not using Postman but, you might find the below code snippets useful to insert into your code on the device side:*
+*If you are not using Postman but, you might find the below code cURL snippets useful to insert into your code on the device side:*
 
-|cURL                                                               |
-|------------------------------------------------------------------|
-| ```                                                              |
-| curl -X POST                                                     |
-|  https://api.scriptrapps.io/tutorials/endtoendapp1/ingestion     |
-|  -H 'Content-Type: application/json'                             |
-|  -H 'Authorization: bearer <your_scriptr.io_token_here>          |
-|  -d '{                                                           |
-|    "speed": 40,                                                  |
-|    "temperature": 24,                                            |
-|    "num_passengers": 14                                          |
-| }'                                                               |
-|```                                                               |
-
+**cURL**                                                    
+``` 
+curl -X POST           
+https://api.scriptrapps.io/tutorials/endtoendapp1/ingestion  
+  -H 'Content-Type: application/json'  
+  -H 'Authorization: bearer <your_scriptr.io_token_here>  
+  -d '{ 
+    "speed": 40, 
+    "temperature": 24,
+    "num_passengers": 14 
+ }' 
+```  
+**Python**
+```
+import http.client
+conn = http.client.HTTPConnection("api,scriptrapps,io")
+payload = "{\n  \"speed\": 40, \n  \"temperature\": 24, \n  \"num_passengers\": 14\n}"
+headers = {
+    'Content-Type': "application/json",
+    'Authorization': "bearer <your_scriptr.io_token_here>"
+    }
+conn.request("POST", "tutorials,endtoendapp1,ingestion", payload, headers)
+res = conn.getresponse()
+data = res.read()
+print(data.decode("utf-8"))
+```
 Send your request to your script by clicking the **Send** button. You should obtain a response similar to the below:
 
 ![test1](./tutorial_test5.png)
