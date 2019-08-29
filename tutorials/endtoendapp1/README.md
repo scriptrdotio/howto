@@ -177,7 +177,7 @@ From the Postman user interface, click the "Authorization" tab. From the "Type" 
 
 ![test1](./tutorial_test4.png)
 
-*If you are not using Postman but, you might find the below code cURL snippets useful to insert into your code on the device side:*
+*If you are not using Postman to simulate the device, you might find the below code snippets useful to insert into your code on the device side:*
 
 **cURL**                                                    
 ``` 
