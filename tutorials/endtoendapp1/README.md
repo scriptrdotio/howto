@@ -55,7 +55,7 @@ Let's go ahead and create our ingestion script. This is a server-side script, i.
 
 ![create_script](./ingestion_script_1.png)
 
-After saving your script, you now have a remotely accessible API available at the following endpoint: https://api.scriptrapps.io/ingestion.  [foot note 1](#foot-note-1), [foot note 2](#foot-note-2)
+After saving your script, you now have a remotely accessible API available at the following endpoint: https://api.scriptrapps.io/ingestion.   ([foot note 1](#foot-note-1), [foot note 2](#foot-note-2))
 
 Let's now add the code that retrieves the payload from the http request, to the "ingestion" script. All we need is to use the native **request** object and read the payload from the latter's **body** property:
 ```
