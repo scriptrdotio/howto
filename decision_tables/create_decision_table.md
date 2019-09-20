@@ -78,7 +78,8 @@ To add some **post-processing logic**. click on the  "Post-script" tab. Note tha
 
 ![Post-processing](./images/post-processing.png)
 
-
+# More
+[How to invoke a Decistion Table from another script](https://github.com/scriptrdotio/howto/blob/master/decision_tables/invoke_decision_table_from_script.md)
 
 
 
