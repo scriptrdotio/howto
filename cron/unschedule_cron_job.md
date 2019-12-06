@@ -16,9 +16,9 @@ There are two ways to do this:
 
 ## Unschedule a script from the code
 
-Scripts can be unscheduled using the native **unschedule()** function. All you need is pass it the handle obtained when scheduling he script (read more on [how to schedule the automatic the execution of a script](./create_cron_job.md). 
+Scripts can be unscheduled using the native **unschedule()** function. All you need is pass it the handle obtained when scheduling the script (read more on [how to schedule the automatic the execution of a script](./create_cron_job.md). 
 
-In the example below, we assume that the handle was persisted in a document ("scheduled_script_handle") in the "handle" field.
+In the example below, we assume that we previously persisted the handle (returned by the **schedule()** function) in a document whose key we set to "scheduled_script_handle". We stored the handle into a field of the document (we name this field "handle").
 
 ```
 var document = require("document");
@@ -33,3 +33,7 @@ return null;
 ```
 # More
 Read [how to schedule a script](./create_cron_job.md)
+
+For more on how to save/query data into/from documents:
+Read how to [persist data](https://github.com/scriptrdotio/howto/blob/master/data/persist_data.md)
+Read how to [retrieve persisted data](https://github.com/scriptrdotio/howto/blob/master/data/query_data.md)
