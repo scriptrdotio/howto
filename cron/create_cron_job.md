@@ -64,7 +64,7 @@ The executionof **schedule()** function returns a metadata section and a result 
 - metadata.status is set to "success" or "failure"
 - If the invocation is successful, **result.handle** contains a schedule handle
 
-**IMPORTANT** as shown in the above example, you should always persist the handle in some document if you need to unschedule your script.
+**IMPORTANT** to unschedule a script, you need to provide the handle returned by the schedule function (see [unschedule a script](./unschedule_cron_job.md)). Therefore, as shown in the above example, it is a good idea to persist this handle into some document whose key is easy to remember. This will make it simple to retrive the handle later on (from that document) when/if you need to unschedule your script.
 
 ```
 // successful execution of schedule() - example
