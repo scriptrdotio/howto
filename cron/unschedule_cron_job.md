@@ -35,5 +35,5 @@ return null;
 Read [how to schedule a script](./create_cron_job.md)
 
 For more on how to save/query data into/from documents:
-Read how to [persist data](https://github.com/scriptrdotio/howto/blob/master/data/persist_data.md)
-Read how to [retrieve persisted data](https://github.com/scriptrdotio/howto/blob/master/data/query_data.md)
+- Read how to [persist data](https://github.com/scriptrdotio/howto/blob/master/data/persist_data.md)
+- Read how to [retrieve persisted data](https://github.com/scriptrdotio/howto/blob/master/data/query_data.md)
