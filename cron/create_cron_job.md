@@ -64,7 +64,7 @@ The executionof **schedule()** function returns a metadata section and a result 
 - metadata.status is set to "success" or "failure"
 - If the invocation is successful, **result.handle** contains a schedule handle
 
-**IMPORTANT** to unschedule a script, you need to provide the handle returned by the schedule function (see [unschedule a script](./unschedule_cron_job.md)). Therefore, as shown in the above example, it is a good idea to persist this handle into some document whose key is easy to remember. This will make it simple to retrive the handle later on (from that document) when/if you need to unschedule your script.
+**IMPORTANT** to unschedule a script, you need to provide the handle returned by the schedule function (see [unschedule a script](./unschedule_cron_job.md)). Therefore, as shown in the above example, it is a good idea to persist this handle into some document whose key is easy to remember. This will make it simple to retrieve the handle later on (from that document) when/if you need to unschedule your script. In the above example, we've chosen "scheduled_script_handle" as a document key and we stored the handle in a field we named "handle" in this document.
 
 ```
 // successful execution of schedule() - example
@@ -91,4 +91,8 @@ The executionof **schedule()** function returns a metadata section and a result 
 # More
 
 Read how to [unschedule a script](./unschedule_cron_job.md)
+
+For more on how to save/query data into/from documents:
+Read how to [persist data](https://github.com/scriptrdotio/howto/blob/master/data/persist_data.md)
+Read how to [retrieve persisted data](https://github.com/scriptrdotio/howto/blob/master/data/query_data.md)
 
