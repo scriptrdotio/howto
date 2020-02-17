@@ -170,6 +170,8 @@ return {
 
 ![Grid API](./images/grid_api.png)
 
+*Image 10*
+
 ### Save your dashboard and view it
 
 - If not already done, give a name to your your dashboard. Save it by pressing Save in the workspace toolbar
