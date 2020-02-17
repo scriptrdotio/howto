@@ -7,9 +7,9 @@
 
 *Image 1*
 
-The dashboard builder is a visual environment that allows your to build dashboards without coding. It offers several widgets that are dedicated to displaying historical values, such as **[line charts](#line-chart), bar charts or [Grids](#grids)** This tutorial will explain how to use line charts and grids respectively.
+The dashboard builder is a visual environment that allows your to build dashboards without coding. It offers several widgets that are dedicated to displaying historical values, such as **[line charts](#Displaying-Historical-values-with-a-line-chart), bar charts or [Grids](#Displaying-historical-values-with-a-Grid)** This tutorial will explain how to use line charts and grids respectively.
 
-## Displaying Historical values with a line chart(#line-chart)
+## Displaying Historical values with a line chart
 
 Say you need a line chart to display the historical variations of temperature and humidity measured by a sensors and persisted in documents. 
 This is done in four steps:
@@ -94,7 +94,7 @@ return [];
 https://iotdemos.scriptrapps.io/tutorials/howto/ui/linechart_dashboard?auth_token=UzByDTgkRjkk2NjpmaXRiaXQ6MjlBRURDOEZCMzlDOTR1QUE5MDIxQ0LyGjc7MkJ5MDU%6X
 ```
 
-## Displaying historical values with a Grid (#grids)
+## Displaying historical values with a Grid
 
 If you need a tabular representation of your historical data, a grid is a more appropriate choice. As it is the case for the line chart, we wil do this in four steps:
 
