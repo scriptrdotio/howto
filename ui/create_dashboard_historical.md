@@ -7,7 +7,7 @@
 
 *Image 1*
 
-The dashboard builder is a visual environment that allows your to build dashboards without coding. It offers several widgets that are dedicated to displaying historical values, such as **[line charts](#line-chart), bar charts or [Grids](#grids). This tutorial will explain how to use line charts and grids respectively.
+The dashboard builder is a visual environment that allows your to build dashboards without coding. It offers several widgets that are dedicated to displaying historical values, such as **[line charts](#line-chart), bar charts or [Grids](#grids)** This tutorial will explain how to use line charts and grids respectively.
 
 ## Displaying Historical values with a line chart(#line-chart)
 
