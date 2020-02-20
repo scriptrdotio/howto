@@ -10,7 +10,7 @@ In a few words:
 
 ![scriptr.io features at a glance](./scriptr.io-iot-middleware.png)
 
-(1): Build dashboards by drag and dropping widgets using the Dashboard builder, or more advances User Interfaces with scriptr.io's UI Component library
+(1): Build dashboards by drag and dropping widgets using the Dashboard builder, or more advanced User Interfaces with scriptr.io's UI Component library
 
 (2): Create your own custom API and API operations. Orchestrate your API operations and third party API operation using scriptr.io's orchestration service
 
