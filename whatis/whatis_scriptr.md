@@ -63,7 +63,7 @@ In addition to these layers, you can add integrations with third party systems a
 - Publish mqtt messages to remote mqtt topics
 - Subscribe to remote mqtt topics
 - Send amqp messages to remote amqp exchanges/queues
-- Subscribe to remote amqp queues
+- Subscribe to remote amqp queues and exchanges
 - Create scheduled (cron) jobs 
 - Broadcast messages
 - Queue the execution of tasks
