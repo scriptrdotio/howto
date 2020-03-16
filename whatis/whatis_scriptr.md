@@ -6,7 +6,8 @@ In a few words:
 - Everything you code is automatically deployed in a secure and scalable cloud environment, releaving you from devops operations
 - Scriptr.io is a managed service, so we take care of monitoring the health of your applications
 - Scriptr.io runs on the cloud, and upon request: on premise (data centers) and even at the Edge
-- Scriptr.io is an extremely flexible and efficient IoT Middleware and communication broker, enabling collaboration among heterogenous platforms and protocols.
+- Scriptr.io is an extremely flexible and efficient IoT Middleware and communication broker, enabling collaboration among heterogenous platforms and protocols
+- It is a marketplace of pre-built IoT applications.
 
 ![scriptr.io features at a glance](./scriptr.io-iot-middleware.png)
 
@@ -83,6 +84,6 @@ There are many ways to do this:
 
 ## Do I need to write my application from scratch?
 
-No you don't: a major component of scriptr.io is its market of vertical applications. We offer many [domain-oriented applications](https://github.com/scriptrdotio?tab=repositories) (smart-water, smart-farming, asset monitoring, etc.) that you can customize and/or extend to your own requirements.
+No you don't: a major component of scriptr.io is its marketplace of vertical applications. We offer many [domain-oriented applications](https://github.com/scriptrdotio?tab=repositories) (smart-water, smart-farming, asset monitoring, etc.) that you can customize and/or extend to your own requirements.
 
 [Back to the how to list](https://github.com/scriptrdotio/howto/blob/master/README.md)
