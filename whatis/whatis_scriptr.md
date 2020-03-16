@@ -81,4 +81,8 @@ There are many ways to do this:
 - Leverage our **bridges** to subscribe to remote topics and queues (mqtt, amqp, websockets, Azure IoT hub, AWS, Everyware, etc.)
 - Leverage our [connectors](https://github.com/scriptrdotio?tab=repositories)
 
+## Do I need to write my application from scratch?
+
+No, a major component of scriptr.io is its market of vertical applications. We offer many [domain-oriented applications](https://github.com/scriptrdotio) (smart-water, smart-farming, asset monitoring, etc.) that you can customize and/or extend to your own requirements.
+
 [Back to the how to list](https://github.com/scriptrdotio/howto/blob/master/README.md)
