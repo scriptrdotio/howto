@@ -62,4 +62,5 @@ If you prefer starting by checking how to develop an end-to-end application, try
 - [How to invoke a decision table from a script?](https://github.com/scriptrdotio/howto/blob/master/decision_tables/invoke_decision_table_from_script.md)
 - [How to control the versions of my application and scripts?](https://github.com/scriptrdotio/howto/blob/master/teamwork/version_control.md)
 - [How to create queued jobs?](https://github.com/scriptrdotio/howto/blob/master/queuing/queue_tasks.md)
+- [How to dynamically generated files from your scripts](https://github.com/scriptrdotio/howto/blob/master/data/generate_file_from_script.md#how-to-dynamically-generate-a-file-from-within-a-script)
 
