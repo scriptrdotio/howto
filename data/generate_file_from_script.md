@@ -13,7 +13,7 @@ As a good practice, you should always keep read/write to "nobody" and possibly s
   - the content of the script
 - Next step is to invoke the setContent() function of the file module, passing the file envelop and specifying if you are updating an existing file or creating a new one (update set to true or false).
 
-'''
+```
 var content = "const MAX = 25;\nfunction isTemperatureTooHigh(temperature){return temperature > MAX;}";
 var fileContent = {
     "ACL":
@@ -29,4 +29,4 @@ var file = require("file");
 var update = false;
 
 return file.setContent("tests/dynamicscript",JSON.stringify(fileContent), update) ;
-'''
+```
