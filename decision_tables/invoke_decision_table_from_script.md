@@ -1,6 +1,6 @@
 # How to invoke a decision table from a script?
 
-A decison table is automatically turned into an API, which is meant to be invoked by remote clients through one of the supported communication protocols (http, mqtt, websockets, amqp). Nevertheless, it is possible for a script to invoke a decision table as if it was a module, using the native **scriptUtil** module and it **execute(path_to_table, payload)** function, as described in the below example.
+A decison table is automatically turned into an API, which is meant to be invoked by remote clients through one of the supported communication protocols (http, mqtt, websockets, amqp). Nevertheless, it is possible for a script to invoke a decision table as if it was a module, using the native **scriptUtil** module and its **execute(path_to_table, payload)** function, as described in the below example.
 
 ```
 // Require the scriptUtil module, notice the "/m"
