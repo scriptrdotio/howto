@@ -1,6 +1,4 @@
 
-
-
 Hello and welcome to this series of tutorials from scriptr.io
 
 <h1>Section 1 : login module</h1>
@@ -39,7 +37,9 @@ Let’s create a simple hello world page. In the workspace tab click on the litt
 Press on the view button to preview your page. 
 
 
-![alt_text](image1.png "image_tooltip")
+![alt_text](image3.png "image_tooltip")
+
+
 
 **Add the Module to your app**
 
@@ -52,8 +52,6 @@ We’re interested in login , the master branch, and want to install it in a fol
 
 Back in the workspace click on the arrow near **new script ** and select “Add custom module from github” and fill in the following information :
 
-
-
 *   Owner : scriptrdotio
 *   Repository : UIComponents
 *   Path : /login
@@ -61,9 +59,7 @@ Back in the workspace click on the arrow near **new script ** and select “Add 
 *   Destination Folder login , or other specific folder
 
 
-
-
-![alt_text](image2.png "image_tooltip")
+![alt_text](image4.png "image_tooltip")
 
 
 Click install and wait for the installation to complete. 
@@ -77,30 +73,30 @@ There are two notable files in the login folder:
 
 
 
-* **login/view/javascript/config.js** :
+*   **login/view/javascript/config.js** :
 
-  Will allows us to tell the login module where to go after login by changing the redirect variable. We could for example redirect the login module to the Welcome.html page we created.
+    Will allows us to tell the login module where to go after login by changing the redirect variable. We could for example redirect the login module to the Welcome.html page we created.
 
 
 ​    
 
 
-![alt_text](image3.png "image_tooltip")
+![alt_text](image2.png "image_tooltip")
 
 
 
     _Note: Watch out for case sensitivity._
 
-* **login/view/javascript/constants.js :**
+*   **login/view/javascript/constants.js :**
 
-  This file allows us to set the background/icon/powered by .. \
-  I will set it to an image that I previously found online. 
+    This file allows us to set the background/icon/powered by .. \
+I will set it to an image that I previously found online. 
 
 
 ​    
 
 
-![alt_text](image4.png "image_tooltip")
+![alt_text](image6.png "image_tooltip")
 
 
 
@@ -122,7 +118,7 @@ Click on **New **in the bottom and fill in a user such as admin/admin or demo/de
 
 
 
-![alt_text](image6.png "image_tooltip")
+![alt_text](image1.png "image_tooltip")
 
 **Login to test **
 
@@ -162,23 +158,21 @@ Then we’ll include the libraries and scripts from login:
 
 If we take a peek at authorization.js we’ll see the widget we want to initialize .. and the parameters it’s expecting , in a javascript on the page we’ll initialize that widget: 
 
-* An empty function for onTokenValid. 
+*   An empty function for onTokenValid. 
+*   A link back to the login page to be used when the user is not logged in , we could pass a string “/login/view/login.html” but we already have it defined in config.js (in config.loginPage).
+*   We set validateTokinApi to login.validateTokenApi (also in login) 
 
-* A link back to the login page to be used when the user is not logged in , we could pass a string “/login/view/login.html” but we already have it defined in config.js (in config.loginPage).
-
-* We set validateTokinApi to login.validateTokenApi (also in login) 
-
-  ```javascript
-  <script type="text/javascript">	
-        	var authorization  = $.scriptr.authorization(
-            	{
-                    onTokenValid: function(){ },
-                    loginPage: config.loginPage,
-                    validateTokenApi: login.validateTokenApi
-            	}
-        	);
-      </script>
-  ```
+    ```javascript
+    <script type="text/javascript">	
+          	var authorization  = $.scriptr.authorization(
+              	{
+                      onTokenValid: function(){ },
+                      loginPage: config.loginPage,
+                      validateTokenApi: login.validateTokenApi
+              	}
+          	);
+        </script>
+    ```
 
 
 
