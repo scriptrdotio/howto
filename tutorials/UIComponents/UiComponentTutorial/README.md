@@ -18,7 +18,7 @@ Here’s a preview of what we will build.
 
 
 
-![alt_text](images/image8.png "image_tooltip")
+![alt_text](image8.png "image_tooltip")
 
 
 First we’ll move “welcome.html” to **_/app/view/html _**then change**_ /login/view/javascript/config.js _** to reflect that change.  \
@@ -43,7 +43,7 @@ The destination folder we recommend is **UIComponent **to follow the tutorial mo
 
 
 
-![alt_text](images/image10.png "image_tooltip")
+![alt_text](image10.png "image_tooltip")
 
 
 <h3>Adding Header to welcome</h3>
@@ -368,7 +368,7 @@ Open your document’s html page .. we’ll need to define an app, attach the co
 Go back to the welcome page. Press view, login if you need to then click on documentation. The page should change and look like this if your code is similar to mine.
 
 
-![alt_text](images/image14.png "image_tooltip")
+![alt_text](image14.png "image_tooltip")
 
 
 
@@ -678,7 +678,7 @@ You’ll notice that a  single user can belong to more than one group, edit the 
 
 
 
-![alt_text](images/image3.png "image_tooltip")
+![alt_text](image3.png "image_tooltip")
 
 
 Now we'll move on to hiding header items depending on who is logged in. Back in the **Welcome.html **page modify the documentation entry in **vm.myItems** to make it accessible only to the documenter role:
@@ -706,13 +706,13 @@ To remedy that situation, go back to the workspace and open **app/view/html/docu
  Click on the Access Control List (the icon next to the word HTML)
 
 
-![alt_text](images/image13.png "image_tooltip")
+![alt_text](image13.png "image_tooltip")
 
 
 Select documenters and press **Add** 
 
 
-![alt_text](images/image6.png "image_tooltip")
+![alt_text](image6.png "image_tooltip")
 
 
 Documenters will now replace **anonymous** .. press **Save Changes.**
@@ -846,22 +846,22 @@ The base URL is the one we set earlier as a subdomain, and the token we’ll use
 
 
 
-![alt_text](images/image11.png "image_tooltip")
+![alt_text](image11.png "image_tooltip")
 
 
 
 
-![alt_text](images/image7.png "image_tooltip")
+![alt_text](image7.png "image_tooltip")
 
 Copy paste this data where it’s needed and save. 
 Next let’s make sure the responseChannel is defined . Click on the [User name] -> Settings 
 Select the Channels tab, make sure the following channel exists: **responseChannel**. 
 
-![alt_text](images/image5.png "image_tooltip")
+![alt_text](image5.png "image_tooltip")
 
 If it isn’t click on “Add Channel” an fill the following then press the save tick button: 
 
-![alt_text](images/image9.png "image_tooltip")
+![alt_text](image9.png "image_tooltip")
 
 Go back to **gaugeDemo.html **and press view to test it. The page should show a gauge with a value now. 
 
@@ -1191,7 +1191,7 @@ To check the log click on the **log** tab in the workspace to open the log page 
 
 
 
-![alt_text](images/image12.png "image_tooltip")
+![alt_text](image12.png "image_tooltip")
 
 
 Expand the **logTest** tab to see the message “logText called”  
@@ -1199,7 +1199,7 @@ Expand the **logTest** tab to see the message “logText called”
 
 
 
-![alt_text](images/image4.png "image_tooltip")
+![alt_text](image4.png "image_tooltip")
 
 
 We can use logs to check when a script runs, we can also print out values and see how they change as the script is updated.
@@ -1362,9 +1362,9 @@ Then send data via curl check the log that it was received and set, and finally 
 
 
 
-![alt_text](images/image2.png "image_tooltip")
+![alt_text](image2.png "image_tooltip")
 
 
 
 
-![alt_text](images/image1.png "image_tooltip")
+![alt_text](image1.png "image_tooltip")
