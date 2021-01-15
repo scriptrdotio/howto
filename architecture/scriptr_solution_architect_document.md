@@ -173,6 +173,14 @@ The beauty of scriptr.io is that any entity, whether it is a script within your 
 
 ![Integration middleware](./middleware.PNG)
 
+*Figure 12 - Implement business logic via orchestration and integration with 3rd parties*
+
+With a few lines of code, you can actually turn your scriptr.io application into a powerful interoperability middleware, by creating a first layer of event processors (your scripts) to transform incoming data into a target format, then letting those event processors publish the transformed events into other channels to which are subscribe third party event processors.
+
+![Interoperability middleware](./middelware-interoperability.PNG)
+
+*Figure 13 - Implement business logic via orchestration and integration with 3rd parties + data transformation*
+
 **ToC**
 - [Environment configuations](./scriptr_solution_architect_document.md#environment-configurations) you can have on scriptr.io
 - [Development life-cycle](./scriptr_solution_architect_document.md#development-life-cycle)
