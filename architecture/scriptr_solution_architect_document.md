@@ -1,6 +1,7 @@
-<p align="center">
-<h1>Scriptr.io solution architect booklet</h1>
-</p>
+#Scriptr.io solution architect booklet</h1>
+
+
+# Objectives of this document
 
 As you may already know, scriptr.io is a [managed serveless environment](../whatis/whatis_scriptr.md) that provides many services and components that you can leverage from within your code. This mainly means that it will make your life much easier when developping your applications, whether these are simple IoT applications ingesting and displaying device data, or large enterprise-grade solutions, integrating with multiple third parties and legacy systems.
 
