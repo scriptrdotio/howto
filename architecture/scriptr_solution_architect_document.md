@@ -14,6 +14,10 @@ This document is thus aimed at providing answers to the most common questions we
 Of course, you can always [contact us](mailto:support@scriptr.io) for any question. We also recommend checking the [how-to guides](https://github.com/scriptrdotio/howto/blob/master/README.md#how-to) and scriptr.io's [official documentation](https://www.scriptr.io/documentation).
 
 # Environment configurations
+There are three possible base configurations:
+- [Free shared environment](./scriptr_solution_architect_document.md#free-shared-environment)
+- [Paid shared environment](./scriptr_solution_architect_document.md#paid-shared-environment)
+- [Dedicated environment](./scriptr_solution_architect_document.md#dedicated-environment)
 
 ## Free shared environment
 This is an ideal option to become familiar with the power of scriptr.io, at no cost.
@@ -38,7 +42,7 @@ Once you feel more comfortable and you are ready to move to production, you can 
 ## Dedicated environment
 This is the most flexible option for medium to large and very large applications, when you have high scalability requirements.
 
-When your application reaches cruising speed or if you need high performance and scalability, you can ask for a dedicated scriptr.io environment. As its name imply, this environment will be dedicated to your application so it will not share any capacity with others. Optionnally, you can ask to enable multi-tenancy on your environment so you get the ability to create multiple accounts in it. This might make sense depending on your business requirements and/or your architecture, as it is discussed in the corresponding section.
+When your application reaches cruising speed or if you need high performance and scalability, you can ask for a dedicated scriptr.io environment. As its name imply, this environment will be dedicated to your application so it will not share any capacity with others. Optionnally, you can ask to enable multi-tenancy on your environment so you get the ability to create multiple accounts in it. This might make sense depending on your business requirements and/or your architecture, as it is discussed in the corresponding section. In this configuration as well, you can purchase additional features from the set of paid features provided by scriptr.io.
 
 ![dedicated model](./dedicated-model.PNG)
 
