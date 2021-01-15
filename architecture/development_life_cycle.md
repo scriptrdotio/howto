@@ -9,7 +9,7 @@ Yet, as mentioned in the introductory section, development teams are sometimes p
 
 We will answers those questions in the following sections:
 
-- [Team work](./development_life_cycle.md#team-work
+- [Team work](./development_life_cycle.md#team-work)
 - [Unit testing](./development_life_cycle.md#unit-testing)
 - [Continuous integration testing](./development_life_cycle.md#continuous-integration-testing)
 - [Staging](./development_life_cycle.md#staging)
