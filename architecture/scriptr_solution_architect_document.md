@@ -4,7 +4,7 @@ As you may already know, scriptr.io is a [managed serveless environment](../what
 
 Software architects and developers that are new to scriptr.io, and less familiar with serveless environments, might sometimes be disoriented at first as how to start. They often have some - legitimate - questions, some related to the development life-cycle and some others to the possible architectures of the solutions they can build with scriptr.io: how to work as a team? Are there development and staging environments? How to test the code? What type of software architectures can be implemented? How to scale, etc.?
 
-This document is thus aimed at providing answers to the most common questions we have received and is structured as follows: 
+This document is thus aimed at providing answers to the most common questions we encounter, and is structured as follows: 
 
 - First section is a short discussion on the different [configuations](./scriptr_solution_architect_document.md#environment-configurations) you can have on scriptr.io
 - Second section will tackle questions around the [development life-cycle](./scriptr_solution_architect_document.md#development-life-cycle)
@@ -31,7 +31,7 @@ When you first [sign-up to scriptr.io](https://www.scriptr.io/register), you obt
 Although this is a shared environment, your have your owmn isolated "silo", which means none of your data and your code are shared with other account owners, nor accessible to them in any way. There is not limitations in the number of accounts you can create on this environment, but (1) **the capacity is throttled** and (2) **some of the features are only accessible for a trial period and a few are not available**.
 
 ## Paid shared environment
-This is a good option for small to medium applications or when you are starting a need to progressively increase your capacity.
+This is a good option for small to medium applications or when you are starting and need to progressively increase your capacity.
 
 Once you feel more comfortable and you are ready to move to production, you can ask for one or more accounts on the shared production environment. As in the free tier, you will share capacity with other account owners, however, you can ask for customized throttling (max number of requests per second, max number of documents, etc.) depending on your requirements. You can also purchase paid features, such as messaging or adding different data store types to your account. Note that since this is a shared environment, there is a limit to how much your application can scale. Another different with the free tier is the SLA (Service Level Agreement) and corresponding QoS (Quality of Service) you will get.
 
