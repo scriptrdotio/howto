@@ -1,4 +1,4 @@
-#Scriptr.io solution architect booklet</h1>
+# Scriptr.io solution architect booklet
 
 
 # Objectives of this document
