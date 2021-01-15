@@ -33,7 +33,7 @@ Although this is a shared environment, your have your owmn isolated "silo", whic
 ## Paid shared environment
 This is a good option for small to medium applications or when you are starting a need to progressively increase your capacity.
 
-Once you feel more comfortable and you are ready to move to production, you can ask for one or more accounts on the shared production environment. As in the free tier, you will share capacity with other account owners, however, you can ask for customized throttling (max number of requests per second, max number of documents, etc.) depending on your requirements. You can also purchase paid features, such as messaging or adding different data store types to your account. Note that since this is a shared environment, there is a limit to how much your application can scale. 
+Once you feel more comfortable and you are ready to move to production, you can ask for one or more accounts on the shared production environment. As in the free tier, you will share capacity with other account owners, however, you can ask for customized throttling (max number of requests per second, max number of documents, etc.) depending on your requirements. You can also purchase paid features, such as messaging or adding different data store types to your account. Note that since this is a shared environment, there is a limit to how much your application can scale. Another different with the free tier is the SLA (Service Level Agreement) and corresponding QoS (Quality of Service) you will get.
 
 ![paid shared environment](./paid-shared-model.PNG)
 
@@ -42,7 +42,9 @@ Once you feel more comfortable and you are ready to move to production, you can 
 ## Dedicated environment
 This is the most flexible option for medium to large and very large applications, when you have high scalability requirements.
 
-When your application reaches cruising speed or if you need high performance and scalability, you can ask for a dedicated scriptr.io environment. As its name imply, this environment will be dedicated to your application so it will not share any capacity with others. Optionnally, you can ask to enable multi-tenancy on your environment so you get the ability to create multiple accounts in it. This might make sense depending on your business requirements and/or your architecture, as it is discussed in the corresponding section. In this configuration as well, you can purchase additional features from the set of paid features provided by scriptr.io. Of course, this is a scriptr.io managed environment, you do not need to worry about a thing.
+When your application reaches cruising speed or if you need high performance and scalability, you can ask for a dedicated scriptr.io environment. As its name imply, this environment will be dedicated to your application so it will not share any capacity with others. Optionnally, you can ask to enable multi-tenancy on your environment so you get the ability to create multiple accounts in it. This might make sense depending on your business requirements and/or your architecture, as it is discussed in the corresponding section. In this configuration as well, you can purchase additional features from the set of paid features provided by scriptr.io. Of course, this is a scriptr.io managed environment, you do not need to worry about a thing. 
+
+In a dedicated environment, you can also expect to select between multiple different SLA and QoS. It is also worth mentioning that dedicated environment will be sized according to your needs and they can be resized accordingly.
 
 ![dedicated model](./dedicated-model.PNG)
 
@@ -102,12 +104,17 @@ In a continuous integration approach, you would like to regularly run all the un
 
 You can then schedule the execution of all the unit tests so they are ran automatically. While you can manually schedule the execution of a script (unit tests are scripts) a better approach it to write a small script (scheduled as well) that will list all the unit tests in the current account (the Continuous Integration account), and schedule the execution of any script that has not be already scheduled. For more on scheduling scripts, please refer to the [corresponding how-to](../cron/create_cron_job.md).
 
-*Note: thanks to the flexibility of scriptr.io, there are many ways of automating the execution of the unit tests in the integration test account. For example, you can also create a script that regularly list all unit tests in the account, then queue a task to execute that script.*
+*Note: thanks to the flexibility of scriptr.io, there are many ways of automating the execution of the unit tests in the integration test account. For example, you can also create a script that regularly lists all unit tests in the account, then queue a task to execute each test.*
 
 ![continuous integration testing](./continuous-integration-testing.PNG)
 
 *Figure 8 - Automatic Continuous Integration testing*
 
+### Staging
+To create a staging environment, you can simply create a new scriptr.io account (e.g. stagin account) and associate it with the corresponding Github account, and also enabling automatic deploy (same as for continuous integration testing). However, if you also mean to run load tests, they this depends on the environment you have selected:
+
+- If you are on a paid shared environment, you must ask for a customized throtling that is identical to what you will ask for production. This will of course incur additional charges.
+- You can opt for a dedicated environment to host your staging account.
 
 **ToC**
 - [Environment configuations](./scriptr_solution_architect_document.md#environment-configurations) you can have on scriptr.io
