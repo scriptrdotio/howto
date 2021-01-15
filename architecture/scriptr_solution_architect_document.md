@@ -138,7 +138,7 @@ The Broker architecture pattern is used in a wide range of applications in diffe
 
 Typically, three components are at the core of a Broker-based architecture: (1) the broker, which receives events and dispatches them into (2) event channels, and (3) the event processors that consume the messages from the channels. Event processors can also push events back the broker. The event channel can adopt two distinct behaviors: (a) it can be a message queue, used as a buffer from which a specific event processor will consume messages, or (b) it can be a topic, use for broadcasting the messages to any event processor that is subscribed to the event channel.
 
-[broker pattern](./broker-pattern.PNG)
+![broker pattern](./broker-pattern.PNG)
 
 Implementing the Broker pattern with scriptr.io is pretty straightforward:
 
