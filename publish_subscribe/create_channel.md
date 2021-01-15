@@ -1,4 +1,4 @@
-#How to create a channel.
+# How to create a channel.
 
 A channel is an abstraction of any data source. You use it to publish messages that are broadcast to all the subscribers of that channel.
 
