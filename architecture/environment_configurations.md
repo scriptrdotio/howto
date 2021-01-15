@@ -1,8 +1,8 @@
 # Environment configurations
 There are three possible base configurations:
-- [Free shared environment](./scriptr_solution_architect_document.md#free-shared-environment)
-- [Paid shared environment](./scriptr_solution_architect_document.md#paid-shared-environment)
-- [Dedicated environment](./scriptr_solution_architect_document.md#dedicated-environment)
+- [Free shared environment](./environment_configurations#free-shared-environment)
+- [Paid shared environment](./environment_configurations##paid-shared-environment)
+- [Dedicated environment](./environment_configurations##dedicated-environment)
 
 ## Free shared environment
 This is an ideal option to become familiar with the power of scriptr.io, at no cost. Altnough highly reliable, it is not meant for production.
