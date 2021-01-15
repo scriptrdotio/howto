@@ -6,10 +6,10 @@ Software architects and developers that are new to scriptr.io, and less familiar
 
 This document is thus aimed at providing answers to the most common questions we have received and is structured as follows: 
 
-- First section is a short discussion on the different configuations you can have on scriptr.io
-- Second section will tackle questions around the development life-cycle
-- Third section will describe how to implement some of the most common architecture patterns with scriptr.io
-- Fourth section will discuss scalability.
+- First section is a short discussion on the different [configuations](./scriptr_solution_architect_document.md#environment-configurations) you can have on scriptr.io
+- Second section will tackle questions around the [development life-cycle](./scriptr_solution_architect_document.md#development-life-cycle)
+- Third section will describe how to implement some of the most [common architecture patterns](./scriptr_solution_architect_document.md#architecture-patterns) with scriptr.io
+- Fourth section will discuss [scalability](./scriptr_solution_architect_document.md#scalability).
 
 Of course, you can always [contact us](mailto:support@scriptr.io) for any question. We also recommend checking the [how-to guides](https://github.com/scriptrdotio/howto/blob/master/README.md#how-to) and scriptr.io's [official documentation](https://www.scriptr.io/documentation).
 
@@ -48,6 +48,12 @@ When your application reaches cruising speed or if you need high performance and
 
 *Figure 3*
 
+ToC
+- [Environment configuations](./scriptr_solution_architect_document.md#environment-configurations) you can have on scriptr.io
+- [Development life-cycle](./scriptr_solution_architect_document.md#development-life-cycle)
+- [Architecture patterns](./scriptr_solution_architect_document.md#architecture-patterns) with scriptr.io
+- [Scalability](./scriptr_solution_architect_document.md#scalability)
+
 # Development life-cycle
 
 A nice things about scriptr.io is that you do not have to think about how to deploy your code: everything you implement from the scriptr.io workspace is immediately and automatically deployed on the cloud and becomes accessible online - with appropriate security checks, all handled on your behalf. This fosters a fast, incremental and agile development approach, where you can quickly move from a prototype to a full-fledged production-ready application. 
@@ -68,8 +74,27 @@ When working as a team, this means that each developer owns a scriptr.io account
 Scriptr.io provides a customization of the Jasmine unit testing framework that you can leverage from within your project. 
 
 
+ToC
+- [Environment configuations](./scriptr_solution_architect_document.md#environment-configurations) you can have on scriptr.io
+- [Development life-cycle](./scriptr_solution_architect_document.md#development-life-cycle)
+- [Architecture patterns](./scriptr_solution_architect_document.md#architecture-patterns) with scriptr.io
+- [Scalability](./scriptr_solution_architect_document.md#scalability).
 
 
 
 # Architecture patterns
+
+ToC
+- [Environment configuations](./scriptr_solution_architect_document.md#environment-configurations) you can have on scriptr.io
+- [Development life-cycle](./scriptr_solution_architect_document.md#development-life-cycle)
+- [Architecture patterns](./scriptr_solution_architect_document.md#architecture-patterns) with scriptr.io
+- [Scalability](./scriptr_solution_architect_document.md#scalability).
+
 # Scalability
+
+
+ToC
+- [Environment configuations](./scriptr_solution_architect_document.md#environment-configurations) you can have on scriptr.io
+- [Development life-cycle](./scriptr_solution_architect_document.md#development-life-cycle)
+- [Architecture patterns](./scriptr_solution_architect_document.md#architecture-patterns) with scriptr.io
+- [Scalability](./scriptr_solution_architect_document.md#scalability).
