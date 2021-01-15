@@ -26,7 +26,7 @@ When you first [sign-up to scriptr.io](https://www.scriptr.io/register), you obt
 
 ![shared environment](./shared-model.PNG)
 
-*Figure 1*
+*Figure 1 - Free shared environment*
 
 Although this is a shared environment, your have your owmn isolated "silo", which means none of your data and your code are shared with other account owners, nor accessible to them in any way. There is not limitations in the number of accounts you can create on this environment, but (1) **the capacity is throttled** and (2) **some of the features are only accessible for a trial period and a few are not available**.
 
@@ -37,16 +37,16 @@ Once you feel more comfortable and you are ready to move to production, you can 
 
 ![paid shared environment](./paid-shared-model.PNG)
 
-*Figure 2*
+*Figure 2 - Paid shared environment*
 
 ## Dedicated environment
 This is the most flexible option for medium to large and very large applications, when you have high scalability requirements.
 
-When your application reaches cruising speed or if you need high performance and scalability, you can ask for a dedicated scriptr.io environment. As its name imply, this environment will be dedicated to your application so it will not share any capacity with others. Optionnally, you can ask to enable multi-tenancy on your environment so you get the ability to create multiple accounts in it. This might make sense depending on your business requirements and/or your architecture, as it is discussed in the corresponding section. In this configuration as well, you can purchase additional features from the set of paid features provided by scriptr.io.
+When your application reaches cruising speed or if you need high performance and scalability, you can ask for a dedicated scriptr.io environment. As its name imply, this environment will be dedicated to your application so it will not share any capacity with others. Optionnally, you can ask to enable multi-tenancy on your environment so you get the ability to create multiple accounts in it. This might make sense depending on your business requirements and/or your architecture, as it is discussed in the corresponding section. In this configuration as well, you can purchase additional features from the set of paid features provided by scriptr.io. Of course, this is a scriptr.io managed environment, you do not need to worry about a thing.
 
 ![dedicated model](./dedicated-model.PNG)
 
-*Figure 3*
+*Figure 3 - Dedicated environment*
 
 **ToC**
 - [Environment configuations](./scriptr_solution_architect_document.md#environment-configurations) you can have on scriptr.io
@@ -56,7 +56,7 @@ When your application reaches cruising speed or if you need high performance and
 
 # Development life-cycle
 
-A nice things about scriptr.io is that you do not have to think about how to deploy your code: everything you implement from the scriptr.io workspace is immediately and automatically deployed on the cloud and becomes accessible online - with appropriate security checks, all handled on your behalf. This fosters a fast, incremental and agile development approach, where you can quickly move from a prototype to a full-fledged production-ready application. 
+A nice things about scriptr.io is that you do not have to think about how to deploy your code: everything you implement from the scriptr.io workspace is immediately and automatically deployed on the cloud and becomes accessible online - with appropriate security checks, all handled on your behalf. This fosters a fast, incremental and agile development approach, where you can quickly and safely iterate from a prototype to a full-fledged production-ready application. 
 
 Yet, as mentioned in the introductory section, development teams are sometimes puzzled about how they can leverage this flexibility and how to organize themselves: 
 - How can they work together on the same project? 
@@ -66,9 +66,11 @@ Yet, as mentioned in the introductory section, development teams are sometimes p
 ## Team work
 Scriptr.io natively integrates with Github. You simply need to link you link an application in your account to a Github repository by clicking on the gear icon in the workspace the selecting Github, the providing a Github repository name and token. From the workspace you can issue check-out/pull or push commands and also compare your current version of the code with the one on the repository (for details, please refer to the [corresponding scriptr.io documentation](https://www.scriptr.io/documentation#documentation-githubGitHubIntegration).
 
-When working as a team, this means that each developer owns a scriptr.io account (on any of the aforementioned possible configurations). Therefore, each developer can have it's own copy of the code that is retrieved from Github. This also means that each developer can try his changes in real-time **without interfering with the others** since his code and data are located in his own *silo*!
+When working as a team, this means that each developer owns a scriptr.io account (on any of the aforementioned possible configurations). Therefore, each developer can have it's own copy of the code that is retrieved from Github. This also means that each developer can try his changes in real-time **without interfering with the others** since his code and data are located in his own *silo* (scriptr.io account + associated run-time)!
 
+![team work](./team-work.PNG)
 
+*Figure 4 - Team work*
 
 ## Testing the code
 Scriptr.io provides a customization of the Jasmine unit testing framework that you can leverage from within your project. 
