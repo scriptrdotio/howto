@@ -110,7 +110,7 @@ You can then schedule the execution of all the unit tests so they are ran automa
 
 *Figure 8 - Automatic Continuous Integration testing*
 
-### Staging
+## Staging
 To create a staging environment, you can simply create a new scriptr.io account (e.g. stagin account) and associate it with the corresponding Github account, and also enabling automatic deploy (same as for continuous integration testing). 
 
 If you also mean to run load tests, then you might want to consider your options:
