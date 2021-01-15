@@ -187,7 +187,7 @@ You can use channels to create task (job) queues. Queues are notably used to dea
 
 ![message queueing](./message-queues.PNG)
 
-*Figure 14 - Absorb load peaks with queues
+*Figure 14 - Absorb load peaks with queues*
 
 
 **ToC**
