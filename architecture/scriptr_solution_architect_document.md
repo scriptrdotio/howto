@@ -127,10 +127,13 @@ If you also mean to run load tests, then you might want to consider your options
 
 # Architecture patterns
 
+Scriptr.io allows you to very simply implement most of the software architecture patterns you need to implement scalable, robust and flexible solutions.
+In this section, we will cover four of them:
+
 - Broker
 - Mediator
-- Micro-services
-- Micro-Kernels
+- Micro-service
+- Micro-Kernel
 
 ## Broker
 
@@ -140,7 +143,20 @@ Typically, three components are at the core of a Broker-based architecture: (1) 
 
 ![broker pattern](./broker-pattern.PNG)
 
-Implementing the Broker pattern with scriptr.io is pretty straightforward:
+*Figure 9 - Broker Pattern*
+
+Implementing the Broker pattern with scriptr.io is very straightforward:
+
+### Topic event channels 
+You create channels into your scriptr.io account: click on the gear icon in the top right corner of the screen and select Channels
+
+![channels](./channels.PNG)
+
+In the channel configuration pannel, just click + Add channel, give a name to your channel, and you are set! 
+
+![channel configuration](./channel-config.PNG)
+
+The beauty of scriptr.io is that any entity, whether it is a script within your account or external systems (including other scriptr.io applications) can be an event processor, i.e. subscribe (consume messages) or publish (produce messages) to your channels. It is worth noting that scriptr.io's channel are independant from the protocol used to convey messages (any of http, websockets, amqp, mqtt). This turns your scriptr.io application in a powerful integration middleware.
 
 **ToC**
 - [Environment configuations](./scriptr_solution_architect_document.md#environment-configurations) you can have on scriptr.io
