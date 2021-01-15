@@ -171,7 +171,7 @@ We advise resorting to the how-to guides](https://github.com/scriptrdotio/howto/
 
 The beauty of scriptr.io is that any entity, whether it is a script within your account or external systems (including other scriptr.io applications) can be an event processor, i.e. subscribe (consume messages) or publish (produce messages) to your channels. It is worth noting that scriptr.io's channel are independant from the protocol used to convey messages (any of http, websockets, amqp, mqtt). This turns your scriptr.io application into a powerful integration middleware.
 
-[Integration middleware](./middleware.PNG]
+![Integration middleware](./middleware.PNG)
 
 **ToC**
 - [Environment configuations](./scriptr_solution_architect_document.md#environment-configurations) you can have on scriptr.io
