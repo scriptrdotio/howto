@@ -9,10 +9,10 @@ Yet, as mentioned in the introductory section, development teams are sometimes p
 
 We will answers those questions in the following sections:
 
-- [Team work](./development_life_cycle#team-work)
-- [Unit testing](./development_life_cycle#unit-testing)
-- [Continuous integration testing](./development_life_cycle#continuous-integration-testing)
-- [Staging](./development_life_cycle#staging)
+- [Team work](./development_life_cycle.md#team-work
+- [Unit testing](./development_life_cycle.md#unit-testing)
+- [Continuous integration testing](./development_life_cycle.md#continuous-integration-testing)
+- [Staging](./development_life_cycle.md#staging)
 
 ## Team work
 Scriptr.io natively integrates with Github. You simply need to link an application in your account to a Github repository by clicking on the gear icon in the workspace, then selecting Github, the providing a Github repository name and token. From the workspace you can issue check-out/pull or push commands and also compare your current version of the code with the one on the repository (for details, please refer to the [corresponding scriptr.io documentation](https://www.scriptr.io/documentation#documentation-githubGitHubIntegration).
