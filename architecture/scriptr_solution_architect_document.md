@@ -148,38 +148,27 @@ Typically, three components are at the core of a Broker-based architecture: (1) 
 Implementing the Broker pattern with scriptr.io is very straightforward:
 
 ### Topic event channels 
-You create channels into your scriptr.io account: click on the gear icon in the top right corner of the screen and select Channels
-
-![channels](./channels.PNG)
-
-*Figure 10 - Create a channel*
-
-In the channel configuration pannel, just click + Add channel, give a name to your channel, and you are set! 
-
-![channel configuration](./channel-config.PNG)
-
-*Figure 11 - Configure a new channel*
+To create channels into your scriptr.io account please check this [how-to guide](https://github.com/scriptrdotio/howto/blob/master/publish_subscribe/create_channel.md)
 
 To subsribe one of the scripts in your account to a channel (turn it into an event processor), you have two options:
-
 - From the UI of the workspace, open the script, click the Subscribe option in the top-right corner of the code editor, then select the channel you want to subscribe the script to
 - From the code of another script, just write subscribe ```subscribe("<your_channel_name>", "<path_and_script_name>")```
 
 Subscribing remote clients to your channels or publishing events to remote third parties is respectively a matter of configuration and writting 2 to 3 lines of code.
-We advise resorting to the how-to guides](https://github.com/scriptrdotio/howto/blob/master/README.md#how-to), for example:
+We advise resorting to the [how-to guides](https://github.com/scriptrdotio/howto/blob/master/README.md#how-to), for example:
 - [Subscribe a remote MQTT client to one of your channels](https://github.com/scriptrdotio/howto/blob/master/mqtt/subscribe_mqtt_client.md#how-to-subscribe-a-remote-mqtt-client-to-receive-messages-from-my-scriptr-account) shows how to do this for an MQTT client.
 
 The beauty of scriptr.io is that any entity, whether it is a script within your account or external systems (including other scriptr.io applications) can be an event processor, i.e. subscribe (consume messages) or publish (produce messages) to your channels. It is worth noting that scriptr.io's channel are independant from the protocol used to convey messages (any of http, websockets, amqp, mqtt). This turns your scriptr.io application into a powerful integration middleware.
 
 ![Integration middleware](./middleware.PNG)
 
-*Figure 12 - Implement business logic via orchestration and integration with 3rd parties*
+*Figure 10 - Implement business logic via orchestration and integration with 3rd parties*
 
 With a few lines of code, you can actually turn your scriptr.io application into a powerful interoperability middleware, by creating a first layer of event processors (your scripts) to transform incoming data into a target format, then letting those event processors publish the transformed events into other channels to which are subscribe third party event processors.
 
 ![Interoperability middleware](./middelware-interoperability.PNG)
 
-*Figure 13 - Implement business logic via orchestration and integration with 3rd parties + data transformation*
+*Figure 11 - Implement business logic via orchestration and integration with 3rd parties + data transformation*
 
 ## Queue event channels
 
@@ -187,7 +176,7 @@ You can use channels to create task (job) queues. Queues are notably used to dea
 
 ![message queueing](./message-queues.PNG)
 
-*Figure 14 - Absorb load peaks with queues*
+*Figure 12 - Absorb load peaks with queues*
 
 
 **ToC**
