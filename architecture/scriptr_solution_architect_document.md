@@ -87,7 +87,7 @@ To use Jasmine for creating unit tests, all you need to do is to deploy the modu
 
 *Figure 5 - Install a module*
 
-In the modules panel, scroll down to Jasmine select press Install. This will automatically install the Jasmine module into the /modules folder of your account.
+In the modules panel, scroll down to Jasmine press Install. This will automatically install the Jasmine module into the /modules folder of your account.
 
 ![select jasmine](./select-jasmine.PNG)
 
@@ -125,9 +125,18 @@ If you also mean to run load tests, then you might want to consider your options
 - [Architecture patterns](./scriptr_solution_architect_document.md#architecture-patterns) with scriptr.io
 - [Scalability](./scriptr_solution_architect_document.md#scalability).
 
-
-
 # Architecture patterns
+
+- Broker
+- Mediator
+- Micro-services
+- Micro-Kernels
+
+## Broker
+
+The Broker architecture pattern is used in a wide range of applications in different domains, ranging from "traditional" enterprise systems to IoT applications. The purpose of the broker pattern is to enable **asynchronous** collaboration (a.k.a choreography) among different software components, based on the occurrence of events and not a well-defined and centralized process. As such, applications leveraging this pattern fall into the category of so-called event-driven architectures. 
+
+Typically, three components are at the core of a Broker-based architecture: (1) the broker, which receives events and dispatches them into (2) event channels, and (3) the event processors that consume the messages from the channels. Event processors can also push events back the broker.
 
 **ToC**
 - [Environment configuations](./scriptr_solution_architect_document.md#environment-configurations) you can have on scriptr.io
