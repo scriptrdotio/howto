@@ -73,7 +73,21 @@ When working as a team, this means that each developer owns a scriptr.io account
 *Figure 4 - Team work*
 
 ## Testing the code
-Scriptr.io provides a customization of the Jasmine unit testing framework that you can leverage from within your project. 
+Scriptr.io provides a customization of the [Jasmine](https://jasmine.github.io/) unit testing framework that you can leverage from within your scriptr.io projects. All you need to do is to deploy the module into your account, which is very easy to achieve:
+
+- From you workspace, click the small arrow in the bottom left corner of the screen near +New Script then select "Install module"
+
+![install module](./install-module.PNG)
+
+*Figure 5 - Install a module*
+
+In the modules panel, scroll down to Jasmine select press Install. This will automatically install the Jasmine module into the /modules folder of your account.
+
+![select jasmine](./select-jasmine.PNG]
+
+*Figure 6 - Select Jasmine*
+
+For more on how to create unit tests with Jasmine in scriptr.io, please refer to [our documentation](https://github.com/scriptrdotio/jasmine/blob/master/README.md).
 
 
 **ToC**
