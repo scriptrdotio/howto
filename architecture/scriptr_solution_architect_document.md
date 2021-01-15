@@ -48,7 +48,7 @@ When your application reaches cruising speed or if you need high performance and
 
 *Figure 3*
 
-ToC
+**ToC**
 - [Environment configuations](./scriptr_solution_architect_document.md#environment-configurations) you can have on scriptr.io
 - [Development life-cycle](./scriptr_solution_architect_document.md#development-life-cycle)
 - [Architecture patterns](./scriptr_solution_architect_document.md#architecture-patterns) with scriptr.io
@@ -74,7 +74,7 @@ When working as a team, this means that each developer owns a scriptr.io account
 Scriptr.io provides a customization of the Jasmine unit testing framework that you can leverage from within your project. 
 
 
-ToC
+**ToC**
 - [Environment configuations](./scriptr_solution_architect_document.md#environment-configurations) you can have on scriptr.io
 - [Development life-cycle](./scriptr_solution_architect_document.md#development-life-cycle)
 - [Architecture patterns](./scriptr_solution_architect_document.md#architecture-patterns) with scriptr.io
@@ -84,7 +84,7 @@ ToC
 
 # Architecture patterns
 
-ToC
+**ToC**
 - [Environment configuations](./scriptr_solution_architect_document.md#environment-configurations) you can have on scriptr.io
 - [Development life-cycle](./scriptr_solution_architect_document.md#development-life-cycle)
 - [Architecture patterns](./scriptr_solution_architect_document.md#architecture-patterns) with scriptr.io
@@ -93,7 +93,7 @@ ToC
 # Scalability
 
 
-ToC
+**ToC**
 - [Environment configuations](./scriptr_solution_architect_document.md#environment-configurations) you can have on scriptr.io
 - [Development life-cycle](./scriptr_solution_architect_document.md#development-life-cycle)
 - [Architecture patterns](./scriptr_solution_architect_document.md#architecture-patterns) with scriptr.io
