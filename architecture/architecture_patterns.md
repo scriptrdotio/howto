@@ -3,7 +3,7 @@
 Scriptr.io allows you to very simply implement most of the software architecture patterns you need to implement scalable, robust and flexible solutions.
 In this section, we will cover four of them:
 
-- Broker
+- [Broker](./architecture_patterns.md#broker)
 - Mediator
 - Micro-service
 - Micro-Kernel
