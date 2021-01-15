@@ -3,13 +3,17 @@
 In a few words: 
 
 - Scriptr.io is a cloud-based platform for developing and executing Enterprise-scale IoT solutions. It offers a set of tools, components and APIs to reduce the effort and time to market IoT applications
-- Everything you code is automatically deployed in a secure and scalable cloud environment, releaving you from devops operations
+- Scriptr.io is a **managed serverless environment**. This means that 
+  - You will leverage (scriptr.io's) services and components to implement your applications
+  - You only need to focus on your code: everything you write is automatically deployed in a secure and scalable cloud environment, releaving you from devops operations
 - Scriptr.io is a managed service, so we take care of monitoring the health of your applications
 - Scriptr.io runs on the cloud, and upon request: on premise (data centers) and even at the Edge
 - Scriptr.io is an extremely flexible and efficient IoT Middleware and communication broker, enabling collaboration among heterogenous platforms and protocols
 - It is a marketplace of pre-built IoT applications.
 
-![scriptr.io features at a glance](./scriptr.io-iot-middleware.png)
+# What are the scriptr.io services you can leverage to build your applications?
+
+![scriptr.io services at a glance](./scriptr.io-iot-middleware.png)
 
 (1): Build dashboards by drag and dropping widgets using the Dashboard builder, or more advanced User Interfaces with scriptr.io's UI Component library
 
