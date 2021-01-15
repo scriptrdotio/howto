@@ -152,9 +152,13 @@ You create channels into your scriptr.io account: click on the gear icon in the 
 
 ![channels](./channels.PNG)
 
+*Figure 10 - Create a channel*
+
 In the channel configuration pannel, just click + Add channel, give a name to your channel, and you are set! 
 
 ![channel configuration](./channel-config.PNG)
+
+*Figure 11 - Configure a new channel*
 
 The beauty of scriptr.io is that any entity, whether it is a script within your account or external systems (including other scriptr.io applications) can be an event processor, i.e. subscribe (consume messages) or publish (produce messages) to your channels. It is worth noting that scriptr.io's channel are independant from the protocol used to convey messages (any of http, websockets, amqp, mqtt). This turns your scriptr.io application in a powerful integration middleware.
 
