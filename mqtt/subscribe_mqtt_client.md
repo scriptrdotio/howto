@@ -8,11 +8,11 @@ Pre-requisites:
 
 From your [workspace](https://www.scriptr.io/workspace), click the wrench icon on the top right corner of the screen, the select Messaging Protocols (**note**: this is a paid option that you can activate for a trial period. You need to request activation from scriptr.io and wait till you it is done before proceeding with this how-to).
 
-[messaging protocols](./messaging_protocols.PNG)
+![messaging protocols](./messaging_protocols.PNG)
 
 In the messaging protocols configuration screen (below):
 
-[generatre credentials](./images/mqtt-credentials.PNG)
+![generatre credentials](./images/mqtt-credentials.PNG)
 
 - In section 1 (protocol), select MQTT as the protocol (default)
 - In section 2 (credentials), select one of your devices. Make sure to copy the generated username and password.
