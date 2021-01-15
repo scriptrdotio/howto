@@ -1,4 +1,6 @@
-# Purpose of this document
+<p align="center">
+<h1>Scriptr.io solution architect booklet</h1>
+</p>
 
 As you may already know, scriptr.io is a [managed serveless environment](../whatis/whatis_scriptr.md) that provides many services and components that you can leverage from within your code. This mainly means that it will make your life much easier when developping your applications, whether these are simple IoT applications ingesting and displaying device data, or large enterprise-grade solutions, integrating with multiple third parties and legacy systems.
 
@@ -16,16 +18,24 @@ Of course, you can always [contact us](mailto:support@scriptr.io) for any questi
 # Environment configurations
 
 ## Free shared environment
-
 This is an ideal option to become familiar with the power of scriptr.io, at no cost.
 
 When you first [sign-up to scriptr.io](https://www.scriptr.io/register), you obtain a free acount on a multitenant scriptr.io environment (free shared environment). This account gives you access to the [workspace](https://www.scriptr.io/workspace) (a web IDE) from which you can start using most of scriptr.io's features and services for free, to build your applications. As mentioned, your code is automatically deployed and runs on the cloud (figure 1). 
 
 ![shared environment](./shared-model.PNG)
+*Figure 1*
 
-Although this is a shared environment, your have your owmn isolated "silo", which means none of your data and your code are shared with other account owners, nor accessible to them in any way. There is not limitations in the number of accounts you can create on this environment, but the capacity is throttled and some of the features are only accessible for a trial period and a few are not available.
+Although this is a shared environment, your have your owmn isolated "silo", which means none of your data and your code are shared with other account owners, nor accessible to them in any way. There is not limitations in the number of accounts you can create on this environment, but (1) **the capacity is throttled** and (2) **some of the features are only accessible for a trial period and a few are not available**.
 
 ## Paid shared environment
+This is a good option for small to medium applications or when you are starting a need to progressively increase your capacity.
+
+Once you feel more comfortable and you are ready to move to production, you can ask for one or more accounts on the shared production environment. As in the free tier, you will share capacity with other account owners, however, you can ask for customized throttling (max number of requests per second, max number of documents, etc.) depending on your requirements. You can also purchase paid features, such as messaging or adding different data store types to your account. Note that since this is a shared environment, there is a limit to how much your application can scale. 
+
+## Dedicated environment
+This is the most flexible option for medium to large  if you have high scalability requirements.
+
+When your application reaches cruising speed or
 
 # Development life-cycle
 
