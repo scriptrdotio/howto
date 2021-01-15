@@ -41,7 +41,7 @@ With a few lines of code, you can actually turn your scriptr.io application into
 
 *Figure 11 - Implement business logic via orchestration and integration with 3rd parties + data transformation*
 
-## Queue event channels
+### Queue event channels
 
 You can use channels to create task (job) queues. Queues are notably used to deal with event producers that generate events/tasks at a pace that is higher than what you scripts can process with the available resources, allowing your application to absorbe peeks and remain responsive. Currently, you can only subscribe scripts in your account to your queues, but your scripts can push the data they process to any remote 3rd party, using any of the supported protocols. For more on queues, please refer to the [how-to guide](https://github.com/scriptrdotio/howto/blob/master/queuing/queue_tasks.md) and the [documentation](https://www.scriptr.io/documentation#documentation-queuemodulequeueModule).
 
@@ -49,6 +49,9 @@ You can use channels to create task (job) queues. Queues are notably used to dea
 
 *Figure 12 - Absorb load peaks with queues*
 
+## Mediator
+
+A mediator 
 
 **ToC**
 - [Environment configuations](./environment_configurations.md) you can have on scriptr.io
