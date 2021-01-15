@@ -31,9 +31,11 @@ This is a good option for small to medium applications or when you are starting 
 Once you feel more comfortable and you are ready to move to production, you can ask for one or more accounts on the shared production environment. As in the free tier, you will share capacity with other account owners, however, you can ask for customized throttling (max number of requests per second, max number of documents, etc.) depending on your requirements. You can also purchase paid features, such as messaging or adding different data store types to your account. Note that since this is a shared environment, there is a limit to how much your application can scale. 
 
 ## Dedicated environment
-This is the most flexible option for medium to large  if you have high scalability requirements.
+This is the most flexible option for medium to large and very large applications, when you have high scalability requirements.
 
-When your application reaches cruising speed or
+When your application reaches cruising speed or if you need high performance and scalability, you can ask for a dedicated scriptr.io environment. As its name imply, this environment will be dedicated to your application so it will not share any capacity with others. Optionnally, you can ask to enable multi-tenancy on your environment so you get the ability to create multiple accounts in it. This might make sense depending on your business requirements and/or your architecture, as it is discussed in the corresponding section.
+
+![dedicated model](./dedicated-model.PNG)
 
 # Development life-cycle
 
