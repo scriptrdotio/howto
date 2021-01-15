@@ -44,7 +44,7 @@ This is the most flexible option for medium to large and very large applications
 
 When your application reaches cruising speed or if you need high performance and scalability, you can ask for a dedicated scriptr.io environment. As its name imply, this environment will be dedicated to your application so it will not share any capacity with others. Optionnally, you can ask to enable multi-tenancy on your environment so you get the ability to create multiple accounts in it. This might make sense depending on your business requirements and/or your architecture, as it is discussed in the corresponding section. In this configuration as well, you can purchase additional features from the set of paid features provided by scriptr.io. Of course, this is a scriptr.io managed environment, you do not need to worry about a thing. 
 
-In a dedicated environment, you can also expect to select between multiple different SLA and QoS. It is also worth mentioning that dedicated environment will be sized according to your needs and they can be resized accordingly.
+In a dedicated environment, you can also expect to select between multiple different SLA and QoS. It is also worth mentioning that dedicated environments will be sized according to your needs and they can be resized accordingly.
 
 ![dedicated model](./dedicated-model.PNG)
 
@@ -66,7 +66,7 @@ Yet, as mentioned in the introductory section, development teams are sometimes p
 - How can they create a staging environment?
 
 ## Team work
-Scriptr.io natively integrates with Github. You simply need to link you link an application in your account to a Github repository by clicking on the gear icon in the workspace the selecting Github, the providing a Github repository name and token. From the workspace you can issue check-out/pull or push commands and also compare your current version of the code with the one on the repository (for details, please refer to the [corresponding scriptr.io documentation](https://www.scriptr.io/documentation#documentation-githubGitHubIntegration).
+Scriptr.io natively integrates with Github. You simply need to link an application in your account to a Github repository by clicking on the gear icon in the workspace, then selecting Github, the providing a Github repository name and token. From the workspace you can issue check-out/pull or push commands and also compare your current version of the code with the one on the repository (for details, please refer to the [corresponding scriptr.io documentation](https://www.scriptr.io/documentation#documentation-githubGitHubIntegration).
 
 When working as a team, this means that each developer owns a scriptr.io account (on any of the aforementioned possible configurations). Therefore, each developer can have it's own copy of the code that is retrieved from Github. This also means that each developer can try his changes in real-time **without interfering with the others** since his code and data are located in his own *silo* (scriptr.io account + associated run-time)!
 
