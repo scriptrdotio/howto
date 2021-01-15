@@ -55,6 +55,7 @@ Or if you need to build a full webapp complete with working login and widget, tr
 - [How to subscribe one or many scripts to a remote mqtt topic?](https://github.com/scriptrdotio/howto/blob/master/mqtt/subscribe_to_remote_mqtt.md)
 - [How to publish a message to a remote mqtt topic from a script?](https://github.com/scriptrdotio/howto/blob/master/mqtt/publish_to_remote_mqtt.md)
 - [How to publish an mqtt message to my API?](https://github.com/scriptrdotio/howto/blob/master/api/publish_mqtt_msgs_to_script.md)
+- [How to subscribe a remote mqtt client to one of my channels](https://github.com/scriptrdotio/howto/blob/master/mqtt/subscribe_mqtt_client.md#how-to-subscribe-a-remote-mqtt-client-to-receive-messages-from-my-scriptr-account)
 - [How to read the messages sent to my API through mqtt?](https://github.com/scriptrdotio/howto/blob/master/api/read_mqtt_messages.md)
 - [How to obtain credentials to allow devices to publish mqtt messages to my scriptr.io account?](https://github.com/scriptrdotio/howto/blob/master/mqtt/obtain_credentials.md)
 - [How to invoke my API (scripts) using websockets?](https://github.com/scriptrdotio/howto/blob/master/api/invoke_api.md)
