@@ -24,6 +24,10 @@ queueClient.queue("architecture/mediator", {"event": request.parameters.event});
 ## Mediator
 There are multiple ways of implementing a mediator in scriptr.io. The simplest way would be to create a [state-machine](https://blog.scriptr.io/using-finite-state-machines-to-build-iot-applications/), since state/transition diagrams are well suited to represent event-driven business processes. Transition can be customized to include some basic processing (e.g. message translation) and mainly to publish events to other channels, that will trigger the execution of the event processors.
 
+![mediator](./statemachine.PNG)
+
+*Figure 2 - Implement a mediator with a state-machine.*
+
 ## Event processor
 As also mentioned in the [Broker Pattern section](./broker.md#event-processors), any entity, whether it is a script within your scriptr.io application or an external application (including other scriptr.io applications) can be an event processor. 
 ## Channels
