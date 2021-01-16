@@ -13,7 +13,7 @@ The main constituants of the Mediator patterns are : (1) the event queue, which 
 This is easy to do because the required constituants are natively available in scriptr.io. 
 
 ## Event queue
-Queue are natively supported in scriptr.io, they are actually a specific way of using channels, therefore, to create an event queue that will feed your mediator, you must create a channel (see below). In addition, if you expect to receive events from external entites (remote applications or other scriptr.io applications), you must also create a script that will receive those events then push them into the queue (see examble below). The scripts in your account will not use this script, since they have direct access to the Queue API.
+Queue are natively supported in scriptr.io, they are actually a specific way of using channels, therefore, to create an event queue that will feed your mediator, you must create a channel (see below). In addition, if you expect to receive events from external entites (remote applications or other scriptr.io applications), you must also create a script that will receive those events then push them into the queue (see examble below). 
 
 ```
 // this script exposes the event queue to external applications
