@@ -20,7 +20,7 @@ The below figure illustrates this with an example where a client application sen
 
 *Figure 10 - Implement business logic via a choreography and integration with 3rd parties*
 
-With a few lines of code, you can turn your scriptr.io application into a powerful integration and interoperability middleware, by creating a first layer of event processors (your scripts) to transform incoming data into a target format (a.k.a "message translation"), then letting those event processors publish the transformed events into other channels to which are subscribe third party event processors.
+With a few lines of code, you can turn your scriptr.io application into a powerful integration and interoperability middleware, by creating a first layer of event processors (your scripts) to transform incoming data into a target format (a.k.a "message translation"), then letting those event processors publish the transformed events into other channels to which are subscribed third party event processors.
 
 ![Interoperability middleware](./middelware-interoperability.PNG)
 
