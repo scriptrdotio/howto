@@ -22,11 +22,10 @@ var queueClient = queue.getInstance("event_queue"); // we have created a channel
 queueClient.queue("architecture/mediator", {"event": request.parameters.event}); // push the received event to the queue
 ``` 
 ## Mediator
-There are multiple ways of creating a mediator in scriptr.io. The simplest way would be to create a script
+There are multiple ways of implementing a mediator in scriptr.io. The simplest way would be to create a [state-machine](https://blog.scriptr.io/using-finite-state-machines-to-build-iot-applications/), since state/transition diagrams are well suited to represent event-driven business processes. Transition can be customized to include some basic processing (e.g. message translation) and mainly to publish events to other channels, that will trigger the execution of the event processors.
 
 ## Event processor
-As also mentioned in the [Broker Pattern section](./broker.md#event-processors), any entity, whether it is a script within your scriptr.io application or an external application (including other scriptr.io applications) can be an event processor.
-
+As also mentioned in the [Broker Pattern section](./broker.md#event-processors), any entity, whether it is a script within your scriptr.io application or an external application (including other scriptr.io applications) can be an event processor. 
 ## Channels
 Channels are very simple to create in scriptr.io. Please refer to this section (./broker.md#channels) to see how to create channels and queues in scriptr.io.
 
