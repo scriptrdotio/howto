@@ -1,6 +1,6 @@
 # How to create queued jobs?
 
-Queued jobs are scripts that are put in a queue and that execute sequentially and asynchronously. There are many situations where an IoT application needs to create queued jobs, such as:
+Queued jobs are scripts that are put in a queue and that execute sequentially and asynchronously. There are many situations where an application needs to create queued jobs, such as:
 
 - When a remote client requests the execution of a lengthy operation and cannot wait for the answer
 - When a script needs more time to execute than the maximum time allocated by scriptr
