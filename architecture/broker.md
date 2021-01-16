@@ -39,7 +39,7 @@ Channels behave by default as topics, i.e. they are used to broadcast messages.
 
 ### Queue event channels
 
-You can use channels to create task (job) queues. Queues are notably used to deal with event producers that generate events/tasks at a pace that is higher than what you scripts can process with the available resources, allowing your application to absorbe peeks and remain responsive. Currently, you can only subscribe scripts in your account to your queues, but your scripts can push the data they process to any remote 3rd party, using any of the supported protocols. For more on queues, please refer to the [how-to guide](https://github.com/scriptrdotio/howto/blob/master/queuing/queue_tasks.md) and the [documentation](https://www.scriptr.io/documentation#documentation-queuemodulequeueModule).
+You can use channels to create task (job) queues. Queues are notably used to deal with event producers that generate events/tasks at a pace that is higher than what event processors can process, allowing your application to absorbe peeks and remain responsive. Currently, you can only subscribe scripts in your account to your queues, but your scripts can push the data they receive to any remote 3rd party, using any of the supported protocols. For more on queues, please refer to the [how-to guide](https://github.com/scriptrdotio/howto/blob/master/queuing/queue_tasks.md) and the [documentation](https://www.scriptr.io/documentation#documentation-queuemodulequeueModule).
 
 ![message queueing](./message-queues.PNG)
 
