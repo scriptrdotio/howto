@@ -56,7 +56,7 @@ You can use channels to create task (job) queues. Queues are notably used to dea
 
 **Solution Architecture Booklet ToC**
 
-- [Environment configuations](./environment_configurations.md) you can have on scriptr.io
+- [Environment configuations](./environment_configurations.md) 
 - [Development life-cycle](./development_life_cycle.md)
 - [Architecture patterns](./architecture_patterns.md)
 - [Scalability](./scalability.md)
