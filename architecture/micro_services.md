@@ -20,7 +20,7 @@ If you need to hide Microservices behin an API gateway, a simple way of doing th
 
 *Figure 2 - Implement Microservices via scriptr.io applications*
 
-An enhanced version of this design is to distribute the Microservices on different scriptr.io accounts hosted on a shared environment or even on distinct dedicated environments.
+An enhanced version of this design is to distribute the Microservices as applications of different scriptr.io accounts hosted on a shared environment or even on distinct dedicated environments.
 
 **Notes**:
 - You do not have to package and deploy your Microservices yourself since, as already discussed, scriptr.io is a [managed servless environment](./scriptr_solution_architect_document.md#scriptrio-solution-architect-booklet) and all your scripts are [automatically deployed](./development_life_cycle.md#development-life-cycle) on the cloud. 
