@@ -53,4 +53,4 @@ Channels are very simple to create in scriptr.io. Please refer to [this section]
 - [Development life-cycle](./development_life_cycle.md)
 - [Architecture patterns](./architecture_patterns.md)
 - [Scalability](./scalability.md)
-
+- [Security](./security)
