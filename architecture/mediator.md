@@ -45,7 +45,7 @@ Channels are very simple to create in scriptr.io. Please refer to [this section]
 
 - [Broker](./broker.md)
 - [Micro-service](./micro_services.md)
-- [Micro-Kernel](./micro_kernel.md)
+- [Layered (monolithic)](./layered.md)
 
 # Solution Architecture Booklet ToC
 
