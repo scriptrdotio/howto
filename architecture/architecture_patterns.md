@@ -7,6 +7,7 @@ In this section, we will cover four of them:
 - [Mediator](./mediator.md)
 - [Micro-service](./micro_services.md)
 - [Micro-Kernel](./micro_kernel.md)
+- [Layered (monolithic](./layered.md)
 
 # Solution Architecture Booklet ToC
 - [Environment configuations](./environment_configurations.md) you can have on scriptr.io
