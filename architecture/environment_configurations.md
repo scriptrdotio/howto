@@ -3,7 +3,7 @@ There are three possible base configurations:
 - [Free shared environment](./environment_configurations.md#free-shared-environment)
 - [Paid shared environment](./environment_configurations.md#paid-shared-environment)
 - [Dedicated environment](./environment_configurations.md#dedicated-environment)
-- [Features of a scriptr.io account]()
+- [Features of a scriptr.io account](./environment_configurations.md#features-of-a-scriptrio-account)
 
 ## Free shared environment
 This is an ideal option to become familiar with the power of scriptr.io, at no cost. Altnough highly reliable, it is not meant for production.
@@ -44,6 +44,7 @@ Regardless of the scriptr.io environment you select, you will always create one 
 - A user and a device directory, where you create the users and groups of your applications. 
 
 Applications can leverage all the scriptr.io APIs and components and they are isolated from each others, which means that they do not share their data, nor their users and devices.
+
 
 **ToC**
 - [Environment configuations](./environment_configurations.md) you can have on scriptr.io
