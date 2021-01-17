@@ -27,7 +27,7 @@ If you need to hide Microservices behin an API gateway, a simple way of doing th
 - [Broker](./broker.md)
 - [Mediator](./mediator.md)
 - [Micro-service](./micro_services.md)
-- [Layered (monolithic](./layered.md)
+- [Layered (monolithic)](./layered.md)
 
 # Solution Architecture Booklet ToC
 - [Environment configuations](./environment_configurations.md) you can have on scriptr.io
