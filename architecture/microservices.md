@@ -8,6 +8,14 @@ The operations of the Microservices composing an information system can be expos
 
 *Figure 1 - Microservice architecture*
 
+# Implementing Microservices with scriptr.io
+
+It is very easy to implement Microservices with scriptr.io. As mentioned in the [anatomy of a scriptr.io account](./environment_configurations.md#anatomy-of-a-scriptrio-account), an account allows you to create one or multiple applications, each having its own sub-domain name, data store(s) and user/device directory. Moreover, each application can access all of scriptr.io's features and APIs, notably those allowing it to communicate with other remote entities.
+
+The best way to implement a Microservices is thus by implementing a scriptr.io application. The operations of the Microservice will be exposed through an API composed of scripts, which will convey the received requests and messages to the internal modules (other scripts) that implement the domain logic. One of the nice things about using scriptr.io is that your API scripts will be remotely accessible using any of the communication protocols that are supported by scriptr.io (http, mqtt, amqp, websocket) **without any change**.
+
+Note that you do not have to package and deploy your Microservices yourself since, as already discussed, scriptr.io is a [managed servless environment](./scriptr_solution_architect_document.md#scriptrio-solution-architect-booklet) and all your scripts are [automatically deployed](./development_life_cycle.md#development-life-cycle) on the cloud.
+
 
 
 
