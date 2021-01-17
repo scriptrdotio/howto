@@ -31,7 +31,7 @@ There are multiple ways of implementing a mediator in scriptr.io. The simplest w
 ## Event processor
 As also mentioned in the [Broker Pattern section](./broker.md#event-processors), any entity, whether it is a script within your scriptr.io application or an external application (including other scriptr.io applications) can be an event processor. 
 ## Channels
-Channels are very simple to create in scriptr.io. Please refer to this section (./broker.md#channels) to see how to create channels and queues in scriptr.io.
+Channels are very simple to create in scriptr.io. Please refer to [this section](./broker.md#channels) to see how to create channels and queues in scriptr.io.
 
 
 
