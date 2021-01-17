@@ -41,7 +41,7 @@ Regardless of the scriptr.io environment you select, you will always create one 
 - Backend scripts (run on the cloud) that implement the business logic and the API of the application 
 - UI scripts, such as dashboards (run in the browser), if you need a front-end to visualize data and/or allow users to interact with your application
 - One or multiple data stores (a default data store is automatically created), 
-- A user and a device directory, where you create the users and groups of your applications. 
+- Users, devices and groups of your applications that you create in the directory of the application. 
 
 Applications can leverage all the scriptr.io APIs and components and they are isolated from each others, which means that they do not share their data, nor their users and devices.
 Interesting to note, you can create a globally unique sub-domain name for your application directly from your workspace (additionally, you can ask the scriptr.io team to associate your applications to your own domain names).
