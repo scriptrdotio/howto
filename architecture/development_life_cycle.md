@@ -67,7 +67,7 @@ If you also mean to run load tests, then you might want to consider your options
 - If you are on a paid shared environment, you must ask to customize the throtling of the staging account, identically to what you will ask for production. This will of course incur additional charges.
 - You can opt for a dedicated environment to host your staging account. You can ask the scriptr.io team to spin up a temporary dedicated environment for you then remove it, or you can ask for a scheduled creation (e.g. every Monday at 08:00 AM).
 
-[staging options](./staging.PNG)
+![staging options](./staging.PNG)
 
 *Figure 9 - Options to create a staging environment*
 
