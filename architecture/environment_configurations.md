@@ -27,7 +27,7 @@ Once you feel more comfortable and you are ready to move to production, you can 
 *Figure 2 - Paid shared environment*
 
 ## Dedicated environment
-This is the most flexible option for medium to large and very large applications, when you have high scalability requirements.
+This is the most flexible option for medium to large and very large applications, when you have high performance and scalability requirements.
 
 When your application reaches cruising speed or if you need high performance and scalability, you can ask for a dedicated scriptr.io environment. As its name imply, this environment will be dedicated to your application so it will not share any capacity with others. Optionnally, you can ask to enable multi-tenancy on your environment so you get the ability to create multiple accounts in it. This might make sense depending on your business requirements and/or your architecture, as it is discussed in the corresponding section. In this configuration as well, you can purchase additional features from the set of paid features provided by scriptr.io. Of course, this is a scriptr.io managed environment, you do not need to worry about a thing. 
 
