@@ -7,10 +7,10 @@ Software architects and developers that are new to scriptr.io, and less familiar
 This document is thus aimed at providing answers to the most common questions we encounter, and is structured as follows: 
 
 - First section is a short discussion on the different scriptr.io [configurations](./environment_configurations.md) that are provided by default
-- Second section will tackle questions around the [development life-cycle](./development_life_cycle.md)
-- Third section will describe how to implement some of the most [common architecture patterns](./scriptr_solution_architect_document.md#architecture-patterns) with scriptr.io
-- Fourth section will discuss [scalability](./scriptr_solution_architect_document.md#scalability)
-- Fifth section will cover [security](./security).
+- Second section tackles questions around the [development life-cycle](./development_life_cycle.md)
+- Third section describes how to implement some of the most [common architecture patterns](./scriptr_solution_architect_document.md#architecture-patterns) with scriptr.io
+- Fourth section discusses [scalability](./scriptr_solution_architect_document.md#scalability)
+- Fifth section covers [security](./security).
 
 Of course, you can always [contact us](mailto:support@scriptr.io) for any question. We also recommend checking the [how-to guides](https://github.com/scriptrdotio/howto/blob/master/README.md#how-to) and scriptr.io's [official documentation](https://www.scriptr.io/documentation).
 
