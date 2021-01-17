@@ -25,8 +25,9 @@ When the processing of a message takes more than a few seconds and can span over
 When the data store grows to hundreds of thousands or millions of documents, the execution time of queries increases, which has a direct incidence on the latency of the application. A well known potential solution to this problem is sharding, which consists in horizontally or vertically splitting a data set into multiple **disjoint** data sets, to reduce the time needed to scan the data. By creating multiple data stores in a scriptr.io application, it is possible to create "shards" and distribute the data over the different stores. Note however that there is currently no built-in sharding mechanism in scriptr.io, which means that the logic to determine which data store to use to write/read data must be done at the level of the application. While this can increase the complexity of the latter, it can also dramatically improve its performance.
 
 ### Incremental data aggregation
-Many scenarios, such as generating dashboard content, require performing data aggregations. 
+Many scenarios, such as generating dashboard content and/or anlytics, require performing data aggregations. When the type of aggregates is know in advance (e.g. generate hourly, daily, weekly, monthly aggregates, etc.), a good option is to perform the aggregation at ingestion time, via queued or a long running jobs for example, or at regular intervals via scheduled jobs. Pre-processing the data will thus generate significant performance gain when generating dashboards and reports.
 
 ### Use the right data store type
+Scriptr.io 
 
 ## Increase capacity
