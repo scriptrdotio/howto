@@ -72,7 +72,7 @@ If you also mean to run load tests, then you might want to consider your options
 *Figure 9 - Options to create a staging environment*
 
 **ToC**
-- [Environment configuations](./environment_configurations.md) you can have on scriptr.io
+- [Environment configuations](./environment_configurations.md)
 - [Development life-cycle](./development_life_cycle.md)
 - [Architecture patterns](./architecture_patterns.md)
 - [Scalability](./scalability.md)
