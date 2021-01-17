@@ -16,12 +16,13 @@ If at least one of the answers to those questions is "yes", the asynchronous pro
 The [Broker](./broker.md) and [Mediator](./mediator.md) architecture patterns can be used to handle the asynchronous execution of event-driven logic, by decoupling the message producers (e.g. client applications) from the message processors. More specifically, using job queues allow the latter to handle a very large number of messages, whose processing time is measured in seconds, at a more convenient pace.
 
 ### Long running jobs
-When the processing of a message takes more than a few seconds and can span over minutes or even hours, then this message must be handled by **long running jobs**. Note that this is a paid feature that is not available by default on scriptr.io's environments.
+When the processing of a message takes more than a few seconds and can span over minutes or even hours, then this type of message must be handled by **long running jobs**. Note that this is a paid feature that is not available by default on scriptr.io's environments.
 
 ## Data processing
 
 
 ### Shards
+When the data store grows to hundreds of thousands or millions of documents, the execution time of queries increases, which has a direct incidence of the latency of the application. A well known potential solution to this problem is sharding, which consists in horizontally or vertically splitting a data set into multiple data sets, to reduce the time needed to scan the data. By creating multiple data stores in a scriptr.io application, it is possible to create "shards" and distribute the data over the different stores. Note however that there is no built-in sharding mechanism in scriptr.io, which means that data distribution and 
 
 ### Incremental data aggregation
 
