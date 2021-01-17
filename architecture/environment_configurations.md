@@ -36,7 +36,7 @@ In a dedicated environment, you can also expect to select between multiple diffe
 
 *Figure 3 - Dedicated environment*
 
-## Features of a scriptr.io account
+## Anatomy of a scriptr.io account
 Regardless of the scriptr.io environment you select, you will always create one or many accounts to implement your applications/solutions. In an account, you can create **applications**. For each application you can create:
 - Backend scripts (run on the cloud) that implement the business logic and the API of the application 
 - UI scripts, such as dashboards (run in the browser), if you need a front-end to visualize data and/or allow users to interact with your application
@@ -44,10 +44,16 @@ Regardless of the scriptr.io environment you select, you will always create one 
 - A user and a device directory, where you create the users and groups of your applications. 
 
 Applications can leverage all the scriptr.io APIs and components and they are isolated from each others, which means that they do not share their data, nor their users and devices.
+Interesting to note, you can create a globally unique sub-domain name for your application directly from your workspace (additionally, you can ask the scriptr.io team to associate your applications to your own domain names).
+
+![account](./account.PNG)
+
+*Figure 4 - Anatomy of a scriptr.io account*
+
 
 
 **ToC**
-- [Environment configuations](./environment_configurations.md) you can have on scriptr.io
+- [Environment configuations](./environment_configurations.md) 
 - [Development life-cycle](./development_life_cycle.md)
 - [Architecture patterns](./architecture_patterns.md)
 - [Scalability](./scalability.md)
