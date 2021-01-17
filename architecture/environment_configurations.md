@@ -56,3 +56,4 @@ Interesting to note, you can create a globally unique sub-domain name for your a
 - [Development life-cycle](./development_life_cycle.md)
 - [Architecture patterns](./architecture_patterns.md)
 - [Scalability](./scalability.md)
+- [Security](./security)
