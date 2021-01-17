@@ -14,8 +14,12 @@ It is very easy to implement Microservices with scriptr.io. As mentioned in the 
 
 The best way to implement a Microservices is thus by implementing a scriptr.io application. The operations of the Microservice will be exposed through an API composed of scripts, which will convey the received requests and messages to the internal modules (other scripts) that implement the domain logic. One of the nice things about using scriptr.io is that your API scripts will be remotely accessible using any of the communication protocols that are supported by scriptr.io (http, mqtt, amqp, websocket) **without any change**.
 
-Note that you do not have to package and deploy your Microservices yourself since, as already discussed, scriptr.io is a [managed servless environment](./scriptr_solution_architect_document.md#scriptrio-solution-architect-booklet) and all your scripts are [automatically deployed](./development_life_cycle.md#development-life-cycle) on the cloud.
+If you need to hide Microservices behin an API gateway, a simple way of doing that is by creating another application that would be the entry point of your architecture. Note though that the other applications (the Microservices) would remain publicly accessible by default (you must contact the scriptr.io team to change that).
 
+
+**Notes**:
+- You do not have to package and deploy your Microservices yourself since, as already discussed, scriptr.io is a [managed servless environment](./scriptr_solution_architect_document.md#scriptrio-solution-architect-booklet) and all your scripts are [automatically deployed](./development_life_cycle.md#development-life-cycle) on the cloud. 
+- Since each application has its own user/device directory, there is no unique identity management service your Microservices can refer to. You could implement one but you would loose the automatic authentication and authorization checks that are provided by scriptr.io for each application.
 
 
 
