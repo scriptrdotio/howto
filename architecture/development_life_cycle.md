@@ -21,7 +21,7 @@ When working as a team, this means that each developer owns a scriptr.io account
 
 ![team work](./team-work.PNG)
 
-*Figure 4 - Team work*
+*Figure 1 - Team work*
 
 ## Testing the code
 
@@ -34,13 +34,13 @@ To use Jasmine for creating unit tests, all you need to do is to deploy the modu
 
 ![install module](./install-module.PNG)
 
-*Figure 5 - Install a module*
+*Figure 2 - Install a module*
 
 In the modules panel, scroll down to Jasmine and press Install. This will automatically install the Jasmine module into the /modules folder of your account.
 
 ![select jasmine](./select-jasmine.PNG)
 
-*Figure 6 - Select Jasmine*
+*Figure 3 - Select Jasmine*
 
 For more on how to create unit tests with Jasmine in scriptr.io, please refer to [our documentation](https://github.com/scriptrdotio/jasmine/blob/master/README.md).
 
@@ -49,7 +49,7 @@ In a continuous integration approach, you would like to regularly run all the un
 
 ![enable auto-deploy from Github](./auto-deploy-from-github.PNG)
 
-*Figure 7 - Enable automatic deployment from Github*
+*Figure 4 - Enable automatic deployment from Github*
 
 You can then schedule the execution of all the unit tests so they are ran automatically. While you can manually schedule the execution of a script (unit tests are scripts) a better approach it to write a small script (scheduled as well) that will list all the unit tests in the current account (the Continuous Integration account), and schedule the execution of any script that has not be already scheduled. For more on scheduling scripts, please refer to the [corresponding how-to](../cron/create_cron_job.md).
 
@@ -57,7 +57,7 @@ You can then schedule the execution of all the unit tests so they are ran automa
 
 ![continuous integration testing](./continuous-integration-testing.PNG)
 
-*Figure 8 - Automatic Continuous Integration testing*
+*Figure 5 - Automatic Continuous Integration testing*
 
 ## Staging
 To create a staging environment, you can simply create a new scriptr.io account (e.g. stagin account) and associate it with the corresponding Github account, and also enabling automatic deploy (same as for continuous integration testing). 
@@ -69,7 +69,7 @@ If you also mean to run load tests, then you might want to consider your options
 
 ![staging options](./staging.PNG)
 
-*Figure 9 - Options to create a staging environment*
+*Figure 6 - Options to create a staging environment*
 
 # Solution Architecture Booklet ToC
 
