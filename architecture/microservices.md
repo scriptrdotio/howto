@@ -16,6 +16,9 @@ The best way to implement a Microservices is thus by implementing a scriptr.io a
 
 If you need to hide Microservices behin an API gateway, a simple way of doing that is by creating another application that would be the entry point of your architecture. Note though that the other applications (the Microservices) would remain publicly accessible by default (you must contact the scriptr.io team to change that).
 
+![microservices with scriptr.io](./scriptr-microservices.PNG)
+
+*Figure 2 - Implement Microservices via scriptr.io applications*
 
 **Notes**:
 - You do not have to package and deploy your Microservices yourself since, as already discussed, scriptr.io is a [managed servless environment](./scriptr_solution_architect_document.md#scriptrio-solution-architect-booklet) and all your scripts are [automatically deployed](./development_life_cycle.md#development-life-cycle) on the cloud. 
