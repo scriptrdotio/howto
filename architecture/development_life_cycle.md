@@ -71,7 +71,8 @@ If you also mean to run load tests, then you might want to consider your options
 
 *Figure 9 - Options to create a staging environment*
 
-**ToC**
+# Solution Architecture Booklet ToC
+
 - [Environment configuations](./environment_configurations.md)
 - [Development life-cycle](./development_life_cycle.md)
 - [Architecture patterns](./architecture_patterns.md)
