@@ -27,7 +27,6 @@ If you need to hide Microservices behin an API gateway, a simple way of doing th
 - [Broker](./broker.md)
 - [Mediator](./mediator.md)
 - [Micro-service](./micro_services.md)
-- [Micro-Kernel](./micro_kernel.md)
 - [Layered (monolithic](./layered.md)
 
 # Solution Architecture Booklet ToC
