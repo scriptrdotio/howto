@@ -3,6 +3,7 @@ There are three possible base configurations:
 - [Free shared environment](./environment_configurations.md#free-shared-environment)
 - [Paid shared environment](./environment_configurations.md#paid-shared-environment)
 - [Dedicated environment](./environment_configurations.md#dedicated-environment)
+- [Features of a scriptr.io account]()
 
 ## Free shared environment
 This is an ideal option to become familiar with the power of scriptr.io, at no cost. Altnough highly reliable, it is not meant for production.
@@ -34,6 +35,15 @@ In a dedicated environment, you can also expect to select between multiple diffe
 ![dedicated model](./dedicated-model.PNG)
 
 *Figure 3 - Dedicated environment*
+
+## Features of a scriptr.io account
+Regardless of the scriptr.io environment you select, you will always create one or many accounts to implement your applications/solutions. In an account, you can create **applications**. For each application you can create:
+- Backend scripts (run on the cloud) that implement the business logic and the API of the application 
+- UI scripts, such as dashboards (run in the browser), if you need a front-end to visualize data and/or allow users to interact with your application
+- One or multiple data stores (a default data store is automatically created), 
+- A user and a device directory, where you create the users and groups of your applications. 
+
+Applications can leverage all the scriptr.io APIs and components and they are isolated from each others, which means that they do not share their data, nor their users and devices.
 
 **ToC**
 - [Environment configuations](./environment_configurations.md) you can have on scriptr.io
