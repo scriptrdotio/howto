@@ -8,9 +8,9 @@ Scalability is always a concern in most enterprise-grade applications. While it 
 
 It often appears that sychronous, request-reply and/or transactional processing are not necessary to tackle a given use cases, but they are actually used out of habit, leading sometimes to bloating the application by reserving a large part of the available resources. Therefore when designing an application, it is important to answer the following questions:
 - Is there a large number of messages to process, whose emitters do not need an response immediately, but can be provided later with the outcome of their request?
-- Is the execution time of the logic triggered by a request higher than a few seconds? Can it span to minutes or hours? 
+- Is the execution time of the logic triggered by a request higher than a few seconds? Can it reach minutes or hours? 
 
-If at least one of the answers to those questions is "yes", the asynchronous processing should definitely be considered.
+If at least one of the answers to those questions is "yes", then asynchronous processing should definitely be considered.
 
 ### Queued jobs
 The [Broker](./broker.md) and [Mediator](./mediator.md) architecture patterns can be used to handle the asynchronous execution of event-driven logic, by decoupling the message producers (e.g. client applications) from the message processors. More specifically, using job queues allow the latter to handle a very large number of messages, whose processing time is measured in seconds, at a more convenient pace.
@@ -20,12 +20,13 @@ When the processing of a message takes more than a few seconds and can span over
 
 ## Data processing
 
+Persisting and querying data can often become the bottleneck of an application. There is a few techniques however, that can postpone the fateful time at which an increase of capacity is necessary: 
 
 ### Shards
-When the data store grows to hundreds of thousands or millions of documents, the execution time of queries increases, which has a direct incidence on the latency of the application. A well known potential solution to this problem is sharding, which consists in horizontally or vertically splitting a data set into multiple **disjoint** data sets, to reduce the time needed to scan the data. By creating multiple data stores in a scriptr.io application, it is possible to create "shards" and distribute the data over the different stores. Note however that there is currently no built-in sharding mechanism in scriptr.io, which means that the logic to determine which data store to use to write/read data must be done at the level of the application. While this can increase the complexity of the latter, it can also dramatically improve its performance.
+When the data store grows to hundreds of thousands or millions of documents, the execution time of queries increases, which has a direct incidence on the latency of the application. A well known potential solution to this problem is sharding (contraction of shared-nothing), which consists in horizontally or vertically splitting a data set into multiple **disjoint** data sets, to reduce the time needed to scan the data. By creating multiple data stores in a scriptr.io application, it is possible to create "shards" and distribute the data over the different stores. Note however that there is currently no built-in sharding mechanism in scriptr.io, which means that the logic to determine which data store to use to write/read data must be done at the level of the application. While this can increase the complexity of the latter, it can also dramatically improve its performance.
 
 ### Incremental data aggregation
-Many scenarios, such as generating dashboard content and/or anlytics, require performing data aggregations. When the type of aggregates is know in advance (e.g. generate hourly, daily, weekly, monthly aggregates, etc.), a good option is to perform the aggregation at ingestion time, via queued or a long running jobs for example, or at regular intervals via scheduled jobs. Pre-processing the data will thus generate significant performance gain when generating dashboards and reports.
+Many scenarios, such as generating dashboard content and/or analytics, require performing data aggregations. When the type of aggregates is know in advance (e.g. generate reports hourly, daily, weekly, monthly aggregates, etc.), a good option is to perform the aggregation at ingestion time, via queued or a long running jobs for example, or at regular intervals via scheduled jobs. Pre-processing the data will thus generate significant performance gain when generating dashboards and reports.
 
 ### Use the right data store type
 Scriptr.io 
