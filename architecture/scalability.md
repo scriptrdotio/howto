@@ -38,7 +38,7 @@ Scrpitr.io provides general-purpose NoSQL data stores. While these are convenien
 It is always possible to ask for increasing the capacity of a dedicated environment. However, depending on the architecture of the solution, it might be more intersting to ask for the creation of multiple small dedicated environments, rather than increasing the capacity of the existing one. For example, if the solution is leveraging [Microservices](./microservices.md), then it might make sense to deploy each Microservice (or sub-sets of Microservics) on a small dedicated environment. This will result in distributing the load of the solution on the different environments and provide improved scalability.
 
 # Solution Architecture Booklet ToC
-- [Environment configuations](./environment_configurations.md) you can have on scriptr.io
+- [Environment configuations](./environment_configurations.md) 
 - [Development life-cycle](./development_life_cycle.md)
 - [Architecture patterns](./architecture_patterns.md)
 - [Scalability](./scalability.md)
