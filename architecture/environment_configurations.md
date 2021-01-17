@@ -45,7 +45,7 @@ Regardless of the scriptr.io environment you select, you will always create one 
 - Users, devices and groups of your applications that you create in the directory of the application. 
 
 Applications can leverage all the scriptr.io APIs and components and they are isolated from each others, which means that they do not share their data, nor their users and devices.
-Interesting to note, you can create a globally unique sub-domain name for your application directly from your workspace (additionally, you can ask the scriptr.io team to associate your applications to your own domain names).
+Interesting to note, you can create a globally unique sub-domain name for your application directly from your workspace (additionally, you can ask the scriptr.io team to associate your applications with your own domain names).
 
 ![account](./account.PNG)
 
