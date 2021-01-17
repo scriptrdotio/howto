@@ -15,7 +15,7 @@ This document is thus aimed at providing answers to the most common questions we
 Of course, you can always [contact us](mailto:support@scriptr.io) for any question. We also recommend checking the [how-to guides](https://github.com/scriptrdotio/howto/blob/master/README.md#how-to) and scriptr.io's [official documentation](https://www.scriptr.io/documentation).
 
 **ToC**
-- [Environment configuations](./environment_configurations.md) you can have on scriptr.io
+- [Environment configuations](./environment_configurations.md) 
 - [Development life-cycle](./development_life_cycle.md)
 - [Architecture patterns](./architecture_patterns.md)
 - [Scalability](./scalability.md)
