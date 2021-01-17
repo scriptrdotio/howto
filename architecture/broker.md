@@ -54,7 +54,7 @@ You can use channels to create task (job) queues. Queues are notably used to dea
 - [Micro-service](./micro_services.md)
 - [Micro-Kernel](./micro_kernel.md)
 
-**Solution Architecture Booklet ToC**
+# Solution Architecture Booklet ToC
 
 - [Environment configuations](./environment_configurations.md) 
 - [Development life-cycle](./development_life_cycle.md)
