@@ -15,9 +15,9 @@ We will answers those questions in the following sections:
 - [Staging](./development_life_cycle.md#staging)
 
 ## Team work
-Scriptr.io natively integrates with Github. You simply need to link an application in your account to a Github repository by clicking on the gear icon in the workspace, then selecting Github, the providing a Github repository name and token. From the workspace you can issue check-out/pull or push commands and also compare your current version of the code with the one on the repository (for details, please refer to the [corresponding scriptr.io documentation](https://www.scriptr.io/documentation#documentation-githubGitHubIntegration).
+Scriptr.io natively integrates with Github. You simply need to link an application in your account to a Github repository by clicking on the gear icon in the workspace, selecting Github, then providing a Github repository name and token. From the workspace you can issue check-out/pull or push commands and also compare your current version of the code with the one on the repository (for details, please refer to the [corresponding scriptr.io documentation](https://www.scriptr.io/documentation#documentation-githubGitHubIntegration).
 
-When working as a team, this means that each developer owns a scriptr.io account (on any of the aforementioned possible configurations). Therefore, each developer can have it's own copy of the code that is retrieved from Github. This also means that each developer can try his changes in real-time **without interfering with the others** since his code and data are located in his own *silo* (scriptr.io account + associated run-time)!
+When working as a team, this means that each developer owns a scriptr.io account (on any of the aforementioned possible [configurations](./environment_configurations.md)). Therefore, each developer can have it's own copy of the code that is retrieved from Github. This also means that each developer can try his changes in real-time **without interfering with the others** since his code and data are located in his own *silo* (scriptr.io account + associated run-time)!
 
 ![team work](./team-work.PNG)
 
