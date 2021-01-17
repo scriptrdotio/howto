@@ -52,7 +52,7 @@ You can use channels to create task (job) queues. Queues are notably used to dea
 
 - [Mediator](./mediator.md)
 - [Micro-service](./micro_services.md)
-- [Micro-Kernel](./micro_kernel.md)
+- [Layered (monolithic)](./layered.md)
 
 # Solution Architecture Booklet ToC
 
