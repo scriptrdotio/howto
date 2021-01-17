@@ -7,7 +7,7 @@ There are three possible base configurations:
 In any of these, accounts will be created, therefore it is important to also understand the [anatomy of a scriptr.io account](./environment_configurations.md#anatomy-of-a-scriptrio-account).
 
 ## Free shared environment
-This is an ideal option to become familiar with the power of scriptr.io, at no cost. Altnough highly reliable, it is not meant for production.
+This is an ideal option to become familiar with the power of scriptr.io, at no cost. Although highly reliable, it is not meant for production.
 
 When you first [sign-up to scriptr.io](https://www.scriptr.io/register), you obtain a free acount on a multitenant scriptr.io environment (free shared environment). This account gives you access to the [workspace](https://www.scriptr.io/workspace) (a web IDE) from which you can start using most of scriptr.io's features and services for free, to build your applications. As mentioned, your code is automatically deployed and runs on the cloud (figure 1). 
 
