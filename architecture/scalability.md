@@ -1,6 +1,6 @@
 # Scalability
 
-Scalability is always a concern in most enterprise-grade applications. While it is definitely possible to increase capacity, solution architects will evaluate design alternatives that maximize the available resources, before considering any capacity increase. On that end, this document goes through a few options that can be assessed when implementing an application.
+Scalability is always a concern in most enterprise-grade applications. While it is definitely possible to increase capacity, solution architects will evaluate design alternatives that maximize the available resources, before considering any capacity increase. In addition, increasing the capacity is not always the optimal solution to a performance problem due to a perfectible architecture. On that end, this document goes through a few options that can be assessed when implementing an application.
 
 *Note:* In this document, we use the word *application* to refer to business logic deployed and executed on scriptr.io. We also use the words *request*, *message* and *event* interchangeably, to refer to any demand sent by a client application to the scriptr.io application.
 
@@ -34,3 +34,5 @@ Many scenarios, such as generating dashboard content and/or analytics, require p
 Scrpitr.io provides general-purpose NoSQL data stores. While these are convenient to store application data, they might not fit all use cases, which can have a direct incidence on performance. For example, scriptr.io's NoSQL data store is not optimized for handling time-series nor for efficiently dealing with relational data. In similar cases, it might be wiser to persist the data into more specialized data stores, such as InfluxDB or MySQL for example, for which scriptr.io provides connectors that can be leveraged from within the code. 
 
 ## Increase capacity
+
+It is always possible to ask for increasing the capacity of a dedicated environment. However, depending on the architecture of the solution, it might be more intersting to ask for the creation of multiple small dedicated environments, rather than increasing the capacity of the existing one. For example, if the solution is desined on [Microservices](./microservices.md), then it might make sense to deploy each Microservice on a small dedicated environment. This will result in distributing the load of the solution on the different environments and provide improved scalability.
