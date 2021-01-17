@@ -36,7 +36,7 @@ To use Jasmine for creating unit tests, all you need to do is to deploy the modu
 
 *Figure 5 - Install a module*
 
-In the modules panel, scroll down to Jasmine press Install. This will automatically install the Jasmine module into the /modules folder of your account.
+In the modules panel, scroll down to Jasmine and press Install. This will automatically install the Jasmine module into the /modules folder of your account.
 
 ![select jasmine](./select-jasmine.PNG)
 
@@ -65,8 +65,11 @@ To create a staging environment, you can simply create a new scriptr.io account 
 If you also mean to run load tests, then you might want to consider your options:
 
 - If you are on a paid shared environment, you must ask to customize the throtling of the staging account, identically to what you will ask for production. This will of course incur additional charges.
-- You can opt for a dedicated environment to host your staging account.
+- You can opt for a dedicated environment to host your staging account. You can ask the scriptr.io team to spin up a temporary dedicated environment for you then remove it, or you can ask for a scheduled creation (e.g. every Monday at 08:00 AM).
 
+[staging options](./staging.PNG)
+
+*Figure 9 - Options to create a staging environment*
 
 **ToC**
 - [Environment configuations](./environment_configurations.md) you can have on scriptr.io
