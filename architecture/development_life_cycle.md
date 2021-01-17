@@ -45,7 +45,7 @@ In the modules panel, scroll down to Jasmine and press Install. This will automa
 For more on how to create unit tests with Jasmine in scriptr.io, please refer to [our documentation](https://github.com/scriptrdotio/jasmine/blob/master/README.md).
 
 ### Continuous Integration testing
-In a continuous integration approach, you would like to regularly run all the unit tests (implemented by the different developers) at regular intervals. One good practice for that is to create a specific scriptr.io account that is associated to the Github repository of the application (the one where developers commit their code and unit tests), and to activate the automatic deployment option. As a result, any code commited to the Github repository will automatically be delployed on the Continuous Integration test account.
+In a continuous integration approach, you would like to regularly run all the unit tests (implemented by the different developers) at regular intervals. One good practice for that is to create a specific scriptr.io account that is associated with the Github repository of the application (the one where developers commit their code and unit tests), and to activate the automatic deployment option. As a result, any code commited to the Github repository will automatically be delployed on the Continuous Integration test account.
 
 ![enable auto-deploy from Github](./auto-deploy-from-github.PNG)
 
