@@ -7,20 +7,19 @@ In this document, we use the word *application* to refet to business logic deplo
 ## Asynchronous processing
 
 It often appears that sychronous, request-reply and/or transactional processing are not necessary to tackle a given use cases, but they are actually used out of habit, leading sometimes to bloating the application by reserving a large part of the available resources. Therefore when designing an application, it is important to answer the following questions:
-- Must the emitter of the request receive an response immediately or can it be "contacted" later to be provided with the outcome of its request?
+- Is there a large number of messages to process, whose emitters do not need an response immediately, but can be provided later with the outcome of their request?
 - Is the execution time of the logic triggered by a request higher than a few seconds? Can it span to minutes or hours? 
 
 If at least one of the answers to those questions is "yes", the asynchronous processing should definitely be considered.
 
 ### Queued jobs
-
-The [Broker](./broker.md) and [Mediator](./mediator.md) architecture patterns can be used to handle the asynchronous execution of event-driven logic, by decoupling the message producers (e.g. client applications) from the message processors. More specifically, using job queues allow the latter to handle a large number of messages, that do not require  at a more convenient pace.
+The [Broker](./broker.md) and [Mediator](./mediator.md) architecture patterns can be used to handle the asynchronous execution of event-driven logic, by decoupling the message producers (e.g. client applications) from the message processors. More specifically, using job queues allow the latter to handle a very large number of messages, whose processing time is measured in seconds, at a more convenient pace.
 
 ### Long running jobs
-
-When the execution time of a 
+When the processing of a message takes more than a few seconds and can span over minutes or even hours, then this message must be handled by **long running jobs**. Note that this is a paid feature that is not available by default on scriptr.io's environments.
 
 ## Data processing
+
 
 ### Shards
 
