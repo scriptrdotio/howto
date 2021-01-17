@@ -14,9 +14,11 @@ If at least one of the answers to those questions is "yes", the asynchronous pro
 
 ### Queued jobs
 
-The [Broker](./broker.md) and [Mediator](./mediator.md) architecture patterns can be used to handle asynchronous event-driven business logic by decoupling the message producers (e.g. client applications) from the message processors, allowing the latter to processe the messages at a more convenient pace
+The [Broker](./broker.md) and [Mediator](./mediator.md) architecture patterns can be used to handle the asynchronous execution of event-driven logic, by decoupling the message producers (e.g. client applications) from the message processors. More specifically, using job queues allow the latter to handle a large number of messages, that do not require  at a more convenient pace.
 
 ### Long running jobs
+
+When the execution time of a 
 
 ## Data processing
 
