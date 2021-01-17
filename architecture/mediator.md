@@ -47,7 +47,7 @@ Channels are very simple to create in scriptr.io. Please refer to [this section]
 - [Micro-service](./micro_services.md)
 - [Micro-Kernel](./micro_kernel.md)
 
-**Solution Architecture Booklet ToC**
+# Solution Architecture Booklet ToC
 
 - [Environment configuations](./environment_configurations.md) 
 - [Development life-cycle](./development_life_cycle.md)
