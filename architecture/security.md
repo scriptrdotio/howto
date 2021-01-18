@@ -66,6 +66,6 @@ Groups can contain users, devices or other groups. It is a convenient ways of as
 It is important to note that, by default, a request or message that has been authenticated an authorized to execute a script will run the latter **using the application's owner authorizations**, which means that any subsequent action, including data manipulation will take place within this authorization context. Therefore, if you want to make sure to execute the script (and subsequent actions) in the context of the user/device that issued the request/message, you must use **impersonation**, which is actually [very simple to do with script.io](../acl/protect_data.md#how-do-i-access-data-using-the-request-initiator-credentials).
 
 ## Encryption
-In-flight data will be encrypted when sending requests/messages to your application over a TLS/SSL connection. Documents (data) are not encrypted by defaults, but you can leverage the provided encryption libraries to encrypt your data if needed.
+In-flight data will be encrypted when sending requests/messages to your application over a TLS/SSL connection. Documents (data) are not encrypted by defaults, but you can leverage the provided encryption libraries to encrypt your data if needed. Note that scriptr.io will ask for TLS whenever an authentication token is passed over a non secure communication, and reject the request.
 
 [Back to Solution Architect Booklet ToC](./solution_architect_booklet.md#toc)
