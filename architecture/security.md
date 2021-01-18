@@ -67,3 +67,5 @@ It is important to note that, by default, a request or message that has been aut
 
 ## Encryption
 In-flight data will be encrypted when sending requests/messages to your application over a TLS/SSL connection. Documents (data) are not encrypted by defaults, but you can leverage the provided encryption libraries to encrypt your data if needed.
+
+[Back to Solution Architect Booklet ToC](./solution_architect_booklet.md#toc)
