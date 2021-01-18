@@ -45,3 +45,5 @@ It is always possible to ask for increasing the capacity of a dedicated environm
 - [Architecture patterns](./architecture_patterns.md)
 - [Scalability](./scalability.md)
 - [Security](./security)
+
+[Home](./solution_architect_booklet.md)
