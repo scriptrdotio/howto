@@ -31,7 +31,7 @@ There are multiple ways of implementing a mediator in scriptr.io. The simplest w
 In figure 2, we see an example of a simple mediator, implemented as a state-machine. It consumes events (event1, event2, event3) to move the processs forward, firing new events (containing business payloads) to the event processors that are subscribed to the corresponding channels. 
 
 ## Event processor
-As also mentioned in the [Broker Pattern section](./broker.md#event-processors), any entity, whether it is a script within your scriptr.io application or an external application (including other scriptr.io applications) can be an event processor. Note that event processors could be communicating with the mediator with any of the protocols that are supported by scriptr.io (http, websockets, mqtt, amqp).
+As also mentioned in the [Broker Pattern section](./broker.md#event-processors), any entity, whether it is a script within your scriptr.io application or an external application (including other scriptr.io applications) can be an event processor. Note that event processors could be communicating with the mediator using any of the protocols that are supported by scriptr.io (http, websockets, mqtt, amqp).
 
 ![soa](./mediator-soa.PNG)
 
