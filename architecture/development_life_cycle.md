@@ -78,3 +78,5 @@ If you also mean to run load tests, then you might want to consider your options
 - [Architecture patterns](./architecture_patterns.md)
 - [Scalability](./scalability.md)
 - [Security](./security)
+
+[Home](./solution_architect_booklet.md)
