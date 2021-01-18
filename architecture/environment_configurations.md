@@ -15,12 +15,12 @@ When you first [sign-up to scriptr.io](https://www.scriptr.io/register), you obt
 
 *Figure 1 - Free shared environment*
 
-Although this is a shared environment, your have your owmn isolated "silo", which means none of your data and your code are shared with other account owners, nor accessible to them in any way. There is not limitations in the number of accounts you can create on this environment, but (1) **the capacity is throttled** and (2) **some of the features are only accessible for a trial period and a few are not available**.
+Although this is a shared environment, you have your own isolated "silo", which means none of your data and your code are shared with other account owners, nor accessible to them in any way. There is not limitations to the number of accounts you can create on this environment, but (1) **the capacity is throttled** and (2) **some of the features are only accessible for a trial period and a few are not available**.
 
 ## Paid shared environment
 This is a good option for small to medium applications or when you are starting and need to progressively increase your capacity.
 
-Once you feel more comfortable and you are ready to move to production, you can ask for one or more accounts on the paid shared environment. As in the free tier, you will share capacity with other account owners, however, you can ask for customized throttling (max number of requests per second, max number of documents, etc.) depending on your requirements. You can also purchase paid features, such as messaging or adding different data store types to your account. Note that since this is a shared environment, there is a limit to how much your application can scale. Another different with the free tier is the SLA (Service Level Agreement) and corresponding QoS (Quality of Service) you will get.
+Once you feel more comfortable and you are ready to move to production, you can ask for one or more accounts on the paid shared environment. As in the free tier, you will share capacity with other account owners, however, you can ask for customized throttling (max number of requests per second, max number of documents, etc.) depending on your requirements. You can also purchase paid features, such as messaging or adding different data store types to your account. Note that since this is a shared environment, there is a limit to how much your application can scale. Another difference with the free tier is the SLA (Service Level Agreement) and corresponding QoS (Quality of Service) you will get.
 
 ![paid shared environment](./paid-shared-model.PNG)
 
