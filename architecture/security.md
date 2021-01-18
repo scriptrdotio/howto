@@ -45,8 +45,8 @@ Your application will probably interact with third-party systems against which i
 
 ## Authorizations
 Scriptr.io handles authorisations via **Access Control Lists** (ACL) at two levels:
-- scripts (manage permissions on the execution of the logic in the scripts)
-- documents (manage permissions on your data, at the field level)
+- scripts: manage permissions on the execution of the logic in the scripts. For more on how to create ACLs for script please read [this](../acl/restrict_access_to_api.md)
+- documents: manage permissions on your data, at the field level. For more on how to create ACLs for documents, please read [this](../acl/protect_data.md)
 
 ACLs are list of users, devices, groups and roles that are authorized on a given resource (script or data). Users, devices, groups and roles that are not part of the ACL of a given script, document or document field will get no access to this resource.
 
@@ -60,5 +60,10 @@ ACL can contain one of the predefined roles:
 - nobody: means that the corresponding resource is forbidden, even for the scriptr role.
 
 ### Groups
-Groups can contain users, devices or other groups. It is a convenient ways of associated users and devices to the same resources. It is recommended to use groups as much as possible when creating ACLs.
+Groups can contain users, devices or other groups. It is a convenient ways of associating users and devices to the same resources. It is recommended to use groups as much as possible when creating ACLs.
 
+### Authorization context
+It is important to note that, by default, a request or message that has been authenticated an authorized to execute a script will run the latter **using the application's owner authorizations**, which means that any subsequent action, including data manipulation will take place within this authorization context. Therefore, if you want to make sure to execute the script (and subsequent actions) in the context of the user/device that issued the request/message, you must use **impersonation**, which is actually [very simple to do with script.io](../acl/protect_data.md#how-do-i-access-data-using-the-request-initiator-credentials).
+
+## Encryption
+In-flight data will be encrypted when sending requests/messages to your application over a TLS/SSL connection. Documents (data) are not encrypted by defaults, but you can leverage the provided encryption libraries to encrypt your data if needed.
