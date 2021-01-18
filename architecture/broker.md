@@ -47,17 +47,10 @@ You can use channels to create task (job) queues. Queues are notably used to dea
 
 *Figure 12 - Absorb load peaks with queues*
 
-
-**Other architecture patterns**
+### Other architecture patterns
 
 - [Mediator](./mediator.md)
 - [Micro-service](./micro_services.md)
 - [Layered (monolithic)](./layered.md)
 
-# Solution Architecture Booklet ToC
-
-- [Environment configuations](./environment_configurations.md) 
-- [Development life-cycle](./development_life_cycle.md)
-- [Architecture patterns](./architecture_patterns.md)
-- [Scalability](./scalability.md)
-- [Security](./security)
+[Back to Solution Architect Booklet ToC](./solution_architect_booklet.md#toc)
