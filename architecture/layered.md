@@ -14,7 +14,7 @@ The logic implemented in the application layer is specific to that application's
 
 Layered architecture are usually monolithic, i.e. they are bundled and deployed as a single component into some hosting environment, such as an application server for example. A Java Web application for instance would be packaged as a WAR file and deployed into a JEE application server or servlet container. Monolithic applications only allow for reusing business objects as code (libraries or frameworks), and not share them among multiple distributed applications, such as in the case of [Microservices](./micro_services.md).
 
-## Implement the layered architecture with scriptr.io
+## Implementing the layered architecture with scriptr.io
 
 That's very easy. Within a scriptr.io application, you can create one logical folder for each layer of the applications (you can then create additional logical sub-folders to organize a layer). We mention "logical folders" as there are no folders in scriptr.io, rather you can logically create a distribution of your scripts using path separators. For example, /presentation/signup/sign-up.html creates the sign-up.html script into the logical "signup" folder within the "presentation" folder. Hence a typical layered scriptr.io application would typically have three main folders, "presentation", "application", "business" (you can name them as you want to). The data store of the scriptr.io application is the data layer, directly accessible from any script via the "document" module.
 
