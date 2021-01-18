@@ -7,7 +7,7 @@ Yet, as mentioned in the introductory section, development teams are sometimes p
 - How can they test their code? 
 - How can they create a staging environment?
 
-We will answers those questions in the following sections:
+We will answer those questions in the following sections:
 
 - [Team work](./development_life_cycle.md#team-work)
 - [Unit testing](./development_life_cycle.md#unit-testing)
