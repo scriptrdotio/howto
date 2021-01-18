@@ -19,6 +19,6 @@ Of course, you can always [contact us](mailto:support@scriptr.io) for any questi
 - [Development life-cycle](./development_life_cycle.md)
 - [Architecture patterns](./architecture_patterns.md)
 - [Scalability](./scalability.md)
-- [Security](./security)
+- [Security](./security.md)
 
 [Back to the how-to](../README.md)
