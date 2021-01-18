@@ -50,7 +50,7 @@ You can use channels to create task (job) queues. Queues are notably used to dea
 ## Other architecture patterns
 
 - [Mediator](./mediator.md)
-- [Micro-service](./micro_services.md)
+- [Microservice](./micro_services.md)
 - [Layered (monolithic)](./layered.md)
 
 [Back to Solution Architect Booklet ToC](./solution_architect_booklet.md#toc)
