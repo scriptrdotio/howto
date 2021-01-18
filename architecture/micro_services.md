@@ -26,15 +26,9 @@ An enhanced version of this design is to distribute the Microservices as applica
 - You do not have to package and deploy your Microservices yourself since, as already discussed, scriptr.io is a [managed servless environment](./scriptr_solution_architect_document.md#scriptrio-solution-architect-booklet) and all your scripts are [automatically deployed](./development_life_cycle.md#development-life-cycle) on the cloud. 
 - Since each application has its own user/device directory, there is no unique identity management service your Microservices can refer to. You could implement one but you would loose the automatic authentication and authorization checks that are provided by scriptr.io for each application.
 
-
-**Other architecture patterns**
+## Other architecture patterns
 - [Broker](./broker.md)
 - [Mediator](./mediator.md)
 - [Layered (monolithic)](./layered.md)
 
-# Solution Architecture Booklet ToC
-- [Environment configuations](./environment_configurations.md) you can have on scriptr.io
-- [Development life-cycle](./development_life_cycle.md)
-- [Architecture patterns](./architecture_patterns.md)
-- [Scalability](./scalability.md)
-- [Security](./security)
+[Back to Solution Architect Booklet ToC](./solution_architect_booklet.md#toc)
