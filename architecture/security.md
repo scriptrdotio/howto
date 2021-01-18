@@ -1,6 +1,6 @@
 # Security
 
-Security is of paramount importance in software systems and applications. Scriptr.io deals with security at three levels: 
+Security is of paramount importance in software systems and applications. Scriptr.io makes no exception and deals with security at three levels: 
 - [Authentication](./security.md#authentication)
 - [Authorizations](./security.md#authorizations)
 - [Encryption](./security.md#ecryption)
