@@ -8,11 +8,4 @@ In this section, we will cover four of them:
 - [Micro-service](./micro_services.md)
 - [Layered (monolithic)](./layered.md)
 
-# Solution Architecture Booklet ToC
-- [Environment configuations](./environment_configurations.md)
-- [Development life-cycle](./development_life_cycle.md)
-- [Architecture patterns](./architecture_patterns.md)
-- [Scalability](./scalability.md)
-- [Security](./security)
-
-[Home](./solution_architect_booklet.md)
+[Back to Solution Architect Booklet ToC](./solution_architect_booklet.md#toc)
