@@ -43,7 +43,7 @@ Channels are very simple to create in scriptr.io. Please refer to [this section]
 ## Other architecture patterns**
 
 - [Broker](./broker.md)
-- [Micro-service](./micro_services.md)
+- [Microservice](./micro_services.md)
 - [Layered (monolithic)](./layered.md)
 
 [Back to Solution Architect Booklet ToC](./solution_architect_booklet.md#toc)
