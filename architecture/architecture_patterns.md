@@ -14,3 +14,5 @@ In this section, we will cover four of them:
 - [Architecture patterns](./architecture_patterns.md)
 - [Scalability](./scalability.md)
 - [Security](./security)
+
+[Home](./solution_architect_booklet.md)
