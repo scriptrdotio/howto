@@ -17,8 +17,10 @@ Each application of a scriptr.io account has its own user and device directory. 
 ### Credentials
 Adding a new a user or a device into the directory can be done from the workspace or using the corresponding APIs. It requires providing a user name (respectively a device name) and a password that will be used to generate an **authentication token**. If a token is lost or corrupted, a new token can be regenerated, which automatically invalidates the other one. It is also possible to modify the password, which leads to the automatic regeneration of an authentication token, and the invalidation of the former password and token respectively.
 
+Users and devices (hereafter refered to as *client applications*) access your application by creating authenticated connection with and/or issuing authenticated requests or message. The mechanism to adopt differs depending on the communication protcol that is used:
+
 #### HTTP
-Users and devices accessing your application by issuing authenticated **http requests** to it's API. A request is authenticated by scriptr.io if it contains a valid authentication token pertaining to the directory of the targeted application. 
+ Client applications can access your application by issuing authenticated http requests to it's API. A request is authenticated by scriptr.io if it contains a valid **authentication token** pertaining to the directory of the targeted application. 
 
 User interfaces served by your application can also leverage the [Login component](https://github.com/scriptrdotio/login), which allow the user to sign-in by entering their username and password in a login form. The login component will generate a session token, automatically redirecting users to the login form upon session expiration.
 
