@@ -5,7 +5,7 @@ Well-designed applications will usually be composed of logical horizontal layers
 - The presentation layer, responsible for the UI and user workflow (navigation among the UI screens)
 - The application layer, that implements the processes (steps) of the application, through the manipulation of the features that are offered by the components of the business layer.
 The logic implemented in the application layer is specific to that application's use cases. In the case of web/mobile applications, this layer also can expose an API or front controllers that are remotely accessible from the UI, via http or websockets
-- The business layer, which implements the business logic and business objets. They reflect the main concepts of the business domain that is covered by the application and they are usually persistent, i.e. their state will be saved into a durable data store. The definitions (e.g classes) of the business objects is usually highly reusable
+- The business layer, which implements the business logic and business objets. They reflect the main concepts of the business domain that is covered by the application and they are usually persistent, i.e. their state will be saved into a durable data store. 
 - The data layer is where business data is persisted. It is typically a database, relational or not.
 
 ![layered architecture](./layered.PNG)
