@@ -21,4 +21,4 @@ Of course, you can always [contact us](mailto:support@scriptr.io) for any questi
 - [Scalability](./scalability.md)
 - [Security](./security)
 
-[Back to the how-to](../Readme.md)
+[Back to the how-to](../README.md)
