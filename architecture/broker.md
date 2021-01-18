@@ -14,7 +14,7 @@ Implementing the Broker pattern with scriptr.io is very straightforward and simp
 ## Event processors
 The beauty of scriptr.io is that any entity, whether it is a script within your scriptr.io application or an external application (including other scriptr.io applications) can be an event processor, i.e. consume events/messages from, or produce events/messages to your channels. You can thus turn your scriptr.io application into a powerful integration middleware.
 
-The below figure illustrates this with an example where a client application sends an event (event 1) to a channel (channel 1) of a scriptr.io account. Event 1 is consumed by one of the scripts hosted by this account (script 1), which executes some bysiness logic. Once done, script 1 emits a new event (event 2) to another channel (channel 2), trigerring the execution of more business logic in the two event processors that consume this event, i.e. script 2 and an external application. The latter issues a third event (event 3) to channel 3, which is consumed by another third party application.
+The below figure illustrates this with an example where a client application sends an event (event 1) to a channel (channel 1) of a scriptr.io application. Event 1 is consumed by one of the scripts hosted by this application (script 1), which executes some bysiness logic. Once done, script 1 emits a new event (event 2) to another channel (channel 2), trigerring the execution of more business logic in the two event processors that consume this event, i.e. script 2 and an external application. The latter issues a third event (event 3) to channel 3, which is consumed by another third party application.
 
 ![Integration middleware](./middleware.PNG)
 
@@ -33,7 +33,7 @@ Channels are native constructs in scriptr.io, so creating one is done in a few c
 
 Channels behave by default as topics, i.e. they are used to broadcast messages. 
 
-- To subsribe one of the scripts in your account to a channel (turn it into an event processor), you have two options:
+- To subsribe one of the scripts in your scriptr.io application to a channel (turn it into an event processor), you have two options:
   - From the UI of the workspace, open the script, click the Subscribe option in the top-right corner of the code editor, then select the channel you want to subscribe the script to
   - From the code of another script, just write subscribe ```subscribe("<your_channel_name>", "<path_and_script_name>")```
 - Subscribing remote clients to your channels or publishing events to remote third parties is respectively a matter of configuration and writting 2 to 3 lines of code. We advise resorting to the [how-to guides](https://github.com/scriptrdotio/howto/blob/master/README.md#how-to), for example:
@@ -41,7 +41,7 @@ Channels behave by default as topics, i.e. they are used to broadcast messages.
 
 ### Queue event channels
 
-You can use channels to create task (job) queues. Queues are notably used to deal with event producers that generate events/tasks at a pace that is higher than what event processors can process, allowing your application to absorbe peeks and remain responsive. Currently, you can only subscribe scripts in your account to your queues, but your scripts can push the data they receive to any remote 3rd party, using any of the supported protocols. For more on queues, please refer to the [how-to guide](https://github.com/scriptrdotio/howto/blob/master/queuing/queue_tasks.md) and the [documentation](https://www.scriptr.io/documentation#documentation-queuemodulequeueModule).
+You can use channels to create task (job) queues. Queues are notably used to deal with event producers that generate events/tasks at a pace that is higher than what event processors can process, allowing your application to absorbe peeks and remain responsive. Currently, you can only subscribe scripts in your application to your queues, but your scripts can push the data they receive to any remote 3rd party, using any of the supported protocols. For more on queues, please refer to the [how-to guide](https://github.com/scriptrdotio/howto/blob/master/queuing/queue_tasks.md) and the [documentation](https://www.scriptr.io/documentation#documentation-queuemodulequeueModule).
 
 ![message queueing](./message-queues.PNG)
 
