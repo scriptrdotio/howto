@@ -20,3 +20,5 @@ Of course, you can always [contact us](mailto:support@scriptr.io) for any questi
 - [Architecture patterns](./architecture_patterns.md)
 - [Scalability](./scalability.md)
 - [Security](./security)
+
+[Home](./solution_architect_booklet.md)
