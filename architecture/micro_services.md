@@ -14,7 +14,7 @@ It is very easy to implement Microservices with scriptr.io. As mentioned in the 
 
 The best way to implement a Microservices is thus by implementing a scriptr.io application. The operations of the Microservice will be exposed through an API composed of scripts, which will convey the received requests and messages to the internal modules (other scripts) that implement the domain logic. One of the nice things about using scriptr.io is that your API scripts will be remotely accessible using any of the communication protocols that are supported by scriptr.io (http, mqtt, amqp, websocket) **without any change**.
 
-If you need to hide Microservices behin an API gateway, a simple way of doing that is by creating another application that would be the entry point of your architecture. Note though that the other applications (the Microservices) would remain publicly accessible by default (you must contact the scriptr.io team to change that).
+If you need to hide Microservices behind an API gateway, a simple way of doing that is by creating another application that would be the entry point of your architecture. Note though that the other applications (the Microservices) would remain publicly accessible by default (you must contact the scriptr.io team to change that).
 
 ![microservices with scriptr.io](./scriptr-microservices.PNG)
 
