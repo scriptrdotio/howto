@@ -48,7 +48,7 @@ In addition to using traditional authentication means (bearer token, username/pa
 ## Authorizations
 Scriptr.io handles authorisations via **Access Control Lists** (ACL) at two levels:
 - scripts: manage permissions on the execution of the logic in the scripts. For more on how to create ACLs for scripts please read [this](../acl/restrict_access_to_api.md)
-- documents: manage permissions on your data, at the field level, either for reading and/or writting. For more on how to create ACLs for documents, please read [this](../acl/protect_data.md)
+- documents: manage permissions on your data, at the field level, either for reading and/or writing. For more on how to create ACLs for documents, please read [this](../acl/protect_data.md)
 
 ACLs are lists of users, devices, groups and roles that are authorized on a given resource (script or data). Users, devices, groups and roles that are not part of the ACL of a given script, document or document field will get no access to the resource.
 
