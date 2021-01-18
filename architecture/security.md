@@ -17,8 +17,8 @@ Each application of a scriptr.io account has its own user and device directory. 
 ### Credentials
 Adding a new a user or a device into the directory can be done from the workspace or using the corresponding APIs. It requires providing a user name (respectively a device name) and a password that will be used to generate an **authentication token**. If a token is lost or corrupted, a new token can be regenerated, which automatically invalidates the other one. It is also possible to modify the password, which leads to the automatic regeneration of an authentication token, and the invalidation of the former password and token respectively.
 
-### HTTP
-Users and devices access your application by issuing authenticated **http requests** to it's API. A request is authenticated by scriptr.io if it contains a valid authentication token pertaining to the directory of the targeted application. 
+#### HTTP
+Users and devices accessing your application by issuing authenticated **http requests** to it's API. A request is authenticated by scriptr.io if it contains a valid authentication token pertaining to the directory of the targeted application. 
 
 User interfaces served by your application can also leverage the [Login component](https://github.com/scriptrdotio/login), which allow the user to sign-in by entering their username and password in a login form. The login component will generate a session token, automatically redirecting users to the login form upon session expiration.
 
@@ -31,7 +31,7 @@ Similarly to MQTT, client application connecting to your application's API over 
 #### WebSockets
 Client applications interacting with your application's API via web socket will authenticate with a valid **authentication token** when [establishing the connection](https://www.scriptr.io/documentation#documentation-realtimecommunicationReal-timeCommunication).
 
-### Authenticating against thrid party systems
+### Authenticating against third party systems
 Your application will probably interact with third-party systems against which it should authenticate. Authentication will strongly depend on the technique used by the third party. In addition to using traditional authentication means (bearer token, username/passwords, etc.) when issusing requests/message to those third parties, you can leverage more advanced techniques that are natively available in scriptr.io and directly usable from within your scripts:
 
 - OAuth
@@ -39,5 +39,8 @@ Your application will probably interact with third-party systems against which i
 - Json Web Tokens.
 
 ## Authorizations
+Scriptr.io handles authorisations via Access Control Lists (ACL) at two levels:
+- scripts (manage permissions on the execution of the logic in the scripts)
+- data (manage permissions on your data, at the field level)
 
-
+## Roles and Groups
