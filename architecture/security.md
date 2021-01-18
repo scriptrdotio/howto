@@ -14,6 +14,9 @@ The owner of a scriptr.io account signs into the workspace (web IDE) using his a
 ## User and device directory
 Each application of a scriptr.io account has its own user and device directory. Directories are not shared across applications, which means that a device or a user who is identified in an application is unknown to other applications of the same scriptr.io account.
 
+### Suspended users/devices
+Any suspended user or device looses its rights to access your application during the suspension period.
+
 ### Credentials
 Adding a new a user or a device into the directory can be done from the workspace or using the corresponding APIs. It requires providing a user name (respectively a device name) and a password that will be used to generate an **authentication token**. If a token is lost or corrupted, a new token can be regenerated, which automatically invalidates the other one. It is also possible to modify the password, which leads to the automatic regeneration of an authentication token, and the invalidation of the former password and token respectively.
 
@@ -41,8 +44,15 @@ Your application will probably interact with third-party systems against which i
 - Json Web Tokens.
 
 ## Authorizations
-Scriptr.io handles authorisations via Access Control Lists (ACL) at two levels:
+Scriptr.io handles authorisations via **Access Control Lists** (ACL) at two levels:
 - scripts (manage permissions on the execution of the logic in the scripts)
-- data (manage permissions on your data, at the field level)
+- documents (manage permissions on your data, at the field level)
+
+ACLs are list of users, devices, groups and roles that are authorized on a given resource (script or data). Users, devices, groups and roles that are not part of the ACL of a given script, document or document field will get no access to this resource.
 
 ## Roles and Groups
+
+### Roles
+Applications can leverage predefined roles: 
+- scriptr: refers to the owner of the application, 
+- authenticated-users: refers to all non suspended users and devices in the directory
