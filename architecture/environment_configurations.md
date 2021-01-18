@@ -51,12 +51,5 @@ Interesting to note, you can create a globally unique sub-domain name for your a
 
 *Figure 4 - Anatomy of a scriptr.io account*
 
-# Solution Architecture Booklet ToC
 
-- [Environment configuations](./environment_configurations.md) 
-- [Development life-cycle](./development_life_cycle.md)
-- [Architecture patterns](./architecture_patterns.md)
-- [Scalability](./scalability.md)
-- [Security](./security)
-
-[Home](./solution_architect_booklet.md)
+[Back to Solution Architect Booklet ToC](./solution_architect_booklet.md#toc)
