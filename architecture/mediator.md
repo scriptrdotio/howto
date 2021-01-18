@@ -40,17 +40,10 @@ As also mentioned in the [Broker Pattern section](./broker.md#event-processors),
 ## Channels
 Channels are very simple to create in scriptr.io. Please refer to [this section](./broker.md#channels) to see how to create channels and queues in scriptr.io.
 
-
-**Other architecture patterns**
+## Other architecture patterns**
 
 - [Broker](./broker.md)
 - [Micro-service](./micro_services.md)
 - [Layered (monolithic)](./layered.md)
 
-# Solution Architecture Booklet ToC
-
-- [Environment configuations](./environment_configurations.md) 
-- [Development life-cycle](./development_life_cycle.md)
-- [Architecture patterns](./architecture_patterns.md)
-- [Scalability](./scalability.md)
-- [Security](./security)
+[Back to Solution Architect Booklet ToC](./solution_architect_booklet.md#toc)
