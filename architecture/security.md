@@ -53,6 +53,12 @@ ACLs are list of users, devices, groups and roles that are authorized on a given
 ## Roles and Groups
 
 ### Roles
-Applications can leverage predefined roles: 
+ACL can contain one of the predefined roles: 
 - scriptr: refers to the owner of the application, 
 - authenticated-users: refers to all non suspended users and devices in the directory
+- anonymous: means that no authentication is required to access the corresponding resource
+- nobody: means that the corresponding resource is forbidden, even for the scriptr role.
+
+### Groups
+Groups can contain users, devices or other groups. It is a convenient ways of associated users and devices to the same resources. It is recommended to use groups as much as possible when creating ACLs.
+
