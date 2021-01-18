@@ -39,11 +39,4 @@ It is always possible to ask for increasing the capacity of a dedicated environm
 
 **The scriptr.io architects can assist you in defining the best scalability options for your application**
 
-# Solution Architecture Booklet ToC
-- [Environment configuations](./environment_configurations.md) 
-- [Development life-cycle](./development_life_cycle.md)
-- [Architecture patterns](./architecture_patterns.md)
-- [Scalability](./scalability.md)
-- [Security](./security)
-
-[Home](./solution_architect_booklet.md)
+[Back to Solution Architect Booklet ToC](./solution_architect_booklet.md#toc)
