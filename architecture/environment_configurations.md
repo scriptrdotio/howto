@@ -58,3 +58,5 @@ Interesting to note, you can create a globally unique sub-domain name for your a
 - [Architecture patterns](./architecture_patterns.md)
 - [Scalability](./scalability.md)
 - [Security](./security)
+
+[Home](./solution_architect_booklet.md)
