@@ -30,7 +30,7 @@ Scriptr.io provides a customization of the [Jasmine](https://jasmine.github.io/)
 ### Unit testing
 To use Jasmine for creating unit tests, all you need to do is to deploy the module into your account, which is very easy to achieve:
 
-- From you workspace, click the small arrow in the bottom left corner of the screen near +New Script then select "Install module"
+- From your workspace, click the small arrow in the bottom left corner of the screen near +New Script then select "Install module"
 
 ![install module](./install-module.PNG)
 
