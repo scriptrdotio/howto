@@ -51,7 +51,7 @@ In a continuous integration approach, you would like to regularly run all the un
 
 *Figure 4 - Enable automatic deployment from Github*
 
-You can then schedule the execution of all the unit tests so they are ran automatically. While you can manually schedule the execution of a script (unit tests are scripts) a better approach it to write a small script (scheduled as well) that will list all the unit tests in the current account (the Continuous Integration account), and schedule the execution of any script that has not be already scheduled. For more on scheduling scripts, please refer to the [corresponding how-to](../cron/create_cron_job.md).
+You can then schedule the execution of all the unit tests so they are ran automatically. While you can manually schedule the execution of a script (unit tests are scripts) a better approach it to write a small script (scheduled as well) that will list all the unit tests in the current account (the Continuous Integration account), and schedule the execution of any script that has not been already scheduled. For more on scheduling scripts, please refer to the [corresponding how-to](../cron/create_cron_job.md).
 
 *Note: thanks to the flexibility of scriptr.io, there are many ways of automating the execution of the unit tests in the integration test account. For example, you can also create a script that regularly lists all unit tests in the account, then queue a task to execute each test.*
 
