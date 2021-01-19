@@ -2,7 +2,7 @@
 
 As you may already know, scriptr.io is a [managed serverless environment](../whatis/whatis_scriptr.md) that provides many services and components that you can leverage from within your code. This mainly means that it will make your life much easier when developping your applications, whether these are simple IoT applications ingesting and displaying device data, or large enterprise-grade solutions, integrating with multiple third parties and legacy systems.
 
-Software architects and developers that are new to scriptr.io, and less familiar with serveless environments, might sometimes be disoriented at first as how to start. They often have some - legitimate - questions, some related to the development life-cycle and some others to the possible architectures of the solutions they can build with scriptr.io: how to work as a team? Are there development and staging environments? How to test the code? What type of software architectures can be implemented? How to scale, etc.? Some other questions also relate to security and authorizations.
+Software architects and developers that are new to scriptr.io, and less familiar with serverless environments, might sometimes be disoriented at first as how to start. They often have some - legitimate - questions, some related to the development life-cycle and some others to the possible architectures of the solutions they can build with scriptr.io: how to work as a team? Are there development and staging environments? How to test the code? What type of software architectures can be implemented? How to scale, etc.? Some other questions also relate to security and authorizations.
 
 This document is thus aimed at providing answers to the most common questions we encounter, and is structured as follows: 
 
