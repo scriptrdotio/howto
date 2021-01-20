@@ -42,8 +42,8 @@ Your application will probably interact with third-party systems against which i
 In addition to using traditional authentication means (bearer token, username/passwords, etc.) when issusing requests/messages to those third parties, you can leverage more advanced techniques that are natively available in scriptr.io and directly usable from within your scripts:
 
 - OAuth
-- Client-side SSL/TLS certifcates
-- Json Web Tokens.
+- Client SSL/TLS certificates
+- JSON Web Tokens.
 
 ## Authorizations
 Scriptr.io handles authorisations via **Access Control Lists** (ACL) at two levels:
