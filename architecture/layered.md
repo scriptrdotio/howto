@@ -23,6 +23,6 @@ Note that so far, you can only create HTML/CSS and JavaScript pages for the pres
 ## Other architecture patterns
 - [Broker](./broker.md)
 - [Mediator](./mediator.md)
-- [Micro service](./micro_service.md)
+- [Microservice](./micro_service.md)
 
 [Back to Solution Architect Booklet ToC](./solution_architect_booklet.md#toc)
