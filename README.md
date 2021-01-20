@@ -15,7 +15,7 @@ If you prefer starting by checking how to develop an end-to-end application, try
 
 Or if you need to build a full webapp complete with working login and widget, try [this tutorial](./tutorials/UIComponents/README.md)
 
-# Solution Architects
+# Solution and Software Architects
 
 If you are a solution architect and you would like to understand more about process development with scriptr.io, supported architectures, configurations, etc. we suggest reading the [scriptr.io solution architect booklet](./architecture/solution_architect_booklet.md)
 
