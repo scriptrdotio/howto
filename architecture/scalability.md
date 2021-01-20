@@ -6,7 +6,7 @@ Scalability is always a concern in most enterprise-grade applications. While it 
 
 ## Asynchronous processing
 
-It often appears that sychronous, request-reply and/or transactional processing are not necessary to tackle a given use cases, but they are actually used out of habit, leading sometimes to bloating the application by reserving a large part of the available resources. Therefore when designing an application, it is important to answer the following questions:
+It often appears that sychronous, request-reply and/or transactional processing are not necessary to tackle a given use case, but they are actually used out of habit, leading sometimes to bloating the application by reserving a large part of the available resources. Therefore when designing an application, it is important to answer the following questions:
 - Is there a large number of messages to process, whose emitters do not need an response immediately, but can be provided later with the outcome of their request?
 - Is the execution time of the logic triggered by a request higher than a few seconds? Can it reach minutes or hours? 
 
