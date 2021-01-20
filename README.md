@@ -17,7 +17,7 @@ Or if you need to build a full webapp complete with working login and widget, tr
 
 # Solution Architects
 
-If you are a solution architect and you would like to undertand more about process development with scriptr.io, supported architectures, configurations, etc. we suggest reading the [scriptr.io solution architect booklet](./architecture/solution_architect_booklet.md)
+If you are a solution architect and you would like to understand more about process development with scriptr.io, supported architectures, configurations, etc. we suggest reading the [scriptr.io solution architect booklet](./architecture/solution_architect_booklet.md)
 
 # How to...
 
