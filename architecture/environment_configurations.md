@@ -15,7 +15,7 @@ When you first [sign-up to scriptr.io](https://www.scriptr.io/register), you obt
 
 *Figure 1 - Free shared environment*
 
-Although this is a shared environment, you have your own isolated "silo", which means none of your data and your code are shared with other account owners, nor accessible to them in any way. There is not limitations to the number of accounts you can create on this environment, but (1) **the capacity is throttled** and (2) **some of the features are only accessible for a trial period and a few are not available**.
+Although this is a shared environment, you have your own isolated "silo", which means none of your data and your code are shared with other account owners, nor accessible to them in any way. There is not limitation to the number of accounts you can create on this environment, but (1) **the capacity is throttled** and (2) **some of the features are only accessible for a trial period and a few are not available**.
 
 ## Paid shared environment
 This is a good option for small to medium applications or when you are starting and need to progressively increase your capacity.
