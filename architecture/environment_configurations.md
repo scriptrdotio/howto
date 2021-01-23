@@ -4,7 +4,7 @@ There are three possible base configurations:
 - [Paid shared environment](./environment_configurations.md#paid-shared-environment)
 - [Dedicated environment](./environment_configurations.md#dedicated-environment)
 
-In any of these, accounts will be created, therefore it is important to also understand the [anatomy of a scriptr.io account](./environment_configurations.md#anatomy-of-a-scriptrio-account).
+In any of these, accounts will be created, therefore it is important to also understand the [anatomy of a scriptr.io account](./environment_configurations.md#anatomy-of-a-scriptrio-account) (at the bottom of this page).
 
 ## Free shared environment
 This is an ideal option to become familiar with the power of scriptr.io, at no cost. Although highly reliable, it is not meant for production.
