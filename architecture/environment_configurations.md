@@ -1,26 +1,26 @@
 # Environment configurations
 There are three possible base configurations:
-- [Free shared environment](./environment_configurations.md#free-shared-environment)
+- [Freemium shared environment](./environment_configurations.md#free-shared-environment)
 - [Paid shared environment](./environment_configurations.md#paid-shared-environment)
 - [Dedicated environment](./environment_configurations.md#dedicated-environment)
 
 In any of these, accounts will be created, therefore it is important to also understand the [anatomy of a scriptr.io account](./environment_configurations.md#anatomy-of-a-scriptrio-account) (at the bottom of this page).
 
-## Free shared environment
+## Freemium shared environment
 This is an ideal option to become familiar with the power of scriptr.io, at no cost. Although highly reliable, it is not meant for production.
 
-When you first [sign-up to scriptr.io](https://www.scriptr.io/register), you obtain a free acount on a multitenant scriptr.io environment (free shared environment). This account gives you access to the [workspace](https://www.scriptr.io/workspace) (a web IDE) from which you can start using most of scriptr.io's features and services for free, to build your applications. As mentioned, your code is automatically deployed and runs on the cloud (figure 1). 
+When you first [sign-up to scriptr.io](https://www.scriptr.io/register), you obtain a freemium acount on a multitenant scriptr.io environment (free shared environment). This account gives you access to the [workspace](https://www.scriptr.io/workspace) (a web IDE) from which you can start using most of scriptr.io's features and services for free, to build your applications. As mentioned, your code is automatically deployed and runs on the cloud (figure 1). 
 
 ![shared environment](./shared-model.PNG)
 
-*Figure 1 - Free shared environment*
+*Figure 1 - Freemium shared environment*
 
 Although this is a shared environment, you have your own isolated "silo", which means none of your data and your code are shared with other account owners, nor accessible to them in any way. There is not limitation to the number of accounts you can create on this environment, but (1) **the capacity is throttled** and (2) **some of the features are only accessible for a trial period and a few are not available**.
 
 ## Paid shared environment
 This is a good option for small to medium applications or when you are starting and need to progressively increase your capacity.
 
-Once you feel more comfortable and you are ready to move to production, you can ask for one or more accounts on the paid shared environment. As in the free tier, you will share capacity with other account owners, however, you can ask for customized throttling (max number of requests per second, max number of documents, etc.) depending on your requirements. You can also purchase paid features, such as messaging or adding different data store types to your account. Note that since this is a shared environment, there is a limit to how much your application can scale. Another difference with the free tier is the SLA (Service Level Agreement) and corresponding QoS (Quality of Service) you will get.
+Once you feel more comfortable and you are ready to move to production, you can ask for one or more accounts on the paid shared environment. As in the free tier, you will share capacity with other account owners, however, you can ask for customized throttling (max number of requests per second, max number of documents, etc.) depending on your requirements. You can also purchase paid features, such as messaging or adding different data store types to your account. Note that since this is a shared environment, there is a limit to how much your application can scale. Another difference with the freemium tier is the SLA (Service Level Agreement) and corresponding QoS (Quality of Service) you will get.
 
 ![paid shared environment](./paid-shared-model.PNG)
 
