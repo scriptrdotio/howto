@@ -149,6 +149,9 @@ Notice that we used different id values: "latest_device_value" and "historical_d
 
 Finally, let's return "historicalData" the variable that we created earlier that contains the result of the query. This is not necessary but we will use it to show you the structure of the data that is returned by a query.
 
+```
+return historicalData;
+```
 ## Let's run a first test
 
 From the **Postman** user interface, we will issue a POST http request toward our ingestion script. Open Postman, create a new request of type POST and enter the address of your script.
