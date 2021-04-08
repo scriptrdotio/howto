@@ -90,7 +90,7 @@ So let's assume we want to obtain all documents that have a non null speed and t
 // add the below to the ingestion script
 var queryObj = {
   query: "temperature is not null and speed is not null", // this is the query expression
-  fields: "temperature, speed, number_passsengers, creationDate" // this lists the fields we need to obtain
+  fields: "temperature, speed, num_passsengers, creationDate" // this lists the fields we need to obtain
 };
 ```
 **Note**: you might have noticed that the "fields" property contains the "creationDate" field. This latter is not a field that the device sent. It is actually part of the metadata that is automatically added by scriptr.io. It indicates the date/time at which a document was created.
