@@ -38,7 +38,7 @@ Let's try it by pasting the below code into a script in the [workspace](https://
 ```
 if (!request.parameters.temperature) { // send a custom error message if an expected parameter is not found in the request
     
-    response.setHeader("status", "400");
+    response.setStatus(400);
     response.setHeader("Content-Type", "text/javascript");
     response.write(JSON.stringify({"msg":"Missing_Parameter - temperature"}));
     response.flush();
@@ -47,7 +47,7 @@ if (!request.parameters.temperature) { // send a custom error message if an expe
 }
 
 // Send custom response message otherwise
-response.setHeader("status", "200");
+response.setStatus(200);
 response.write("ok");
 response.flush();
 response.close();
