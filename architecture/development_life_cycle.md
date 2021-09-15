@@ -44,23 +44,23 @@ In the modules panel, scroll down to Jasmine and press Install. This will automa
 
 For more on how to create unit tests with Jasmine in scriptr.io, please refer to [our documentation](https://github.com/scriptrdotio/jasmine/blob/master/README.md).
 
-### Continuous Integration testing
+### Continuous Integration
 In a continuous integration approach, you would like to regularly run all the unit tests (implemented by the different developers) at regular intervals. One good practice for that is to create a specific scriptr.io account that is associated with the Github repository of the application (the one where developers commit their code and unit tests), and to activate the automatic deployment option. As a result, any code committed to the Github repository will automatically be delployed on the Continuous Integration test account.
 
 ![enable auto-deploy from Github](./auto-deploy-from-github.PNG)
 
 *Figure 4 - Enable automatic deployment from Github*
 
-You can then schedule the execution of all the unit tests so they are ran automatically. While you can manually schedule the execution of a script (unit tests are scripts) a better approach it to write a small script (scheduled as well) that will list all the unit tests in the current account (the Continuous Integration account), and schedule the execution of any script that has not been already scheduled. Another flexible approach is to create a webhook from your Githib repository that would trigger the execution of the script that runs the tests. For more on scheduling scripts, please refer to the [corresponding how-to](../cron/create_cron_job.md).
+You can then schedule the execution of all the unit tests so they are ran automatically. While you can manually schedule the execution of a script (unit tests are scripts) a better approach it to write a small orchestration script (scheduled as well) that will list all the unit tests in the current account (the Continuous Integration account), and schedule the execution of any script that has not been already scheduled. The execution of this script could be scheduled or triggered by a webhook from your Github repository. For more on scheduling scripts, please refer to the [corresponding how-to](../cron/create_cron_job.md). Optionally, once all tests complete successfully, the orchestration script can issue a release request on the Github repository.
 
-*Note: thanks to the flexibility of scriptr.io, there are many ways of automating the execution of the unit tests in the integration test account. For example, you can also create a script that regularly lists all unit tests in the account, then [queue a task](../queuing/queue_tasks.md) to execute each test.*
+*Note: thanks to the flexibility of scriptr.io, there are many ways of automating the execution of the unit tests in the integration test account. For example, your test orchestration script could list all unit tests in the account, then [queue a task](../queuing/queue_tasks.md) to execute each test.*
 
 ![continuous integration testing](./continuous-integration-testing.PNG)
 
 *Figure 5 - Automatic Continuous Integration testing*
 
-## Staging
-To create a staging environment, you can simply create a new scriptr.io account (e.g. staging account) and associate it with the corresponding Github account, and also enabling automatic deploy (same as for continuous integration testing). 
+## Staging (continuous delivery)
+To create a staging environment, you can simply create a new scriptr.io account (e.g. staging account) and associate it with the corresponding Github account. You can enable automatic deploy (same as for continuous integration testing) but a better option would be to configure the deployment to happen further to a release event. 
 
 If you also mean to run load tests, then you might want to consider your options:
 
