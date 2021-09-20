@@ -41,7 +41,7 @@ var metclient = require("../metclient");
 try {
     var metClient = new metclient.MetOffice(); 
     var resp = metClient.sendObservation(request.parameters);
-    document.save(resp;
+    document.save(resp);
 }catch(exception){
     return exception;
 }
