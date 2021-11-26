@@ -10,11 +10,13 @@ This repository contains a list of short documents that answer most of the commo
 - **Make sure that you already [signed-up for a free account](https://www.scriptr.io/register)!** 
 - If you don't know yet what scriptr.io is, **check [what scriptr.io is and what it allows you to do](https://github.com/scriptrdotio/howto/blob/master/whatis/whatis_scriptr.md)**.
 
-# Tutorial
+# Tutorials
 
-If you prefer starting by checking how to develop an end-to-end application, try [this tutorial](./tutorials/endtoendapp1/README.md)
+- If you prefer starting by checking how to develop an end-to-end application, try [this tutorial](./tutorials/endtoendapp1/README.md)
 
-Or if you need to build a full webapp complete with working login and widget, try [this tutorial](./tutorials/UIComponents/README.md)
+- If you are more into watching **video tutorials**, that's a [video tutorial to get started with scriptr.io](https://drive.google.com/file/d/18xP1PwLKxG9C-zajXz81BkjPw2D-Jivx/view?usp=sharing)
+
+- Alternatively, if you need to build a full webapp complete with working login and widget, try [this tutorial](./tutorials/UIComponents/README.md)
 
 # Solution and Software Architects
 
